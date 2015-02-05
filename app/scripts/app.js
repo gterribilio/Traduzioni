@@ -8,5 +8,8 @@
  *
  * Main module of the application.
  */
-angular
-  .module('lemietraduzioniApp', []);
+ angular
+ .module('lemietraduzioniApp', [
+ 	'ngRoute',
+ 	'DirectivesModule'
+ 	]);

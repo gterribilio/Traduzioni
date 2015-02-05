@@ -1,0 +1,31 @@
+/*reset di base*/
+
+*{margin:0px;padding:0px;}
+
+ul,p {
+  -webkit-padding-start: 0px;
+  -webkit-padding-end: 0px;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+}
+
+/* end reset di base */
+
+.well {
+	background:#174264;
+	padding: 0px;
+}
+
+.login {
+	position:absolute; 
+	top:60px;
+	opacity:0.9;
+	padding-top:60px;
+}
+
+/**** FIX per glyphicon che hanno altezza maggiore di input ****/
+
+form .glyphicon {
+  top: 0;
+}
+/**** end FIX ****/

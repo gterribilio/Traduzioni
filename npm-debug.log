@@ -1,0 +1,85 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'ngroute' ]
+2 info using npm@1.4.23
+3 info using node@v0.10.31
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json lemietraduzioni@0.0.0 No description
+6 warn package.json lemietraduzioni@0.0.0 No README data
+7 warn package.json karma-chrome-launcher@0.1.7 No README data
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'ngroute', null ]
+10 verbose cache add name=undefined spec="ngroute" args=["ngroute",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'ngroute',
+11 verbose parsed url   path: 'ngroute',
+11 verbose parsed url   href: 'ngroute' }
+12 silly lockFile cba9a52c-ngroute ngroute
+13 verbose lock ngroute C:\Users\terribilio.gi\AppData\Roaming\npm-cache\cba9a52c-ngroute.lock
+14 silly lockFile cba9a52c-ngroute ngroute
+15 silly lockFile cba9a52c-ngroute ngroute
+16 verbose addNamed [ 'ngroute', '' ]
+17 verbose addNamed [ null, '*' ]
+18 silly lockFile b95925b9-ngroute ngroute@
+19 verbose lock ngroute@ C:\Users\terribilio.gi\AppData\Roaming\npm-cache\b95925b9-ngroute.lock
+20 silly addNameRange { name: 'ngroute', range: '*', hasData: false }
+21 verbose request where is /ngroute
+22 verbose request registry http://registry.npmjs.org/
+23 verbose request id 24eea0586132ec9f
+24 verbose url raw /ngroute
+25 verbose url resolving [ 'http://registry.npmjs.org/', './ngroute' ]
+26 verbose url resolved http://registry.npmjs.org/ngroute
+27 verbose request where is http://registry.npmjs.org/ngroute
+28 info trying registry request attempt 1 at 10:43:28
+29 http GET http://registry.npmjs.org/ngroute
+30 http 404 http://registry.npmjs.org/ngroute
+31 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+31 verbose headers   'content-type': 'application/json',
+31 verbose headers   'cache-control': 'max-age=0',
+31 verbose headers   'content-length': '52',
+31 verbose headers   'accept-ranges': 'bytes',
+31 verbose headers   date: 'Thu, 05 Feb 2015 09:42:48 GMT',
+31 verbose headers   age: '0',
+31 verbose headers   'x-cache': 'MISS from proxyizsto.izsto.it',
+31 verbose headers   'x-cache-lookup': 'MISS from proxyizsto.izsto.it:8080',
+31 verbose headers   via: '1.1 varnish, 1.0 proxyizsto.izsto.it (squid/3.1.10)',
+31 verbose headers   connection: 'close' }
+32 silly registry.get cb [ 404,
+32 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+32 silly registry.get     'content-type': 'application/json',
+32 silly registry.get     'cache-control': 'max-age=0',
+32 silly registry.get     'content-length': '52',
+32 silly registry.get     'accept-ranges': 'bytes',
+32 silly registry.get     date: 'Thu, 05 Feb 2015 09:42:48 GMT',
+32 silly registry.get     age: '0',
+32 silly registry.get     'x-cache': 'MISS from proxyizsto.izsto.it',
+32 silly registry.get     'x-cache-lookup': 'MISS from proxyizsto.izsto.it:8080',
+32 silly registry.get     via: '1.1 varnish, 1.0 proxyizsto.izsto.it (squid/3.1.10)',
+32 silly registry.get     connection: 'close' } ]
+33 silly lockFile b95925b9-ngroute ngroute@
+34 silly lockFile b95925b9-ngroute ngroute@
+35 error 404 404 Not Found: ngroute
+35 error 404
+35 error 404 'ngroute' is not in the npm registry.
+35 error 404 You should bug the author to publish it
+35 error 404 It was specified as a dependency of 'lemietraduzioni'
+35 error 404
+35 error 404 Note that you can also install from a
+35 error 404 tarball, folder, or http url, or git url.
+36 error System Windows_NT 6.1.7601
+37 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "ngroute"
+38 error cwd C:\Users\terribilio.gi\Dropbox\angularjs\lemietraduzioni
+39 error node -v v0.10.31
+40 error npm -v 1.4.23
+41 error code E404
+42 verbose exit [ 1, true ]
