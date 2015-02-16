@@ -43,6 +43,9 @@
               <li ng-show="isLogged">
                 <a class="page-scroll" ng-click="" href="#login">Il mio Profilo</a>
               </li>
+              <li ng-show="isLogged">
+                <a class="page-scroll" ng-click="doLogout();" href="/">Esci <span class="glyphicon glyphicon-share-alt"></span></a>
+              </li>
             </ul>
           </div>
           <!-- /.navbar-collapse -->
@@ -89,7 +92,6 @@
     <script src="scripts/explico.js"></script>
     <script src="scripts/app.js"></script>
     <script src="scripts/services.js"></script>
-    <script src="scripts/grayscale.js"></script>
     <script src="scripts/jquery.easing.min.js"></script>
     <script src="scripts/directives.js"></script>
     <script src="scripts/controllers/home.js"></script>
@@ -97,6 +99,9 @@
     <script src="scripts/controllers/home_agenzia.js"></script>
     <script src="scripts/sjcl.js"></script>
     <script src="scripts/common.js"></script>
+
+    <script src="scripts/grayscale.js"></script>
+
     <!-- endbuild -->
   </body>
   </html>

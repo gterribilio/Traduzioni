@@ -8,6 +8,8 @@ home.controller('HomeCtrl',  ['$scope', '$rootScope', '$window', 'services', '$l
 		$rootScope.showLogin=false;
 		$rootScope.showRicercaRipetizioni=false;
 		$rootScope.showLeMieRipetizioni=false;
+        $rootScope.isShowRegistrazioneAgenzia=true;
+        $rootScope.isShowRegistrazioneTraduttore=true;
 
 		$scope.doAccedi= function() {
 			services.getFromRESTServer("username="+$scope.username+"&password="+$scope.password,"login").
@@ -60,4 +62,10 @@ home.controller('HomeCtrl',  ['$scope', '$rootScope', '$window', 'services', '$l
         	}
         });
     }
+
+    $rootScope.doLogout = function() {
+            customFactory.logout();
+            $location.path("/");
+            $rootScope.isLogged = false;
+        };
 }]);
