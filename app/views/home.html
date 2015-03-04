@@ -12,14 +12,16 @@
   <div class="intro-body">
     <div class="container">
       <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-12">
           <h1 style="margin-top:30px;" class="brand-heading">Welcome to Explico</h1>
-          <p class="intro-text">We have not a subhead</p>
+          <p class="intro-text">"TRANSLATION CANNOT BE DISSOCIATED FROM THE NOTION OF PROGRESS"</p>
+          <p>JEAH-FRANCOIS JOLY</p>
+          <div style="margin-bottom:100px;"/>
           <div style="float:left;opacity:0.6;">
             <a role="button" scroll-on-click href="#registrazione_agenzia" class="btn btn-default btn-lg"> <i class="fa fa-angle-double-down animated"></i>&nbsp;Are you an agency?</a>
           </div>
           <div style="float:right;opacity:0.6;">
-            <a role="button" scroll-on-click href="#registrazione_traduttore" class="btn btn-default btn-lg"><i class="text-right fa fa-angle-double-down animated"></i>&nbsp;Are you a translator?</a>
+            <a role="button" scroll-on-click href="#registrazione_traduttore" class="btn btn-default btn-lg"><i class="fa fa-angle-double-down animated"></i>&nbsp;Are you a translator?</a>
           </div>
         </div>
       </div>
@@ -28,30 +30,12 @@
 </header>
 
 <!-- Registrazione Agenzia Section -->
-<section id="registrazione_agenzia" class="content-section text-center" ng-if="isShowRegistrazioneAgenzia">
-  <div class="inner_div_registrazione_agenzia">
-    <div class="container">
-      <div class="col-lg-8 col-lg-offset-2">
-        <h2>Registrazione Agenzia</h2>
-        <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-        <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
-      </div>
-    </div>
-  </div>
-</section>
+<section registrazione-agenzia-element id="registrazione_agenzia" class="content-section text-center" ng-if="isShowRegistrazioneAgenzia"/>
 
 <!-- Registrazione Traduttori Section -->
-<section id="registrazione_traduttore" class="content-section text-center" ng-if="isShowRegistrazioneTraduttore">
-  <div class="inner_div_registrazione_traduttore">
-    <div class="container">
-      <div class="col-lg-8 col-lg-offset-2">
-        <h2>Registrazione Traduttore</h2>
-        <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-        <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
-      </div>
-    </div>
-  </div>
-</section>
+
+<section registrazione-traduttore-element id="registrazione_traduttore" class="content-section text-center" ng-if="isShowRegistrazioneTraduttore"/>
+
 
 <!-- About Section -->
 <section id="about" class="container content-section text-center">

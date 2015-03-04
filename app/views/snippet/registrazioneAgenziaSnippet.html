@@ -1,0 +1,105 @@
+<div class="intro-body" ng-controller="registrazioneCtrl">
+ <div class="row row_registrazione">
+  <h2>Create your Agency account</h2>
+</div>
+<form name="userForm" ng-submit="doRegisterAgenzia()" novalidate> <!--disabilito validazione html5-->
+  <div class="row row_registrazione">
+    <!-- usernameAgenzia -->
+    <div class="form-group row" ng-class="{ 'has-error' : userForm.usernameAgenzia.$invalid && !userForm.usernameAgenzia.$pristine }">
+      <label class="col-xs-3 col-sm-offset-2 text-right control-label">Username*</label>
+      <div class="col-sm-3 col-xs-9">
+        <input type="text" name="usernameAgenzia" class="form-control" ng-model="usernameAgenzia" required ng-minlength="6" placeholder="">
+      </div>
+    </div>
+    <p ng-show="userForm.usernameAgenzia.$invalid && !userForm.usernameAgenzia.$pristine && userForm.usernameAgenzia.$error.minlength" class="help-block">Lo usernameAgenzia deve essere almeno di 6 caratteri</p>
+
+    <!-- passwordAgenzia -->
+    <div class="form-group row" ng-class="{ 'has-error' : userForm.passwordAgenzia.$invalid && !userForm.passwordAgenzia.$pristine }">
+      <label class="col-xs-3 col-sm-offset-2 text-right control-label">Password*</label>
+      <div class="col-sm-3 col-xs-9">
+        <input type="password" id="passwordAgenzia" name="passwordAgenzia" class="form-control" ng-model="passwordAgenzia" required placeholder="" ng-pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$/"><!--per trovare altre espressioni regolari andare su http://regexlib.com/Search.aspx?k=passwordAgenzia&AspxAutoDetectCookieSupport=1-->
+      </div>
+    </div>
+    <p ng-show="userForm.passwordAgenzia.$invalid && !userForm.passwordAgenzia.$pristine && userForm.passwordAgenzia.$error.pattern" class="help-block">La passwordAgenzia deve essere di almeno 4 caratteri, non più di 8 e deve includere almeno una lettera maiuscola, una minuscola e un numero</p>
+
+    <div class="form-group row" ng-class="{ 'has-error' : userForm.passwordAgenziaR.$invalid && !userForm.passwordAgenziaR.$pristine}">
+      <label class="col-xs-3 col-sm-offset-2 text-right control-label">Confirm password*</label>
+      <div class="col-sm-3 col-xs-9">
+        <input type="password" id="passwordAgenziaR" name="passwordAgenziaR" pw-check="passwordAgenzia" class="form-control" required ng-model="passwordAgenziaR" placeholder="" ng-pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$/">
+      </div>
+    </div>
+    <p ng-show="userForm.passwordAgenziaR.$invalid && !userForm.passwordAgenziaR.$pristine && userForm.passwordAgenziaR.$error.pattern" class="help-block">La password deve essere di almeno 4 caratteri, non più di 8 e deve includere almeno una lettera maiuscola, una minuscola e un numero</p>
+
+    <!-- controllo coincidenza passwordAgenzia -->
+    <div class="msg-block" ng-show="userForm.$error">
+      <p ng-show="userForm.passwordAgenziaR.$error.pwmatch" class="help-block">Le due password non coincidono</p>
+    </div>
+
+    <!-- emailAgenzia -->
+    <div class="form-group row" ng-class="{ 'has-error' : userForm.emailAgenzia.$invalid && !userForm.emailAgenzia.$pristine }">
+      <label class="col-xs-3 col-sm-offset-2 text-right control-label">Email*</label>
+      <div class="col-sm-3 col-xs-9">
+        <input type="email" name="emailAgenzia" class="form-control" ng-model="emailAgenzia" required placeholder="">
+      </div>
+    </div>
+    <p ng-show="userForm.emailAgenzia.$invalid && !userForm.emailAgenzia.$pristine" class="help-block">Inserisci una mail valida</p>
+  </div>
+  <div style="clear:both;" />
+
+  <div class="row row_registrazione">
+    <!-- AGENCY NAME -->
+    <div class="form-group row" ng-class="{ 'has-error' : userForm.nomeAgenzia.$invalid && !userForm.nomeAgenzia.$pristine }">
+      <label class="col-xs-3 col-sm-offset-2 text-right control-label text-right ">Agency Name*</label>
+      <div class="col-sm-3 col-xs-9">
+        <input type="text" name="nomeAgenzia" class="form-control" ng-model="nomeAgenzia" required placeholder="">
+      </div>
+    </div>
+    <span ng-show="userForm.nomeAgenzia.$invalid && !userForm.nomeAgenzia.$pristine" class="help-block">Required Field</span>
+
+    <!-- employeesAgenzia -->
+    <div class="form-group row">
+      <label class="col-xs-3 col-sm-offset-2 text-right control-label">Employees</label>
+      <div class="col-sm-3 col-xs-9">
+        <select class="form-control" name="employeesAgenzia" ng-model="employeesAgenzia">
+         <option></option>
+         <option>0 - 50</option>
+         <option>51 - 250</option>
+         <option>+250</option>
+       </select>
+     </div>
+   </div>
+
+   <!-- cittaAgenzia -->
+   <div class="form-group row" ng-class="{ 'has-error' : userForm.cittaAgenzia.$invalid && !userForm.cittaAgenzia.$pristine }">
+    <label class="col-xs-3 col-sm-offset-2 text-right control-label">Country*</label>
+    <div class="col-sm-3 col-xs-9">
+      <!--<input type="text" name="cittaAgenzia" class="form-control" ng-model="cittaAgenzia" required placeholder="">-->
+      <select class="form-control" name="employeesAgenzia" required ng-model="cittaAgenzia">
+       <option></option>
+       <option>A</option>
+       <option>B</option>
+       <option>C</option>
+     </select>
+   </div>
+ </div>
+ <p ng-show="userForm.cittaAgenzia.$invalid && !userForm.cittaAgenzia.$pristine" class="help-block">La città è obbligatoria</p>
+
+ <!-- websiteAgenzia -->
+ <div class="form-group row" ng-class="{ 'has-error' : userForm.websiteAgenzia.$invalid && !userForm.websiteAgenzia.$pristine }">
+  <label class="col-xs-3 col-sm-offset-2 text-right control-label text-right ">Website*</label>
+  <div class="col-sm-3 col-xs-9">
+    <input type="text" name="websiteAgenzia" class="form-control" ng-model="websiteAgenzia" required placeholder="">
+  </div>
+</div>
+<span ng-show="userForm.websiteAgenzia.$invalid && !userForm.websiteAgenzia.$pristine" class="help-block">Campo obbligatorio</span>
+
+<div style="margin-top:10px" class="form-group">
+  <!-- Button -->
+  <div class="text-center">
+    <button type="submit" class="btn btn-lg btn-primary" ng-disabled="userForm.$invalid">GET STARTED</button>
+  </div>
+</div>
+</div>
+</form>
+</div>
+</div>

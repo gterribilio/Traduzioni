@@ -36,3 +36,32 @@ form .glyphicon {
 	top: 0;
 }
 /**** end FIX ****/
+
+#registrazione_traduttore {
+	background: url(../images/registrazione_traduttore.jpg) no-repeat center center scroll;
+	background-color: #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+#registrazione_agenzia {
+	background: url(../images/registrazione_agenzia.jpg) no-repeat center center scroll;
+	background-color: #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.row_registrazione {
+	border-top:1px solid white;
+	padding-top:15px;
+	background-color: rgba(0,0,0,0.4);
+}
+
+.help-block {
+	color:red;
+	font-size:14px;
+}

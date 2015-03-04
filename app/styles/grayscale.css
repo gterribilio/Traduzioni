@@ -4,7 +4,7 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-body {
+ body {
     width: 100%;
     height: 100%;
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -15,6 +15,12 @@ body {
 html {
     width: 100%;
     height: 100%;
+}
+
+section {
+   height:100%;
+   display: table;
+   width: 100%;
 }
 
 h1,
@@ -146,7 +152,7 @@ a:focus {
     -o-background-size: cover;
 }
 
-.intro .intro-body {
+.intro .intro-body, section .intro-body {
     display: table-cell;
     vertical-align: middle;
 }
@@ -170,7 +176,7 @@ a:focus {
     }
 
     .intro .intro-body .intro-text {
-        font-size: 50px;
+        font-size: 30px;
     }
 }
 
@@ -253,31 +259,7 @@ a:focus {
 }
 
 #about {
-    background: url(../images/registrazione_traduttore.jpg) no-repeat bottom center scroll;
-}
-
-.inner_div_registrazione_traduttore {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(../images/registrazione_traduttore.jpg) no-repeat center center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-.inner_div_registrazione_agenzia {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(../images/registrazione_agenzia.jpg) no-repeat center center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    background: url(../images/about.jpg) no-repeat bottom center scroll;
 }
 
 #map {
