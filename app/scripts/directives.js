@@ -3,45 +3,19 @@
 var direttive = angular.module('DirectivesModule', []);
 
 direttive
-/*direttiva su controllo per le password che siano uguali*/
-.directive('loginElement', function() {
+
+/* directive template */
+.directive('templateSnippet', function() {
   return {
     restrict: 'A',
-    transclude: true,
-    scope: {
-      rip: '=login',
-      actionpath: '=',
-    },
-    templateUrl: 'views/snippet/loginSnippet.html'
+    templateUrl: function(elem, attr){
+      return 'views/'+attr.name+'.html';
+    }
   };
-}).
+})
 
-directive('registrazioneTraduttoreElement', function() {
-  return {
-    restrict: 'A',
-    transclude: true,
-    scope: {
-      rip: '=ripetizioni',
-      actionpath: '=',
-    },
-    templateUrl: 'views/snippet/registrazioneTraduttoreSnippet.html'
-  };
-}).
-
-directive('registrazioneAgenziaElement', function() {
-  return {
-    restrict: 'A',
-    transclude: true,
-    scope: {
-      rip: '=ripetizioni',
-      actionpath: '=',
-    },
-    templateUrl: 'views/snippet/registrazioneAgenziaSnippet.html'
-  };
-}).
-
-/*direttiva su controllo per le password che siano uguali*/
-directive('pwCheck', [function () {
+/* direttiva su controllo per le password che siano uguali */
+.directive('pwCheck', [function () {
   return {
     require: 'ngModel',
     link: function (scope, elem, attrs, ctrl) {
@@ -55,9 +29,13 @@ directive('pwCheck', [function () {
     }
   }
 }])
+
 .directive('scrollOnClick', function() {
   return {
     restrict: 'A',
+    scope: {
+      scroll: '=scroll'
+    },
     link: function(scope, $elm, attrs) {
       var idToScroll = attrs.href;
       $elm.on('click', function() {

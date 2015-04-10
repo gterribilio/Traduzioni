@@ -1,0 +1,113 @@
+<form name="userForm" novalidate>
+	<div class="row_shadow">	
+		<h2>Profile</h2>
+		<div class="alert alert-success" ng-show="isShowMessage" role="alert">Your profile has been successfully updated!</div>
+		<div class="panel panel-default well col-md-7" style="opacity:0.9;">
+			<div class="panel-body">
+				<div class="row row-eq-height">
+					<div id="item_first_row_list" class="col-xs-3">
+						<img class="thumb_img" src="http://bridgesprep.org/wp-content/uploads/2013/10/Facebook-no-profile-picture-icon-620x389.jpg"/>
+					</div>
+					<div id="item_second_row_list" class="col-xs-9">
+						<div class="row form-group" ng-show="!editMode">
+							<label class="col-xs-3 control-label text-right">Name Surname:</label>
+							<span class="col-sm-5">{{userData.NOME}} {{userData.COGNOME}}</span>
+						</div>
+						<!-- NAME -->
+						<div class="row form-group" ng-show="editMode">
+							<div ng-class="{ 'has-error' : userForm.nomeTraduttore.$invalid && !userForm.nomeTraduttore.$pristine }">
+								<label class="col-xs-2 control-label text-right ">Name*</label>
+								<span class="col-sm-4"><input type="text" name="nomeTraduttore" class="form-control" ng-model="nomeTraduttore" required placeholder="" /></span>
+							</div>
+
+							<!-- SURNAME -->
+							<div ng-class="{ 'has-error' : userForm.cognomeTraduttore.$invalid && !userForm.cognomeTraduttore.$pristine }">
+								<label class="col-xs-2 control-label text-right">Surname*</label>
+								<span class="col-sm-4"><input type="text" name="cognomeTraduttore" class="form-control" ng-model="cognomeTraduttore" required placeholder=""></span>
+							</div>
+						</div>
+
+						<!-- birthdayTraduttore -->
+						<div class="form-group row" ng-show="!editMode">
+							<label class="col-xs-3 control-label text-right">Birthday:</label>
+							<span class="col-sm-5">{{userData.DATA_NASCITA | date:'dd/MM/yyyy'}}</span>
+						</div>
+						<div ng-show="editMode" class="form-group row" ng-class="{ 'has-error' : userForm.birthdayTraduttore.$invalid && !userForm.birthdayTraduttore.$pristine }">
+							<label for="birthdayTraduttore" class="col-xs-2 control-label text-right">Birthday: </label>
+							<span class="col-sm-4"><input type="date" name="birthdayTraduttore" ng-model="birthdayTraduttore" class="form-control" placeholder="" ng-pattern="/^((\d{4})-(\d{2})-(\d{2}))$/" /></span>
+						</div>	
+
+						<!--  CITTA & COUNTRY -->
+						<div class="form-group row" ng-show="!editMode">
+							<label class="col-xs-3 control-label text-right">City:</label>
+							<span class="col-sm-5">{{userData.CITTA}}</span>
+						</div>
+
+						<div class="row form-group" ng-show="editMode">
+							<div ng-class="{ 'has-error' : userForm.cittaTraduttore.$invalid && !userForm.cittaTraduttore.$pristine }">
+								<label class="col-xs-2 control-label text-right">City*</label>
+								<span class="col-sm-4">
+									<input type="text" name="cittaTraduttore" class="form-control" ng-model="cittaTraduttore" required>
+								</span>
+							</div>
+						</div>
+
+						<div class="row form-group" ng-show="editMode">
+
+							<div ng-class="{ 'has-error' : userForm.countryTraduttore.$invalid && !userForm.countryTraduttore.$pristine }">
+								<label class="col-xs-2 text-right control-label">Country*</label>
+								<div class="col-sm-4">
+									<select class="form-control" name="countryTraduttore" ng-model="countryTraduttore" ng-options="countryTraduttore.DESCRIZIONE for countryTraduttore in countriesTraduttore" required></select>
+								</div>
+							</div>
+						</div>
+
+						<!-- COUNTRY -->
+						<div class="form-group row" ng-show="!editMode">
+							<label class="col-xs-3 control-label text-right">Country:</label>
+							<span class="col-sm-5">{{userData.PAESE}}</span>
+						</div>
+
+						<!-- MADRELINGUA -->
+						<div class="form-group row" ng-show="!editMode">
+							<label class="col-xs-3 control-label text-right">Mothertongue:</label>
+							<span class="col-sm-5">{{userData.MADRELINGUA}}</span>
+						</div>
+
+						<div ng-show="editMode" class="form-group row">
+							<div ng-class="{ 'has-error' : userForm.countryTraduttore.$invalid && !userForm.countryTraduttore.$pristine }">
+								<label class="col-xs-2 text-right control-label">Mothertongue</label>
+								<div class="col-sm-4">
+									<select class="form-control" name="mothertongueTraduttore" ng-model="mothertongueTraduttore" ng-options="mothertongueTraduttore.DESCRIZIONE for mothertongueTraduttore in languages" required></select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div style="clear:both;"></div>
+				<div ng-show="!editMode" class="text-right" style="margin-top:10px;">
+					<button type="submit" class="btn btn-lg btn-success btn-sm" ng-click="editMode=true;isShowMessage=false;">
+						<i class="fa fa-edit"></i> edit
+					</button>
+				</div>
+
+				<div ng-show="editMode" class="text-right" style="margin-top:10px;">
+					<button type="submit" class="btn btn-lg btn-success btn-sm" ng-click="editMode=false;doUpdateProfileTraduttore();" ng-disabled="userForm.$invalid">
+						<i class="fa fa-edit"></i> Confirm
+					</button>
+					<button type="submit" class="btn btn-lg btn-success btn-sm" ng-click="editMode=false;">
+						<i class="fa fa-angle-double-left"></i> Cancel
+					</button>
+				</div>
+
+				<!--<div ng-show="!editMode"  style="float:right;margin-right:10%;"><a href="" class="btn btn-lg btn-success btn-sm"><i class="fa fa-edit"></i> edit</a></div>
+				<div ng-show="editMode" ng-click="editMode=false;doUpdateProfileTraduttore();" style="float:right;margin-right:10%;"><a href=""><i class="fa fa-edit"></i> Confirm</a></div>
+				<div ng-show="editMode" ng-click="editMode=false;" style="float:right;margin-right:30px;"><a href=""><i class="fa fa-angle-double-left"></i> Cancel</a></div>-->
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+</form>
+

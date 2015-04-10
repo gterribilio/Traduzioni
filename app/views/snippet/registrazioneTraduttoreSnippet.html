@@ -1,9 +1,9 @@
 <div class="intro-body" ng-controller="registrazioneCtrl">
- <div class="row row_registrazione">
+ <div class="row_shadow">
   <h2>Create your freelance account</h2>
 </div>
 <form name="userForm" ng-submit="doRegisterTraduttore()" novalidate> <!--disabilito validazione html5-->
-  <div class="row row_registrazione">
+  <div class="row_shadow">
     <!-- usernameTraduttore -->
     <div class="form-group row" ng-class="{ 'has-error' : userForm.usernameTraduttore.$invalid && !userForm.usernameTraduttore.$pristine }">
       <label class="col-xs-3 col-sm-offset-2 text-right control-label">Username*</label>
@@ -34,6 +34,7 @@
     <div class="msg-block" ng-show="userForm.$error">
       <p ng-show="userForm.passwordTraduttoreR.$error.pwmatch" class="help-block">Le due password non coincidono</p>
     </div>
+    
     <!-- emailTraduttore -->
     <div class="form-group row" ng-class="{ 'has-error' : userForm.emailTraduttore.$invalid && !userForm.emailTraduttore.$pristine }">
       <label class="col-xs-3 col-sm-offset-2 text-right control-label">Email*</label>
@@ -45,7 +46,7 @@
   </div>
   <div style="clear:both;" />
 
-  <div class="row row_registrazione">
+  <div class="row_shadow">
     <!-- NAME -->
     <div class="form-group row" ng-class="{ 'has-error' : userForm.nomeTraduttore.$invalid && !userForm.nomeTraduttore.$pristine }">
       <label class="col-xs-3 col-sm-offset-2 text-right control-label text-right ">Name*</label>
@@ -55,7 +56,7 @@
     </div>
     <span ng-show="userForm.nomeTraduttore.$invalid && !userForm.nomeTraduttore.$pristine" class="help-block">Required field</span>
 
-    <!-- COGnomeTraduttore -->
+    <!-- CognomeTraduttore -->
     <div class="form-group row" ng-class="{ 'has-error' : userForm.cognomeTraduttore.$invalid && !userForm.cognomeTraduttore.$pristine }">
       <label class="col-xs-3 col-sm-offset-2 text-right control-label">Surname*</label>
       <div class="col-sm-3 col-xs-9">
@@ -68,33 +69,25 @@
     <div class="form-group row">
       <label class="col-xs-3 col-sm-offset-2 text-right control-label">Mothertongue</label>
       <div class="col-sm-3 col-xs-9">
-        <!--<input type="text" name="mothertongueTraduttore" class="form-control" ng-model="mothertongueTraduttore" placeholder="mothertongueTraduttore">-->
-        <select class="form-control" name="mothertongueTraduttore" ng-model="mothertongueTraduttore">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
+        <select class="form-control" name="mothertongueTraduttore" ng-model="mothertongueTraduttore" ng-options="mothertongueTraduttore.DESCRIZIONE for mothertongueTraduttore in mothertonguesTraduttore"></select>
       </div>
     </div>
 
-    <!-- cittaTraduttore -->
-    <div class="form-group row" ng-class="{ 'has-error' : userForm.cittaTraduttore.$invalid && !userForm.cittaTraduttore.$pristine }">
+    <!-- countryTraduttore -->
+    <div class="form-group row" ng-class="{ 'has-error' : userForm.countryTraduttore.$invalid && !userForm.countryTraduttore.$pristine }">
       <label class="col-xs-3 col-sm-offset-2 text-right control-label">Country*</label>
       <div class="col-sm-3 col-xs-9">
-        <input type="text" name="cittaTraduttore" class="form-control" ng-model="cittaTraduttore" required placeholder="">
-      </div>
-    </div>
-    <p ng-show="userForm.cittaTraduttore.$invalid && !userForm.cittaTraduttore.$pristine" class="help-block">Required field</p>
+       <select class="form-control" name="countryTraduttore" ng-model="countryTraduttore" ng-options="countryTraduttore.DESCRIZIONE for countryTraduttore in countriesTraduttore"></select>
+     </div>
+   </div>
+   <p ng-show="userForm.countryTraduttore.$invalid && !userForm.countryTraduttore.$pristine" class="help-block">Required field</p>
 
-    <div style="margin-top:10px" class="form-group">
-      <!-- Button -->
-      <div class="text-center">
-        <button type="submit" class="btn btn-lg btn-primary" ng-disabled="userForm.$invalid">GET STARTED</button>
-      </div>
+   <div style="margin-top:10px" class="form-group">
+    <!-- Button -->
+    <div class="text-center">
+      <button type="submit" class="btn btn-lg btn-primary" ng-disabled="userForm.$invalid">GET STARTED</button>
     </div>
   </div>
-</form>
 </div>
+</form>
 </div>

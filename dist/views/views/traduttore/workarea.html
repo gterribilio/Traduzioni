@@ -1,0 +1,38 @@
+<section id=workareaTraduttoreSnippet style=padding-top:150px;color:black class=background-default>
+	<div class=col-xs-5>
+		<textarea name=todo disabled ng-bind=job.TEXT_TODO id=todo>
+			Testo da tradurre
+		</textarea>
+		<script>
+	// Replace the <textarea id="editor1"> with a CKEditor
+	// instance, using default configuration.
+	CKEDITOR.replace('todo');
+	</script>
+</div>
+<div class=col-xs-5>
+	<textarea name=done ng-bind=job.TEXT_DONE id=done>
+		Translated text
+	</textarea>
+	<script>
+	// Replace the <textarea id="editor1"> with a CKEditor
+	// instance, using default configuration.
+	CKEDITOR.replace( 'done');
+	</script>
+	<div style=margin-top:30px class=text-center ng-show=!accepted>
+		<button ng-click=doAccept() class="btn btn-md btn-success">
+			<i class="fa fa-check"> Accept
+		</button>
+		<button ng-click=doDecline() class="btn btn-md btn-danger">
+			<i class="fa fa-close"> Decline
+		</button>
+	</div>
+	<div style=margin-top:30px class=text-center ng-show=accepted>
+		<button ng-click=doSave() class="btn btn-md btn-warning">
+			<i class="fa fa-save"> Save
+		</button>
+		<button ng-click=doSend() class="btn btn-md btn-success">
+			<i class="fa fa-send"> Send & Finish
+		</button>
+	</div>
+</div>
+</section>

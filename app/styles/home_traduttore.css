@@ -1,0 +1,73 @@
+/* Il mio profile DIV*/
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  width: 100%;
+  margin-top:0px;
+}
+
+.thumb {
+  float: left;
+  /*margin: -0.5em 0.5em 0.5em 0;
+  padding-bottom: 1em;
+  height: 100px;
+  width: 100px;*/
+}
+
+.thumb_img {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  height:130px;
+  width:130px;
+  margin-left:10px;
+}
+
+div#item_second_row_list {
+  margin: 0px;
+  padding: 0px;
+}
+
+div#item_first_row_list {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* BLINK EFFECT USING CSS3 */
+.blink_me {
+  -webkit-animation-name: blinker;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 5;
+
+  -moz-animation-name: blinker;
+  -moz-animation-duration: 2s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: 5;
+
+  animation-name: blinker;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 5;
+}
+
+@-moz-keyframes blinker {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}

@@ -18,9 +18,10 @@ html {
 }
 
 section {
-   height:100%;
-   display: table;
-   width: 100%;
+ height:100%;
+ display: table;
+ width: 100%;
+ padding-top:100px;
 }
 
 h1,
@@ -36,16 +37,25 @@ h6 {
     letter-spacing: 1px;
 }
 
+h4 {
+     margin: 0 0 0px;
+}
+
 p {
     margin: 0 0 25px;
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+i {
+    font-size:16px;
     line-height: 1.5;
 }
 
 @media(min-width:767px) {
     p {
         margin: 0 0 35px;
-        font-size: 20px;
+        /*font-size: 20px;*/
         line-height: 1.6;
     }
 }
@@ -107,6 +117,11 @@ a:focus {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
+}
+
+/*OVERRIDE ALTEZZA LINEA BOOTSTRAP PER AVERE ICONA MESSAGGI IN NAVBAR AD ALTEZZA VERTICALE*/
+.navbar-nav > li > a {
+  line-height: 40px;
 }
 
 .navbar-custom .nav li a:hover,
@@ -255,11 +270,10 @@ a:focus {
 }
 
 .content-section {
-    padding-top: 50px;
 }
 
 #about {
-    background: url(../images/about.jpg) no-repeat bottom center scroll;
+    background: url(../images/about.jpg) no-repeat center center scroll;
 }
 
 #map {
@@ -270,7 +284,6 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 50px;
     }
 
     .download-section {
@@ -308,6 +321,10 @@ a:focus {
 
 ul.banner-social-buttons {
     margin-top: 0;
+}
+
+@media(min-width:1200px) {
+    
 }
 
 @media(max-width:1199px) {

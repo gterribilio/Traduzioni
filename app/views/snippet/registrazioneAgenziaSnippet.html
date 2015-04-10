@@ -1,9 +1,9 @@
 <div class="intro-body" ng-controller="registrazioneCtrl">
- <div class="row row_registrazione">
+ <div class="row_shadow">
   <h2>Create your Agency account</h2>
 </div>
 <form name="userForm" ng-submit="doRegisterAgenzia()" novalidate> <!--disabilito validazione html5-->
-  <div class="row row_registrazione">
+  <div class="row_shadow">
     <!-- usernameAgenzia -->
     <div class="form-group row" ng-class="{ 'has-error' : userForm.usernameAgenzia.$invalid && !userForm.usernameAgenzia.$pristine }">
       <label class="col-xs-3 col-sm-offset-2 text-right control-label">Username*</label>
@@ -46,7 +46,7 @@
   </div>
   <div style="clear:both;" />
 
-  <div class="row row_registrazione">
+  <div class="row_shadow">
     <!-- AGENCY NAME -->
     <div class="form-group row" ng-class="{ 'has-error' : userForm.nomeAgenzia.$invalid && !userForm.nomeAgenzia.$pristine }">
       <label class="col-xs-3 col-sm-offset-2 text-right control-label text-right ">Agency Name*</label>
@@ -60,46 +60,35 @@
     <div class="form-group row">
       <label class="col-xs-3 col-sm-offset-2 text-right control-label">Employees</label>
       <div class="col-sm-3 col-xs-9">
-        <select class="form-control" name="employeesAgenzia" ng-model="employeesAgenzia">
-         <option></option>
-         <option>0 - 50</option>
-         <option>51 - 250</option>
-         <option>+250</option>
-       </select>
-     </div>
-   </div>
+        <select class="form-control" name="employeeAgenzia" ng-model="employeeAgenzia" ng-options="employeeAgenzia.DESCRIZIONE for employeeAgenzia in employeesAgenzia"></select>
+      </div>
+    </div>
 
-   <!-- cittaAgenzia -->
-   <div class="form-group row" ng-class="{ 'has-error' : userForm.cittaAgenzia.$invalid && !userForm.cittaAgenzia.$pristine }">
-    <label class="col-xs-3 col-sm-offset-2 text-right control-label">Country*</label>
-    <div class="col-sm-3 col-xs-9">
-      <!--<input type="text" name="cittaAgenzia" class="form-control" ng-model="cittaAgenzia" required placeholder="">-->
-      <select class="form-control" name="employeesAgenzia" required ng-model="cittaAgenzia">
-       <option></option>
-       <option>A</option>
-       <option>B</option>
-       <option>C</option>
-     </select>
-   </div>
- </div>
- <p ng-show="userForm.cittaAgenzia.$invalid && !userForm.cittaAgenzia.$pristine" class="help-block">La città è obbligatoria</p>
+    <!-- countryAgenzia -->
+    <div class="form-group row" ng-class="{ 'has-error' : userForm.countryAgenzia.$invalid && !userForm.countryAgenzia.$pristine }">
+      <label class="col-xs-3 col-sm-offset-2 text-right control-label">Country*</label>
+      <div class="col-sm-3 col-xs-9">
+        <!--<input type="text" name="countryAgenzia" class="form-control" ng-model="countryAgenzia" required placeholder="">-->
+        <select class="form-control" name="countryAgenzia" ng-model="countryAgenzia" ng-options="countryAgenzia.DESCRIZIONE for countryAgenzia in cittaeAgenzia"></select>
+      </div>
+    </div>
+    <p ng-show="userForm.countryAgenzia.$invalid && !userForm.countryAgenzia.$pristine" class="help-block">Country is required</p>
 
- <!-- websiteAgenzia -->
- <div class="form-group row" ng-class="{ 'has-error' : userForm.websiteAgenzia.$invalid && !userForm.websiteAgenzia.$pristine }">
-  <label class="col-xs-3 col-sm-offset-2 text-right control-label text-right ">Website*</label>
-  <div class="col-sm-3 col-xs-9">
-    <input type="text" name="websiteAgenzia" class="form-control" ng-model="websiteAgenzia" required placeholder="">
+    <!-- websiteAgenzia -->
+    <div class="form-group row" ng-class="{ 'has-error' : userForm.websiteAgenzia.$invalid && !userForm.websiteAgenzia.$pristine }">
+      <label class="col-xs-3 col-sm-offset-2 text-right control-label text-right ">Website*</label>
+      <div class="col-sm-3 col-xs-9">
+        <input type="text" name="websiteAgenzia" class="form-control" ng-model="websiteAgenzia" required placeholder="">
+      </div>
+    </div>
+    <span ng-show="userForm.websiteAgenzia.$invalid && !userForm.websiteAgenzia.$pristine" class="help-block">Campo obbligatorio</span>
+
+    <div style="margin-top:10px" class="form-group">
+      <!-- Button -->
+      <div class="text-center">
+        <button type="submit" class="btn btn-lg btn-primary" ng-disabled="userForm.$invalid">GET STARTED</button>
+      </div>
+    </div>
   </div>
-</div>
-<span ng-show="userForm.websiteAgenzia.$invalid && !userForm.websiteAgenzia.$pristine" class="help-block">Campo obbligatorio</span>
-
-<div style="margin-top:10px" class="form-group">
-  <!-- Button -->
-  <div class="text-center">
-    <button type="submit" class="btn btn-lg btn-primary" ng-disabled="userForm.$invalid">GET STARTED</button>
-  </div>
-</div>
-</div>
 </form>
-</div>
 </div>

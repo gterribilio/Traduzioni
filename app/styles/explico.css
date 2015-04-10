@@ -20,25 +20,42 @@ ul,p {
 
 .well {
 	background:#174264;
-	padding: 0px;
+	padding:0;
 }
 
 .login {
 	position:absolute; 
 	top:60px;
 	opacity:0.9;
-	padding-top:60px;
+	padding-top:100px;
 }
 
 /**** FIX per glyphicon che hanno altezza maggiore di input ****/
 
-form .glyphicon {
-	top: 0;
-}
+.input-group .input-group-addon {
+     line-height: 1!important;
+     top:0px;
+ }
+
 /**** end FIX ****/
 
-#registrazione_traduttore {
-	background: url(../images/registrazione_traduttore.jpg) no-repeat center center scroll;
+/**** FIX PER INPUT CON MENO PADDING INTERNO ****/
+
+ .form-control {
+  padding: 3px 3px;
+}
+
+.background-default {
+	background: url(../images/london-bg.jpg) no-repeat center center scroll;
+	background-color: #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+#contact {
+	background: url(../images/contact.jpg) no-repeat center center scroll;
 	background-color: #000;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -55,10 +72,29 @@ form .glyphicon {
 	-o-background-size: cover;
 }
 
-.row_registrazione {
+#privacy {
+	background: url(../images/privacy.jpg) no-repeat center center scroll;
+	background-color: #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.row_shadow {
 	border-top:1px solid white;
 	padding-top:15px;
+	padding-right:30px;
+	padding-bottom:15px;
+	padding-left:30px;
 	background-color: rgba(0,0,0,0.4);
+	border-bottom:1px solid white;
+}
+
+/*OVERRIDE DEI MARGINI PER LA CLASSE ROW DI BOOTSTRAP*/
+.row {
+	margin-left:0px!important;
+	margin-right:0px!important;
 }
 
 .help-block {
