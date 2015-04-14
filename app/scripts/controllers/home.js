@@ -3,7 +3,7 @@
 var home = angular.module('HomeCtrlModule', []);
 
 home.controller('HomeCtrl',  ['$scope', '$rootScope', '$window', 'services', '$location', '$anchorScroll', 'customFactory',
-	function ($scope, $rootScope, $window, services, $location, $anchorScroll, customFactory) {    
+  function ($scope, $rootScope, $window, services, $location, $anchorScroll, customFactory) {
 
 
     // questa funzione di init permette ogni qualvolta l'utente esce senza chiudere la pagina in cui si trova di mandarlo alla home da loggato nel caso
@@ -15,86 +15,86 @@ home.controller('HomeCtrl',  ['$scope', '$rootScope', '$window', 'services', '$l
         else $location.path("/home_agenzia");
       }
 
-    })(); //end init function  
+    })(); //end function
 
     $rootScope.showLogin=false;
 
     $rootScope.showWorkarea=false;
 
-     //tiro su la codetable del numero degli impiegati per agenzia
-     services.getCodeTable("codetable=1").success(function (data){
-        //alert(JSON.stringify(data));
-        $scope.employeesAgenzia=data;
-      });
+    //tiro su la codetable del numero degli impiegati per agenzia
+    services.getCodeTable("codetable=1").success(function (data){
+      //alert(JSON.stringify(data));
+      $scope.employeesAgenzia=data;
+    });
 
-     //tiro su la codetable delle città
-     services.getCodeTable("codetable=2").success(function (data){
-        //alert(JSON.stringify(data));
-        $scope.cittaeAgenzia=data;
-        $scope.mothertonguesTraduttore=data;
-        $scope.countriesTraduttore=data;
-      });
+    //tiro su la codetable delle città
+    services.getCodeTable("codetable=2").success(function (data){
+      //alert(JSON.stringify(data));
+      $scope.cittaeAgenzia=data;
+      $scope.mothertonguesTraduttore=data;
+      $scope.countriesTraduttore=data;
+    });
 
-     $scope.doAccedi= function() {
-       services.getFromRESTServer("username="+$scope.username+"&password="+$scope.password,"login").
-       success(function (data) {
-        if(data.jsonError != null || data.errCode != null)
-        {
-         alert (data.errMsg);
-       }
-       else {
+    $scope.doAccedi= function() {
+      services.getFromRESTServer("username="+$scope.username+"&password="+$scope.password,"login").
+        success(function (data) {
+          if(data.jsonError != null || data.errCode != null)
+          {
+            alert (data.errMsg);
+          }
+          else {
 
-         $rootScope.isLogged = true;
+            $rootScope.isLogged = true;
 
-         customFactory.set('isLogged',true);
-                    //localStorageService.set("isLogged",true);
+            customFactory.set('isLogged',true);
+            //localStorageService.set("isLogged",true);
 
-                    $rootScope.showLogin=false;
-                    $rootScope.userData=data[0];
-                    //localStorageService.set("userData",JSON.stringify($rootScope.userData));
-                    customFactory.set('userData',$scope.userData);
+            $rootScope.showLogin=false;
+            $rootScope.userData=data[0];
+            //localStorageService.set("userData",JSON.stringify($rootScope.userData));
+            customFactory.set('userData',$scope.userData);
 
-                    if($scope.userData.RUOLO=='TRADUTTORE') {
-                      alert("Welcome " + $scope.userData.NOME +"! Find your translations now!");
-                      $location.path("/home_traduttore");
-                    }
-                    else {
-                     alert("Welcome " + $scope.userData.NOME +"! Post your translation now!");
-                     $location.path("/home_agenzia");
-                   }
-                 }
-            //stampa il JSON Object
-            //alert(JSON.stringify(data));
-          });
+            if($scope.userData.RUOLO=='TRADUTTORE') {
+              alert("Welcome " + $scope.userData.NOME +"! Find your translations now!");
+              $location.path("/home_traduttore");
+            }
+            else {
+              alert("Welcome " + $scope.userData.NOME +"! Post your translation now!");
+              $location.path("/home_agenzia");
+            }
+          }
+          //stampa il JSON Object
+          //alert(JSON.stringify(data));
+        });
     } //end doAccedi
 
     $rootScope.doLogout = function() {
-      customFactory.logout();
+      localStorage.clear();
       $location.path("/");
       $rootScope.isLogged = false;
     };
 
     $rootScope.doJobsTraduttore = function() {
-     $location.hash('#/jobs_traduttore');
-     $anchorScroll();
-   };
+      $location.hash('#/jobs_traduttore');
+      $anchorScroll();
+    };
 
-   $scope.doContatta = function() {
-    services.getFromRESTServer(
-      "email="+$scope.email+"&subject="+$scope.subject+"&text="+$scope.text ,"contact")
-    .success(function (data) {
-      if(data.jsonError != null || data.errCode != null)
-      {
-        alert (data.errMsg);
-      }
-      else {
-       alert("Thanks for your support! We'll call you as soon as possible!");
-         //chiama anchor scroll
-         $location.hash('intro');
-         $anchorScroll();
-       }
-     });
-  };
+    $scope.doContatta = function() {
+      services.getFromRESTServer(
+        "email="+$scope.email+"&subject="+$scope.subject+"&text="+$scope.text ,"contact")
+        .success(function (data) {
+          if(data.jsonError != null || data.errCode != null)
+          {
+            alert (data.errMsg);
+          }
+          else {
+            alert("Thanks for your support! We'll call you as soon as possible!");
+            //chiama anchor scroll
+            $location.hash('intro');
+            $anchorScroll();
+          }
+        });
+    };
 
   }]);// end controller
 
@@ -107,15 +107,15 @@ home.controller('registrazioneCtrl',  ['$scope', '$rootScope', '$window', 'servi
         "username="+$scope.usernameTraduttore+"&password="+$scope.passwordTraduttore+"&nome="+$scope.nomeTraduttore+
         "&cognome="+$scope.cognomeTraduttore+"&email="+$scope.emailTraduttore+ "&ruolo=TRADUTTORE"+
         "&country=" + temp_country + "&mothertongue=" + temp_mothertongue,"register")
-      .success(function (data) {
-        if(data.jsonError != null || data.errCode != null)
-        {
-          alert (data.errMsg);
-        }
-        else {
-          doAccedi($scope.usernameTraduttore, $scope.passwordTraduttore);
-        }
-      });
+        .success(function (data) {
+          if(data.jsonError != null || data.errCode != null)
+          {
+            alert (data.errMsg);
+          }
+          else {
+            doAccedi($scope.usernameTraduttore, $scope.passwordTraduttore);
+          }
+        });
     }
 
     $scope.doRegisterAgenzia = function() {
@@ -125,52 +125,52 @@ home.controller('registrazioneCtrl',  ['$scope', '$rootScope', '$window', 'servi
         "username=" + $scope.usernameAgenzia + "&password=" + $scope.passwordAgenzia + "&nome=" + $scope.nomeAgenzia +
         "&email=" + $scope.emailAgenzia+ "&ruolo=AGENZIA"+ "&employees=" + temp_employee +
         "&country=" + temp_citta + "&website=" + $scope.websiteAgenzia,"register").
-      success(function (data) {
-        if(data.jsonError != null || data.errCode != null)
-        {
-          alert (data.errMsg);
-        }
-        else {
-          doAccedi($scope.usernameAgenzia, $scope.passwordAgenzia);
-        }
-      });
+        success(function (data) {
+          if(data.jsonError != null || data.errCode != null)
+          {
+            alert (data.errMsg);
+          }
+          else {
+            doAccedi($scope.usernameAgenzia, $scope.passwordAgenzia);
+          }
+        });
     }
 
     function doAccedi(a, b) {
-     services.getFromRESTServer("username="+a+"&password="+b,"login").
-     success(function (data) {
-      if(data.jsonError != null || data.errCode != null)
-      {
-       alert (data.errMsg);
-     }
-     else {
+      services.getFromRESTServer("username="+a+"&password="+b,"login").
+        success(function (data) {
+          if(data.jsonError != null || data.errCode != null)
+          {
+            alert (data.errMsg);
+          }
+          else {
 
-       $rootScope.isLogged = true;
+            $rootScope.isLogged = true;
 
-       customFactory.set('isLogged',true);
-                    //localStorageService.set("isLogged",true);
+            customFactory.set('isLogged',true);
+            //localStorageService.set("isLogged",true);
 
-                    $rootScope.showLogin=false;
-                    $rootScope.userData=data[0];
-                    //localStorageService.set("userData",JSON.stringify($rootScope.userData));
-                    customFactory.set('userData',$rootScope.userData);
+            $rootScope.showLogin=false;
+            $rootScope.userData=data[0];
+            //localStorageService.set("userData",JSON.stringify($rootScope.userData));
+            customFactory.set('userData',$rootScope.userData);
 
-                    if($rootScope.userData.RUOLO=='TRADUTTORE') 
-                      $location.path("/home_traduttore");
-                    else $location.path("/home_agenzia");
+            if($rootScope.userData.RUOLO=='TRADUTTORE')
+              $location.path("/home_traduttore");
+            else $location.path("/home_agenzia");
 
-                    alert("Benvenuto " + $rootScope.userData.USERNAME +"! Accedi subito dal menù a tutte le funzioni e trova le tue traduzioni!");
+            alert("Benvenuto " + $rootScope.userData.USERNAME +"! Accedi subito dal menù a tutte le funzioni e trova le tue traduzioni!");
 
-                  }
-            //stampa il JSON Object
-            //alert(JSON.stringify(data));
-          }).error(function(data, status) {
-            console.error('Repos error', status, data);
-          })
+          }
+          //stampa il JSON Object
+          //alert(JSON.stringify(data));
+        }).error(function(data, status) {
+          console.error('Repos error', status, data);
+        })
 
-          .finally(function() {
-            console.log("finally finished repos");
-          });
+        .finally(function() {
+          console.log("finally finished repos");
+        });
     } //end doAccedi
 
-}]);//end Controller
+  }]);//end Controller

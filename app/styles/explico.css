@@ -3,101 +3,121 @@
 *{margin:0px;padding:0px;}
 
 html,body, .view-container, .view-frame.ng-scope {
-	height:100%;
-	width:100%;
-	margin:0;
-	padding:0;
+  height:100%;
+  width:100%;
+  margin:0;
+  padding:0;
 }
 
 ul,p {
-	-webkit-padding-start: 0px;
-	-webkit-padding-end: 0px;
-	-webkit-margin-before: 0px;
-	-webkit-margin-after: 0px;
+  -webkit-padding-start: 0px;
+  -webkit-padding-end: 0px;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
 }
 
 /* end reset di base */
 
 .well {
-	background:#174264;
-	padding:0;
+  background:#174264;
+  padding:0;
 }
 
 .login {
-	position:absolute; 
-	top:60px;
-	opacity:0.9;
-	padding-top:100px;
+  position:absolute;
+  top:60px;
+  opacity:0.9;
+  padding-top:100px;
 }
 
 /**** FIX per glyphicon che hanno altezza maggiore di input ****/
 
 .input-group .input-group-addon {
-     line-height: 1!important;
-     top:0px;
- }
+  line-height: 1!important;
+  top:0px;
+}
 
 /**** end FIX ****/
 
 /**** FIX PER INPUT CON MENO PADDING INTERNO ****/
 
- .form-control {
+.form-control {
   padding: 3px 3px;
 }
 
 .background-default {
-	background: url(../images/london-bg.jpg) no-repeat center center scroll;
-	background-color: #000;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
+  background: url(../images/london-bg.jpg) no-repeat center center scroll;
+  background-color: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
 #contact {
-	background: url(../images/contact.jpg) no-repeat center center scroll;
-	background-color: #000;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
+  background: url(../images/contact.jpg) no-repeat center center scroll;
+  background-color: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
 #registrazione_agenzia {
-	background: url(../images/registrazione_agenzia.jpg) no-repeat center center scroll;
-	background-color: #000;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
+  background: url(../images/registrazione_agenzia.jpg) no-repeat center center scroll;
+  background-color: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
 #privacy {
-	background: url(../images/privacy.jpg) no-repeat center center scroll;
-	background-color: #000;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
+  background: url(../images/privacy.jpg) no-repeat center center scroll;
+  background-color: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
 .row_shadow {
-	border-top:1px solid white;
-	padding-top:15px;
-	padding-right:30px;
-	padding-bottom:15px;
-	padding-left:30px;
-	background-color: rgba(0,0,0,0.4);
-	border-bottom:1px solid white;
+  border-top:1px solid white;
+  padding-top:15px;
+  padding-right:30px;
+  padding-bottom:15px;
+  padding-left:30px;
+  background-color: rgba(0,0,0,0.4);
+  border-bottom:1px solid white;
 }
 
 /*OVERRIDE DEI MARGINI PER LA CLASSE ROW DI BOOTSTRAP*/
 .row {
-	margin-left:0px!important;
-	margin-right:0px!important;
+  margin-left:0px!important;
+  margin-right:0px!important;
 }
 
 .help-block {
-	color:red;
-	font-size:14px;
+  color:red;
+  font-size:14px;
+}
+
+/***************** SPINNER ********************/
+#overlay {
+  position: fixed;
+  z-index:9999;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+#loading{
+  position: fixed;
+  z-index:9999;
+  top: 50%;
+  left: 50%;
+  margin: -45px 0 0 -45px;
 }

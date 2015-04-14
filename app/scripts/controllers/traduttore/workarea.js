@@ -30,12 +30,12 @@ dett.controller('WorkareaTraduttoreCtrl', [ '$scope','$rootScope', '$routeParams
 		}
 
 		$scope.id_job = $routeParams.id; //ID DI JOB_TRANSLATION O JOB_CORRECTION
-		$scope.tipo_job = $routeParams.tipo; //CORRECTION O TRANSLATION, in base al tipo job, aggiornerò sul backend una 
+		$scope.tipo_job = $routeParams.tipo; //CORRECTION O TRANSLATION, in base al tipo job, aggiornerò sul backend una
 		//tabella piuttosto che l'altra
-		
+
 		services.getFromRESTServer("id_job="+$scope.id_job + "&tipo_job="+$scope.tipo_job,"dettaglio_job")
 		.success(function (response) {
-			$scope.job=response[0]; 
+			$scope.job=response[0];
 
 			/*FIX TEXTEDITOR PERCHE' NON FACEVA VEDERE IL CONTENUTO DELLA TEXTAREA E BISOGNAVA FARE REFRESH PAGINA
 			http://stackoverflow.com/questions/3147670/ckeditor-update-textarea*/
@@ -57,12 +57,12 @@ dett.controller('WorkareaTraduttoreCtrl', [ '$scope','$rootScope', '$routeParams
 			if(conf == true) {
 				$scope.accepted="true";
 				//aggiorna status a ACTIVE
-				services.getFromRESTServer("id_job="+$scope.id_job + "&tipo_job="+$scope.tipo_job 
+				services.getFromRESTServer("id_job="+$scope.id_job + "&tipo_job="+$scope.tipo_job
 					+ "&status=ACTIVE","update_job_status")
 				.success(function (response) {
 				});
 				//aggiorna ID_TRADUTTORE sul JOB
-				services.getFromRESTServer("id_job=" + $scope.id_job + "&tipo_job=" + $scope.tipo_job + 
+				services.getFromRESTServer("id_job=" + $scope.id_job + "&tipo_job=" + $scope.tipo_job +
 					"&user_id=" + $rootScope.userData.ID,"doAccept")
 				.success(function (response) {
 					alert('Congratulation! You have just accepted this job!');
@@ -75,11 +75,11 @@ dett.controller('WorkareaTraduttoreCtrl', [ '$scope','$rootScope', '$routeParams
 
 			if(conf == true) {
 				//aggiorna status a DECLINE
-				services.getFromRESTServer("id_job=" + $scope.id_job + "&tipo_job=" + $scope.tipo_job 
+				services.getFromRESTServer("id_job=" + $scope.id_job + "&tipo_job=" + $scope.tipo_job
 					+ "&status=DECLINED","update_job_status")
 				.success(function (response) {
 				});
-				services.getFromRESTServer("id_job=" + $scope.id_job + "&tipo_job="  +$scope.tipo_job + 
+				services.getFromRESTServer("id_job=" + $scope.id_job + "&tipo_job="  +$scope.tipo_job +
 					"&user_id=" + $rootScope.userData.ID,"doDecline")
 				.success(function (response) {
 					$location.path("/jobs_traduttore");
@@ -89,10 +89,34 @@ dett.controller('WorkareaTraduttoreCtrl', [ '$scope','$rootScope', '$routeParams
 		};
 
 		$scope.doSave = function() {
-			services.getFromRESTServer("id_job=" + $scope.id_job + "&text=" + $scope.job.TEXT_DONE + 
+
+			//FIX FORZO AGGIORNAMENTO CKEDITOR ALTRIMENTI PASSA VALORE VECCHIO
+			for(var instanceName in CKEDITOR.instances)
+				CKEDITOR.instances[instanceName].updateElement();
+
+			services.getFromRESTServer("id_job=" + $scope.id_job + "&text=" + CKEDITOR.instances['done'].getData() +
 				"&tipo_job=" + $scope.tipo_job,"save_job")
 			.success(function (response) {
 			});
 		};
+
+    $scope.doSend = function() {
+      var conf = confirm("Do you really want to send and finish this job?");
+
+      if(conf == true) {
+        //aggiorna status a a "in approval"
+        services.getFromRESTServer("id_job=" + $scope.id_job + "&tipo_job=" + $scope.tipo_job
+        + "&status=IN APPROVAL","update_job_status")
+          .success(function (response) {
+          });
+        //TODO invia mail all'agenzia per scaricare il file
+        services.getFromRESTServer("id_job=" + $scope.id_job + "&tipo_job="  +$scope.tipo_job +
+        "&id_agenzia=" + $scope.job.ID_AGENZIA,"doSend")
+          .success(function (response) {
+            $location.path("/jobs_traduttore");
+            alert("Thank you very much! Agency is going to approve your work!");
+          });
+      }
+    };
 
 	}]);

@@ -238,7 +238,7 @@ livereload: {
         files: [{
           expand: true,
           cwd: '<%= yeoman.app %>/images',
-        src: '{,*/}*.{png,jpg,jpeg}',
+        src: '{,*/}*.{png,jpg,jpeg,gif}',
         dest: '<%= yeoman.dist %>/images'
       }]
     }
@@ -255,30 +255,30 @@ livereload: {
   }
 },
 
-htmlmin: {                                                                                                                                                                                                                                                                  
-  dist: {                                                                                                                                                                                                                                                                   
-    options: {                                                                                                                                                                                                                                                              
-      removeCommentsFromCDATA: true,                                                                                                                                                                                                                                        
-      removeComments: true,                                                                                                                                                                                                                                                 
-          // https://github.com/yeoman/grunt-usemin/issues/44                                                                                                                                                                                                                   
-          //collapseWhitespace: true,                                                                                                                                                                                                                                           
-          collapseBooleanAttributes: true,                                                                                                                                                                                                                                      
-          removeAttributeQuotes: true,                                                                                                                                                                                                                                          
-          removeRedundantAttributes: true,                                                                                                                                                                                                                                      
-          useShortDoctype: true,                                                                                                                                                                                                                                                
-          removeEmptyAttributes: true,                                                                                                                                                                                                                                          
-          removeOptionalTags: true,                                                                                                                                                                                                                                             
-          // Cannot remove empty elements with angular directives                                                                                                                                                                                                               
-          removeEmptyElements: false                                                                                                                                                                                                                                            
-        },                                                                                                                                                                                                                                                                      
-        files: [{                                                                                                                                                                                                                                                               
-          expand: true,                                                                                                                                                                                                                                                         
-          dot: false,                                                                                                                                                                                                                                                           
-          cwd: '<%= yeoman.app %>',                                                                                                                                                                                                                                             
-          dest: '<%= yeoman.dist %>/views/',                                                                                                                                                                                                                                   
-          src: ['*.html','views/**/*.html']                                                                                                                                                                                                             
-        }]                                                                                                                                                                                                                                                                      
-      }                                                                                                                                                                                                                                                                         
+htmlmin: {
+  dist: {
+    options: {
+      removeCommentsFromCDATA: true,
+      removeComments: true,
+          // https://github.com/yeoman/grunt-usemin/issues/44
+          //collapseWhitespace: true,
+          collapseBooleanAttributes: true,
+          removeAttributeQuotes: true,
+          removeRedundantAttributes: true,
+          useShortDoctype: true,
+          removeEmptyAttributes: true,
+          removeOptionalTags: true,
+          // Cannot remove empty elements with angular directives
+          removeEmptyElements: false
+        },
+        files: [{
+          expand: true,
+          dot: false,
+          cwd: '<%= yeoman.app %>',
+          dest: '<%= yeoman.dist %>/views/',
+          src: ['*.html','views/**/*.html']
+        }]
+      }
     },
 
     // ng-annotate tries to make the code safe for minification automatically
