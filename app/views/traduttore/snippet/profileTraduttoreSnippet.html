@@ -1,13 +1,14 @@
 <form name="userForm" novalidate>
-	<div class="row_shadow">	
+	<div class="row_shadow">
 		<h2>Profile</h2>
 		<div class="alert alert-success" ng-show="isShowMessage" role="alert">Your profile has been successfully updated!</div>
 		<div class="panel panel-default well col-md-7" style="opacity:0.9;">
 			<div class="panel-body">
 				<div class="row row-eq-height">
 					<div id="item_first_row_list" class="col-xs-3">
-						<img class="thumb_img" src="http://bridgesprep.org/wp-content/uploads/2013/10/Facebook-no-profile-picture-icon-620x389.jpg"/>
+						<img class="thumb_img" src="images/profile_picture.jpg"/>
 					</div>
+          <div ng-file-select="" ng-model="files" class="upload-button ng-pristine ng-valid" ng-multiple="false" ng-accept="'*.jpg,*.png'" ng-model-rejected="rejFiles" tabindex="0">Attach an Image</div>
 					<div id="item_second_row_list" class="col-xs-9">
 						<div class="row form-group" ng-show="!editMode">
 							<label class="col-xs-3 control-label text-right">Name Surname:</label>
@@ -35,7 +36,7 @@
 						<div ng-show="editMode" class="form-group row" ng-class="{ 'has-error' : userForm.birthdayTraduttore.$invalid && !userForm.birthdayTraduttore.$pristine }">
 							<label for="birthdayTraduttore" class="col-xs-2 control-label text-right">Birthday: </label>
 							<span class="col-sm-4"><input type="date" name="birthdayTraduttore" ng-model="birthdayTraduttore" class="form-control" placeholder="" ng-pattern="/^((\d{4})-(\d{2})-(\d{2}))$/" /></span>
-						</div>	
+						</div>
 
 						<!--  CITTA & COUNTRY -->
 						<div class="form-group row" ng-show="!editMode">
