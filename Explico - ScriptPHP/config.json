@@ -1,0 +1,26 @@
+{
+  "name": "Explico",
+  "environment": "development",
+  "version": "1.0.1 20150407",
+  "defaultKK" : "test",
+  "logger": {
+    "enable": true,
+    "level": "error",
+    "loggingPattern": ">> %s::[%s] ",
+    "controllers": {}
+  },
+  "development": {
+    "urls": {
+      
+    },
+    "request": {
+      "url": "http://explico.altervista.org/JSONEngine.php"
+    }
+  },
+  "production": {
+    "urls": {
+    },
+    "request": {
+    }
+  }
+}

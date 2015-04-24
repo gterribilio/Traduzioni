@@ -17,10 +17,15 @@ var app = angular
     'HomeCtrlTraduttoreModule',
     'HomeCtrlAgenziaModule',
     'DirectivesModule',
-    'JobsCtrlTraduttoreModule'
+    'JobsCtrlTraduttoreModule',
+    'fileUpload'
   ]);
 
 var app_cfg = {
+
+  "endpoint_server" : "http://explico.altervista.org",
+
+  "endpoint_upload_server" : "http://www.pastafrescalioni.it",
 
   "environment": "development",
   "request" : {
@@ -28,7 +33,7 @@ var app_cfg = {
   },
   "development" : {
     "urls" : {
-      "config_endpoint" : "./config.json"
+      "config_endpoint" : "http://www.pastafrescalioni.it/config.json.php"
     },
     "request" : {
     }

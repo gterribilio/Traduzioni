@@ -52,14 +52,22 @@ home.controller('HomeCtrl',  ['$scope', '$rootScope', '$window', 'services', '$l
             $rootScope.showLogin=false;
             $rootScope.userData=data[0];
             //localStorageService.set("userData",JSON.stringify($rootScope.userData));
-            customFactory.set('userData',$scope.userData);
+            customFactory.set('userData',$rootScope.userData);
 
             if($scope.userData.RUOLO=='TRADUTTORE') {
-              alert("Welcome " + $scope.userData.NOME +"! Find your translations now!");
+              //alert("Welcome " + $rootScope.userData.NOME +"! Find your translations now!");
+              $.notify("Welcome " + $rootScope.userData.NOME +"! Find your translations now!",{
+                type: 'success',
+                allow_dismiss: true
+              });
               $location.path("/home_traduttore");
             }
             else {
-              alert("Welcome " + $scope.userData.NOME +"! Post your translation now!");
+              //alert("Welcome " + $rootScope.userData.NOME +"! Post your translation now!");
+              $.notify("Welcome " + $rootScope.userData.NOME +"! Post your translation now!",{
+                type: 'success',
+                allow_dismiss: true
+              });
               $location.path("/home_agenzia");
             }
           }
@@ -158,8 +166,6 @@ home.controller('registrazioneCtrl',  ['$scope', '$rootScope', '$window', 'servi
             if($rootScope.userData.RUOLO=='TRADUTTORE')
               $location.path("/home_traduttore");
             else $location.path("/home_agenzia");
-
-            alert("Benvenuto " + $rootScope.userData.USERNAME +"! Accedi subito dal menù a tutte le funzioni e trova le tue traduzioni!");
 
           }
           //stampa il JSON Object

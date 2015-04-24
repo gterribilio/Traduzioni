@@ -23,7 +23,8 @@ services
 
 	service.getConfiguration = function (callback){
 		service.init();
-		return $http({url: APP_CFG[APP_CFG.environment].urls.config_endpoint, method:"get",headers:{'Content-Type':'application/javascript'}, data:{}});
+
+    return $http.jsonp(APP_CFG[APP_CFG.environment].urls.config_endpoint +"?callback=JSON_CALLBACK");
 		//equivalente return $http.get(APP_CFG[APP_CFG.environment].urls.config_endpoint, {headers:{'Content-Type':'application/javascript'}});
 	}
 

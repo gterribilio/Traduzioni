@@ -17,15 +17,6 @@
   width: 100px;*/
 }
 
-.thumb_img {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  height:130px;
-  width:130px;
-  margin-left:10px;
-}
-
 div#item_second_row_list {
   margin: 0px;
   padding: 0px;
@@ -54,19 +45,19 @@ div#item_first_row_list {
   animation-iteration-count: 5;
 }
 
-@-moz-keyframes blinker {  
+@-moz-keyframes blinker {
   0% { opacity: 1.0; }
   50% { opacity: 0.0; }
   100% { opacity: 1.0; }
 }
 
-@-webkit-keyframes blinker {  
+@-webkit-keyframes blinker {
   0% { opacity: 1.0; }
   50% { opacity: 0.0; }
   100% { opacity: 1.0; }
 }
 
-@keyframes blinker {  
+@keyframes blinker {
   0% { opacity: 1.0; }
   50% { opacity: 0.0; }
   100% { opacity: 1.0; }

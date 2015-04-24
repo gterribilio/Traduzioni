@@ -122,6 +122,8 @@ ul,p {
   margin: -45px 0 0 -45px;
 }
 
+/***************** END SPINNER ********************/
+
 /**************** BUTTON FILE UPLOAD ****************/
 
 .upload-buttons input[type="file"] {
@@ -141,3 +143,56 @@ ul,p {
   top: 7px;
   cursor: pointer;
 }
+
+/**************** END BUTTON FILE UPLOAD ****************/
+
+/**************** PROFILE IMAGE *************************/
+
+#container_image_profile
+{
+  height:180px;
+  width:180px;
+  position:relative;
+}
+
+.thumb_img
+{
+  position:absolute;
+  left:0;
+  top:0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+#text_image_profile
+{
+  z-index:100;
+  position:absolute;
+  color:white;
+  bottom:0;
+  background-color: black;
+  opacity:0.4;
+  padding-left:30px;
+  cursor: pointer;
+  width:180px;
+  margin:0;
+}
+
+#text_image_profile:hover
+{
+  background-color: black;
+  opacity:0.8;
+}
+
+/**************** END PROFILE IMAGE *************************/
+
+/**************** OVERRIDE PADDING LEFT E RIGHT SULLE COLONNE ****************/
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/**************** END OVERRIDE PADDING LEFT E RIGHT SULLE COLONNE ****************/

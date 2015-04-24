@@ -13,11 +13,12 @@
 
 var dett = angular.module('JobsCtrlTraduttoreModule');
 
-dett.controller('WorkareaTraduttoreCtrl', [ '$scope','$rootScope', '$routeParams', '$location', 'services','customFactory',
-  function ($scope, $rootScope, $routeParams, $location, services, customFactory) {
+dett.controller('WorkareaTraduttoreCtrl', ['$http', '$scope','$rootScope', '$routeParams', '$location', 'services','customFactory', 'APP_CFG', '$sce', '$route',
+  function ($http, $scope, $rootScope, $routeParams, $location, services, customFactory, APP_CFG, $sce, $route) {
 
     $rootScope.showWorkarea=true;
     $scope.accepted = false;
+    $scope.getJobTODO = null;
 
     //alert(CKEDITOR.basePath + ' before');
     //CKEDITOR.basePath=location.protocol + "//" + location.host + '/ckeditor/';
@@ -39,7 +40,6 @@ dett.controller('WorkareaTraduttoreCtrl', [ '$scope','$rootScope', '$routeParams
 
         /*FIX TEXTEDITOR PERCHE' NON FACEVA VEDERE IL CONTENUTO DELLA TEXTAREA E BISOGNAVA FARE REFRESH PAGINA
          http://stackoverflow.com/questions/3147670/ckeditor-update-textarea*/
-        CKEDITOR.instances['todo'].setData($scope.job.TEXT_TODO);
         CKEDITOR.instances['done'].setData($scope.job.TEXT_DONE);
         /*END FIX*/
 
@@ -49,6 +49,10 @@ dett.controller('WorkareaTraduttoreCtrl', [ '$scope','$rootScope', '$routeParams
         else {
           $scope.accepted = true;
         }
+        /*una volta che recupero il job, posso anche recuperare il lavoro da tradurre*/
+        $scope.getJobTODO = function () {
+          return APP_CFG.endpoint_upload_server + '/uploadedFiles/' + $scope.job.ID_AGENZIA + '/' + $scope.job.JOB_PATH;
+        };
       });
 
     $scope.doAccept = function() {
@@ -65,7 +69,11 @@ dett.controller('WorkareaTraduttoreCtrl', [ '$scope','$rootScope', '$routeParams
         services.getFromRESTServer("id_job=" + $scope.id_job + "&tipo_job=" + $scope.tipo_job +
         "&user_id=" + $rootScope.userData.ID,"doAccept")
           .success(function (response) {
-            alert('Congratulation! You have just accepted this job!');
+            //alert('Congratulation! You have just accepted this job!');
+            $.notify("Congratulation! You have just accepted this job!",{
+              type: 'success',
+              allow_dismiss: true
+            });
           });
       }
     };
@@ -83,7 +91,11 @@ dett.controller('WorkareaTraduttoreCtrl', [ '$scope','$rootScope', '$routeParams
         "&user_id=" + $rootScope.userData.ID,"doDecline")
           .success(function (response) {
             $location.path("/jobs_traduttore");
-            alert('We are very sad! We hope you\'ll find something else!');
+            //alert('We are very sad! We hope you\'ll find something else!');
+            $.notify("We are very sad! We hope you\'ll find something else!",{
+              type: 'success',
+              allow_dismiss: true
+            });
           });
       }
     };
@@ -114,7 +126,13 @@ dett.controller('WorkareaTraduttoreCtrl', [ '$scope','$rootScope', '$routeParams
         "&id_agenzia=" + $scope.job.ID_AGENZIA,"doSend")
           .success(function (response) {
             $location.path("/jobs_traduttore");
-            alert("Thank you very much! Agency is going to approve your work!");
+            //alert("Thank you very much! Agency is going to approve your work!");
+            $.notify("Thank you very much! Agency is going to approve your work!",{
+              type: 'success',
+              allow_dismiss: true
+            });
+            $rootScope.showWorkarea=false;
+
           });
       }
     };

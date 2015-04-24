@@ -1,9 +1,9 @@
-<div class=row_shadow>	
+<div class=row_shadow>
 	<h2>Language Pair</h2>
 	<div ng-if="pairList == NULL" class="alert alert-warning" role=alert>At the moment you don't have any languages pair! Can we help you?
 	</div>
 	<form name=pairForm ng-submit=doAddPair() novalidate> 
-		<div class="panel panel-default well col-md-7" style=opacity:0.9>
+		<div class="panel panel-default well col-md-10" style=opacity:0.9>
 			<div class=panel-body>
 				<div class="row form-group">
 					
@@ -72,9 +72,9 @@
 		<div style=clear:both></div>
 	</form>
 
-	<div ng-if="pairList.length !=0">						
+	<div ng-if="pairList.length !=0">
 		<div id={{$index}} ng-repeat="pair in pairList">
-			<div class="panel panel-default well col-md-7" style=opacity:0.9>
+			<div class="panel panel-default well col-md-10" style=opacity:0.9>
 				<div class=panel-body>
 					<div class="row form-group">
 						
@@ -82,26 +82,26 @@
 						<span class=col-sm-3>{{pair.FROM}}</span>
 						
 						<label class="col-xs-2 control-label text-right">To:</label>
-						<span class=col-sm-3>{{pair.TO}}</span>			
+						<span class=col-sm-3>{{pair.TO}}</span>
 					</div>
 					<div class="row form-group">
 						
 						<label class="col-xs-2 control-label text-right">Field:</label>
-						<span class=col-sm-3>{{pair.FIELD}}</span>		
+						<span class=col-sm-3>{{pair.FIELD}}</span>
 					</div>
 					<div class="row form-group">
 						
 						<label class="col-xs-2 control-label text-right">Service:</label>
-						<span class=col-sm-3>{{pair.SERVICE}}</span>		
+						<span class=col-sm-3>{{pair.SERVICE}}</span>
 					</div>
 					<div class="row form-group">
 						
 						<label class="col-xs-2 control-label text-right">Price:</label>
-						<span class=col-sm-3>{{pair.PRICE}}</span>		
+						<span class=col-sm-3>{{pair.PRICE}}</span>
 
 						
 						<label class="col-xs-2 control-label text-right">Currency:</label>
-						<span class=col-sm-3>{{pair.CURRENCY}}</span>		
+						<span class=col-sm-3>{{pair.CURRENCY}}</span>
 					</div>
 					
 					<form name=pairForm ng-submit=doDeletePair(pair.ID) novalidate> 
@@ -115,5 +115,5 @@
 			</div>
 		</div>
 	</div>
-	<div style=clear:both></div>	
+	<div style=clear:both></div>
 </div>

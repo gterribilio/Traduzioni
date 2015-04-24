@@ -1,11 +1,12 @@
 /*  MODULO CON CONSTANTI  */
-angular.module('ConfigModule', [])
 
-var common = angular.module('CommonModule', ['ConfigModule'])
+'use strict';
+
+var common = angular.module('CommonModule', [])
 
 /*  FACTORY  */
 
-.factory('customFactory', ['APP_CFG','services', '$q',  function(APP_CFG, services, $q) {
+.factory('customFactory', ['APP_CFG','services', '$q', function(APP_CFG, services, $q) {
 
 	var securizer = null;
 	var deferred = $q.defer();

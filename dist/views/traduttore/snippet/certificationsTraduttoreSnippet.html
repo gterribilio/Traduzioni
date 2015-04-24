@@ -1,11 +1,11 @@
-<div class="row_shadow">	
+<div class="row_shadow">
 	<h2>Certifications</h2>
 	<div ng-if="certificationList == NULL" class="alert alert-warning" role="alert">At the moment you don't have any languages certification! Can we help you?
 	</div>
 	<form name="certificationForm" ng-submit="doAddCertification()" novalidate> <!--disabilito validazione html5-->
-		<div class="panel panel-default well col-md-7" style="opacity:0.9;">
+		<div class="panel panel-default well col-md-10" style="opacity:0.9;">
 			<div class="panel-body">
-				
+
 				<!-- INSTITUTE -->
 				<div class="row form-group">
 					<div ng-class="{ 'has-error' : certificationForm.instituteC.$invalid && !certificationForm.instituteC.$pristine }">
@@ -52,9 +52,9 @@
 			<div style="clear:both;"></div>
 		</form>
 
-		<div ng-if="certificationList.length !=0">						
+		<div ng-if="certificationList.length !=0">
 			<div id="{{$index}}" ng-repeat="certification in certificationList">
-				<div class="panel panel-default well col-md-7" style="opacity:0.9;">
+				<div class="panel panel-default well col-md-10" style="opacity:0.9;">
 					<div class="panel-body">
 						<div class="row form-group">
 							<!-- INSTITUTE -->
@@ -62,17 +62,17 @@
 							<span class="col-sm-3">{{certification.INSTITUTE}}</span>
 							<!-- DATE -->
 							<label class="col-xs-2 control-label text-right">Date:</label>
-							<span class="col-sm-3">{{certification.DATE | date:'dd/MM/yyyy'}}</span>			
+							<span class="col-sm-3">{{certification.DATE | date:'dd/MM/yyyy'}}</span>
 						</div>
 						<div class="row form-group">
 							<!-- CERTIFICATION -->
 							<label class="col-xs-2 control-label text-right">Certification:</label>
-							<span class="col-sm-3">{{certification.CERTIFICATION}}</span>		
+							<span class="col-sm-3">{{certification.CERTIFICATION}}</span>
 						</div>
 						<div class="row form-group">
 							<!-- LEVEL -->
 							<label class="col-xs-2 control-label text-right">Level:</label>
-							<span class="col-sm-3">{{certification.LEVEL}}</span>		
+							<span class="col-sm-3">{{certification.LEVEL}}</span>
 						</div>
 						<!-- DELETE BUTTON -->
 						<form name="certificationForm" ng-submit="doDeleteCertification(certification.ID)" novalidate> <!--disabilito validazione html5-->
@@ -86,6 +86,6 @@
 				</div>
 			</div>
 		</div>
-		<div style="clear:both;"></div>	
+		<div style="clear:both;"></div>
 	</div><!-- end row shadow -->
 

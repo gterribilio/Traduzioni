@@ -38,11 +38,11 @@ h6 {
 }
 
 h4 {
-     margin: 0 0 0px;
+     margin: 0 0 0;
 }
 
 p {
-    margin: 0 0 25px;
+    margin: 0 0 25px 0;
     font-size: 16px;
     line-height: 1.5;
 }
@@ -54,7 +54,7 @@ i {
 
 @media(min-width:767px) {
     p {
-        margin: 0 0 35px;
+        margin: 0 0 35px 0;
         /*font-size: 20px;*/
         line-height: 1.6;
     }
@@ -109,7 +109,7 @@ a:focus {
 }
 
 .navbar-custom .nav li.active {
-    outline: nonte;
+    outline: none;
     background-color: rgba(255,255,255,.3);
 }
 
@@ -235,7 +235,7 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0 {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -252,7 +252,7 @@ a:focus {
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0 {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -324,7 +324,7 @@ ul.banner-social-buttons {
 }
 
 @media(min-width:1200px) {
-    
+
 }
 
 @media(max-width:1199px) {
@@ -371,8 +371,4 @@ img::selection {
 
 img::-moz-selection {
     background: 0 0;
-}
-
-body {
-    webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
