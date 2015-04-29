@@ -74,6 +74,12 @@ app.config(['$routeProvider', '$httpProvider', function($routeProvider, $httpPro
           return customFactory.promise;
         }]
       }}).
+    when('/search_agenzia', {templateUrl: 'views/agenzia/search_agenzia.html', controller: 'SearchAgenziaCtrl',
+      resolve:{
+        'MyServiceData': ['customFactory', function(customFactory){
+          return customFactory.promise;
+        }]
+      }}).
     otherwise({redirectTo: '/'});
 
   var $http,

@@ -1,10 +1,177 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+<form name="userForm" novalidate>
+  <div class="row_shadow">
+    <h2>Your Profile</h2>
+    <div class="panel panel-default well col-xs-10" style="opacity:0.9;">
+      <div class="panel-body">
+        <div class="row row-eq-height">
+          <div id="item_first_row_list" class="col-xs-3"  ng-controller="UploadCtrl">
 
-</body>
-</html>
+            <div id="container_image_profile">
+              <img class="thumb_img" width="180" height="180" ng-src="{{userData.IMAGE == null ? 'images/profile_picture.jpg' : image()}}"/>
+              <p id="text_image_profile">
+                <i class="fa fa-camera"> <span class="button" ng-file-select ng-model="files">Update image</span></i>
+              </p>
+            </div>
+          </div>
+
+          <!-- AGENCY NAME -->
+          <div id="item_second_row_list" class="col-xs-8">
+            <div class="row form-group" ng-show="!editMode">
+              <label class="col-xs-2 control-label text-right">Agency Name:</label>
+              <span class="col-sm-4">{{userData.NOME}}</span>
+            </div>
+            <div class="row form-group" ng-show="editMode">
+              <div ng-class="{ 'has-error' : userForm.nomeAgenzia.$invalid && !userForm.nomeAgenzia.$pristine }">
+                <label class="col-xs-2 control-label text-right ">Agency Name*</label>
+                <span class="col-sm-4"><input type="text" name="nomeAgenzia" class="form-control" ng-model="nomeAgenzia" required/></span>
+              </div>
+            </div>
+
+            <!-- EMPLOYEES -->
+            <div class="form-group row" ng-show="!editMode">
+              <label class="col-xs-2 control-label text-right">Employees:</label>
+              <span class="col-sm-4">{{userData.NUM_IMPIEGATI}}</span>
+            </div>
+            <div ng-show="editMode" class="form-group row">
+              <label for="impiegatoAgenzia" class="col-xs-2 control-label text-right">Employees</label>
+              <span class="col-sm-4">
+                  <select class="form-control" id="impiegatoAgenzia" name="impiegatoAgenzia" ng-model="impiegatoAgenzia" ng-options="impiegatoAgenzia.DESCRIZIONE for impiegatoAgenzia in impiegatiAgenzia" required></select>
+              </span>
+            </div>
+
+            <!--  INDIRIZZO + CITY -->
+            <div class="form-group row" ng-show="!editMode">
+              <label class="col-xs-2 control-label text-right">Address:</label>
+              <span class="col-sm-4">{{userData.INDIRIZZO}}</span>
+
+              <label class="col-xs-2 control-label text-right">City:</label>
+              <span class="col-sm-4">{{userData.CITTA}}</span>
+            </div>
+
+            <div class="row form-group" ng-show="editMode">
+              <div ng-class="{ 'has-error' : userForm.indirizzoAgenzia.$invalid && !userForm.indirizzoAgenzia.$pristine }">
+                <label class="col-xs-2 control-label text-right">Address*</label>
+								<span class="col-sm-4">
+									<input type="text" name="indirizzoAgenzia" class="form-control" ng-model="indirizzoAgenzia" required>
+								</span>
+              </div>
+
+              <div ng-class="{ 'has-error' : userForm.cittaAgenzia.$invalid && !userForm.cittaAgenzia.$pristine }">
+                <label class="col-xs-2 control-label text-right">City*</label>
+								<span class="col-sm-4">
+									<input type="text" name="cittaAgenzia" class="form-control" ng-model="cittaAgenzia" required>
+								</span>
+              </div>
+            </div>
+
+            <!-- PAESE + CODICE POSTALE -->
+            <div class="form-group row" ng-show="!editMode">
+              <label class="col-xs-2 control-label text-right">Country:</label>
+              <span class="col-sm-4">{{userData.PAESE}}</span>
+
+              <label class="col-xs-2 control-label text-right">Zip Code:</label>
+              <span class="col-sm-4">{{userData.CODICE_POSTALE}}</span>
+            </div>
+
+            <div class="row form-group" ng-show="editMode">
+              <div ng-class="{ 'has-error' : userForm.countryAgenzia.$invalid && !userForm.countryAgenzia.$pristine }">
+                <label class="col-xs-2 text-right control-label">Country*</label>
+                <div class="col-sm-4">
+                  <select class="form-control" name="countryAgenzia" ng-model="countryAgenzia" ng-options="countryAgenzia.DESCRIZIONE for countryAgenzia in countriesAgenzia" required></select>
+                </div>
+              </div>
+
+              <div ng-class="{ 'has-error' : userForm.codicePostaleAgenzia.$invalid && !userForm.codicePostaleAgenzia.$pristine }">
+                <label class="col-xs-2 control-label text-right">Zip Code*</label>
+								<span class="col-sm-4">
+									<input type="text" name="codicePostaleAgenzia" class="form-control" ng-model="codicePostaleAgenzia" required>
+								</span>
+              </div>
+            </div>
+
+            <!-- PHONE -->
+            <div class="form-group row" ng-show="!editMode">
+              <label class="col-xs-2 control-label text-right">Phone:</label>
+              <span class="col-sm-4">{{userData.PHONE}}</span>
+            </div>
+
+            <div class="row form-group" ng-show="editMode">
+              <div ng-class="{ 'has-error' : userForm.telefonoAgenzia.$invalid && !userForm.telefonoAgenzia.$pristine }">
+                <label class="col-xs-2 control-label text-right">Phone*</label>
+								<span class="col-sm-4">
+									<input type="tel" name="telefonoAgenzia" class="form-control" ng-model="telefonoAgenzia" required>
+								</span>
+              </div>
+            </div>
+
+            <!-- EMAIL -->
+            <div class="form-group row" ng-show="!editMode">
+              <label class="col-xs-2 control-label text-right">e-mail:</label>
+              <span class="col-sm-4">{{userData.EMAIL}}</span>
+            </div>
+
+            <div class="row form-group" ng-show="editMode">
+              <div ng-class="{ 'has-error' : userForm.emailAgenzia.$invalid && !userForm.emailAgenzia.$pristine }">
+                <label class="col-xs-2 control-label text-right">e-mail*</label>
+								<span class="col-sm-4">
+									<input type="email" name="emailAgenzia" class="form-control" ng-model="emailAgenzia" required>
+								</span>
+              </div>
+            </div>
+
+            <!-- WEB -->
+            <div class="form-group row" ng-show="!editMode">
+              <label class="col-xs-2 control-label text-right">Web:</label>
+              <span class="col-sm-4">{{userData.SITO_WEB}}</span>
+            </div>
+
+            <div class="row form-group" ng-show="editMode">
+              <div ng-class="{ 'has-error' : userForm.webAgenzia.$invalid && !userForm.webAgenzia.$pristine }">
+                <label class="col-xs-2 control-label text-right">Web*</label>
+								<span class="col-sm-4">
+									<input type="text" name="webAgenzia" class="form-control" ng-model="webAgenzia" required>
+								</span>
+              </div>
+            </div>
+
+            <!-- VAT NUMBER -->
+            <div class="form-group row" ng-show="!editMode">
+              <label class="col-xs-2 control-label text-right">VAT:</label>
+              <span class="col-sm-4">{{userData.VAT}}</span>
+            </div>
+
+            <div class="row form-group" ng-show="editMode">
+              <div ng-class="{ 'has-error' : userForm.vat.$invalid && !userForm.vat.$pristine }">
+              <label class="col-xs-2 control-label text-right">VAT number*</label>
+								<span class="col-sm-4">
+									<input type="text" name="vat" class="form-control" ng-model="vat" required>
+								</span>
+                </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div style="clear:both;"></div>
+        <div ng-show="!editMode" class="text-right" style="margin-top:10px;">
+          <button type="submit" class="btn btn-lg btn-success btn-sm" ng-click="editMode=true;">
+            <i class="fa fa-edit"></i> edit
+          </button>
+        </div>
+
+        <div ng-show="editMode" class="text-right" style="margin-top:10px;">
+          <button type="submit" class="btn btn-lg btn-success btn-sm" ng-click="editMode=false;doUpdateProfileAgenzia();" ng-disabled="userForm.$invalid">
+            <i class="fa fa-edit"></i> Confirm
+          </button>
+          <button type="submit" class="btn btn-lg btn-success btn-sm" ng-click="editMode=false;">
+            <i class="fa fa-angle-double-left"></i> Cancel
+          </button>
+        </div>
+
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</form>
+

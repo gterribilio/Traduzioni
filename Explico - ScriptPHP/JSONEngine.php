@@ -273,6 +273,12 @@ switch ($azione) {
 	$user_id=$_GET['user_id'];
 	$query = "SELECT * FROM JOBS_CORRECTION WHERE STATO IN ('".$GLOBALS["statiPrenotazione"]["CLOSED"]."') AND ID_TRADUTTORE=".$user_id." ORDER BY DATA_SCADENZA";
 	break;
+	
+	//ottieni gli ultimi 3 commenti dell'agenzia
+	case "getAgencyComments":
+	$user_id=$_GET['user_id'];
+	$query = "SELECT * FROM COMMENT WHERE ID_AGENZIA=".$user_id." ORDER BY DATA DESC LIMIT 3";
+	break;
 
 	//login utente
 	case "login":
@@ -291,19 +297,32 @@ switch ($azione) {
 	$birthdayTraduttore=$_GET['birthdayTraduttore'];
 	$mothertongueTraduttore=$_GET['mothertongueTraduttore'];
 	$vat=$_GET['vat'];
+	
+	//campi agenzia
+	$nomeAgenzia=$_GET['nome'];
+	$impiegatiAgenzia=$_GET['impiegati'];
+	$indirizzoAgenzia=$_GET['indirizzo'];
+	$codicePostale=$_GET['codicePostale'];
+	$telefonoAgenzia=$_GET['telefono'];
+	$webAgenzia=$_GET['web'];
+	
 	//campi comuni
 	$citta=$_GET['citta'];
 	$country=$_GET['country'];
 	$ruolo=$_GET['ruolo'];
 	$id=$_GET['id'];
+	$email= $_GET['email'];
 
-	$query1 = "UPDATE UTENTE SET CITTA='".$citta."', PAESE='".$country."', VAT='".$vat."' WHERE ID=".$id;
+	$query1 = "UPDATE UTENTE SET CITTA='".$citta."', PAESE='".$country."', VAT='".$vat."', EMAIL='".$email."' WHERE ID=".$id;
 	execQuery($query1, $nomeDB);
 	if($ruolo=="TRADUTTORE") {
 		$query="UPDATE TRADUTTORE SET NOME='".$nomeTraduttore."', COGNOME='".$cognomeTraduttore."', DATA_NASCITA='".$birthdayTraduttore."'
 		, MADRELINGUA='".$mothertongueTraduttore."' WHERE ID=".$id;
 	}else{
-//caso AGENZIA
+		//caso AGENZIA
+		$query="UPDATE AGENZIA SET NOME='".$nomeAgenzia."', NUM_IMPIEGATI='".$impiegatiAgenzia."', 
+		INDIRIZZO='".$indirizzoAgenzia."', CODICE_POSTALE='".$codicePostale."' 
+		, PHONE='".$telefonoAgenzia."', SITO_WEB='".$webAgenzia."' WHERE ID=".$id;
 	}
 	execQuery($query, $nomeDB);
 	$query = "SELECT U.ID, U.USERNAME, U.PASSWORD, U.SALE, U.RUOLO, U.EMAIL, U.CITTA, U.PAESE FROM UTENTE U WHERE U.ID=".$id;
@@ -325,6 +344,12 @@ if($tipo_job=="translation") {
 else /*($tipo_job=="correction")*/ {
 	$query="SELECT * FROM JOBS_CORRECTION where ID=".$id_job;
 }
+break;
+
+case "reportAbuse":
+$id_commento=$_GET['id'];
+sendCustomMail("reportAbuse@explico.com ", "luca.sapone86@gmail.com ", "Report abuse sul commento ".$id_commento, 
+"Ciao Luca, è stato inviato il report abuse per il commento <strong>".$id_commento."</strong>");
 break;
 /*case "ricerca_prof":
 //listview: Ricerca per nome professore con slot DISPONIBILI (prenotabili)
@@ -653,11 +678,11 @@ if(count($json)>0) {
 //$jsonstring = json_encode(array("Risultato"=>"OK"));
 		$jsonstring = json_encode(array("errCode"=>"401","errMsg"=>"Impossibile annullare la ripetizione. E' stata gia' confermata dal docente."));
 //sendMail($id_ripe);
-	}else if($azione=="contact"){
+	}else if($azione=="contact" || $azione=="reportAbuse"){
 //va sempre a buon fine l'invio della mail
 		$jsonstring = array("Risultato"=>"OK");
 	} else {
-		$jsonstring = json_encode(array("errCode"=>"300","errMsg"=>"Nessun dato trovato."));
+		$jsonstring = json_encode(array("errCode"=>"300","errMsg"=>"No data found."));
 	}
 }
 

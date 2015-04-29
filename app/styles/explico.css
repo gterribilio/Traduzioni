@@ -46,7 +46,7 @@ ul,p {
 }
 
 .background-default {
-  background: url(../images/london-bg.jpg) no-repeat center center scroll;
+  background: url(../images/london-bg.jpg) no-repeat 0 0;
   background-color: #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -55,7 +55,7 @@ ul,p {
 }
 
 #contact {
-  background: url(../images/contact.jpg) no-repeat center center scroll;
+  background: url(../images/contact.jpg) no-repeat 0 0;
   background-color: #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -64,7 +64,7 @@ ul,p {
 }
 
 #registrazione_agenzia {
-  background: url(../images/registrazione_agenzia.jpg) no-repeat center center scroll;
+  background: url(../images/registrazione_agenzia.jpg) no-repeat 0 0;
   background-color: #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -73,7 +73,7 @@ ul,p {
 }
 
 #privacy {
-  background: url(../images/privacy.jpg) no-repeat center center scroll;
+  background: url(../images/privacy.jpg) no-repeat 0 0;
   background-color: #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -164,6 +164,7 @@ ul,p {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
+
 #text_image_profile
 {
   z-index:100;
@@ -196,3 +197,36 @@ ul,p {
 }
 
 /**************** END OVERRIDE PADDING LEFT E RIGHT SULLE COLONNE ****************/
+
+/**************** RATING ****************/
+.rating{
+  color: #a9a9a9;
+  margin: 0;
+  padding: 0;
+}
+
+ul.rating {
+  display: inline-block;
+}
+
+.rating li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 1px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.rating .filled {
+  color: #fd0;
+}
+/**************** END RATING ****************/
+
+/**************** READMORE ****************/
+
+article {
+  color:black;
+}
+
+/**************** END READMORE ****************/

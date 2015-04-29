@@ -33,6 +33,21 @@
               </div>
             </div>
 
+            <!-- EMAIL -->
+            <div class="form-group row" ng-show="!editMode">
+              <label class="col-xs-3 control-label text-right">e-mail:</label>
+              <span class="col-sm-4">{{userData.EMAIL}}</span>
+            </div>
+
+            <div class="row form-group" ng-show="editMode">
+              <div ng-class="{ 'has-error' : userForm.emailTraduttore.$invalid && !userForm.emailTraduttore.$pristine }">
+                <label class="col-xs-2 control-label text-right">e-mail*</label>
+								<span class="col-sm-4">
+									<input type="email" name="emailTraduttore" class="form-control" ng-model="emailTraduttore" required>
+								</span>
+              </div>
+            </div>
+
             <!-- birthdayTraduttore -->
             <div class="form-group row" ng-show="!editMode">
               <label class="col-xs-3 control-label text-right">Birthday:</label>
@@ -96,10 +111,12 @@
             </div>
 
             <div class="row form-group" ng-show="editMode">
+              <div ng-class="{ 'has-error' : userForm.vat.$invalid && !userForm.vat.$pristine }">
                 <label class="col-xs-2 control-label text-right">VAT number</label>
 								<span class="col-sm-4">
 									<input type="text" name="vat" class="form-control" ng-model="vat">
 								</span>
+              </div>
             </div>
 
           </div>

@@ -19,6 +19,7 @@ home.controller('HomeTraduttoreCtrl',  ['$scope', '$rootScope', '$window', 'serv
     $scope.cognomeTraduttore = $rootScope.userData.COGNOME;
     $scope.birthdayTraduttore = $rootScope.userData.DATA_NASCITA;
     $scope.cittaTraduttore = $rootScope.userData.CITTA;
+    $scope.emailTraduttore = $rootScope.userData.EMAIL;
     $scope.vat = $rootScope.userData.VAT;
 
     //tiro su la codetable delle città
@@ -151,7 +152,8 @@ home.controller('HomeTraduttoreCtrl',  ['$scope', '$rootScope', '$window', 'serv
         var temp_country= ($scope.countryTraduttore===null) ? null : $scope.countryTraduttore.DESCRIZIONE;
         services.getFromRESTServer(
           "nomeTraduttore="+$scope.nomeTraduttore+"&cognomeTraduttore="+$scope.cognomeTraduttore+"&birthdayTraduttore="+$scope.birthdayTraduttore+
-          "&citta="+$scope.cittaTraduttore+"&country="+temp_country + "&mothertongueTraduttore=" + temp_mothertongue + "&vat=" + $scope.vat + "&ruolo=TRADUTTORE" +
+          "&citta="+$scope.cittaTraduttore+"&country="+temp_country + "&mothertongueTraduttore=" + temp_mothertongue +
+          "&email=" + $scope.emailTraduttore + "&vat=" + $scope.vat + "&ruolo=TRADUTTORE" +
           "&id=" + $rootScope.userData.ID,"updateProfile")
           .success(function (data) {
             if(data.jsonError != null || data.errCode != null)

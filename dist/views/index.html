@@ -51,7 +51,7 @@
           <a href=#><img style=vertical-align:top src=images/logo.png width=80></a>
         </li>
         <li ng-show="isLogged && userData.RUOLO=='TRADUTTORE'">
-          <a href=#/home_traduttore ng-click="showWorkarea=false;">Il mio Profilo</a>
+          <a href=#/home_traduttore ng-click="showWorkarea=false;">My account</a>
         </li>
         <li ng-class="{blink_me:userData.HAS_NEW_MESSAGE=='Y'}" ng-show="isLogged && userData.RUOLO=='TRADUTTORE'">
           <a href=#/jobs_traduttore ng-click="showWorkarea=false;"><img ng-src="{{userData.HAS_NEW_MESSAGE=='Y' ? '/images/new_icon_speech.png' :
@@ -61,7 +61,13 @@
           <a href="">Workarea</a>
         </li>
         <li ng-show="isLogged && userData.RUOLO=='AGENZIA'">
-          <a href=#/profile_agenzia ng-click="showWorkarea=false;">Il mio Profilo</a>
+          <a href=#/home_agenzia ng-click="showWorkarea=false;">My account</a>
+        </li>
+        <li ng-show="isLogged && userData.RUOLO=='AGENZIA'">
+          <a href=#/jobs_agenzia ng-click="showWorkarea=false;">Jobs</a>
+        </li>
+        <li ng-show="isLogged && userData.RUOLO=='AGENZIA' && showWorkarea">
+          <a href=#/workarea_agenzia>Workarea</a>
         </li>
       </ul>
     </div>
@@ -119,8 +125,6 @@
 
 
 
-
-<script src=scripts/app.js></script>
 <script src=scripts/app.js></script>
 <script src=scripts/services.js></script>
 <script src=scripts/jquery.easing.min.js></script>
@@ -132,7 +136,8 @@
 <script src=scripts/controllers/traduttore/workarea.js></script>
 <script src=scripts/sjcl.js></script>
 <script src=scripts/common.js></script>
-<script src=scripts/grayscale.js></script>
+<script src=scripts/readmore.min.js></script>
+<script src=scripts/explico.js></script>
 <script src=scripts/upload.js></script>
 <script src=scripts/angular-file-upload.js></script>
 <script src=scripts/bootstrap-notify.js></script>
