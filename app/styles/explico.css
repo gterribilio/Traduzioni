@@ -230,3 +230,13 @@ article {
 }
 
 /**************** END READMORE ****************/
+
+/**************** OVERRIDE SLIDER PROPERTY ****************/
+
+.jslider div.jslider-value {color:white; background-color: transparent;}
+
+.jslider div.jslider-label {color:white!important;}
+
+/**************** END OVERRIDE SLIDER PROPERTY ****************/
+
+

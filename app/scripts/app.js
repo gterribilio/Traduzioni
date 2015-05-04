@@ -16,6 +16,7 @@ var app = angular
     'HomeCtrlModule',
     'HomeCtrlTraduttoreModule',
     'HomeCtrlAgenziaModule',
+    'SearchCtrlAgenziaModule',
     'DirectivesModule',
     'JobsCtrlTraduttoreModule',
     'fileUpload'

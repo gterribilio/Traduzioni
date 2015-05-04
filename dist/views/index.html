@@ -23,6 +23,8 @@
   <link href=styles/explico.css rel=stylesheet>
   <link href=styles/home_traduttore.css rel=stylesheet>
   <link rel=stylesheet href="styles/animate.css">
+  <link rel=stylesheet href="styles/bootstrap-datepicker3.css">
+
   
 
   <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel=stylesheet type=text/css>
@@ -61,13 +63,13 @@
           <a href="">Workarea</a>
         </li>
         <li ng-show="isLogged && userData.RUOLO=='AGENZIA'">
-          <a href=#/home_agenzia ng-click="showWorkarea=false;">My account</a>
+          <a href=#/home_agenzia>My account</a>
         </li>
         <li ng-show="isLogged && userData.RUOLO=='AGENZIA'">
-          <a href=#/jobs_agenzia ng-click="showWorkarea=false;">Jobs</a>
+          <a href=#/search_agenzia>Search</a>
         </li>
-        <li ng-show="isLogged && userData.RUOLO=='AGENZIA' && showWorkarea">
-          <a href=#/workarea_agenzia>Workarea</a>
+        <li ng-show="isLogged && userData.RUOLO=='AGENZIA'">
+          <a href=#/jobs_agenzia>Jobs</a>
         </li>
       </ul>
     </div>
@@ -133,6 +135,7 @@
 <script src=scripts/controllers/traduttore/home_traduttore.js></script>
 <script src=scripts/controllers/traduttore/jobs_traduttore.js></script>
 <script src=scripts/controllers/agenzia/home_agenzia.js></script>
+<script src=scripts/controllers/agenzia/search_agenzia.js></script>
 <script src=scripts/controllers/traduttore/workarea.js></script>
 <script src=scripts/sjcl.js></script>
 <script src=scripts/common.js></script>
@@ -141,10 +144,6 @@
 <script src=scripts/upload.js></script>
 <script src=scripts/angular-file-upload.js></script>
 <script src=scripts/bootstrap-notify.js></script>
-
-
-
-
-
+<script src=scripts/bootstrap-datepicker.js></script>
 <script src=ckeditor/ckeditor.js></script>
 
