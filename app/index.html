@@ -38,7 +38,7 @@
   <img id="loading" src="images/gif-load.gif"/>
 </div>
 
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="height:70px;">
+<nav class='navbar navbar-custom navbar-fixed-top' role='navigation' style='height:70px;'>
   <div class="container">
     <!-- Collect the nav links, forms, and other content for toggling -->
 
@@ -84,7 +84,7 @@
           <a class="page-scroll" ng-click="showLogin=true;" href="#login">Sign In</a>
         </li>
         <li ng-show="isLogged">
-          <a class="page-scroll" ng-click="doLogout();" href="/">Logout <span class="glyphicon glyphicon-share-alt"></span></a>
+          <a class='page-scroll' ng-click='doLogout();' href='' >Logout <span class="glyphicon glyphicon-share-alt"></span></a>
         </li>
       </ul>
     </div>
@@ -148,7 +148,10 @@
 <script src="scripts/angular-file-upload.js"></script>
 <script src="scripts/bootstrap-notify.js"></script>
 <script src="scripts/bootstrap-datepicker.js"></script>
-<script src="ckeditor/ckeditor.js"></script>
 
 <!-- endbuild -->
 
+<!-- non minificare, altrimenti non funziona-->
+<script src="ckeditor/ckeditor.js"></script>
+</body>
+</html>

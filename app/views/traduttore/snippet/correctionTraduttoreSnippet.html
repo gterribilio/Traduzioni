@@ -6,7 +6,7 @@
 	<div ng-if="indeadlineCorrectionList == NULL" class="alert alert-warning" role="alert">At the moment you don't have any in deadline jobs! Can we help you?
 	</div>
 
-	<div ng-if="indeadlineCorrectionList != NULL">	
+	<div ng-if="indeadlineCorrectionList != NULL">
 		<table class="table table-condensed">
 			<thead>
 				<tr>
@@ -29,19 +29,20 @@
 					<td><p>{{indeadlineCorrectionItem.LINGUA_A}}</p></td>
 					<td><p>{{indeadlineCorrectionItem.NUM_KTR}} ktr</p></td>
 					<td><p>{{indeadlineCorrectionItem.PREZZO_TOT}}</p></td>
-					<td style="color:blue;font-weight:bold;">{{(indeadlineCorrectionItem.STATO=='DECLINED' || indeadlineCorrectionItem.STATO=='ENGAGMENT') ? 'COMPETITION' : indeadlineCorrectionItem.STATO}}</p></td>
+          <td style="color:blue;font-weight:bold;"><p>{{indeadlineCorrectionItem.STATO}}</p></td>
+					<!--<td style="color:blue;font-weight:bold;">{{(indeadlineCorrectionItem.STATO=='DECLINED' || indeadlineCorrectionItem.STATO=='ENGAGMENT') ? 'COMPETITION' : indeadlineCorrectionItem.STATO}}</p></td>-->
 				</tr>
 			</tbody>
 		</table>
 	</div> <!-- end ng-if -->
 
-	<div style="clear:both;"></div>	
+	<div style="clear:both;"></div>
 
 	<h4>Done</h4>
 	<div class="alert alert-info" role="alert">Here you can find all your <strong>not yet started or not yet finished correction jobs</strong>. Click on #ID to accept or view the job detail.</div>
 	<div ng-if="doneCorrectionList == NULL" class="alert alert-warning" role="alert">At the moment you don't have any done jobs! Can we help you?
 	</div>
-	<div ng-if="doneCorrectionList != NULL">						
+	<div ng-if="doneCorrectionList != NULL">
 		<table class="table table-condensed">
 			<thead>
 				<tr>

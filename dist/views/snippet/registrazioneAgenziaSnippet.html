@@ -1,94 +1,108 @@
 <div class="intro-body" ng-controller="registrazioneCtrl">
- <div class="row_shadow">
-  <h2>Create your Agency account</h2>
-</div>
-<form name="userForm" ng-submit="doRegisterAgenzia()" novalidate> <!--disabilito validazione html5-->
   <div class="row_shadow">
-    <!-- usernameAgenzia -->
-    <div class="form-group row" ng-class="{ 'has-error' : userForm.usernameAgenzia.$invalid && !userForm.usernameAgenzia.$pristine }">
-      <label class="col-xs-3 col-sm-offset-2 text-right control-label">Username*</label>
-      <div class="col-sm-3 col-xs-9">
-        <input type="text" name="usernameAgenzia" class="form-control" ng-model="usernameAgenzia" required ng-minlength="6" placeholder="">
-      </div>
-    </div>
-    <p ng-show="userForm.usernameAgenzia.$invalid && !userForm.usernameAgenzia.$pristine && userForm.usernameAgenzia.$error.minlength" class="help-block">Lo usernameAgenzia deve essere almeno di 6 caratteri</p>
-
-    <!-- passwordAgenzia -->
-    <div class="form-group row" ng-class="{ 'has-error' : userForm.passwordAgenzia.$invalid && !userForm.passwordAgenzia.$pristine }">
-      <label class="col-xs-3 col-sm-offset-2 text-right control-label">Password*</label>
-      <div class="col-sm-3 col-xs-9">
-        <input type="password" id="passwordAgenzia" name="passwordAgenzia" class="form-control" ng-model="passwordAgenzia" required placeholder="" ng-pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$/"><!--per trovare altre espressioni regolari andare su http://regexlib.com/Search.aspx?k=passwordAgenzia&AspxAutoDetectCookieSupport=1-->
-      </div>
-    </div>
-    <p ng-show="userForm.passwordAgenzia.$invalid && !userForm.passwordAgenzia.$pristine && userForm.passwordAgenzia.$error.pattern" class="help-block">La passwordAgenzia deve essere di almeno 4 caratteri, non più di 8 e deve includere almeno una lettera maiuscola, una minuscola e un numero</p>
-
-    <div class="form-group row" ng-class="{ 'has-error' : userForm.passwordAgenziaR.$invalid && !userForm.passwordAgenziaR.$pristine}">
-      <label class="col-xs-3 col-sm-offset-2 text-right control-label">Confirm password*</label>
-      <div class="col-sm-3 col-xs-9">
-        <input type="password" id="passwordAgenziaR" name="passwordAgenziaR" pw-check="passwordAgenzia" class="form-control" required ng-model="passwordAgenziaR" placeholder="" ng-pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$/">
-      </div>
-    </div>
-    <p ng-show="userForm.passwordAgenziaR.$invalid && !userForm.passwordAgenziaR.$pristine && userForm.passwordAgenziaR.$error.pattern" class="help-block">La password deve essere di almeno 4 caratteri, non più di 8 e deve includere almeno una lettera maiuscola, una minuscola e un numero</p>
-
-    <!-- controllo coincidenza passwordAgenzia -->
-    <div class="msg-block" ng-show="userForm.$error">
-      <p ng-show="userForm.passwordAgenziaR.$error.pwmatch" class="help-block">Le due password non coincidono</p>
-    </div>
-
-    <!-- emailAgenzia -->
-    <div class="form-group row" ng-class="{ 'has-error' : userForm.emailAgenzia.$invalid && !userForm.emailAgenzia.$pristine }">
-      <label class="col-xs-3 col-sm-offset-2 text-right control-label">Email*</label>
-      <div class="col-sm-3 col-xs-9">
-        <input type="email" name="emailAgenzia" class="form-control" ng-model="emailAgenzia" required placeholder="">
-      </div>
-    </div>
-    <p ng-show="userForm.emailAgenzia.$invalid && !userForm.emailAgenzia.$pristine" class="help-block">Inserisci una mail valida</p>
+    <h2>Create your Agency account</h2>
   </div>
-  <div style="clear:both;" />
+  <form name="userForm" ng-submit="doRegisterAgenzia()" novalidate> <!--disabilito validazione html5-->
+    <div class="row_shadow">
+      <!-- usernameAgenzia -->
+      <div class="form-group row" ng-class="{ 'has-error' : userForm.usernameAgenzia.$invalid && !userForm.usernameAgenzia.$pristine }">
+        <label class="col-xs-3 col-sm-offset-2 text-right control-label">Username*</label>
+        <div class="col-sm-3">
+          <input type="text" name="usernameAgenzia" class="form-control" ng-model="usernameAgenzia" required ng-minlength="6" placeholder="">
+        </div>
+        <div class="col-sm-4">
+          <p ng-show="userForm.usernameAgenzia.$invalid && !userForm.usernameAgenzia.$pristine && userForm.usernameAgenzia.$error.minlength" class="help-block">Lo usernameAgenzia deve essere almeno di 6 caratteri</p>
+        </div>
+      </div>
 
-  <div class="row_shadow">
-    <!-- AGENCY NAME -->
-    <div class="form-group row" ng-class="{ 'has-error' : userForm.nomeAgenzia.$invalid && !userForm.nomeAgenzia.$pristine }">
-      <label class="col-xs-3 col-sm-offset-2 text-right control-label text-right ">Agency Name*</label>
-      <div class="col-sm-3 col-xs-9">
-        <input type="text" name="nomeAgenzia" class="form-control" ng-model="nomeAgenzia" required placeholder="">
+      <!-- passwordAgenzia -->
+      <div class="form-group row" ng-class="{ 'has-error' : userForm.passwordAgenzia.$invalid && !userForm.passwordAgenzia.$pristine }">
+        <label class="col-xs-3 col-sm-offset-2 text-right control-label">Password*</label>
+        <div class="col-sm-3">
+          <input type="password" id="passwordAgenzia" name="passwordAgenzia" class="form-control" ng-model="passwordAgenzia" required placeholder="" ng-pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$/"><!--per trovare altre espressioni regolari andare su http://regexlib.com/Search.aspx?k=passwordAgenzia&AspxAutoDetectCookieSupport=1-->
+        </div>
+        <div class="col-sm-4">
+          <p ng-show="userForm.passwordAgenzia.$invalid && !userForm.passwordAgenzia.$pristine && userForm.passwordAgenzia.$error.pattern" class="help-block">La passwordAgenzia deve essere di almeno 4 caratteri, non più di 8 e deve includere almeno una lettera maiuscola, una minuscola e un numero</p>
+        </div>
+      </div>
+
+      <!-- passwordRAgenzia -->
+      <div class="form-group row" ng-class="{ 'has-error' : userForm.passwordAgenziaR.$invalid && !userForm.passwordAgenziaR.$pristine}">
+        <label class="col-xs-3 col-sm-offset-2 text-right control-label">Confirm password*</label>
+        <div class="col-sm-3">
+          <input type="password" id="passwordAgenziaR" name="passwordAgenziaR" pw-check="passwordAgenzia" class="form-control" required ng-model="passwordAgenziaR" placeholder="" ng-pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$/">
+        </div>
+        <div class="col-sm-4">
+          <span ng-show="userForm.passwordAgenziaR.$invalid && !userForm.passwordAgenziaR.$pristine && userForm.passwordAgenziaR.$error.pattern" class="help-block">La password deve essere di almeno 4 caratteri, non più di 8 e deve includere almeno una lettera maiuscola, una minuscola e un numero</span>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <!-- controllo coincidenza passwordAgenzia -->
+        <div class="msg-block col-xs-4 col-sm-offset-8" ng-show="userForm.$error">
+          <span ng-show="userForm.passwordAgenziaR.$error.pwmatch" class="help-block">Password mismatching</span>
+        </div>
+      </div>
+
+      <!-- emailAgenzia -->
+      <div class="form-group row" ng-class="{ 'has-error' : userForm.emailAgenzia.$invalid && !userForm.emailAgenzia.$pristine }">
+        <label class="col-xs-3 col-sm-offset-2 text-right control-label">Email*</label>
+        <div class="col-sm-3">
+          <input type="email" name="emailAgenzia" class="form-control" ng-model="emailAgenzia" required placeholder="">
+        </div>
+        <div class="col-sm-4">
+          <span ng-show="userForm.emailAgenzia.$invalid && !userForm.emailAgenzia.$pristine" class="help-block">Inserisci una mail valida</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row_shadow">
+      <!-- AGENCY NAME -->
+      <div class="form-group row" ng-class="{ 'has-error' : userForm.nomeAgenzia.$invalid && !userForm.nomeAgenzia.$pristine }">
+        <label class="col-xs-3 col-sm-offset-2 text-right control-label text-right ">Agency Name*</label>
+        <div class="col-sm-3">
+          <input type="text" name="nomeAgenzia" class="form-control" ng-model="nomeAgenzia" required placeholder="">
+        </div>
+        <div class="col-sm-4">
+          <span ng-show="userForm.nomeAgenzia.$invalid && !userForm.nomeAgenzia.$pristine" class="help-block">Required Field</span>
+        </div>
+      </div>
+
+      <!-- employeesAgenzia -->
+      <div class="form-group row">
+        <label class="col-xs-3 col-sm-offset-2 text-right control-label">Employees</label>
+        <div class="col-sm-3 col-xs-9">
+          <select class="form-control" name="employeeAgenzia" ng-model="employeeAgenzia" ng-options="employeeAgenzia.DESCRIZIONE for employeeAgenzia in employeesAgenzia"></select>
+        </div>
+      </div>
+
+      <!-- countryAgenzia -->
+      <div class="form-group row" ng-class="{ 'has-error' : userForm.countryAgenzia.$invalid && !userForm.countryAgenzia.$pristine }">
+        <label class="col-xs-3 col-sm-offset-2 text-right control-label">Country*</label>
+        <div class="col-sm-3 col-xs-9">
+          <!--<input type="text" name="countryAgenzia" class="form-control" ng-model="countryAgenzia" required placeholder="">-->
+          <select required class="form-control" name="countryAgenzia" ng-model="countryAgenzia" ng-options="countryAgenzia.DESCRIZIONE for countryAgenzia in cittaeAgenzia"></select>
+        </div>
+      </div>
+
+      <!-- websiteAgenzia -->
+      <div class="form-group row" ng-class="{ 'has-error' : userForm.websiteAgenzia.$invalid && !userForm.websiteAgenzia.$pristine }">
+        <label class="col-xs-3 col-sm-offset-2 text-right control-label text-right ">Website</label>
+        <div class="col-sm-3">
+          <input type="text" name="websiteAgenzia" class="form-control" ng-model="websiteAgenzia" ng-pattern="/\(?(?:(http|https|ftp):\/\/)?(?:((?:[^\W\s]|\.|-|[:]{1})+)@{1})?((?:www.)?(?:[^\W\s]|\.|-)+[\.][^\W\s]{2,4}|localhost(?=\/)|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(?::(\d*))?([\/]?[^\s\?]*[\/]{1})*(?:\/?([^\s\n\?\[\]\{\}\#]*(?:(?=\.)){1}|[^\s\n\?\[\]\{\}\.\#]*)?([\.]{1}[^\s\?\#]*)?)?(?:\?{1}([^\s\n\#\[\]]*))?([\#][^\s\n]*)?\)?/">
+        </div>
+        <div class="col-sm-4">
+          <span ng-show="userForm.websiteAgenzia.$invalid && !userForm.websiteAgenzia.$pristine" class="help-block">Invalid web address</span>
+        </div>
+      </div>
+
+      <div style="margin-top:10px" class="form-group">
+        <!-- Button -->
+        <div class="text-center">
+          <button type="submit" class="btn btn-lg btn-primary" ng-disabled="userForm.$invalid">GET STARTED</button>
+        </div>
       </div>
     </div>
-    <span ng-show="userForm.nomeAgenzia.$invalid && !userForm.nomeAgenzia.$pristine" class="help-block">Required Field</span>
-
-    <!-- employeesAgenzia -->
-    <div class="form-group row">
-      <label class="col-xs-3 col-sm-offset-2 text-right control-label">Employees</label>
-      <div class="col-sm-3 col-xs-9">
-        <select class="form-control" name="employeeAgenzia" ng-model="employeeAgenzia" ng-options="employeeAgenzia.DESCRIZIONE for employeeAgenzia in employeesAgenzia"></select>
-      </div>
-    </div>
-
-    <!-- countryAgenzia -->
-    <div class="form-group row" ng-class="{ 'has-error' : userForm.countryAgenzia.$invalid && !userForm.countryAgenzia.$pristine }">
-      <label class="col-xs-3 col-sm-offset-2 text-right control-label">Country*</label>
-      <div class="col-sm-3 col-xs-9">
-        <!--<input type="text" name="countryAgenzia" class="form-control" ng-model="countryAgenzia" required placeholder="">-->
-        <select class="form-control" name="countryAgenzia" ng-model="countryAgenzia" ng-options="countryAgenzia.DESCRIZIONE for countryAgenzia in cittaeAgenzia"></select>
-      </div>
-    </div>
-    <p ng-show="userForm.countryAgenzia.$invalid && !userForm.countryAgenzia.$pristine" class="help-block">Country is required</p>
-
-    <!-- websiteAgenzia -->
-    <div class="form-group row" ng-class="{ 'has-error' : userForm.websiteAgenzia.$invalid && !userForm.websiteAgenzia.$pristine }">
-      <label class="col-xs-3 col-sm-offset-2 text-right control-label text-right ">Website*</label>
-      <div class="col-sm-3 col-xs-9">
-        <input type="text" name="websiteAgenzia" class="form-control" ng-model="websiteAgenzia" required placeholder="">
-      </div>
-    </div>
-    <span ng-show="userForm.websiteAgenzia.$invalid && !userForm.websiteAgenzia.$pristine" class="help-block">Campo obbligatorio</span>
-
-    <div style="margin-top:10px" class="form-group">
-      <!-- Button -->
-      <div class="text-center">
-        <button type="submit" class="btn btn-lg btn-primary" ng-disabled="userForm.$invalid">GET STARTED</button>
-      </div>
-    </div>
-  </div>
-</form>
+  </form>
 </div>

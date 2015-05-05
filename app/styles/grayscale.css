@@ -273,7 +273,7 @@ a:focus {
 }
 
 #about {
-    background: url(../images/about.jpg) no-repeat center center scroll;
+    background: url(../images/about.jpg) no-repeat 0 0;
 }
 
 #map {

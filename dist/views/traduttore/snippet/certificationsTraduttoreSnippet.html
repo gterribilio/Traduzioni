@@ -18,16 +18,16 @@
 					<div class="row form-group">
 						<!-- DATE -->
 						<div ng-class="{ 'has-error' : certificationForm.date.$invalid && !certificationForm.date.$pristine }">
-							<label for="date" class="col-xs-2 control-label text-right">Date: </label>
+							<label for="date" class="col-xs-2 control-label text-right">Date</label>
 							<span class="col-sm-4">
-								<input type="date" required name="date" ng-model="date" class="form-control" placeholder="" ng-pattern="/^((\d{4})-(\d{2})-(\d{2}))$/" data-toggle="tooltip" data-placement="right" title="Format dd/mm/yyyy"/>
+								<input type="date" name="date" ng-model="date" class="form-control" placeholder="" ng-pattern="/^((\d{4})-(\d{2})-(\d{2}))$/" data-toggle="tooltip" data-placement="right" title="Format dd/mm/yyyy"/>
 							</span>
 						</div>
 					</div>
 					<div class="row form-group">
 						<!-- CERTIFICATION -->
 						<div ng-class="{ 'has-error' : certificationForm.certification.$invalid && !certificationForm.certification.$pristine }">
-							<label for="certification" class="col-xs-2 control-label text-right">Certification: </label>
+							<label for="certification" class="col-xs-2 control-label text-right">Certification*</label>
 							<span class="col-sm-4"><input required type="text" name="certification" ng-model="certification" class="form-control" data-toggle="tooltip" data-placement="right" title="Name of Certification"/></span>
 						</div>
 					</div>

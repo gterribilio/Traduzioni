@@ -2,8 +2,8 @@
 
 var home = angular.module('HomeCtrlModule', []);
 
-home.controller('HomeCtrl',  ['$scope', '$rootScope', '$window', 'services', '$location', '$anchorScroll', 'customFactory',
-  function ($scope, $rootScope, $window, services, $location, $anchorScroll, customFactory) {
+home.controller('HomeCtrl',  ['$scope', '$rootScope', '$window', 'services', '$location', '$anchorScroll', 'customFactory', '$timeout',
+  function ($scope, $rootScope, $window, services, $location, $anchorScroll, customFactory, $timeout) {
 
 
     // questa funzione di init permette ogni qualvolta l'utente esce senza chiudere la pagina in cui si trova di mandarlo alla home da loggato nel caso
@@ -77,9 +77,9 @@ home.controller('HomeCtrl',  ['$scope', '$rootScope', '$window', 'services', '$l
     } //end doAccedi
 
     $rootScope.doLogout = function() {
-      localStorage.clear();
       $location.path("/");
       $rootScope.isLogged = false;
+      localStorage.clear();
     };
 
     $rootScope.doJobsTraduttore = function() {

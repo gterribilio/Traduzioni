@@ -6,7 +6,7 @@
 	<div ng-if="indeadlineTranslationList == NULL" class="alert alert-warning" role="alert">At the moment you don't have any in deadline jobs! Can we help you?
 	</div>
 
-	<div ng-if="indeadlineTranslationList != NULL">	
+	<div ng-if="indeadlineTranslationList != NULL">
 		<table class="table table-condensed">
 			<thead>
 				<tr>
@@ -29,7 +29,9 @@
 					<td><p>{{indeadlineItem.LINGUA_A}}</p></td>
 					<td><p>{{indeadlineItem.NUM_KTR}} ktr</p></td>
 					<td><p>{{indeadlineItem.PREZZO_TOT}}</p></td>
-					<td style="color:blue;font-weight:bold;">{{(indeadlineItem.STATO=='DECLINED' || indeadlineItem.STATO=='ENGAGMENT') ? 'COMPETITION' : indeadlineItem.STATO}}</p></td>
+					<!--<td style="color:blue;font-weight:bold;">{{(indeadlineItem.STATO=='DECLINED' || indeadlineItem.STATO=='ENGAGMENT') ? 'COMPETITION' : indeadlineItem.STATO}}</p>
+					</td>-->
+          <td style="color:blue;font-weight:bold;"><p>{{indeadlineItem.STATO}}</p></td>
 				</tr>
 			</tbody>
 		</table>
@@ -39,7 +41,7 @@
 	<div class="alert alert-info" role="alert">Here you can find all your <strong>not yet started or not yet finished translation jobs</strong>. Click on #ID to accept or view the job detail.</div>
 	<div ng-if="doneTranslationList == NULL" class="alert alert-warning" role="alert">At the moment you don't have any done jobs! Can we help you?
 	</div>
-	<div ng-if="doneTranslationList != NULL">						
+	<div ng-if="doneTranslationList != NULL">
 		<table class="table table-condensed">
 			<thead>
 				<tr>

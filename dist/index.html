@@ -12,7 +12,7 @@
   <meta name="author" content="">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <link rel="stylesheet" href="styles/vendor.476df695.css">
-  <link rel="stylesheet" href="styles/main.18527d11.css">
+  <link rel="stylesheet" href="styles/main.dc5f4f0d.css">
 
 </head>
 <body ng-app="lemietraduzioniApp" data-spy="scroll" data-target=".navbar-fixed-top.navbar-fixed-bottom">
@@ -21,7 +21,7 @@
   <img id="loading" src="images/gif-load.gif"/>
 </div>
 
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="height:70px;">
+<nav class='navbar navbar-custom navbar-fixed-top' role='navigation' style='height:70px;'>
   <div class="container">
     <!-- Collect the nav links, forms, and other content for toggling -->
 
@@ -67,7 +67,7 @@
           <a class="page-scroll" ng-click="showLogin=true;" href="#login">Sign In</a>
         </li>
         <li ng-show="isLogged">
-          <a class="page-scroll" ng-click="doLogout();" href="/">Logout <span class="glyphicon glyphicon-share-alt"></span></a>
+          <a class='page-scroll' ng-click='doLogout();' href='' >Logout <span class="glyphicon glyphicon-share-alt"></span></a>
         </li>
       </ul>
     </div>
@@ -100,5 +100,9 @@
 
 <script src="scripts/vendor.323cde0a.js"></script>
 
-<script src="scripts/scripts.c26c6547.js"></script>
+<script src="scripts/scripts.ec029faf.js"></script>
 
+<!-- non minificare, altrimenti non funziona-->
+<script src="ckeditor/ckeditor.js"></script>
+</body>
+</html>

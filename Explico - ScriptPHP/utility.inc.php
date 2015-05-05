@@ -6,7 +6,7 @@ $GLOBALS["statiPrenotazione"] = array (
 	"ENGAGMENT" => "ENGAGMENT", 
 	"COMPETITION" => "COMPETITION", 
 	"ACTIVE" => "ACTIVE",
-	"REVISION" => "REVISION", 
+	"REVIEW" => "REVIEW", 
 	"IN APPROVAL" => "IN APPROVAL", 
 	"CLOSED" => "CLOSED");
 

@@ -1,4 +1,4 @@
-<form name="userForm" novalidate>
+<form name="profileForm" novalidate>
   <div class="row_shadow">
     <h2>Your Profile</h2>
     <div class="panel panel-default well col-xs-10" style="opacity:0.9;">
@@ -21,7 +21,7 @@
               <span class="col-sm-4">{{userData.NOME}}</span>
             </div>
             <div class="row form-group" ng-show="editMode">
-              <div ng-class="{ 'has-error' : userForm.nomeAgenzia.$invalid && !userForm.nomeAgenzia.$pristine }">
+              <div ng-class="{ 'has-error' : profileForm.nomeAgenzia.$invalid && !profileForm.nomeAgenzia.$pristine }">
                 <label class="col-xs-2 control-label text-right ">Agency Name*</label>
                 <span class="col-sm-4"><input type="text" name="nomeAgenzia" class="form-control" ng-model="nomeAgenzia" required/></span>
               </div>
@@ -49,14 +49,14 @@
             </div>
 
             <div class="row form-group" ng-show="editMode">
-              <div ng-class="{ 'has-error' : userForm.indirizzoAgenzia.$invalid && !userForm.indirizzoAgenzia.$pristine }">
+              <div ng-class="{ 'has-error' : profileForm.indirizzoAgenzia.$invalid && !profileForm.indirizzoAgenzia.$pristine }">
                 <label class="col-xs-2 control-label text-right">Address*</label>
 								<span class="col-sm-4">
 									<input type="text" name="indirizzoAgenzia" class="form-control" ng-model="indirizzoAgenzia" required>
 								</span>
               </div>
 
-              <div ng-class="{ 'has-error' : userForm.cittaAgenzia.$invalid && !userForm.cittaAgenzia.$pristine }">
+              <div ng-class="{ 'has-error' : profileForm.cittaAgenzia.$invalid && !profileForm.cittaAgenzia.$pristine }">
                 <label class="col-xs-2 control-label text-right">City*</label>
 								<span class="col-sm-4">
 									<input type="text" name="cittaAgenzia" class="form-control" ng-model="cittaAgenzia" required>
@@ -74,17 +74,17 @@
             </div>
 
             <div class="row form-group" ng-show="editMode">
-              <div ng-class="{ 'has-error' : userForm.countryAgenzia.$invalid && !userForm.countryAgenzia.$pristine }">
+              <div ng-class="{ 'has-error' : profileForm.countryAgenzia.$invalid && !profileForm.countryAgenzia.$pristine }">
                 <label class="col-xs-2 text-right control-label">Country*</label>
                 <div class="col-sm-4">
                   <select class="form-control" name="countryAgenzia" ng-model="countryAgenzia" ng-options="countryAgenzia.DESCRIZIONE for countryAgenzia in countriesAgenzia" required></select>
                 </div>
               </div>
 
-              <div ng-class="{ 'has-error' : userForm.codicePostaleAgenzia.$invalid && !userForm.codicePostaleAgenzia.$pristine }">
+              <div ng-class="{ 'has-error' : profileForm.codicePostaleAgenzia.$invalid && !profileForm.codicePostaleAgenzia.$pristine }">
                 <label class="col-xs-2 control-label text-right">Zip Code*</label>
 								<span class="col-sm-4">
-									<input type="text" name="codicePostaleAgenzia" class="form-control" ng-model="codicePostaleAgenzia" required>
+									<input type="text" name="codicePostaleAgenzia" class="form-control" ng-pattern="/^[0-9]+$/" ng-model="codicePostaleAgenzia" required>
 								</span>
               </div>
             </div>
@@ -96,10 +96,10 @@
             </div>
 
             <div class="row form-group" ng-show="editMode">
-              <div ng-class="{ 'has-error' : userForm.telefonoAgenzia.$invalid && !userForm.telefonoAgenzia.$pristine }">
-                <label class="col-xs-2 control-label text-right">Phone*</label>
+              <div ng-class="{ 'has-error' : profileForm.telefonoAgenzia.$invalid && !profileForm.telefonoAgenzia.$pristine }">
+                <label class="col-xs-2 control-label text-right">Phone</label>
 								<span class="col-sm-4">
-									<input type="tel" name="telefonoAgenzia" class="form-control" ng-model="telefonoAgenzia" required>
+									<input type="tel" name="telefonoAgenzia" class="form-control" ng-model="telefonoAgenzia" ng-pattern="/^[0-9]+$/">
 								</span>
               </div>
             </div>
@@ -111,7 +111,7 @@
             </div>
 
             <div class="row form-group" ng-show="editMode">
-              <div ng-class="{ 'has-error' : userForm.emailAgenzia.$invalid && !userForm.emailAgenzia.$pristine }">
+              <div ng-class="{ 'has-error' : profileForm.emailAgenzia.$invalid && !profileForm.emailAgenzia.$pristine }">
                 <label class="col-xs-2 control-label text-right">e-mail*</label>
 								<span class="col-sm-4">
 									<input type="email" name="emailAgenzia" class="form-control" ng-model="emailAgenzia" required>
@@ -126,10 +126,10 @@
             </div>
 
             <div class="row form-group" ng-show="editMode">
-              <div ng-class="{ 'has-error' : userForm.webAgenzia.$invalid && !userForm.webAgenzia.$pristine }">
-                <label class="col-xs-2 control-label text-right">Web*</label>
+              <div ng-class="{ 'has-error' : profileForm.webAgenzia.$invalid && !profileForm.webAgenzia.$pristine }">
+                <label class="col-xs-2 control-label text-right">Web</label>
 								<span class="col-sm-4">
-									<input type="text" name="webAgenzia" class="form-control" ng-model="webAgenzia" required>
+									<input type="text" name="webAgenzia" class="form-control" ng-pattern="/\(?(?:(http|https|ftp):\/\/)?(?:((?:[^\W\s]|\.|-|[:]{1})+)@{1})?((?:www.)?(?:[^\W\s]|\.|-)+[\.][^\W\s]{2,4}|localhost(?=\/)|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(?::(\d*))?([\/]?[^\s\?]*[\/]{1})*(?:\/?([^\s\n\?\[\]\{\}\#]*(?:(?=\.)){1}|[^\s\n\?\[\]\{\}\.\#]*)?([\.]{1}[^\s\?\#]*)?)?(?:\?{1}([^\s\n\#\[\]]*))?([\#][^\s\n]*)?\)?/" ng-model="webAgenzia">
 								</span>
               </div>
             </div>
@@ -141,7 +141,7 @@
             </div>
 
             <div class="row form-group" ng-show="editMode">
-              <div ng-class="{ 'has-error' : userForm.vat.$invalid && !userForm.vat.$pristine }">
+              <div ng-class="{ 'has-error' : profileForm.vat.$invalid && !profileForm.vat.$pristine }">
               <label class="col-xs-2 control-label text-right">VAT number*</label>
 								<span class="col-sm-4">
 									<input type="text" name="vat" class="form-control" ng-model="vat" required>
@@ -160,7 +160,7 @@
         </div>
 
         <div ng-show="editMode" class="text-right" style="margin-top:10px;">
-          <button type="submit" class="btn btn-lg btn-success btn-sm" ng-click="editMode=false;doUpdateProfileAgenzia();" ng-disabled="userForm.$invalid">
+          <button type="submit" class="btn btn-lg btn-success btn-sm" ng-click="editMode=false;doUpdateProfileAgenzia();" ng-disabled="profileForm.$invalid">
             <i class="fa fa-edit"></i> Confirm
           </button>
           <button type="submit" class="btn btn-lg btn-success btn-sm" ng-click="editMode=false;">

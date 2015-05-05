@@ -180,7 +180,11 @@ home.controller('HomeTraduttoreCtrl',  ['$scope', '$rootScope', '$window', 'serv
         .success(function (data) {
           if(data.jsonError != null || data.errCode != null)
           {
-            alert (data.errMsg);
+            //alert (data.errMsg);
+            $.notify(data.errMsg,{
+              type: 'danger',
+              allow_dismiss: true
+            });
           }
           else {
             $scope.pairList = data;
@@ -212,7 +216,10 @@ home.controller('HomeTraduttoreCtrl',  ['$scope', '$rootScope', '$window', 'serv
         .success(function (data) {
           if(data.jsonError != null || data.errCode != null)
           {
-            alert (data.errMsg);
+            $.notify(data.errMsg,{
+              type: 'danger',
+              allow_dismiss: true
+            });
           }
           else {
             $scope.educationList = data;
@@ -246,7 +253,10 @@ home.controller('HomeTraduttoreCtrl',  ['$scope', '$rootScope', '$window', 'serv
         .success(function (data) {
           if(data.jsonError != null || data.errCode != null)
           {
-            alert (data.errMsg);
+            $.notify(data.errMsg,{
+              type: 'danger',
+              allow_dismiss: true
+            });
           }
           else {
             $scope.certificationList = data;
