@@ -5,13 +5,14 @@
   <form name=userForm ng-submit=doRegisterAgenzia() novalidate> 
     <div class=row_shadow>
       
-      <div class="form-group row" ng-class="{ 'has-error' : userForm.usernameAgenzia.$invalid && !userForm.usernameAgenzia.$pristine }">
+      <div class="form-group row" ng-class="{ 'has-error' : userForm.usernameAgenzia.$invalid && !userForm.usernameAgenzia.$pristine || usernamePresent }">
         <label class="col-xs-3 col-sm-offset-2 text-right control-label">Username*</label>
         <div class=col-sm-3>
-          <input name=usernameAgenzia class=form-control ng-model=usernameAgenzia required ng-minlength=6 placeholder="">
+          <input name=usernameAgenzia class=form-control ng-model=usernameAgenzia ng-blur="checkUsername(usernameAgenzia,'A')" required ng-minlength=6 placeholder="">
         </div>
         <div class=col-sm-4>
-          <p ng-show="userForm.usernameAgenzia.$invalid && !userForm.usernameAgenzia.$pristine && userForm.usernameAgenzia.$error.minlength" class=help-block>Lo usernameAgenzia deve essere almeno di 6 caratteri</p>
+          <span ng-show="userForm.usernameAgenzia.$invalid && !userForm.usernameAgenzia.$pristine && userForm.usernameAgenzia.$error.minlength" class=help-block>Lo usernameAgenzia deve essere almeno di 6 caratteri</span>
+          <span ng-show=usernamePresent class=help-block>Username already present</span>
         </div>
       </div>
 

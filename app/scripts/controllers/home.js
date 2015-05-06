@@ -5,6 +5,10 @@ var home = angular.module('HomeCtrlModule', []);
 home.controller('HomeCtrl',  ['$scope', '$rootScope', '$window', 'services', '$location', '$anchorScroll', 'customFactory', '$timeout',
   function ($scope, $rootScope, $window, services, $location, $anchorScroll, customFactory, $timeout) {
 
+    $rootScope.showLogin=false;
+    $rootScope.showWorkarea=false;
+
+    $scope.usernamePresent=false;
 
     // questa funzione di init permette ogni qualvolta l'utente esce senza chiudere la pagina in cui si trova di mandarlo alla home da loggato nel caso
     //in cui nel session storage ci siano ancora i dati
@@ -14,12 +18,7 @@ home.controller('HomeCtrl',  ['$scope', '$rootScope', '$window', 'services', '$l
         if($rootScope.userData.RUOLO=='TRADUTTORE') $location.path("/home_traduttore");
         else $location.path("/home_agenzia");
       }
-
     })(); //end function
-
-    $rootScope.showLogin=false;
-
-    $rootScope.showWorkarea=false;
 
     //tiro su la codetable del numero degli impiegati per agenzia
     services.getCodeTable("codetable=1").success(function (data){
@@ -178,5 +177,19 @@ home.controller('registrazioneCtrl',  ['$scope', '$rootScope', '$window', 'servi
           console.log("finally finished repos");
         });
     } //end doAccedi
+
+    $scope.checkUsername = function(username,profile) {
+      services.getFromRESTServer(
+        "username="+(profile=='A' ? $scope.usernameAgenzia : $scope.usernameTraduttore),"checkUsername")
+        .success(function (data) {
+          if(data.jsonError != null || data.errCode != null)
+          {
+            $scope.usernamePresent=true;
+          }
+          else {
+            $scope.usernamePresent=false;
+          }
+        });
+    }
 
   }]);//end Controller

@@ -1,6 +1,6 @@
 <?php
 
-//Includo il file che contiene le funzioni per la connessione MySQL
+//Includo il file che contiene le funzioni per la connessione 
 require_once("./mysql.inc.php");
 require_once("./security.php");
 
@@ -41,6 +41,12 @@ switch ($azione) {
 		$subject=addslashes($_GET['subject']);
 		$text=$_GET['text'];
 		sendMail($email,$subject,$text);
+	break;
+	
+	//checkUsername
+	case "checkUsername":
+		$username=$_GET['username'];
+		$query="SELECT * FROM UTENTE WHERE BINARY USERNAME='".$username."'";
 	break;
 
 	//aggiorna lo status della traduzione
@@ -370,10 +376,9 @@ switch ($azione) {
 	break;
 }//end switch azione
 
-//il metodo execQuery si troverà su "mysql.inc.php" e VIENE ESEGUITO SEMPRE ALMENO UNA VOLTA
+//il metodo execQuery si troverà su "mysql.inc.php"
 if(!empty($query)) {
 	$result = execQuery($query, $nomeDB);
-
 	while($row = @mysql_fetch_array($result, MYSQL_ASSOC))
 	{
 		array_push($json, $row);
@@ -412,7 +417,7 @@ if($azione=="login" && count($json)>0) {
 else if($azione=="register") {
 //SE LA SELECT DI PRIMA HA GIA' TORNATO RISULTATI, SIGNIFICA CHE ESISTE GIA' L'UTENTE
 	if(count($json)>0) {
-		$json = array("errCode"=>"406", "errMsg"=>"Username ".$username." presente.");
+		$json = array("errCode"=>"406", "errMsg"=>"Username ".$username." already present.");
 	}
 	else {
 
@@ -457,6 +462,13 @@ else if($azione=="register") {
 		else {
 //TODO se ci saranno altri ruoli
 		}
+		$json = array("Risultato"=>"OK");
+	}
+} else if($azione=="checkUsername") {
+	if(count($json)>0) {
+		$json = array("errCode"=>"408", "errMsg"=>"Username ".$username." already present");
+	}
+	else {
 		$json = array("Risultato"=>"OK");
 	}
 }

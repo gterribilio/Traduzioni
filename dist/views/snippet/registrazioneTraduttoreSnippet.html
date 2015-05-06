@@ -5,13 +5,14 @@
   <form name="userForm" ng-submit="doRegisterTraduttore()" novalidate> <!--disabilito validazione html5-->
     <div class="row_shadow">
       <!-- usernameTraduttore -->
-      <div class="form-group row" ng-class="{ 'has-error' : userForm.usernameTraduttore.$invalid && !userForm.usernameTraduttore.$pristine }">
+      <div class="form-group row" ng-class="{ 'has-error' : (userForm.usernameTraduttore.$invalid && !userForm.usernameTraduttore.$pristine) || usernamePresent }">
         <label class="col-xs-3 col-sm-offset-2 text-right control-label">Username*</label>
         <div class="col-sm-3">
-          <input type="text" name="usernameTraduttore" class="form-control" ng-model="usernameTraduttore" required ng-minlength="6" placeholder="">
+          <input type="text" name="usernameTraduttore" class="form-control" ng-blur="checkUsername(usernameTraduttore,'T')" ng-model="usernameTraduttore" required ng-minlength="6" placeholder="">
         </div>
         <div class="col-sm-4">
           <span ng-show="userForm.usernameTraduttore.$invalid && !userForm.usernameTraduttore.$pristine && userForm.usernameTraduttore.$error.minlength" class="help-block">Lo username deve essere almeno di 6 caratteri</span>
+          <span ng-show="usernamePresent" class="help-block">Username already present</span>
         </div>
       </div>
 

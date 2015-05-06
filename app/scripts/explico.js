@@ -177,3 +177,7 @@ function init() {
         icon: image
     });*/
 }
+
+function isEmpty(str) {
+  return (!str || 0 === str.length);
+}
