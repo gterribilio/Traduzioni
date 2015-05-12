@@ -1,0 +1,136 @@
+"{"
+_key ":"~","
+dateOfBirth ":{"
+day ":20,"
+month ":8,"
+year ":1986},"
+educations ":{"
+_total ":2,"
+values ":[{"
+degree ":"
+Laurea ","
+endDate ":{"
+year ":2010},"
+fieldOfStudy ":"
+Scienze politiche ","
+id ":63422358,"
+schoolName ":"
+Università degli Studi di Torino ","
+startDate ":{"
+year ":2006}},{"
+degree ":"
+Diploma ","
+endDate ":{"
+year ":2006},"
+fieldOfStudy ":"
+storia, geografia, matematica, informatica, latino, greco, italiano ","
+id ":65687520,"
+schoolName ":"
+Liceo Classico\ "v. Gioberti\"", "startDate": {
+  "year": 2000
+}
+}]
+}, "emailAddress": "luca.sapone86@gmail.com", "firstName": "Luca", "headline": "Web Marketing Assistant", "industry": "Information Technology and Services", "lastName": "Sapone", "location": {
+  "country": {
+    "code": "it"
+  },
+  "name": "Turin Area, Italy"
+}, "pictureUrl": "https://media.licdn.com/mpr/mprx/0_8D2tXJxwUoqBQFws8Ef3XUa9REGRkkwsCW4DXs7wX79oUhyV2IpYEVR5zXCLF_EnTaauIjj_FyVp", "positions": {
+  "_total": 5,
+    "values": [{
+    "company": {
+      "id": 78630,
+      "industry": "Information Technology and Services",
+      "name": "Ulixe Group",
+      "size": "51-200 employees",
+      "ticker": "",
+      "type": "Privately Held"
+    },
+    "endDate": {
+      "month": 10,
+      "year": 2014
+    },
+    "isCurrent": false,
+    "startDate": {
+      "month": 3,
+      "year": 2014
+    },
+    "summary": "Durante questa esperienza ho potuto gestire le campagne AdWords di due rami della holding Ulixe Group. Nei mesi di gestione della campagna ho ottenuto risultati molto soddisfacenti riducendo i costi di pubblicazione del 48%, tramite strategie di segmentazione dei target sempre più definiti ed ottimizzazione delle keywords, incrementando il ROI derivante da questo strumento. La mia attività comportava report diretti al Direttore Marketing ed al CEO.\nHo inoltre preso parte alla gestione delle Public Relations e delle trattative con gli agenti di commercio (tra cui LinkedIn)",
+    "title": "Web Marketing Assistant"
+  }, {
+    "company": {
+      "id": 2731524,
+      "industry": "Publishing",
+      "name": "Visionborne",
+      "size": "11-50 employees",
+      "ticker": "",
+      "type": "Public Company"
+    },
+    "endDate": {
+      "month": 10,
+      "year": 2014
+    },
+    "isCurrent": false,
+    "startDate": {
+      "month": 3,
+      "year": 2014
+    },
+    "summary": "Durante questa esperienza ho potuto approfondire le mie conoscenze del marketing ed attuare campagne pubblicitarie sui vari social networks (Facebook, LinkedIn, Twitter e  Google+) e canali di streaming video (Youtube, Vimeo) analizzando con continuità le evolutive delle campagne “a pagamento” e il ROI che comportavano queste attività di SEM.\nHo gestito le relazioni con alcune aziende americane e svolto con esse trattative per organizzare una presentazione durante uno dei principali eventi del settore.comics.\nHo potuto partecipare alle attività di ottimizzazione per le ricerche sui motori di ricerca (SEO).",
+    "title": "Web Marketing Assistant"
+  }, {
+    "company": {
+      "id": 3046,
+      "industry": "Supermarkets",
+      "name": "Carrefour",
+      "size": "10,001+ employees",
+      "ticker": "",
+      "type": "Public Company"
+    },
+    "endDate": {
+      "month": 3,
+      "year": 2014
+    },
+    "isCurrent": false,
+    "startDate": {
+      "month": 5,
+      "year": 2007
+    },
+    "summary": "impiegato di 4°livello nei reparti: casse, pescheria ed ortofrutta, scatolame, salumi/latticini,surgelati",
+    "title": "Impiegato"
+  }, {
+    "company": {
+      "name": "Sansilvestro Bar"
+    },
+    "endDate": {
+      "month": 10,
+      "year": 2013
+    },
+    "isCurrent": false,
+    "startDate": {
+      "month": 1,
+      "year": 2013
+    },
+    "title": "Gestrore"
+  }, {
+    "company": {
+      "id": 3046,
+      "industry": "Supermarkets",
+      "name": "Carrefour",
+      "size": "10,001+ employees",
+      "ticker": "",
+      "type": "Public Company"
+    },
+    "endDate": {
+      "month": 7,
+      "year": 2012
+    },
+    "isCurrent": false,
+    "startDate": {
+      "month": 4,
+      "year": 2012
+    },
+    "title": "Impiegato risorse umane - stage"
+  }]
+}, "publicProfileUrl": "https://www.linkedin.com/pub/luca-sapone/2a/902/95"
+}
+"

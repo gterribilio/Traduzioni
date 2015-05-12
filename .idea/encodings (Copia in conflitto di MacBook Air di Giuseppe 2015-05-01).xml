@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Gruntfile.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/angular-file-upload-shim.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/common.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/controllers/agenzia/home_agenzia.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/directives.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/explico.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/services.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/upload.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/explico.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/grayscale.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/agenzia/home_agenzia.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/agenzia/snippet/aboutYourAgencySnippet.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/agenzia/snippet/profileAgenziaSnippet.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/traduttore/snippet/certificationsTraduttoreSnippet.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/traduttore/snippet/educationTraduttoreSnippet.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/traduttore/snippet/languagesPairSnippet.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/traduttore/snippet/profileTraduttoreSnippet.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/traduttore/workarea.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bower.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/karma.conf.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/package.json" charset="UTF-8" />
+  </component>
+</project>
