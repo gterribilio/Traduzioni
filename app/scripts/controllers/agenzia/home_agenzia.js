@@ -7,6 +7,7 @@ home.controller('HomeAgenziaCtrl',  ['$scope', '$rootScope', '$window', 'service
 
     $rootScope.image= null;
     $scope.comments=null;
+    $scope.commentsAll=null;
 
     $rootScope.isLogged = customFactory.get('isLogged');
     $rootScope.userData =  customFactory.get('userData');
@@ -59,6 +60,17 @@ home.controller('HomeAgenziaCtrl',  ['$scope', '$rootScope', '$window', 'service
       }
       else {
         $scope.comments = data;
+        //alert(JSON.stringify(data));
+      }
+    });//end success
+
+    services.getFromRESTServer("user_id=" + $rootScope.userData.ID,"getAllAgencyComments").success(function (data) {
+      if(data.jsonError != null || data.errCode != null)
+      {
+        //alert(JSON.stringify(data));
+      }
+      else {
+        $scope.commentsAll = data;
         //alert(JSON.stringify(data));
       }
     });//end success
@@ -131,7 +143,7 @@ home.controller('HomeAgenziaCtrl',  ['$scope', '$rootScope', '$window', 'service
             alert (data.errMsg);
           }
           else {
-              $.notify("A notification has been sent to us! We'll contact you as soon as possible! King regards!",{
+            $.notify("A notification has been sent to us! We'll contact you as soon as possible! King regards!",{
               type: 'success',
               allow_dismiss: true
             });
@@ -150,6 +162,3 @@ home.controller('HomeAgenziaCtrl',  ['$scope', '$rootScope', '$window', 'service
     }); //end $on event
 
   }]);
-
-
-

@@ -5,7 +5,8 @@
   <form name="userForm" ng-submit="doRegisterAgenzia()" novalidate> <!--disabilito validazione html5-->
     <div class="row_shadow">
       <!-- usernameAgenzia -->
-      <div class="form-group row" ng-class="{ 'has-error' : userForm.usernameAgenzia.$invalid && !userForm.usernameAgenzia.$pristine || usernamePresent }">
+
+      <div class="form-group row" ng-class="{ 'has-error' : (userForm.usernameAgenzia.$invalid && !userForm.usernameAgenzia.$pristine) || usernamePresent }">
         <label class="col-xs-3 col-sm-offset-2 text-right control-label">Username*</label>
         <div class="col-sm-3">
           <input type="text" name="usernameAgenzia" class="form-control" ng-model="usernameAgenzia" ng-blur="checkUsername(usernameAgenzia,'A')" required ng-minlength="6" placeholder="">

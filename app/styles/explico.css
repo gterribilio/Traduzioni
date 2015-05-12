@@ -231,7 +231,7 @@ ul.rating {
 /**************** READMORE ****************/
 
 article {
-  color:black;
+  color:#333;
 }
 
 /**************** END READMORE ****************/
@@ -243,5 +243,11 @@ article {
 .jslider div.jslider-label {color:white!important;}
 
 /**************** END OVERRIDE SLIDER PROPERTY ****************/
+
+.comment_item {
+  border-top: 1px solid #e5e5e5;
+  color: #333!important;
+  padding: 10px 15px 10px 15px;
+}
 
 
