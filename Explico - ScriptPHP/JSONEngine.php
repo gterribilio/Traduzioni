@@ -434,6 +434,7 @@ else if($azione=="register") {
 		$ruolo=$_GET['ruolo'];
 		$email=$_GET['email'];
 		$country=$_GET['country'];
+		$city=$_GET['city'];
 
 //campi traduttore
 		$nome=$_GET['nome'];
@@ -445,7 +446,7 @@ else if($azione=="register") {
 		$website=$_GET['website'];
 
 		$query="INSERT INTO `UTENTE` (`ID`, `USERNAME`, `PASSWORD`, `SALE`, `RUOLO`, `EMAIL`, `CITTA`, `PAESE`, `PAYPAL`, `IBAN`) VALUES
-		(NULL, '".$username."','".$password."', '".$sale."', '".$ruolo."', '".$email."', NULL, '".$country."' , NULL, NULL)";
+		(NULL, '".$username."','".$password."', '".$sale."', '".$ruolo."', '".$email."', '".$city."', '".$country."' , NULL, NULL)";
 		$result = execQuery($query, $nomeDB);
 
 		$query = "SELECT ID FROM `UTENTE` WHERE USERNAME = '".$username."'";

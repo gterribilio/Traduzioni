@@ -9,6 +9,9 @@
     <file url="file://$PROJECT_DIR$/app/scripts/controllers/agenzia/search_agenzia.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/directives.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/explico.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/linkedin.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/linkedin.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/linkedin.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/services.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/upload.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/explico.css" charset="UTF-8" />
@@ -18,6 +21,8 @@
     <file url="file://$PROJECT_DIR$/app/views/agenzia/snippet/aboutYourAgencySnippet.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/agenzia/snippet/profileAgenziaSnippet.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/agenzia/snippet/searchAgenziaSnippet.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/snippet/contactSnippet.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/snippet/loginSnippet.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/traduttore/snippet/certificationsTraduttoreSnippet.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/traduttore/snippet/correctionTraduttoreSnippet.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/traduttore/snippet/educationTraduttoreSnippet.html" charset="UTF-8" />
@@ -26,6 +31,7 @@
     <file url="file://$PROJECT_DIR$/app/views/traduttore/snippet/translationTraduttoreSnippet.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/traduttore/workarea.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bower.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bower_components/ngLinkedIn/ngLinkedIn-0.1.4/ngLinkedIn.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/karma.conf.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/package.json" charset="UTF-8" />
   </component>

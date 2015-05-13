@@ -2,12 +2,12 @@
 
 var home = angular.module('HomeCtrlModule', []);
 
-home.controller('HomeCtrl',  ['$scope', '$rootScope', '$window', 'services', '$location', '$anchorScroll', 'customFactory', '$timeout',
-  function ($scope, $rootScope, $window, services, $location, $anchorScroll, customFactory, $timeout) {
+home.controller('HomeCtrl',  ['$scope', '$rootScope', '$window', 'services', '$location', '$anchorScroll', 'customFactory', '$timeout', '$linkedIn',
+  function ($scope, $rootScope, $window, services, $location, $anchorScroll, customFactory, $timeout, $linkedIn) {
 
     $rootScope.showLogin=false;
     $rootScope.showWorkarea=false;
-
+    $scope.linkedinData = null;
     $scope.usernamePresent=false;
 
     // questa funzione di init permette ogni qualvolta l'utente esce senza chiudere la pagina in cui si trova di mandarlo alla home da loggato nel caso
@@ -33,47 +33,48 @@ home.controller('HomeCtrl',  ['$scope', '$rootScope', '$window', 'services', '$l
       $scope.mothertonguesTraduttore=data;
       $scope.countriesTraduttore=data;
     });
+    /*
+     $scope.doAccedi= function() {
+     services.getFromRESTServer("username="+$scope.username+"&password="+$scope.password,"login").
+     success(function (data) {
+     if(data.jsonError != null || data.errCode != null)
+     {
+     alert (data.errMsg);
+     }
+     else {
 
-    $scope.doAccedi= function() {
-      services.getFromRESTServer("username="+$scope.username+"&password="+$scope.password,"login").
-        success(function (data) {
-          if(data.jsonError != null || data.errCode != null)
-          {
-            alert (data.errMsg);
-          }
-          else {
+     $rootScope.isLogged = true;
 
-            $rootScope.isLogged = true;
+     customFactory.set('isLogged',true);
+     //localStorageService.set("isLogged",true);
 
-            customFactory.set('isLogged',true);
-            //localStorageService.set("isLogged",true);
+     $rootScope.showLogin=false;
+     $rootScope.userData=data[0];
+     //localStorageService.set("userData",JSON.stringify($rootScope.userData));
+     customFactory.set('userData',$rootScope.userData);
 
-            $rootScope.showLogin=false;
-            $rootScope.userData=data[0];
-            //localStorageService.set("userData",JSON.stringify($rootScope.userData));
-            customFactory.set('userData',$rootScope.userData);
-
-            if($scope.userData.RUOLO=='TRADUTTORE') {
-              //alert("Welcome " + $rootScope.userData.NOME +"! Find your translations now!");
-              $.notify("Welcome " + $rootScope.userData.NOME +"! Find your translations now!",{
-                type: 'success',
-                allow_dismiss: true
-              });
-              $location.path("/home_traduttore");
-            }
-            else {
-              //alert("Welcome " + $rootScope.userData.NOME +"! Post your translation now!");
-              $.notify("Welcome " + $rootScope.userData.NOME +"! Post your translation now!",{
-                type: 'success',
-                allow_dismiss: true
-              });
-              $location.path("/home_agenzia");
-            }
-          }
-          //stampa il JSON Object
-          //alert(JSON.stringify(data));
-        });
-    } //end doAccedi
+     if($scope.userData.RUOLO=='TRADUTTORE') {
+     //alert("Welcome " + $rootScope.userData.NOME +"! Find your translations now!");
+     $.notify("Welcome " + $rootScope.userData.NOME +"! Find your translations now!",{
+     type: 'success',
+     allow_dismiss: true
+     });
+     $location.path("/home_traduttore");
+     }
+     else {
+     //alert("Welcome " + $rootScope.userData.NOME +"! Post your translation now!");
+     $.notify("Welcome " + $rootScope.userData.NOME +"! Post your translation now!",{
+     type: 'success',
+     allow_dismiss: true
+     });
+     $location.path("/home_agenzia");
+     }
+     }
+     //stampa il JSON Object
+     //alert(JSON.stringify(data));
+     });
+     } //end doAccedi
+     */
 
     $rootScope.doLogout = function() {
       $location.path("/");
@@ -103,13 +104,9 @@ home.controller('HomeCtrl',  ['$scope', '$rootScope', '$window', 'services', '$l
         });
     };
 
-  }]);// end controller
-
-home.controller('registrazioneCtrl',  ['$scope', '$rootScope', '$window', 'services', '$location', 'customFactory',
-  function ($scope, $rootScope, $window, services, $location, customFactory) {
     $scope.doRegisterTraduttore = function() {
-      var temp_mothertongue = ($scope.mothertongueTraduttore===null) ? null : $scope.mothertongueTraduttore.DESCRIZIONE;
-      var temp_country= ($scope.countryTraduttore===null) ? null : $scope.countryTraduttore.DESCRIZIONE;
+      var temp_mothertongue = ($scope.mothertongueTraduttore==null) ? null : $scope.mothertongueTraduttore.DESCRIZIONE;
+      var temp_country= ($scope.countryTraduttore==null) ? null : $scope.countryTraduttore.DESCRIZIONE;
       services.getFromRESTServer(
         "username="+$scope.usernameTraduttore+"&password="+$scope.passwordTraduttore+"&nome="+$scope.nomeTraduttore+
         "&cognome="+$scope.cognomeTraduttore+"&email="+$scope.emailTraduttore+ "&ruolo=TRADUTTORE"+
@@ -120,14 +117,14 @@ home.controller('registrazioneCtrl',  ['$scope', '$rootScope', '$window', 'servi
             alert (data.errMsg);
           }
           else {
-            doAccedi($scope.usernameTraduttore, $scope.passwordTraduttore);
+            $scope.doAccedi($scope.usernameTraduttore, $scope.passwordTraduttore);
           }
         });
     }
 
     $scope.doRegisterAgenzia = function() {
-      var temp_citta = ($scope.countryAgenzia===null) ? null : $scope.countryAgenzia.DESCRIZIONE;
-      var temp_employee= ($scope.employeeAgenzia===null) ? null : $scope.employeeAgenzia.DESCRIZIONE;
+      var temp_citta = ($scope.countryAgenzia==null) ? null : $scope.countryAgenzia.DESCRIZIONE;
+      var temp_employee= ($scope.employeeAgenzia==null) ? null : $scope.employeeAgenzia.DESCRIZIONE;
       services.getFromRESTServer(
         "username=" + $scope.usernameAgenzia + "&password=" + $scope.passwordAgenzia + "&nome=" + $scope.nomeAgenzia +
         "&email=" + $scope.emailAgenzia+ "&ruolo=AGENZIA"+ "&employees=" + temp_employee +
@@ -138,17 +135,20 @@ home.controller('registrazioneCtrl',  ['$scope', '$rootScope', '$window', 'servi
             alert (data.errMsg);
           }
           else {
-            doAccedi($scope.usernameAgenzia, $scope.passwordAgenzia);
+            $scope.doAccedi($scope.usernameAgenzia, $scope.passwordAgenzia);
           }
         });
     }
 
-    function doAccedi(a, b) {
+    $scope.doAccedi = function (a, b) {
       services.getFromRESTServer("username="+a+"&password="+b,"login").
         success(function (data) {
           if(data.jsonError != null || data.errCode != null)
           {
-            alert (data.errMsg);
+            $.notify(data.errMsg,{
+              type: 'danger',
+              allow_dismiss: true
+            });
           }
           else {
 
@@ -162,34 +162,80 @@ home.controller('registrazioneCtrl',  ['$scope', '$rootScope', '$window', 'servi
             //localStorageService.set("userData",JSON.stringify($rootScope.userData));
             customFactory.set('userData',$rootScope.userData);
 
-            if($rootScope.userData.RUOLO=='TRADUTTORE')
+            if($rootScope.userData.RUOLO=='TRADUTTORE') {
+              //alert("Welcome " + $rootScope.userData.NOME +"! Find your translations now!");
+              $.notify("Welcome " + $rootScope.userData.NOME +"! Find your translations now!",{
+                type: 'success',
+                allow_dismiss: true
+              });
               $location.path("/home_traduttore");
-            else $location.path("/home_agenzia");
+            }
+            else {
+              //alert("Welcome " + $rootScope.userData.NOME +"! Post your translation now!");
+              $.notify("Welcome " + $rootScope.userData.NOME +"! Post your translation now!",{
+                type: 'success',
+                allow_dismiss: true
+              });
+              $location.path("/home_agenzia");
+            }
 
           }
           //stampa il JSON Object
           //alert(JSON.stringify(data));
         }).error(function(data, status) {
           console.error('Repos error', status, data);
-        })
-
-        .finally(function() {
-          console.log("finally finished repos");
         });
     } //end doAccedi
 
-    $scope.checkUsername = function(username,profile) {
+    $scope.checkUsername = function(username) {
       services.getFromRESTServer(
-        "username="+(profile=='A' ? $scope.usernameAgenzia : $scope.usernameTraduttore),"checkUsername")
+        "username="+username,"checkUsername")
         .success(function (data) {
           if(data.jsonError != null || data.errCode != null)
           {
             $scope.usernamePresent=true;
+            $.notify("Username already present! Please sign in!",{
+              type: 'danger',
+              allow_dismiss: true
+            });
+
           }
           else {
+            //username not yet present
             $scope.usernamePresent=false;
           }
         });
     }
 
+    $scope.linkedinRegister = function (role){
+      $linkedIn.authorize();
+      var fields=["firstName","lastName","location:(name,country:(code))","pictureUrl", "emailAddress", "id"];
+      $linkedIn.profile('me',fields).then(function (data) {
+        $scope.linkedinData=data.values[0];
+        var temp_location = $scope.linkedinData.location.name.split(',');
+        var temp_city= temp_location[0];
+        var temp_country= temp_location[1];
+
+        services.getFromRESTServer(
+          "username=" + $scope.linkedinData.emailAddress + "&password=" + $scope.linkedinData.id
+          + "&nome=" + $scope.linkedinData.firstName +
+          "&cognome="+$scope.linkedinData.lastName+"&email="+$scope.linkedinData.emailAddress+ "&ruolo="+ role +
+          "&country=" + temp_country + "&city=" + temp_city ,"register")
+          .success(function (data) {
+            if(data.jsonError != null || data.errCode != null)
+            {
+              $.notify("Username already present! Please sign in!",{
+                type: 'danger',
+                allow_dismiss: true
+              });
+            }
+            else {
+              doAccedi($scope.linkedinData.emailAddress, $scope.linkedinData.id);
+            }
+          });
+        //TODO aggiungere anche url dell'immagine sul server
+
+        //TODO modificare quando da ok la prima volta
+      });
+    }
   }]);//end Controller

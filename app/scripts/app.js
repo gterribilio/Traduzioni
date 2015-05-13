@@ -19,7 +19,8 @@ var app = angular
     'SearchCtrlAgenziaModule',
     'DirectivesModule',
     'JobsCtrlTraduttoreModule',
-    'fileUpload'
+    'fileUpload',
+    'ngLinkedIn'
   ]);
 
 var app_cfg = {
@@ -43,7 +44,8 @@ var app_cfg = {
 };
 app.constant('APP_CFG', app_cfg);
 
-app.config(['$routeProvider', '$httpProvider', function($routeProvider, $httpProvider) {
+app.config(['$routeProvider', '$httpProvider', '$linkedInProvider',
+  function($routeProvider, $httpProvider, $linkedInProvider) {
   $routeProvider.
     when('/', {templateUrl: 'views/home.html', controller: 'HomeCtrl',
       resolve:{
@@ -115,6 +117,9 @@ app.config(['$routeProvider', '$httpProvider', function($routeProvider, $httpPro
     }];
 
   $httpProvider.interceptors.push(interceptor);
+
+    //LINKEDIN SETTING
+  $linkedInProvider.set('appKey', '78yuued4wl0cgc').set('scope', 'r_emailaddress r_basicprofile').set('authorize', false);
 }]);
 
 function showModal(value, id) {
