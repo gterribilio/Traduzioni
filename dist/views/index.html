@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html class=no-js> <!--<![endif]-->
+<head>
+  <title>Explico</title>
+  <meta http-equiv=content-type content="text/html;charset=utf-8">
+  <meta http-equiv=X-UA-Compatible content="IE=edge">
+  <meta name=viewport content="width=device-width,initial-scale=1">
+  <meta name=description content="">
+  <meta name=author content="">
+  
+  
+  
+  <link rel=stylesheet href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel=stylesheet href="bower_components/font-awesome/css/font-awesome.css">
+  
+  
+  
+  <link rel=stylesheet href=styles/main.css>
+  <link href=styles/grayscale.css rel=stylesheet>
+  <link href=styles/explico.css rel=stylesheet>
+  <link href=styles/home_traduttore.css rel=stylesheet>
+  <link href=styles/animate.css rel=stylesheet>
+  <link href=styles/bootstrap-datepicker3.css rel=stylesheet>
+
+  
+
+  <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel=stylesheet type=text/css>
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel=stylesheet type=text/css>
+  
+
+
+<body id=explicoBody ng-app=lemietraduzioniApp data-spy=scroll data-target=.navbar-fixed-top.navbar-fixed-bottom>
+
+<div id=overlay>
+  <img id=loading src="images/gif-load.gif">
+</div>
+
+<nav class="navbar navbar-custom navbar-fixed-top" role=navigation style=height:70px>
+  <div class=container>
+    
+
+    <div class="collapse navbar-collapse navbar-left navbar-main-collapse">
+      <ul class="nav navbar-nav">
+        
+        <li class=hidden>
+          <a href=#page-top></a>
+        </li>
+        
+        <li>
+          <a href=#><img style=vertical-align:top src=images/logo.png width=80></a>
+        </li>
+        <li ng-show="isLogged && userData.RUOLO=='TRADUTTORE'">
+          <a href=#/home_traduttore ng-click="showWorkarea=false;">My account</a>
+        </li>
+        <li ng-class="{blink_me:userData.HAS_NEW_MESSAGE=='Y'}" ng-show="isLogged && userData.RUOLO=='TRADUTTORE'">
+          <a href=#/jobs_traduttore ng-click="showWorkarea=false;"><img ng-src="{{userData.HAS_NEW_MESSAGE=='Y' ? '/images/new_icon_speech.png' :
+                  '/images/icon_speech.png'}}" width=40> Jobs</a>
+        </li>
+        <li ng-show="isLogged && userData.RUOLO=='TRADUTTORE' && showWorkarea">
+          <a href="">Workarea</a>
+        </li>
+        <li ng-show="isLogged && userData.RUOLO=='AGENZIA'">
+          <a href=#/home_agenzia>My account</a>
+        </li>
+        <li ng-show="isLogged && userData.RUOLO=='AGENZIA'">
+          <a href=#/search_agenzia>Search</a>
+        </li>
+        <li ng-show="isLogged && userData.RUOLO=='AGENZIA'">
+          <a href=#/jobs_agenzia>Jobs</a>
+        </li>
+      </ul>
+    </div>
+    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+      <ul class="nav navbar-nav">
+        
+        <li class=hidden>
+          <a href=#page-top></a>
+        </li>
+        <li ng-show=!isLogged>
+          <a class=page-scroll ng-click="showLogin=true;" href=#login>Sign In</a>
+        </li>
+        <li ng-show=isLogged>
+          <a class=page-scroll ng-click=doLogout(); href>Logout <span class="glyphicon glyphicon-share-alt"></span></a>
+        </li>
+      </ul>
+    </div>
+    
+  </div>
+  
+</nav>
+
+<div class=view-container>
+  <div ng-view class=view-frame></div>
+</div>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-XXXXX-X');
+  ga('send', 'pageview');
+</script>
+
+
+<script type=text/javascript src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+
+<!--[if lt IE 9]><script src="bower_components/es5-shim/es5-shim.js"></script>
+<script src="bower_components/json3/lib/json3.js"></script><![endif]-->
+
+
+
+
+<script src=bower_components/jquery/jquery-2.1.3/dist/jquery.js></script>
+<script src=bower_components/angular/angular.js></script>
+<script src=bower_components/bootstrap/dist/js/bootstrap.js></script>
+<script src=bower_components/angular-route/angular-route.js></script>
+<script src=bower_components/ng-file-upload/angular-file-upload.js></script>
+<script src=bower_components/remarkable-bootstrap-notify/bootstrap-notify-3.1.3/dist/bootstrap-notify.js></script>
+<script src=bower_components/ngLinkedIn/ngLinkedIn-0.1.4/ngLinkedIn.js></script>
+
+
+
+
+<script src=scripts/app.js></script>
+<script src=scripts/services.js></script>
+<script src=scripts/jquery.easing.min.js></script>
+<script src=scripts/directives.js></script>
+<script src=scripts/controllers/home.js></script>
+<script src=scripts/controllers/traduttore/home_traduttore.js></script>
+<script src=scripts/controllers/traduttore/jobs_traduttore.js></script>
+<script src=scripts/controllers/agenzia/home_agenzia.js></script>
+<script src=scripts/controllers/agenzia/search_agenzia.js></script>
+<script src=scripts/controllers/traduttore/workarea.js></script>
+<script src=scripts/sjcl.js></script>
+<script src=scripts/common.js></script>
+<script src=scripts/readmore.min.js></script>
+<script src=scripts/explico.js></script>
+<script src=scripts/upload.js></script>
+<script src=scripts/bootstrap-datepicker.js></script>
+
+
+
+<script src=ckeditor/ckeditor.js></script>
+
+

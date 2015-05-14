@@ -1,0 +1,120 @@
+<div class="row_shadow">
+	<h2>Language Pair</h2>
+	<div ng-if="pairList == NULL" class="alert alert-warning" role="alert">At the moment you don't have any languages pair! Can we help you?
+	</div>
+	<form name="pairForm" ng-submit="doAddPair()" novalidate> <!--disabilito validazione html5-->
+		<div class="panel panel-default well col-md-10" style="opacity:0.9;">
+			<div class="panel-body">
+				<div class="row form-group">
+					<!-- FROM -->
+					<div ng-class="{ 'has-error' : pairForm.from.$invalid && !pairForm.from.$pristine }">
+						<label class="col-xs-2 control-label text-right ">From*</label>
+						<span class="col-sm-4">
+							<select required class="form-control" name="from" ng-model="from" placeholder="select language..." required ng-options="language.DESCRIZIONE for language in languages"></select>
+						</span>
+					</div>
+
+					<!-- TO -->
+					<div ng-class="{ 'has-error' : pairForm.to.$invalid && !pairForm.to.$pristine }">
+						<label class="col-xs-2 control-label text-right">To*</label>
+						<span class="col-sm-4">
+							<select class="form-control" name="to" ng-model="to" placeholder="select language..." required ng-options="language.DESCRIZIONE for language in languages"></select>
+						</span>
+					</div>
+				</div>
+				<div class="row form-group">
+
+					<!-- FIELD -->
+					<div ng-class="{ 'has-error' : pairForm.field.$invalid && !pairForm.field.$pristine }">
+						<label class="col-xs-2 control-label text-right">Field*</label>
+						<span class="col-sm-4">
+							<select class="form-control" name="field" ng-model="field" required ng-options="field.DESCRIZIONE for field in fields"></select>
+						</span>
+					</div>
+				</div>
+				<div class="row form-group">
+
+					<!-- SERVICES -->
+					<div ng-class="{ 'has-error' : pairForm.service.$invalid && !pairForm.service.$pristine }">
+						<label class="col-xs-2 control-label text-right">Service*</label>
+						<span class="col-sm-4">
+							<select class="form-control" name="service" ng-model="service" required ng-options="service.DESCRIZIONE for service in services"></select>
+						</span>
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<!-- PRICE -->
+					<div ng-class="{ 'has-error' : pairForm.price.$invalid && !pairForm.price.$pristine }">
+						<label class="col-xs-2 control-label text-right ">Price*</label>
+						<span class="col-sm-4">
+							<input type="text" name="price" class="form-control" ng-model="price" ng-pattern="/^-?(\d+.?\d*)$|(\d*.?\d+)$/" required>
+						</span>
+					</div>
+
+					<!-- CURRENCY -->
+					<div ng-class="{ 'has-error' : pairForm.currency.$invalid && !pairForm.currency.$pristine }">
+						<label class="col-xs-2 control-label text-right">Currency*</label>
+						<span class="col-sm-4">
+							<select class="form-control" name="currency" ng-model="currency" required ng-options="currency.DESCRIZIONE for currency in currencies"></select>
+						</span>
+					</div>
+				</div>
+
+				<!-- SEND BUTTON -->
+				<div class="text-right" style="margin-top:10px;">
+					<button type="submit" class="btn btn-lg btn-success btn-sm" ng-disabled="pairForm.$invalid">
+						<i class='fa fa-flag' /> Add Pair
+					</button>
+				</div>
+			</div>
+		</div>
+		<div style="clear:both;"></div>
+	</form>
+
+	<div ng-if="pairList.length !=0">
+		<div id="{{$index}}" ng-repeat="pair in pairList">
+			<div class="panel panel-default well col-md-10" style="opacity:0.9;">
+				<div class="panel-body">
+					<div class="row form-group">
+						<!-- FROM -->
+						<label class="col-xs-2 control-label text-right">From:</label>
+						<span class="col-sm-3">{{pair.FROM}}</span>
+						<!-- TO -->
+						<label class="col-xs-2 control-label text-right">To:</label>
+						<span class="col-sm-3">{{pair.TO}}</span>
+					</div>
+					<div class="row form-group">
+						<!-- FIELD -->
+						<label class="col-xs-2 control-label text-right">Field:</label>
+						<span class="col-sm-3">{{pair.FIELD}}</span>
+					</div>
+					<div class="row form-group">
+						<!-- SERVICES -->
+						<label class="col-xs-2 control-label text-right">Service:</label>
+						<span class="col-sm-3">{{pair.SERVICE}}</span>
+					</div>
+					<div class="row form-group">
+						<!-- PRICE -->
+						<label class="col-xs-2 control-label text-right">Price:</label>
+						<span class="col-sm-3">{{pair.PRICE}}</span>
+
+						<!-- CURRENCY -->
+						<label class="col-xs-2 control-label text-right">Currency:</label>
+						<span class="col-sm-3">{{pair.CURRENCY}}</span>
+					</div>
+					<!-- DELETE BUTTON -->
+					<form name="pairForm" ng-submit="doDeletePair(pair.ID)" novalidate> <!--disabilito validazione html5-->
+						<div class="text-right" style="margin-top:10px;">
+							<button type="submit" class="btn btn-lg btn-success btn-sm">
+								<i class='fa fa-times'/> Delete Pair
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+</div><!-- end row shadow -->
+

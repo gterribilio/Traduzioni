@@ -1,0 +1,146 @@
+<form name=userForm novalidate>
+  <div class=row_shadow>
+    <h2>Profile</h2>
+    <div class="panel panel-default well col-xs-10" style=opacity:0.9>
+      <div class=panel-body>
+        <div class="row row-eq-height">
+          <div id=item_first_row_list class=col-xs-3 ng-controller=UploadCtrl>
+
+            <div id=container_image_profile>
+              <img class=thumb_img width=180 height=180 ng-src="{{userData.IMAGE == null ? 'images/profile_picture.jpg' : image()}}">
+              <p id=text_image_profile>
+                <i class="fa fa-camera"> <span class=button ng-file-select ng-model=files>Update image</span></i>
+              </p>
+            </div>
+          </div>
+
+          <div id=item_second_row_list class=col-xs-8>
+            <div class="row form-group" ng-show=!editMode>
+              <label class="col-xs-3 control-label text-right">Name Surname:</label>
+              <span class=col-sm-4>{{userData.NOME}} {{userData.COGNOME}}</span>
+            </div>
+            
+            <div class="row form-group" ng-show=editMode>
+              <div ng-class="{ 'has-error' : userForm.nomeTraduttore.$invalid && !userForm.nomeTraduttore.$pristine }">
+                <label class="col-xs-2 control-label text-right">Name*</label>
+                <span class=col-sm-4><input name=nomeTraduttore class=form-control ng-model=nomeTraduttore required placeholder=""></span>
+              </div>
+
+              
+              <div ng-class="{ 'has-error' : userForm.cognomeTraduttore.$invalid && !userForm.cognomeTraduttore.$pristine }">
+                <label class="col-xs-2 control-label text-right">Surname*</label>
+                <span class=col-sm-4><input name=cognomeTraduttore class=form-control ng-model=cognomeTraduttore required placeholder=""></span>
+              </div>
+            </div>
+
+            
+            <div class="form-group row" ng-show=!editMode>
+              <label class="col-xs-3 control-label text-right">e-mail:</label>
+              <span class=col-sm-4>{{userData.EMAIL}}</span>
+            </div>
+
+            <div class="row form-group" ng-show=editMode>
+              <div ng-class="{ 'has-error' : userForm.emailTraduttore.$invalid && !userForm.emailTraduttore.$pristine }">
+                <label class="col-xs-2 control-label text-right">e-mail*</label>
+								<span class=col-sm-4>
+									<input type=email name=emailTraduttore class=form-control ng-model=emailTraduttore required>
+								</span>
+              </div>
+            </div>
+
+            
+            <div class="form-group row" ng-show=!editMode>
+              <label class="col-xs-3 control-label text-right">Birthday:</label>
+              <span class=col-sm-4>{{userData.DATA_NASCITA | date:'dd/MM/yyyy'}}</span>
+            </div>
+            <div ng-show=editMode class="form-group row" ng-class="{ 'has-error' : userForm.birthdayTraduttore.$invalid && !userForm.birthdayTraduttore.$pristine }">
+              <label for=birthdayTraduttore class="col-xs-2 control-label text-right">Birthday</label>
+              <span class=col-sm-4><input type=date id=birthdayTraduttore name=birthdayTraduttore ng-model=birthdayTraduttore class=form-control placeholder="" ng-pattern="/^((\d{4})-(\d{2})-(\d{2}))$/"></span>
+            </div>
+
+            
+            <div class="form-group row" ng-show=!editMode>
+              <label class="col-xs-3 control-label text-right">City:</label>
+              <span class=col-sm-4>{{userData.CITTA}}</span>
+            </div>
+
+            <div class="row form-group" ng-show=editMode>
+              <div ng-class="{ 'has-error' : userForm.cittaTraduttore.$invalid && !userForm.cittaTraduttore.$pristine }">
+                <label class="col-xs-2 control-label text-right">City*</label>
+								<span class=col-sm-4>
+									<input name=cittaTraduttore class=form-control ng-model=cittaTraduttore required>
+								</span>
+              </div>
+            </div>
+
+            <div class="row form-group" ng-show=editMode>
+
+              <div ng-class="{ 'has-error' : userForm.countryTraduttore.$invalid && !userForm.countryTraduttore.$pristine }">
+                <label class="col-xs-2 text-right control-label">Country*</label>
+                <div class=col-sm-4>
+                  <select class=form-control name=countryTraduttore ng-model=countryTraduttore ng-options="countryTraduttore.DESCRIZIONE for countryTraduttore in countriesTraduttore" required></select>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="form-group row" ng-show=!editMode>
+              <label class="col-xs-3 control-label text-right">Country:</label>
+              <span class=col-sm-4>{{userData.PAESE}}</span>
+            </div>
+
+            
+            <div class="form-group row" ng-show=!editMode>
+              <label class="col-xs-3 control-label text-right">Mothertongue:</label>
+              <span class=col-sm-4>{{userData.MADRELINGUA}}</span>
+            </div>
+
+            <div ng-show=editMode class="form-group row">
+              <div ng-class="{ 'has-error' : userForm.mothertongueTraduttore.$invalid && !userForm.mothertongueTraduttore.$pristine }">
+                <label class="col-xs-2 text-right control-label">Mothertongue</label>
+                <div class=col-sm-4>
+                  <select class=form-control name=mothertongueTraduttore ng-model=mothertongueTraduttore ng-options="mothertongueTraduttore.DESCRIZIONE for mothertongueTraduttore in languages" required></select>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="form-group row" ng-show=!editMode>
+              <label class="col-xs-3 control-label text-right">VAT number:</label>
+              <span class=col-sm-4>{{userData.VAT}}</span>
+            </div>
+
+            <div class="row form-group" ng-show=editMode>
+              <div ng-class="{ 'has-error' : userForm.vat.$invalid && !userForm.vat.$pristine }">
+                <label class="col-xs-2 control-label text-right">VAT number</label>
+								<span class=col-sm-4>
+									<input name=vat class=form-control ng-model=vat>
+								</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style=clear:both></div>
+        <div ng-show=!editMode class=text-right style=margin-top:10px>
+          <button type=submit class="btn btn-lg btn-success btn-sm" ng-click="editMode=true;isShowMessage=false;">
+            <i class="fa fa-edit"></i> edit
+          </button>
+        </div>
+
+        <div ng-show=editMode class=text-right style=margin-top:10px>
+          <button type=submit class="btn btn-lg btn-success btn-sm" ng-click="editMode=false;doUpdateProfileTraduttore();" ng-disabled=userForm.$invalid>
+            <i class="fa fa-edit"></i> Confirm
+          </button>
+          <button type=submit class="btn btn-lg btn-success btn-sm" ng-click="editMode=false;">
+            <i class="fa fa-angle-double-left"></i> Cancel
+          </button>
+        </div>
+
+        
+        <div style=clear:both></div>
+      </div>
+    </div>
+    <div style=clear:both></div>
+  </div>
+</form>
