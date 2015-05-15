@@ -25,102 +25,113 @@ var app = angular
 
 var app_cfg = {
 
-  "endpoint_server" : "http://explico.altervista.org",
+  "endpoint_server": "http://explico.altervista.org",
 
-  "endpoint_upload_server" : "http://www.pastafrescalioni.it",
+  "endpoint_upload_server": "http://www.pastafrescalioni.it",
 
   "environment": "development",
-  "request" : {
-    "url" : ""
+  "request": {
+    "url": ""
   },
-  "development" : {
-    "urls" : {
-      "config_endpoint" : "http://www.pastafrescalioni.it/config.json.php"
+  "development": {
+    "urls": {
+      "config_endpoint": "http://www.pastafrescalioni.it/config.json.php"
     },
-    "request" : {
-    }
+    "request": {}
   },
-  "production" : {}
+  "production": {}
 };
 app.constant('APP_CFG', app_cfg);
 
 app.config(['$routeProvider', '$httpProvider', '$linkedInProvider',
-  function($routeProvider, $httpProvider, $linkedInProvider) {
-  $routeProvider.
-    when('/', {templateUrl: 'views/home.html', controller: 'HomeCtrl',
-      resolve:{
-        'MyServiceData': ['customFactory', function(customFactory){
-          return customFactory.promise;
-        }]
-      }}).
-    when('/home_agenzia', {templateUrl: 'views/agenzia/home_agenzia.html', controller: 'HomeAgenziaCtrl',
-      resolve:{
-        'MyServiceData': ['customFactory', function(customFactory){
-          return customFactory.promise;
-        }]
-      }}).
-    when('/home_traduttore', {templateUrl: 'views/traduttore/home_traduttore.html', controller: 'HomeTraduttoreCtrl',
-      resolve:{
-        'MyServiceData': ['customFactory', function(customFactory){
-          return customFactory.promise;
-        }]
-      }}).
-    when('/jobs_traduttore', {templateUrl: 'views/traduttore/jobs_traduttore.html', controller: 'JobsTraduttoreCtrl',
-      resolve:{
-        'MyServiceData': ['customFactory', function(customFactory){
-          return customFactory.promise;
-        }]
-      }}).
-    when('/workarea/:tipo/:id', {templateUrl: 'views/traduttore/workarea.html', controller: 'WorkareaTraduttoreCtrl',
-      resolve:{
-        'MyServiceData': ['customFactory', function(customFactory){
-          return customFactory.promise;
-        }]
-      }}).
-    when('/search_agenzia', {templateUrl: 'views/agenzia/search_agenzia.html', controller: 'SearchAgenziaCtrl',
-      resolve:{
-        'MyServiceData': ['customFactory', function(customFactory){
-          return customFactory.promise;
-        }]
-      }}).
-    otherwise({redirectTo: '/'});
-
-  var $http,
-    interceptor = ['$q', '$injector', function ($q, $injector) {
-
-      function hide() {
-        $http = $http || $injector.get('$http');
-        if ($http.pendingRequests.length < 1) {
-          showModal(false);
+  function ($routeProvider, $httpProvider, $linkedInProvider) {
+    $routeProvider.
+      when('/', {
+        templateUrl: 'views/home.html', controller: 'HomeCtrl',
+        resolve: {
+          'MyServiceData': ['customFactory', function (customFactory) {
+            return customFactory.promise;
+          }]
         }
-      }
-
-      return {
-        request: function (config) {
-          showModal(true);
-          return config || $q.when(config);
-        },
-        requestError: function (request) {
-          hide();
-          return $q.reject(request);
-        },
-        response: function (response) {
-          hide();
-          return response || $q.when(response);
-        },
-        responseError: function (error) {
-          hide();
-          return $q.reject(error);
+      }).
+      when('/home_agenzia', {
+        templateUrl: 'views/agenzia/home_agenzia.html', controller: 'HomeAgenziaCtrl',
+        resolve: {
+          'MyServiceData': ['customFactory', function (customFactory) {
+            return customFactory.promise;
+          }]
         }
-      };
+      }).
+      when('/home_traduttore', {
+        templateUrl: 'views/traduttore/home_traduttore.html', controller: 'HomeTraduttoreCtrl',
+        resolve: {
+          'MyServiceData': ['customFactory', function (customFactory) {
+            return customFactory.promise;
+          }]
+        }
+      }).
+      when('/jobs_traduttore', {
+        templateUrl: 'views/traduttore/jobs_traduttore.html', controller: 'JobsTraduttoreCtrl',
+        resolve: {
+          'MyServiceData': ['customFactory', function (customFactory) {
+            return customFactory.promise;
+          }]
+        }
+      }).
+      when('/workarea/:tipo/:id', {
+        templateUrl: 'views/traduttore/workarea.html', controller: 'WorkareaTraduttoreCtrl',
+        resolve: {
+          'MyServiceData': ['customFactory', function (customFactory) {
+            return customFactory.promise;
+          }]
+        }
+      }).
+      when('/search_agenzia', {
+        templateUrl: 'views/agenzia/search_agenzia.html', controller: 'SearchAgenziaCtrl',
+        resolve: {
+          'MyServiceData': ['customFactory', function (customFactory) {
+            return customFactory.promise;
+          }]
+        }
+      }).
+      otherwise({redirectTo: '/'});
 
-    }];
+    var $http,
+      interceptor = ['$q', '$injector', function ($q, $injector) {
 
-  $httpProvider.interceptors.push(interceptor);
+        function hide() {
+          $http = $http || $injector.get('$http');
+          if ($http.pendingRequests.length < 1) {
+            showModal(false);
+          }
+        }
+
+        return {
+          request: function (config) {
+            showModal(true);
+            return config || $q.when(config);
+          },
+          requestError: function (request) {
+            hide();
+            return $q.reject(request);
+          },
+          response: function (response) {
+            hide();
+            return response || $q.when(response);
+          },
+          responseError: function (error) {
+            hide();
+            return $q.reject(error);
+          }
+        };
+
+      }];
+
+    $httpProvider.interceptors.push(interceptor);
 
     //LINKEDIN SETTING
-  $linkedInProvider.set('appKey', '78yuued4wl0cgc').set('scope', 'r_emailaddress r_basicprofile').set('authorize', false);
-}]);
+    $linkedInProvider.set('appKey', '78yuued4wl0cgc').set('scope', 'r_emailaddress r_basicprofile').set('authorize', false);
+  }]);
 
 function showModal(value, id) {
   var isAlert;
