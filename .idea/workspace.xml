@@ -5,101 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11065f60-ee0e-4598-ac8a-b433e47c68e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bootstrap-social.css" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\404.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\ckeditor\CHANGES.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\ckeditor\LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\ckeditor\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\ckeditor\build-config.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\ckeditor\ckeditor.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\ckeditor\config.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\ckeditor\contents.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\ckeditor\styles.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\fonts\FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\fonts\fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\fonts\fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\fonts\fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\fonts\fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\fonts\fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\fonts\glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\fonts\glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\fonts\glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\fonts\glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\images\about.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\images\contact.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\images\gif-load.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\images\icon_speech.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\images\intro-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\images\logo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\images\london-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\images\new_icon_speech.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\images\privacy.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\images\profile_picture.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\images\registrazione_agenzia.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\images\registrazione_traduttore.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\images\yeoman.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\robots.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\scripts\oldieshim.8907f769.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\scripts\scripts.79956aa3.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\scripts\vendor.694d186f.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\styles\main.f0d19eec.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\styles\vendor.476df695.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\404.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\agenzia\home_agenzia.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\agenzia\search_agenzia.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\agenzia\snippet\aboutYourAgencySnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\agenzia\snippet\profileAgenziaSnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\agenzia\snippet\searchAgenziaSnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\home.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\snippet\contactSnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\snippet\loginSnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\snippet\privacySnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\snippet\registrazioneAgenziaSnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\snippet\registrazioneTraduttoreSnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\traduttore\home_traduttore.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\traduttore\jobs_traduttore.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\traduttore\snippet\certificationsTraduttoreSnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\traduttore\snippet\correctionTraduttoreSnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\traduttore\snippet\educationTraduttoreSnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\traduttore\snippet\interpretationTraduttoreSnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\traduttore\snippet\languagesPairSnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\traduttore\snippet\profileTraduttoreSnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\traduttore\snippet\translationTraduttoreSnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\traduttore\workarea.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\views\agenzia\home_agenzia.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\views\agenzia\search_agenzia.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\views\agenzia\snippet\aboutYourAgencySnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\views\agenzia\snippet\profileAgenziaSnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\views\agenzia\snippet\searchAgenziaSnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\views\home.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\views\snippet\contactSnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\views\snippet\loginSnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\views\snippet\privacySnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\views\snippet\registrazioneAgenziaSnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\views\snippet\registrazioneTraduttoreSnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\views\traduttore\home_traduttore.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\views\traduttore\jobs_traduttore.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\views\traduttore\snippet\certificationsTraduttoreSnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\views\traduttore\snippet\correctionTraduttoreSnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\views\traduttore\snippet\educationTraduttoreSnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\views\traduttore\snippet\interpretationTraduttoreSnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\views\traduttore\snippet\languagesPairSnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\views\traduttore\snippet\profileTraduttoreSnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\views\traduttore\snippet\translationTraduttoreSnippet.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\views\views\traduttore\workarea.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\~$pping_linkedin.doc" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\~WRL0499.tmp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/styles/main.88e0ebaa.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/scripts/scripts.81e8e505.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Explico - ScriptPHP/JSONEngine.php" afterPath="$PROJECT_DIR$/Explico - ScriptPHP/JSONEngine.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/explico.css" afterPath="$PROJECT_DIR$/app/styles/explico.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/grayscale.css" afterPath="$PROJECT_DIR$/app/styles/grayscale.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/home.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/snippet/loginSnippet.html" afterPath="$PROJECT_DIR$/app/views/snippet/loginSnippet.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/snippet/registrazioneAgenziaSnippet.html" afterPath="$PROJECT_DIR$/app/views/snippet/registrazioneAgenziaSnippet.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/snippet/registrazioneTraduttoreSnippet.html" afterPath="$PROJECT_DIR$/app/views/snippet/registrazioneTraduttoreSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/snippet/loginSnippet.html" afterPath="$PROJECT_DIR$/dist/views/snippet/loginSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/snippet/loginSnippet.html" afterPath="$PROJECT_DIR$/dist/views/views/snippet/loginSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/upload.js" afterPath="$PROJECT_DIR$/app/scripts/upload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Explico - ScriptPHP/upload.php" afterPath="$PROJECT_DIR$/Explico - ScriptPHP/upload.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Explico.iws" />
@@ -121,55 +38,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="96" column="40" selection-start-line="96" selection-start-column="40" selection-end-line="96" selection-end-column="40" />
-              <folding>
-                <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loginSnippet.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/snippet/loginSnippet.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.8461537">
-              <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-              <folding>
-                <element signature="n#style#0;n#div#2;n#form#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="upload.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/scripts/upload.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.47994056">
+              <caret line="202" column="24" selection-start-line="202" selection-start-column="24" selection-end-line="202" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -200,12 +73,10 @@
         <option value="$PROJECT_DIR$/app/views/traduttore/workarea.html" />
         <option value="$PROJECT_DIR$/app/config.json.php" />
         <option value="$PROJECT_DIR$/app/scripts/services.js" />
-        <option value="$PROJECT_DIR$/Explico - ScriptPHP/JSONEngine.php" />
         <option value="$PROJECT_DIR$/app/views/traduttore/snippet/languagesPairSnippet.html" />
         <option value="$PROJECT_DIR$/app/views/traduttore/snippet/educationTraduttoreSnippet.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/traduttore/workarea.js" />
         <option value="$PROJECT_DIR$/app/views/agenzia/home_agenzia.html" />
-        <option value="$PROJECT_DIR$/app/scripts/upload.js" />
         <option value="$PROJECT_DIR$/app/views/agenzia/search_agenzia.html" />
         <option value="$PROJECT_DIR$/app/views/traduttore/snippet/profileTraduttoreSnippet.html" />
         <option value="$PROJECT_DIR$/karma.conf.js" />
@@ -215,19 +86,15 @@
         <option value="$PROJECT_DIR$/app/styles/bootstrap-datepicker3.css" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/agenzia/search_agenzia.js" />
         <option value="$PROJECT_DIR$/app/views/agenzia/snippet/searchAgenziaSnippet.html" />
-        <option value="$PROJECT_DIR$/app/styles/grayscale.css" />
         <option value="$PROJECT_DIR$/app/views/traduttore/snippet/translationTraduttoreSnippet.html" />
         <option value="$PROJECT_DIR$/app/views/traduttore/snippet/correctionTraduttoreSnippet.html" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/traduttore/home_traduttore.js" />
         <option value="$PROJECT_DIR$/app/views/traduttore/snippet/certificationsTraduttoreSnippet.html" />
         <option value="$PROJECT_DIR$/app/views/agenzia/snippet/profileAgenziaSnippet.html" />
         <option value="$PROJECT_DIR$/app/scripts/explico.js" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/agenzia/home_agenzia.js" />
         <option value="$PROJECT_DIR$/app/scripts/directives.js" />
         <option value="$PROJECT_DIR$/app/scripts/linkedin.js" />
         <option value="$PROJECT_DIR$/bower_components/ngLinkedIn/ngLinkedIn-0.1.4/ngLinkedIn.js" />
-        <option value="$PROJECT_DIR$/app/styles/explico.css" />
         <option value="$PROJECT_DIR$/app/views/home.html" />
         <option value="$PROJECT_DIR$/app/views/agenzia/snippet/aboutYourAgencySnippet.html" />
         <option value="$PROJECT_DIR$/app/views/snippet/contactSnippet.html" />
@@ -237,6 +104,12 @@
         <option value="$PROJECT_DIR$/app/views/snippet/registrazioneAgenziaSnippet.html" />
         <option value="$PROJECT_DIR$/app/views/snippet/registrazioneTraduttoreSnippet.html" />
         <option value="$PROJECT_DIR$/app/views/snippet/loginSnippet.html" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/traduttore/home_traduttore.js" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/agenzia/home_agenzia.js" />
+        <option value="$PROJECT_DIR$/Explico - ScriptPHP/JSONEngine.php" />
+        <option value="$PROJECT_DIR$/app/styles/explico.css" />
+        <option value="$PROJECT_DIR$/app/styles/grayscale.css" />
+        <option value="$PROJECT_DIR$/app/scripts/upload.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/home.js" />
       </list>
     </option>
@@ -376,6 +249,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -404,67 +278,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Explico" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Explico" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ngLinkedIn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Explico" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Explico" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ngLinkedIn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ngLinkedIn-0.1.4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Explico" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Explico" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="Explico - ScriptPHP" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -475,7 +294,7 @@
     <property name="editor.config.accepted" value="true" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="SearchEverywhereHistoryKey" value="login&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/snippet/loginSnippet.html&#10;home_a&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/controllers/agenzia/home_agenzia.js&#10;upload.&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/upload.js&#10;home&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/controllers/agenzia/home_agenzia.js&#10;profile&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/agenzia/snippet/profileAgenziaSnippet.html&#10;regis&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/snippet/registrazioneAgenziaSnippet.html&#10;bowe&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/bower.json&#10;app&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/app.js&#10;registra&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/snippet/registrazioneTraduttoreSnippet.html&#10;home.&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/controllers/home.js&#10;inde&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/index.html&#10;re&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/snippet/registrazioneTraduttoreSnippet.html&#10;conta&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/snippet/contactSnippet.html&#10;contac&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/snippet/contactSnippet.html&#10;css&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/styles/explico.css&#10;*.css&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/styles/explico.css&#10;direct&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/directives.js&#10;hometr&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/traduttore/home_traduttore.html&#10;registrazionea&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/snippet/registrazioneAgenziaSnippet.html&#10;regi&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/snippet/registrazioneTraduttoreSnippet.html&#10;bower&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/bower.json&#10;bower.&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/bower.json&#10;index&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/index.html&#10;app.js&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/app.js&#10;regist&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/snippet/registrazioneTraduttoreSnippet.html&#10;direc&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/directives.js&#10;grunt&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/Gruntfile.js&#10;expl&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/styles/explico.css&#10;homea&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/agenzia/home_agenzia.html&#10;about&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/agenzia/snippet/aboutYourAgencySnippet.html&#10;registr&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/snippet/registrazioneTraduttoreSnippet.html&#10;upload&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/upload.js&#10;explico&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/explico.js&#10;home.js&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/controllers/home.js&#10;registrazionetra&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/snippet/registrazioneTraduttoreSnippet.html&#10;explico.&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/styles/explico.css&#10;pro&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/agenzia/snippet/profileAgenziaSnippet.html&#10;certificatio&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/traduttore/snippet/certificationsTraduttoreSnippet.html&#10;corre&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/traduttore/snippet/correctionTraduttoreSnippet.html&#10;transla&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/traduttore/snippet/translationTraduttoreSnippet.html&#10;jobs&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/traduttore/jobs_traduttore.html&#10;ex&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/explico.js&#10;commo&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/common.js&#10;home.html&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/home.html&#10;langua&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/traduttore/snippet/languagesPairSnippet.html&#10;profil&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/agenzia/snippet/profileAgenziaSnippet.html&#10;ind&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/index.html&#10;*traduttor&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Explico/app/views/traduttore/snippet/translationTraduttoreSnippet.html&#10;search&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Explico/app/scripts/controllers/agenzia/search_agenzia.js&#10;sear&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Explico/app/views/agenzia/snippet/searchAgenziaSnippet.html" />
+    <property name="SearchEverywhereHistoryKey" value="home&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/controllers/home.js&#10;gra&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/styles/grayscale.css&#10;xplico.&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/styles/explico.css&#10;home_age&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/controllers/agenzia/home_agenzia.js&#10;home_tra&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/controllers/traduttore/home_traduttore.js&#10;regis&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/snippet/registrazioneTraduttoreSnippet.html&#10;hom&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/controllers/agenzia/home_agenzia.js&#10;login&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/snippet/loginSnippet.html&#10;home_a&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/controllers/agenzia/home_agenzia.js&#10;upload.&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/upload.js&#10;profile&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/agenzia/snippet/profileAgenziaSnippet.html&#10;bowe&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/bower.json&#10;app&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/app.js&#10;registra&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/snippet/registrazioneTraduttoreSnippet.html&#10;home.&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/controllers/home.js&#10;inde&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/index.html&#10;re&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/snippet/registrazioneTraduttoreSnippet.html&#10;conta&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/snippet/contactSnippet.html&#10;contac&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/snippet/contactSnippet.html&#10;css&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/styles/explico.css&#10;*.css&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/styles/explico.css&#10;direct&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/directives.js&#10;hometr&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/traduttore/home_traduttore.html&#10;registrazionea&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/snippet/registrazioneAgenziaSnippet.html&#10;regi&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/snippet/registrazioneTraduttoreSnippet.html&#10;bower&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/bower.json&#10;bower.&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/bower.json&#10;index&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/index.html&#10;app.js&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/app.js&#10;regist&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/snippet/registrazioneTraduttoreSnippet.html&#10;direc&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/directives.js&#10;grunt&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/Gruntfile.js&#10;expl&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/styles/explico.css&#10;homea&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/agenzia/home_agenzia.html&#10;about&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/agenzia/snippet/aboutYourAgencySnippet.html&#10;registr&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/snippet/registrazioneTraduttoreSnippet.html&#10;upload&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/upload.js&#10;explico&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/explico.js&#10;home.js&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/controllers/home.js&#10;registrazionetra&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/snippet/registrazioneTraduttoreSnippet.html&#10;explico.&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/styles/explico.css&#10;pro&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/agenzia/snippet/profileAgenziaSnippet.html&#10;certificatio&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/traduttore/snippet/certificationsTraduttoreSnippet.html&#10;corre&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/traduttore/snippet/correctionTraduttoreSnippet.html&#10;transla&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/traduttore/snippet/translationTraduttoreSnippet.html&#10;jobs&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/traduttore/jobs_traduttore.html&#10;ex&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/explico.js&#10;commo&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/scripts/common.js&#10;home.html&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/home.html&#10;langua&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Explico/app/views/traduttore/snippet/languagesPairSnippet.html" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="113" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="142" />
@@ -635,7 +454,13 @@
       <option name="project" value="LOCAL" />
       <updated>1431593996687</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="20150515">
+      <created>1431699763777</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1431699763777</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -651,26 +476,26 @@
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26311606" sideWeight="0.6821192" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1891892" sideWeight="0.660485" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26311606" sideWeight="0.3178808" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1891892" sideWeight="0.33951497" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13953489" sideWeight="0.5063593" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10438909" sideWeight="0.49682036" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16844602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16370107" sideWeight="0.49682036" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24960254" sideWeight="0.49449036" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.049822062" sideWeight="0.4936407" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19475357" sideWeight="0.29714286" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12218268" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858837" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16963227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -689,13 +514,22 @@
     <MESSAGE value="20150415" />
     <MESSAGE value="20150513" />
     <MESSAGE value="20150514" />
-    <option name="LAST_COMMIT_MESSAGE" value="20150514" />
+    <MESSAGE value="20150515" />
+    <option name="LAST_COMMIT_MESSAGE" value="20150515" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/agenzia/home_agenzia.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/upload.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -732,13 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/grayscale.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/traduttore/snippet/correctionTraduttoreSnippet.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.153846">
@@ -764,13 +591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.029360967">
           <caret line="1" column="77" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/traduttore/home_traduttore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="201" column="33" selection-start-line="201" selection-start-column="33" selection-end-line="201" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -809,18 +629,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/linkedin profile.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/traduttore/workarea.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="72" column="27" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -828,7 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -836,7 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -854,18 +664,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/remarkable-bootstrap-notify/bootstrap-notify-3.1.3/dist/bootstrap-notify.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -873,7 +675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -881,7 +682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -889,7 +689,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="180" column="23" selection-start-line="180" selection-start-column="23" selection-end-line="180" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -914,13 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/explico.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/agenzia/snippet/aboutYourAgencySnippet.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -939,7 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.02915952">
           <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -947,7 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7921147">
           <caret line="10" column="2997" selection-start-line="10" selection-start-column="2997" selection-end-line="10" selection-end-column="2997" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -993,14 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/agenzia/snippet/profileAgenziaSnippet.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14550643">
@@ -1012,25 +794,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/agenzia/home_agenzia.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9697386">
-          <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="96" column="40" selection-start-line="96" selection-start-column="40" selection-end-line="96" selection-end-column="40" />
-          <folding>
-            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1038,40 +801,92 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="82" column="39" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/snippet/loginSnippet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26676178">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="108" column="9" selection-start-line="108" selection-start-column="9" selection-end-line="108" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/snippet/registrazioneTraduttoreSnippet.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5">
-          <caret line="71" column="89" selection-start-line="71" selection-start-column="89" selection-end-line="71" selection-end-column="89" />
+        <state vertical-scroll-proportion="-19.615385">
+          <caret line="84" column="37" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/snippet/loginSnippet.html">
+    <entry file="file://$PROJECT_DIR$/Explico - ScriptPHP/JSONEngine.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#form#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/home.js">
+    <entry file="file://$PROJECT_DIR$/app/styles/explico.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/grayscale.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="160" column="5" selection-start-line="160" selection-start-column="5" selection-end-line="160" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/traduttore/home_traduttore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="141" column="51" selection-start-line="141" selection-start-column="45" selection-end-line="141" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/agenzia/home_agenzia.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.724138">
+          <caret line="49" column="60" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/upload.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28125">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47994056">
+          <caret line="202" column="24" selection-start-line="202" selection-start-column="24" selection-end-line="202" selection-end-column="24" />
           <folding />
         </state>
       </provider>

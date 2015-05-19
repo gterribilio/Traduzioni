@@ -12,7 +12,7 @@ app.controller('UploadCtrl', ['$scope', '$rootScope', '$upload', 'APP_CFG', 'cus
         for (var i = 0; i < files.length; i++) {
           var file = files[i];
           $upload.upload({
-            url: APP_CFG.endpoint_server + '/upload.php',
+            url: APP_CFG.endpoint_server + '/upload.php?action=uploadImage',
             fields: {
               'user_id': $rootScope.userData.ID
             },

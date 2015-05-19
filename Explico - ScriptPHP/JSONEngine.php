@@ -6,6 +6,7 @@ require_once("./security.php");
 
 //includo file per invio mail
 require_once("./utility.inc.php");
+require_once("./upload.php");
 
 $json = array();
 //leggo l'azione passata in "GET" da eseguire per settare bene la query
@@ -435,7 +436,7 @@ else if($azione=="register") {
 		$email=$_GET['email'];
 		$country=$_GET['country'];
 		$city=$_GET['city'];
-
+		
 //campi traduttore
 		$nome=$_GET['nome'];
 		$cognome=$_GET['cognome'];
@@ -445,14 +446,20 @@ else if($azione=="register") {
 		$employees=$_GET['employees'];
 		$website=$_GET['website'];
 
-		$query="INSERT INTO `UTENTE` (`ID`, `USERNAME`, `PASSWORD`, `SALE`, `RUOLO`, `EMAIL`, `CITTA`, `PAESE`, `PAYPAL`, `IBAN`) VALUES
-		(NULL, '".$username."','".$password."', '".$sale."', '".$ruolo."', '".$email."', '".$city."', '".$country."' , NULL, NULL)";
+		$query="INSERT INTO `UTENTE` (`ID`, `USERNAME`, `PASSWORD`, `SALE`, `RUOLO`, `EMAIL`, `CITTA`, `PAESE`, `IMAGE`, `PAYPAL`, `IBAN`) VALUES
+		(NULL, '".$username."','".$password."', '".$sale."', '".$ruolo."', '".$email."', '".$city."', '".$country."', NULL, NULL, NULL)";
 		$result = execQuery($query, $nomeDB);
 
 		$query = "SELECT ID FROM `UTENTE` WHERE USERNAME = '".$username."'";
 		$result = execQuery($query, $nomeDB);
 		$row = @mysql_fetch_array($result, MYSQL_ASSOC);
 		$uid = $row['ID'];
+		
+		//GESTIONE DELL'IMMAGINE DEL PROFILO LINKEDIN
+		if(!empty($_GET['pictureUrl'])) {
+			//VEDI UPLOAD.PHP
+			uploadImageFromLinkedin($uid,$_GET['pictureUrl']);
+		}
 
 		if($ruolo=="TRADUTTORE") {
 

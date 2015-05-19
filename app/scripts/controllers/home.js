@@ -9,7 +9,7 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
     $rootScope.showWorkarea = false;
     $scope.usernamePresent = false;
 
-    // questa funzione di init permette ogni qualvolta l'utente esce senza chiudere la pagina in cui si trova di mandarlo alla home da loggato nel caso
+    // questa funzione di init peermette ogni qualvolta l'utente esce senza chiudere la pagina in cui si trova di mandarlo alla home da loggato nel caso
     //in cui nel session storage ci siano ancora i dati
     (function init() {
       if (customFactory.get('isLogged') && customFactory.get('userData') != null) {
@@ -29,14 +29,20 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
     services.getCodeTable("codetable=2").success(function (data) {
       //alert(JSON.stringify(data));
       $scope.cittaeAgenzia = data;
-      $scope.mothertonguesTraduttore = data;
       $scope.countriesTraduttore = data;
+    });
+
+    //tiro su la codetable delle languages
+    services.getCodeTable("codetable=3").success(function (data){
+      //alert(JSON.stringify(data));
+      $scope.mothertonguesTraduttore = data;
     });
 
     $rootScope.doLogout = function () {
       $location.path("/");
       $rootScope.isLogged = false;
       localStorage.clear();
+      IN.User.logout();
     };
 
     $rootScope.doJobsTraduttore = function () {
@@ -69,7 +75,10 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
         "&country=" + temp_country + "&mothertongue=" + temp_mothertongue, "register")
         .success(function (data) {
           if (data.jsonError != null || data.errCode != null) {
-            alert(data.errMsg);
+            $.notify(data.errMsg, {
+              type: 'danger',
+              allow_dismiss: true
+            });
           }
           else {
             $scope.doAccedi($scope.usernameTraduttore, $scope.passwordTraduttore);
@@ -86,7 +95,10 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
         "&country=" + temp_citta + "&website=" + $scope.websiteAgenzia, "register").
         success(function (data) {
           if (data.jsonError != null || data.errCode != null) {
-            alert(data.errMsg);
+            $.notify(data.errMsg, {
+              type: 'danger',
+              allow_dismiss: true
+            });
           }
           else {
             $scope.doAccedi($scope.usernameAgenzia, $scope.passwordAgenzia);
@@ -162,18 +174,19 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
     $scope.linkedinRegister = function (role) {
       IN.User.authorize(function () {
 
-        IN.API.Profile("me").fields(["firstName", "lastName", "location:(name,country:(code))", "pictureUrl", "emailAddress", "id"]).result(function (data) {
-
+        IN.API.Profile("me").fields(["firstName", "lastName", "location:(name,country:(code))", "pictureUrls::(original)", "emailAddress", "id"]).result(function (data) {
+        //IN.API.Raw("/people/~").result(function (data) {
           $rootScope.linkedinData = data.values[0];
 
           var temp_location = $rootScope.linkedinData.location.name.split(',');
           var temp_city = temp_location[0];
           var temp_country = temp_location[1];
+          var temp_pictureUrls = ($rootScope.linkedinData.pictureUrls.hasOwnProperty('values')) ? $rootScope.linkedinData.pictureUrls.values[0] : '';
           services.getFromRESTServer(
             "username=" + $rootScope.linkedinData.emailAddress + "&password=" + $rootScope.linkedinData.id
             + "&nome=" + $rootScope.linkedinData.firstName +
             "&cognome=" + $rootScope.linkedinData.lastName + "&email=" + $rootScope.linkedinData.emailAddress + "&ruolo=" + role +
-            "&country=" + temp_country + "&city=" + temp_city, "register")
+            "&country=" + temp_country + "&city=" + temp_city + "&pictureUrl=" + temp_pictureUrls, "register")
             .success(function (data) {
               if (data.jsonError != null || data.errCode != null) {
                 $.notify("Username already present! Please sign in!", {
@@ -182,7 +195,6 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
                 });
               }
               else {
-
                 $scope.doAccedi($rootScope.linkedinData.emailAddress, $rootScope.linkedinData.id);
               }
             });

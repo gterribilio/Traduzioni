@@ -152,6 +152,14 @@ a:focus {
     }
 }
 
+/*****
+
+CSS IMAGE CONTAIN, COVER, 100% 100%
+
+http://www.w3schools.com/cssref/playit.asp?filename=playcss_background-size&preval=cover
+
+*****/
+
 .intro {
     display: table;
     width: 100%;
@@ -161,10 +169,7 @@ a:focus {
     color: #fff;
     background: url(../images/intro-bg.jpg) no-repeat bottom center scroll;
     background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+  background-size:100% 100%;
 }
 
 .intro .intro-body, section .intro-body {

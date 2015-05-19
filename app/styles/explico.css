@@ -48,37 +48,25 @@ ul,p {
 .background-default {
   background: url(../images/london-bg.jpg) no-repeat 0 0;
   background-color: #000;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+  background-size:100% 100%;
 }
 
 #contact {
   background: url(../images/contact.jpg) no-repeat 0 0;
   background-color: #000;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+  background-size:100% 100%;
 }
 
 #registrazione_agenzia {
   background: url(../images/registrazione_agenzia.jpg) no-repeat 0 0;
   background-color: #000;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+  background-size:100% 100%;
 }
 
 #privacy {
   background: url(../images/privacy.jpg) no-repeat 0 0;
   background-color: #000;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+  background-size:100% 100%;
 }
 
 .row_shadow {
