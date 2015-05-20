@@ -43,6 +43,7 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
       $rootScope.isLogged = false;
       localStorage.clear();
       IN.User.logout();
+      FB.logout();
     };
 
     $rootScope.doJobsTraduttore = function () {
@@ -268,18 +269,31 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
     }
 
     $scope.facebookLogin = function (role) {
-      IN.User.authorize(function () {
+      FB.getLoginStatus(function (response) {
+        if (response.status === 'connected') {
+          doLoginFacebook();
+        } else { //gestisco sia lo stato NOT_AUTHORIZED che lo stato UNKNOWN
+          FB.login(function (response) {
+            // Handle the response object, like in statusChangeCallback() in our demo
+            // code.
+            if (response.status === 'connected') {
+              doLoginFacebook();
+            }
+            //else non fare niente
+          }, {
+            scope: 'email, public_profile, user_friends',
+            return_scopes: true
+          });//end login
+        }
+      });
+    }//end FacebookLogin
 
-        IN.API.Profile("me").fields(["firstName", "lastName", "location:(name,country:(code))", "pictureUrl", "emailAddress", "id"]).result(function (data) {
-
-          $rootScope.linkedinData = data.values[0];
-
-          $scope.doAccedi($rootScope.linkedinData.emailAddress, $rootScope.linkedinData.id);
-
-        });//end  IN.API.Profile("me")
-      });//end authorize
-    }//end linkedinRegister
-
+    function doLoginFacebook() {
+      FB.api('/me', function (response) {
+        $rootScope.facebookData = response;
+        $scope.doAccedi($rootScope.facebookData.email, $rootScope.facebookData.id);
+      });
+    }
     /**************** END FACEBOOK *******************/
 
   }]);//end Controller
