@@ -43,7 +43,11 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
       $rootScope.isLogged = false;
       localStorage.clear();
       IN.User.logout();
-      FB.logout();
+      FB.getLoginStatus(function (response) {
+        if (response.status === 'connected') {
+          FB.logout();
+        }
+      });
     };
 
     $rootScope.doJobsTraduttore = function () {
@@ -248,23 +252,23 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
         //var temp_location = $rootScope.facebookData.location.name.split(',');
         //var temp_city = temp_location[0];
         //var temp_country = temp_location[1];
-        $scope.facebookImage= "http://graph.facebook.com/" + $rootScope.facebookData.id + "/picture?type=large";
-          services.getFromRESTServer(
-            "username=" + $rootScope.facebookData.email + "&password=" + $rootScope.facebookData.id
-            + "&nome=" + $rootScope.facebookData.first_name +
-            "&cognome=" + $rootScope.facebookData.last_name + "&email=" + $rootScope.facebookData.email + "&ruolo=" + role +
+        $scope.facebookImage = "http://graph.facebook.com/" + $rootScope.facebookData.id + "/picture?type=large";
+        services.getFromRESTServer(
+          "username=" + $rootScope.facebookData.email + "&password=" + $rootScope.facebookData.id
+          + "&nome=" + $rootScope.facebookData.first_name +
+          "&cognome=" + $rootScope.facebookData.last_name + "&email=" + $rootScope.facebookData.email + "&ruolo=" + role +
             /*"&country=" + temp_country + "&city=" + temp_city +*/ "&pictureUrl=" + $scope.facebookImage + "&social=FACEBOOK", "register")
-            .success(function (data) {
-              if (data.jsonError != null || data.errCode != null) {
-                $.notify("Username already present! Please sign in!", {
-                  type: 'danger',
-                  allow_dismiss: true
-                });
-              }
-              else {
-                $scope.doAccedi($rootScope.facebookData.email, $rootScope.facebookData.id);
-              }
-            });
+          .success(function (data) {
+            if (data.jsonError != null || data.errCode != null) {
+              $.notify("Username already present! Please sign in!", {
+                type: 'danger',
+                allow_dismiss: true
+              });
+            }
+            else {
+              $scope.doAccedi($rootScope.facebookData.email, $rootScope.facebookData.id);
+            }
+          });
       });
     }
 
@@ -294,6 +298,7 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
         $scope.doAccedi($rootScope.facebookData.email, $rootScope.facebookData.id);
       });
     }
+
     /**************** END FACEBOOK *******************/
 
   }]);//end Controller

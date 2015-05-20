@@ -5,8 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11065f60-ee0e-4598-ac8a-b433e47c68e3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/fbChannel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/fbChannel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Explico - ScriptPHP/provaUploadImmagineFacebook.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/scripts/scripts.8f5dd196.js" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Explico\dist\scripts\scripts.81e8e505.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/home.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/snippet/loginSnippet.html" afterPath="$PROJECT_DIR$/app/views/snippet/loginSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/index.html" afterPath="$PROJECT_DIR$/dist/views/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/snippet/loginSnippet.html" afterPath="$PROJECT_DIR$/dist/views/snippet/loginSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/snippet/loginSnippet.html" afterPath="$PROJECT_DIR$/dist/views/views/snippet/loginSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/snippet/registrazioneAgenziaSnippet.html" afterPath="$PROJECT_DIR$/dist/views/snippet/registrazioneAgenziaSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/snippet/registrazioneAgenziaSnippet.html" afterPath="$PROJECT_DIR$/dist/views/views/snippet/registrazioneAgenziaSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/snippet/registrazioneTraduttoreSnippet.html" afterPath="$PROJECT_DIR$/dist/views/snippet/registrazioneTraduttoreSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/snippet/registrazioneTraduttoreSnippet.html" afterPath="$PROJECT_DIR$/dist/views/views/snippet/registrazioneTraduttoreSnippet.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Explico.iws" />
@@ -86,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/home.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.41595092">
-              <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+              <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -569,7 +581,13 @@
       <option name="project" value="LOCAL" />
       <updated>1432131918894</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="20150520">
+      <created>1432132444085</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1432132444085</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1001,7 +1019,7 @@
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.41595092">
-          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
           <folding />
         </state>
       </provider>

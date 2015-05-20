@@ -7,6 +7,7 @@
       
       <div class="form-group row" ng-class="{ 'has-error' : (userForm.usernameTraduttore.$invalid && !userForm.usernameTraduttore.$pristine) || usernamePresent }">
         <label class="col-xs-3 col-sm-offset-2 text-right control-label">Username*</label>
+
         <div class=col-sm-3>
           <input name=usernameTraduttore class=form-control ng-blur=checkUsername(usernameTraduttore) ng-model=usernameTraduttore required ng-minlength=6 placeholder="">
         </div>
@@ -18,6 +19,7 @@
       
       <div class="form-group row" ng-class="{ 'has-error' : userForm.passwordTraduttore.$invalid && !userForm.passwordTraduttore.$pristine }">
         <label class="col-xs-3 col-sm-offset-2 text-right control-label">Password*</label>
+
         <div class=col-sm-3>
           <input type=password id=passwordTraduttore name=passwordTraduttore class=form-control ng-model=passwordTraduttore required placeholder="" ng-pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$/">
         </div>
@@ -28,6 +30,7 @@
 
       <div class="form-group row" ng-class="{ 'has-error' : userForm.passwordTraduttoreR.$invalid && !userForm.passwordTraduttoreR.$pristine}">
         <label class="col-xs-3 col-sm-offset-2 text-right control-label"> Confirm password*</label>
+
         <div class="col-sm-3 col-xs-9">
           <input type=password id=passwordTraduttoreR name=passwordTraduttoreR pw-check=passwordTraduttore class=form-control required ng-model=passwordTraduttoreR placeholder="" ng-pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$/">
         </div>
@@ -46,6 +49,7 @@
       
       <div class="form-group row" ng-class="{ 'has-error' : userForm.emailTraduttore.$invalid && !userForm.emailTraduttore.$pristine }">
         <label class="col-xs-3 col-sm-offset-2 text-right control-label">Email*</label>
+
         <div class="col-sm-3 col-xs-9">
           <input type=email name=emailTraduttore class=form-control ng-model=emailTraduttore required placeholder="">
         </div>
@@ -59,6 +63,7 @@
       
       <div class="form-group row" ng-class="{ 'has-error' : userForm.nomeTraduttore.$invalid && !userForm.nomeTraduttore.$pristine }">
         <label class="col-xs-3 col-sm-offset-2 text-right control-label text-right">Name*</label>
+
         <div class=col-sm-3>
           <input name=nomeTraduttore class=form-control ng-model=nomeTraduttore required placeholder="">
         </div>
@@ -70,6 +75,7 @@
       
       <div class="form-group row" ng-class="{ 'has-error' : userForm.cognomeTraduttore.$invalid && !userForm.cognomeTraduttore.$pristine }">
         <label class="col-xs-3 col-sm-offset-2 text-right control-label">Surname*</label>
+
         <div class=col-sm-3>
           <input name=cognomeTraduttore class=form-control ng-model=cognomeTraduttore required placeholder="">
         </div>
@@ -81,6 +87,7 @@
       
       <div class="form-group row">
         <label class="col-xs-3 col-sm-offset-2 text-right control-label">Mothertongue</label>
+
         <div class=col-sm-3>
           <select class=form-control name=mothertongueTraduttore ng-model=mothertongueTraduttore ng-options="mothertongueTraduttore.DESCRIZIONE for mothertongueTraduttore in mothertonguesTraduttore"></select>
         </div>
@@ -89,6 +96,7 @@
       
       <div class="form-group row" ng-class="{ 'has-error' : userForm.countryTraduttore.$invalid && !userForm.countryTraduttore.$pristine }">
         <label class="col-xs-3 col-sm-offset-2 text-right control-label">Country*</label>
+
         <div class=col-sm-3>
           <select required class=form-control name=countryTraduttore ng-model=countryTraduttore ng-options="countryTraduttore.DESCRIZIONE for countryTraduttore in countriesTraduttore"></select>
         </div>
@@ -101,10 +109,10 @@
         
         <div class=text-center>
           <button type=submit class="btn btn-default" ng-disabled=userForm.$invalid>GET STARTED</button>
-		 <a class="btn btn-social btn-linkedin" ng-click="linkedinRegister('TRADUTTORE')">
-            <i class="fa fa-linkedin"></i> Register as Translator with LinkedIn
-          </a>
-          
+          <a class="btn btn-social btn-linkedin" ng-click="linkedinRegister('TRADUTTORE')">
+            <i class="fa fa-linkedin"></i> Register with LinkedIn</a>
+          <a class="btn btn-social btn-facebook" ng-click="facebookRegister('TRADUTTORE')">
+            <i class="fa fa-facebook"></i> Register with Facebook</a>
         </div>
       </div>
     </div>
