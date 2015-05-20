@@ -133,6 +133,54 @@ app.config(['$routeProvider', '$httpProvider', '$linkedInProvider',
     $linkedInProvider.set('appKey', '78yuued4wl0cgc').set('scope', 'r_emailaddress r_basicprofile').set('authorize', false);
   }]);
 
+/*********** RUN CODE **************/
+app.run(['$rootScope', '$window', 'services', function ($rootScope, $window) {
+    $window.fbAsyncInit = function () {
+      // Executed when the SDK is loaded
+      FB.init({
+        /*
+         The app id of the web app;
+         To register a new app visit Facebook App Dashboard
+         ( https://developers.facebook.com/apps/ )
+         */
+        appId: '456422687866536',
+        /*
+         Adding a Channel File improves the performance
+         of the javascript SDK, by addressing issues
+         with cross-domain communication in certain browsers.
+         */
+        channelUrl: 'app/channel.html',
+        /*
+         Set if you want to check the authentication status
+         at the start up of the app
+         */
+        status: true,
+        /*
+         Enable cookies to allow the server to access
+         the session
+         */
+        cookie: true,
+        /* Parse XFBML */
+        xfbml: true
+      });
+    };
+    // Are you familiar to IIFE ( http://bit.ly/iifewdb ) ?
+    (function (d) {
+      // load the Facebook javascript SDK
+      var js,
+        id = 'facebook-jssdk',
+        ref = d.getElementsByTagName('script')[0];
+      if (d.getElementById(id)) {
+        return;
+      }
+      js = d.createElement('script');
+      js.id = id;
+      js.async = true;
+      js.src = "http://connect.facebook.net/en_US/all.js";
+      ref.parentNode.insertBefore(js, ref);
+    }(document));
+  }]);
+
 function showModal(value, id) {
   var isAlert;
   if (id == undefined) id = "loading";

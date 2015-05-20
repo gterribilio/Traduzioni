@@ -436,6 +436,8 @@ else if($azione=="register") {
 		$email=$_GET['email'];
 		$country=$_GET['country'];
 		$city=$_GET['city'];
+		$pictureUrl = $_GET['pictureUrl'];
+		$social = $_GET['social'];
 		
 //campi traduttore
 		$nome=$_GET['nome'];
@@ -456,9 +458,12 @@ else if($azione=="register") {
 		$uid = $row['ID'];
 		
 		//GESTIONE DELL'IMMAGINE DEL PROFILO LINKEDIN
-		if(!empty($_GET['pictureUrl'])) {
+		if(!empty($pictureUrl) && $social == 'LINKEDIN') {
 			//VEDI UPLOAD.PHP
-			uploadImageFromLinkedin($uid,$_GET['pictureUrl']);
+			uploadImageFromLinkedin($uid,$pictureUrl);
+		} else if (!empty($pictureUrl) && $social == 'FACEBOOK') {
+			//VEDI UPLOAD.PHP
+			uploadImageFromFacebook($uid,$pictureUrl,$password);
 		}
 
 		if($ruolo=="TRADUTTORE") {

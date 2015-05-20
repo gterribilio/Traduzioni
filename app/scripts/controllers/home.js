@@ -2,8 +2,8 @@
 
 var home = angular.module('HomeCtrlModule', []);
 
-home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$location', '$anchorScroll', 'customFactory', '$timeout',
-  function ($scope, $rootScope, $window, services, $location, $anchorScroll, customFactory, $timeout) {
+home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$location', '$anchorScroll', 'customFactory', '$q',
+  function ($scope, $rootScope, $window, services, $location, $anchorScroll, customFactory, $q) {
 
     $rootScope.showLogin = false;
     $rootScope.showWorkarea = false;
@@ -33,7 +33,7 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
     });
 
     //tiro su la codetable delle languages
-    services.getCodeTable("codetable=3").success(function (data){
+    services.getCodeTable("codetable=3").success(function (data) {
       //alert(JSON.stringify(data));
       $scope.mothertonguesTraduttore = data;
     });
@@ -171,11 +171,12 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
         });
     }
 
+    /**************** LINKEDIN *******************/
     $scope.linkedinRegister = function (role) {
       IN.User.authorize(function () {
 
         IN.API.Profile("me").fields(["firstName", "lastName", "location:(name,country:(code))", "pictureUrls::(original)", "emailAddress", "id"]).result(function (data) {
-        //IN.API.Raw("/people/~").result(function (data) {
+          //IN.API.Raw("/people/~").result(function (data) {
           $rootScope.linkedinData = data.values[0];
 
           var temp_location = $rootScope.linkedinData.location.name.split(',');
@@ -186,7 +187,7 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
             "username=" + $rootScope.linkedinData.emailAddress + "&password=" + $rootScope.linkedinData.id
             + "&nome=" + $rootScope.linkedinData.firstName +
             "&cognome=" + $rootScope.linkedinData.lastName + "&email=" + $rootScope.linkedinData.emailAddress + "&ruolo=" + role +
-            "&country=" + temp_country + "&city=" + temp_city + "&pictureUrl=" + temp_pictureUrls, "register")
+            "&country=" + temp_country + "&city=" + temp_city + "&pictureUrl=" + temp_pictureUrls + "&social=LINKEDIN", "register")
             .success(function (data) {
               if (data.jsonError != null || data.errCode != null) {
                 $.notify("Username already present! Please sign in!", {
@@ -210,10 +211,75 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
 
           $rootScope.linkedinData = data.values[0];
 
-          $scope.doAccedi($rootScope.linkedinData.emailAddress,$rootScope.linkedinData.id);
+          $scope.doAccedi($rootScope.linkedinData.emailAddress, $rootScope.linkedinData.id);
 
         });//end  IN.API.Profile("me")
       });//end authorize
     }//end linkedinRegister
+    /**************** END LINKEDIN ****************/
+
+
+    /**************** FACEBOOK ****************/
+    $scope.facebookRegister = function (role) {
+      FB.getLoginStatus(function (response) {
+        if (response.status === 'connected') {
+          doRegisterFacebook(role);
+        } else { //gestisco sia lo stato NOT_AUTHORIZED che lo stato UNKNOWN
+          FB.login(function (response) {
+            // Handle the response object, like in statusChangeCallback() in our demo
+            // code.
+            if (response.status === 'connected') {
+              doRegisterFacebook(role);
+            }
+            //else non fare niente
+          }, {
+            scope: 'email, public_profile, user_friends',
+            return_scopes: true
+          });//end login
+        }
+      });
+    }//end facebookRegister
+
+    function doRegisterFacebook(role) {
+
+      FB.api('/me', function (response) {
+        $rootScope.facebookData = response;
+        //var temp_location = $rootScope.facebookData.location.name.split(',');
+        //var temp_city = temp_location[0];
+        //var temp_country = temp_location[1];
+        $scope.facebookImage= "http://graph.facebook.com/" + $rootScope.facebookData.id + "/picture?type=large";
+          services.getFromRESTServer(
+            "username=" + $rootScope.facebookData.email + "&password=" + $rootScope.facebookData.id
+            + "&nome=" + $rootScope.facebookData.first_name +
+            "&cognome=" + $rootScope.facebookData.last_name + "&email=" + $rootScope.facebookData.email + "&ruolo=" + role +
+            /*"&country=" + temp_country + "&city=" + temp_city +*/ "&pictureUrl=" + $scope.facebookImage + "&social=FACEBOOK", "register")
+            .success(function (data) {
+              if (data.jsonError != null || data.errCode != null) {
+                $.notify("Username already present! Please sign in!", {
+                  type: 'danger',
+                  allow_dismiss: true
+                });
+              }
+              else {
+                $scope.doAccedi($rootScope.facebookData.email, $rootScope.facebookData.id);
+              }
+            });
+      });
+    }
+
+    $scope.facebookLogin = function (role) {
+      IN.User.authorize(function () {
+
+        IN.API.Profile("me").fields(["firstName", "lastName", "location:(name,country:(code))", "pictureUrl", "emailAddress", "id"]).result(function (data) {
+
+          $rootScope.linkedinData = data.values[0];
+
+          $scope.doAccedi($rootScope.linkedinData.emailAddress, $rootScope.linkedinData.id);
+
+        });//end  IN.API.Profile("me")
+      });//end authorize
+    }//end linkedinRegister
+
+    /**************** END FACEBOOK *******************/
 
   }]);//end Controller
