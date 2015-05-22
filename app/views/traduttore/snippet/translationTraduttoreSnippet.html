@@ -1,73 +1,87 @@
 <!-- In Deadline -->
-<div class="row_shadow">
-	<h2>TRANSLATION</h2>
-	<h4>In Deadline</h4>
-	<div class="alert alert-info" role="alert">Here you can find all your <strong>not yet started or not yet finished translation jobs</strong>. Click on #ID to accept or view the job detail.</div>
-	<div ng-if="indeadlineTranslationList == NULL" class="alert alert-warning" role="alert">At the moment you don't have any in deadline jobs! Can we help you?
-	</div>
+<div class="row_shadow" style="padding: 40px 0px 40px 0px;">
+  <div style="margin-left:30px;">
+    <h2>TRANSLATION</h2>
+  </div>
+  <div class="row_shadow">
+    <h4>In Deadline</h4>
 
-	<div ng-if="indeadlineTranslationList != NULL">
-		<table class="table table-condensed">
-			<thead>
-				<tr>
-					<th><label>#ID</label></th>
-					<th><label>Expire before</label></th>
-					<th><label>Agency Name</label></th>
-					<th><label>From Language</label></th>
-					<th><label>To Language</label></th>
-					<th><label>Ktr number</label></th>
-					<th><label>Total price</label></th>
-					<th><label>Status</label></th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr id="{{$index}}" ng-repeat="indeadlineItem in indeadlineTranslationList" class="table-striped">
-					<td><p><a ng-click="showWorkarea=true;" href="#/workarea/translation/{{indeadlineItem.ID}}">{{indeadlineItem.ID}}</a></p></td>
-					<td><p>{{indeadlineItem.DATA_SCADENZA | date:'dd/MM/yyyy'}}</p></td>
-					<td><p>{{indeadlineItem.ID_AGENZIA}}</p></td>
-					<td><p>{{indeadlineItem.LINGUA_DA}}</p></td>
-					<td><p>{{indeadlineItem.LINGUA_A}}</p></td>
-					<td><p>{{indeadlineItem.NUM_KTR}} ktr</p></td>
-					<td><p>{{indeadlineItem.PREZZO_TOT}}</p></td>
-					<!--<td style="color:blue;font-weight:bold;">{{(indeadlineItem.STATO=='DECLINED' || indeadlineItem.STATO=='ENGAGMENT') ? 'COMPETITION' : indeadlineItem.STATO}}</p>
-					</td>-->
+    <div class="alert alert-info" role="alert">Here you can find all your <strong>not yet started or not yet finished
+      translation jobs</strong>. Click on #ID to accept or view the job detail.
+    </div>
+    <div ng-if="indeadlineTranslationList == NULL" class="alert alert-warning" role="alert">At the moment you don't have
+      any in deadline jobs! Can we help you?
+    </div>
+
+    <div ng-if="indeadlineTranslationList != NULL">
+      <table class="table table-condensed">
+        <thead>
+        <tr>
+          <th><label>#ID</label></th>
+          <th><label>Expire before</label></th>
+          <th><label>Agency Name</label></th>
+          <th><label>From Language</label></th>
+          <th><label>To Language</label></th>
+          <th><label>Ktr number</label></th>
+          <th><label>Total price</label></th>
+          <th><label>Status</label></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr id="{{$index}}" ng-repeat="indeadlineItem in indeadlineTranslationList" class="table-striped">
+          <td><p><a ng-click="showWorkarea=true;" href="#/workarea/translation/{{indeadlineItem.ID}}">{{indeadlineItem.ID}}</a>
+          </p></td>
+          <td><p>{{indeadlineItem.DATA_SCADENZA | date:'dd/MM/yyyy'}}</p></td>
+          <td><p>{{indeadlineItem.ID_AGENZIA}}</p></td>
+          <td><p>{{indeadlineItem.LINGUA_DA}}</p></td>
+          <td><p>{{indeadlineItem.LINGUA_A}}</p></td>
+          <td><p>{{indeadlineItem.NUM_KTR}} ktr</p></td>
+          <td><p>{{indeadlineItem.PREZZO_TOT}}</p></td>
+          <!--<td style="color:blue;font-weight:bold;">{{(indeadlineItem.STATO=='DECLINED' || indeadlineItem.STATO=='ENGAGMENT') ? 'COMPETITION' : indeadlineItem.STATO}}</p>
+                    </td>-->
           <td style="color:blue;font-weight:bold;"><p>{{indeadlineItem.STATO}}</p></td>
-				</tr>
-			</tbody>
-		</table>
-	</div> <!-- end ng-if -->
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- end ng-if -->
 
-	<h4>Done</h4>
-	<div class="alert alert-info" role="alert">Here you can find all your <strong>not yet started or not yet finished translation jobs</strong>. Click on #ID to accept or view the job detail.</div>
-	<div ng-if="doneTranslationList == NULL" class="alert alert-warning" role="alert">At the moment you don't have any done jobs! Can we help you?
-	</div>
-	<div ng-if="doneTranslationList != NULL">
-		<table class="table table-condensed">
-			<thead>
-				<tr>
-					<th><label>#ID</label></th>
-					<th><label>Expire before</label></th>
-					<th><label>Agency Name</label></th>
-					<th><label>From Language</label></th>
-					<th><label>To Language</label></th>
-					<th><label>Ktr number</label></th>
-					<th><label>Total price</label></th>
-					<th><label>Status</label></th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr id="{{$index}}" ng-repeat="doneItem in doneTranslationList" class="table-striped">
-					<td><p>{{doneItem.ID}}</p></td>
-					<td><p>{{doneItem.DATA_SCADENZA | date:'dd/MM/yyyy'}}</p></td>
-					<td><p>{{doneItem.ID_AGENZIA}}</p></td>
-					<td><p>{{doneItem.LINGUA_DA}}</p></td>
-					<td><p>{{doneItem.LINGUA_A}}</p></td>
-					<td><p>{{doneItem.NUM_KTR}} ktr</p></td>
-					<td><p>{{doneItem.PREZZO_TOT}}</p></td>
-					<td style="color:blue;font-weight:bold;">{{doneItem.STATO}}</p></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-	<div style="clear:both;"></div>
+    <h4>Done</h4>
+
+    <div class="alert alert-info" role="alert">Here you can find all your <strong>not yet started or not yet finished
+      translation jobs</strong>. Click on #ID to accept or view the job detail.
+    </div>
+    <div ng-if="doneTranslationList == NULL" class="alert alert-warning" role="alert">At the moment you don't have any
+      done jobs! Can we help you?
+    </div>
+    <div ng-if="doneTranslationList != NULL">
+      <table class="table table-condensed">
+        <thead>
+        <tr>
+          <th><label>#ID</label></th>
+          <th><label>Expire before</label></th>
+          <th><label>Agency Name</label></th>
+          <th><label>From Language</label></th>
+          <th><label>To Language</label></th>
+          <th><label>Ktr number</label></th>
+          <th><label>Total price</label></th>
+          <th><label>Status</label></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr id="{{$index}}" ng-repeat="doneItem in doneTranslationList" class="table-striped">
+          <td><p>{{doneItem.ID}}</p></td>
+          <td><p>{{doneItem.DATA_SCADENZA | date:'dd/MM/yyyy'}}</p></td>
+          <td><p>{{doneItem.ID_AGENZIA}}</p></td>
+          <td><p>{{doneItem.LINGUA_DA}}</p></td>
+          <td><p>{{doneItem.LINGUA_A}}</p></td>
+          <td><p>{{doneItem.NUM_KTR}} ktr</p></td>
+          <td><p>{{doneItem.PREZZO_TOT}}</p></td>
+          <td style="color:blue;font-weight:bold;">{{doneItem.STATO}}</p></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="clear:both;"></div>
+  </div>
 </div>

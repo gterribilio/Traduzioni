@@ -1,61 +1,71 @@
-<div class="row_shadow">
-	<h2>EDUCATION</h2>
-	<div ng-if="educationList == NULL" class="alert alert-warning" role="alert">At the moment you don't have any education skills! Can we help you?
-	</div>
-	<form name="educationForm" ng-submit="doAddEducation()" novalidate> <!--disabilito validazione html5-->
-		<div class="panel panel-default well col-md-10" style="opacity:0.9;">
-			<div class="panel-body">
-				<div class="row form-group">
-					<!-- INSTITUTE -->
-					<div ng-class="{ 'has-error' : educationForm.institute.$invalid && !educationForm.institute.$pristine }">
-						<label class="col-xs-2 control-label text-right ">Institute*</label>
+<div class="row_shadow" style="padding: 40px 0px 40px 0px;">
+  <div style="margin-left:30px;">
+    <h2>EDUCATION</h2>
+  </div>
+  <div class="row_shadow">
+    <div ng-if="educationList == NULL" class="alert alert-warning" role="alert">At the moment you don't have any
+      education skills! Can we help you?
+    </div>
+    <form name="educationForm" ng-submit="doAddEducation()" novalidate> <!--disabilito validazione html5-->
+      <div class="panel panel-default well col-md-10" style="opacity:0.9;">
+        <div class="panel-body">
+          <div class="row form-group">
+            <!-- INSTITUTE -->
+            <div ng-class="{ 'has-error' : educationForm.institute.$invalid && !educationForm.institute.$pristine }">
+              <label class="col-xs-2 control-label text-right ">Institute*</label>
 						<span class="col-sm-4">
-							<input type="text" name="institute" class="form-control" ng-model="institute" required placeholder="" data-toggle="tooltip" data-placement="right" title="Name of the Institute"></span>
-						</div>
+							<input type="text" name="institute" class="form-control" ng-model="institute" required placeholder=""
+                     data-toggle="tooltip" data-placement="right" title="Name of the Institute"></span>
+            </div>
 
-						<!-- FIELD -->
-						<div ng-class="{ 'has-error' : educationForm.fieldE.$invalid && !educationForm.fieldE.$pristine }">
-							<label class="col-xs-2 control-label text-right">Field*</label>
-							<span class="col-sm-4"><input type="text" name="field" class="form-control" ng-model="fieldE" required data-toggle="tooltip" data-placement="right" title="Name of Course of the University"></span>
-						</div>
+            <!-- FIELD -->
+            <div ng-class="{ 'has-error' : educationForm.fieldE.$invalid && !educationForm.fieldE.$pristine }">
+              <label class="col-xs-2 control-label text-right">Field*</label>
+              <span class="col-sm-4"><input type="text" name="field" class="form-control" ng-model="fieldE" required
+                                            data-toggle="tooltip" data-placement="right"
+                                            title="Name of Course of the University"></span>
+            </div>
 
-					</div>
+          </div>
 
-					<!-- SEND BUTTON -->
-					<div class="text-right" style="margin-top:10px;">
-						<button type="submit" class="btn btn-lg btn-success btn-sm" ng-disabled="educationForm.$invalid">
-							<i class='fa fa-book' /> Add education
-						</button>
-					</div>
-				</div>
-			</div>
-			<div style="clear:both;"></div>
-		</form>
+          <!-- SEND BUTTON -->
+          <div class="text-right" style="margin-top:10px;">
+            <button type="submit" class="btn btn-lg btn-default btn-sm" ng-disabled="educationForm.$invalid">
+              <i class='fa fa-book'/> Add education
+            </button>
+          </div>
+        </div>
+      </div>
+      <div style="clear:both;"></div>
+    </form>
 
-		<div ng-if="educationList.length !=0">
-			<div id="{{$index}}" ng-repeat="education in educationList">
-				<div class="panel panel-default well col-md-10" style="opacity:0.9;">
-					<div class="panel-body">
-						<div class="row form-group">
-							<!-- INSTITUTE -->
-							<label class="col-xs-2 control-label text-right">Institute:</label>
-							<span class="col-sm-3">{{education.INSTITUTE}}</span>
-							<!-- FIELD -->
-							<label class="col-xs-2 control-label text-right">Field:</label>
-							<span class="col-sm-3">{{education.FIELD}}</span>
-						</div>
-						<!-- DELETE BUTTON -->
-						<form name="educationForm" ng-submit="doDeleteEducation(education.ID)" novalidate> <!--disabilito validazione html5-->
-							<div class="text-right" style="margin-top:10px;">
-								<button type="submit" class="btn btn-lg btn-success btn-sm">
-									<i class='fa fa-times'/> Delete education
-								</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div style="clear:both;"></div>
-	</div><!-- end row shadow -->
+    <div ng-if="educationList.length !=0">
+      <div id="{{$index}}" ng-repeat="education in educationList">
+        <div class="panel panel-default well col-md-10" style="opacity:0.9;">
+          <div class="panel-body">
+            <div class="row form-group">
+              <!-- INSTITUTE -->
+              <label class="col-xs-2 control-label text-right">Institute:</label>
+              <span class="col-sm-3">{{education.INSTITUTE}}</span>
+              <!-- FIELD -->
+              <label class="col-xs-2 control-label text-right">Field:</label>
+              <span class="col-sm-3">{{education.FIELD}}</span>
+            </div>
+            <!-- DELETE BUTTON -->
+            <form name="educationForm" ng-submit="doDeleteEducation(education.ID)" novalidate>
+              <!--disabilito validazione html5-->
+              <div class="text-right" style="margin-top:10px;">
+                <button type="submit" class="btn btn-lg btn-default btn-sm">
+                  <i class='fa fa-times'/> Delete education
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="clear:both;"></div>
+  </div>
+  <!-- end row shadow -->
+</div>
 

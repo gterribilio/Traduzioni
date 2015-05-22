@@ -24,6 +24,7 @@
     <file url="file://$PROJECT_DIR$/app/views/traduttore/snippet/certificationsTraduttoreSnippet.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/traduttore/snippet/correctionTraduttoreSnippet.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/traduttore/snippet/educationTraduttoreSnippet.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/traduttore/snippet/interpretationTraduttoreSnippet.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/traduttore/snippet/languagesPairSnippet.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/traduttore/snippet/profileTraduttoreSnippet.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/traduttore/snippet/translationTraduttoreSnippet.html" charset="UTF-8" />

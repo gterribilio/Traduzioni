@@ -1,175 +1,177 @@
 <form name=profileForm novalidate>
-  <div class=row_shadow>
-    <h2>Your Profile</h2>
-    <div class="panel panel-default well col-xs-10" style=opacity:0.9>
-      <div class=panel-body>
-        <div class="row row-eq-height">
-          <div id=item_first_row_list class=col-xs-3 ng-controller=UploadCtrl>
+  <div class=row_shadow style="padding: 40px 0px 40px 0px">
+    <div style=margin-left:30px>
+      <h2>Your Profile</h2>
+    </div>
+    <div class=row_shadow>
+      <div class="row row-eq-height">
+        <div id=item_first_row_list class=col-xs-3 ng-controller=UploadCtrl>
 
-            <div id=container_image_profile>
-              <img class=thumb_img width=180 height=180 ng-src="{{userData.IMAGE == null ? 'images/profile_picture.jpg' : image()}}">
-              <p id=text_image_profile>
-                <i class="fa fa-camera"> <span class=button ng-file-select ng-model=files>Update image</span></i>
-              </p>
+          <div id=container_image_profile>
+            <img class=thumb_img width=180 height=180 ng-src="{{userData.IMAGE == null ? 'images/profile_picture.jpg' : image()}}">
+
+            <p id=text_image_profile>
+              <i class="fa fa-camera"> <span class=button ng-file-select ng-model=files>Update image</span></i>
+            </p>
+          </div>
+        </div>
+
+        
+        <div id=item_second_row_list class=col-xs-8>
+          <div class="row form-group" ng-show=!editMode>
+            <label class="col-xs-2 control-label text-right">Agency Name:</label>
+            <span class=col-sm-4>{{userData.NOME}}</span>
+          </div>
+          <div class="row form-group" ng-show=editMode>
+            <div ng-class="{ 'has-error' : profileForm.nomeAgenzia.$invalid && !profileForm.nomeAgenzia.$pristine }">
+              <label class="col-xs-2 control-label text-right">Agency Name*</label>
+              <span class=col-sm-4><input name=nomeAgenzia class=form-control ng-model=nomeAgenzia required></span>
             </div>
           </div>
 
           
-          <div id=item_second_row_list class=col-xs-8>
-            <div class="row form-group" ng-show=!editMode>
-              <label class="col-xs-2 control-label text-right">Agency Name:</label>
-              <span class=col-sm-4>{{userData.NOME}}</span>
-            </div>
-            <div class="row form-group" ng-show=editMode>
-              <div ng-class="{ 'has-error' : profileForm.nomeAgenzia.$invalid && !profileForm.nomeAgenzia.$pristine }">
-                <label class="col-xs-2 control-label text-right">Agency Name*</label>
-                <span class=col-sm-4><input name=nomeAgenzia class=form-control ng-model=nomeAgenzia required></span>
-              </div>
-            </div>
-
-            
-            <div class="form-group row" ng-show=!editMode>
-              <label class="col-xs-2 control-label text-right">Employees:</label>
-              <span class=col-sm-4>{{userData.NUM_IMPIEGATI}}</span>
-            </div>
-            <div ng-show=editMode class="form-group row">
-              <label for=impiegatoAgenzia class="col-xs-2 control-label text-right">Employees</label>
+          <div class="form-group row" ng-show=!editMode>
+            <label class="col-xs-2 control-label text-right">Employees:</label>
+            <span class=col-sm-4>{{userData.NUM_IMPIEGATI}}</span>
+          </div>
+          <div ng-show=editMode class="form-group row">
+            <label for=impiegatoAgenzia class="col-xs-2 control-label text-right">Employees</label>
               <span class=col-sm-4>
                   <select class=form-control id=impiegatoAgenzia name=impiegatoAgenzia ng-model=impiegatoAgenzia ng-options="impiegatoAgenzia.DESCRIZIONE for impiegatoAgenzia in impiegatiAgenzia" required></select>
               </span>
-            </div>
+          </div>
 
-            
-            <div class="form-group row" ng-show=!editMode>
-              <label class="col-xs-2 control-label text-right">Address:</label>
-              <span class=col-sm-4>{{userData.INDIRIZZO}}</span>
+          
+          <div class="form-group row" ng-show=!editMode>
+            <label class="col-xs-2 control-label text-right">Address:</label>
+            <span class=col-sm-4>{{userData.INDIRIZZO}}</span>
 
-              <label class="col-xs-2 control-label text-right">City:</label>
-              <span class=col-sm-4>{{userData.CITTA}}</span>
-            </div>
+            <label class="col-xs-2 control-label text-right">City:</label>
+            <span class=col-sm-4>{{userData.CITTA}}</span>
+          </div>
 
-            <div class="row form-group" ng-show=editMode>
-              <div ng-class="{ 'has-error' : profileForm.indirizzoAgenzia.$invalid && !profileForm.indirizzoAgenzia.$pristine }">
-                <label class="col-xs-2 control-label text-right">Address*</label>
+          <div class="row form-group" ng-show=editMode>
+            <div ng-class="{ 'has-error' : profileForm.indirizzoAgenzia.$invalid && !profileForm.indirizzoAgenzia.$pristine }">
+              <label class="col-xs-2 control-label text-right">Address*</label>
 								<span class=col-sm-4>
 									<input name=indirizzoAgenzia class=form-control ng-model=indirizzoAgenzia required>
 								</span>
-              </div>
+            </div>
 
-              <div ng-class="{ 'has-error' : profileForm.cittaAgenzia.$invalid && !profileForm.cittaAgenzia.$pristine }">
-                <label class="col-xs-2 control-label text-right">City*</label>
+            <div ng-class="{ 'has-error' : profileForm.cittaAgenzia.$invalid && !profileForm.cittaAgenzia.$pristine }">
+              <label class="col-xs-2 control-label text-right">City*</label>
 								<span class=col-sm-4>
 									<input name=cittaAgenzia class=form-control ng-model=cittaAgenzia required>
 								</span>
+            </div>
+          </div>
+
+          
+          <div class="form-group row" ng-show=!editMode>
+            <label class="col-xs-2 control-label text-right">Country:</label>
+            <span class=col-sm-4>{{userData.PAESE}}</span>
+
+            <label class="col-xs-2 control-label text-right">Zip Code:</label>
+            <span class=col-sm-4>{{userData.CODICE_POSTALE}}</span>
+          </div>
+
+          <div class="row form-group" ng-show=editMode>
+            <div ng-class="{ 'has-error' : profileForm.countryAgenzia.$invalid && !profileForm.countryAgenzia.$pristine }">
+              <label class="col-xs-2 text-right control-label">Country*</label>
+
+              <div class=col-sm-4>
+                <select class=form-control name=countryAgenzia ng-model=countryAgenzia ng-options="countryAgenzia.DESCRIZIONE for countryAgenzia in countriesAgenzia" required></select>
               </div>
             </div>
 
-            
-            <div class="form-group row" ng-show=!editMode>
-              <label class="col-xs-2 control-label text-right">Country:</label>
-              <span class=col-sm-4>{{userData.PAESE}}</span>
-
-              <label class="col-xs-2 control-label text-right">Zip Code:</label>
-              <span class=col-sm-4>{{userData.CODICE_POSTALE}}</span>
-            </div>
-
-            <div class="row form-group" ng-show=editMode>
-              <div ng-class="{ 'has-error' : profileForm.countryAgenzia.$invalid && !profileForm.countryAgenzia.$pristine }">
-                <label class="col-xs-2 text-right control-label">Country*</label>
-                <div class=col-sm-4>
-                  <select class=form-control name=countryAgenzia ng-model=countryAgenzia ng-options="countryAgenzia.DESCRIZIONE for countryAgenzia in countriesAgenzia" required></select>
-                </div>
-              </div>
-
-              <div ng-class="{ 'has-error' : profileForm.codicePostaleAgenzia.$invalid && !profileForm.codicePostaleAgenzia.$pristine }">
-                <label class="col-xs-2 control-label text-right">Zip Code*</label>
+            <div ng-class="{ 'has-error' : profileForm.codicePostaleAgenzia.$invalid && !profileForm.codicePostaleAgenzia.$pristine }">
+              <label class="col-xs-2 control-label text-right">Zip Code*</label>
 								<span class=col-sm-4>
 									<input name=codicePostaleAgenzia class=form-control ng-pattern="/^[0-9]+$/" ng-model=codicePostaleAgenzia required>
 								</span>
-              </div>
             </div>
+          </div>
 
-            
-            <div class="form-group row" ng-show=!editMode>
-              <label class="col-xs-2 control-label text-right">Phone:</label>
-              <span class=col-sm-4>{{userData.PHONE}}</span>
-            </div>
+          
+          <div class="form-group row" ng-show=!editMode>
+            <label class="col-xs-2 control-label text-right">Phone:</label>
+            <span class=col-sm-4>{{userData.PHONE}}</span>
+          </div>
 
-            <div class="row form-group" ng-show=editMode>
-              <div ng-class="{ 'has-error' : profileForm.telefonoAgenzia.$invalid && !profileForm.telefonoAgenzia.$pristine }">
-                <label class="col-xs-2 control-label text-right">Phone</label>
+          <div class="row form-group" ng-show=editMode>
+            <div ng-class="{ 'has-error' : profileForm.telefonoAgenzia.$invalid && !profileForm.telefonoAgenzia.$pristine }">
+              <label class="col-xs-2 control-label text-right">Phone</label>
 								<span class=col-sm-4>
 									<input type=tel name=telefonoAgenzia class=form-control ng-model=telefonoAgenzia ng-pattern="/^[0-9]+$/">
 								</span>
-              </div>
             </div>
+          </div>
 
-            
-            <div class="form-group row" ng-show=!editMode>
-              <label class="col-xs-2 control-label text-right">e-mail:</label>
-              <span class=col-sm-4>{{userData.EMAIL}}</span>
-            </div>
+          
+          <div class="form-group row" ng-show=!editMode>
+            <label class="col-xs-2 control-label text-right">e-mail:</label>
+            <span class=col-sm-4>{{userData.EMAIL}}</span>
+          </div>
 
-            <div class="row form-group" ng-show=editMode>
-              <div ng-class="{ 'has-error' : profileForm.emailAgenzia.$invalid && !profileForm.emailAgenzia.$pristine }">
-                <label class="col-xs-2 control-label text-right">e-mail*</label>
+          <div class="row form-group" ng-show=editMode>
+            <div ng-class="{ 'has-error' : profileForm.emailAgenzia.$invalid && !profileForm.emailAgenzia.$pristine }">
+              <label class="col-xs-2 control-label text-right">e-mail*</label>
 								<span class=col-sm-4>
 									<input type=email name=emailAgenzia class=form-control ng-model=emailAgenzia required>
 								</span>
-              </div>
             </div>
+          </div>
 
-            
-            <div class="form-group row" ng-show=!editMode>
-              <label class="col-xs-2 control-label text-right">Web:</label>
-              <span class=col-sm-4>{{userData.SITO_WEB}}</span>
-            </div>
+          
+          <div class="form-group row" ng-show=!editMode>
+            <label class="col-xs-2 control-label text-right">Web:</label>
+            <span class=col-sm-4>{{userData.SITO_WEB}}</span>
+          </div>
 
-            <div class="row form-group" ng-show=editMode>
-              <div ng-class="{ 'has-error' : profileForm.webAgenzia.$invalid && !profileForm.webAgenzia.$pristine }">
-                <label class="col-xs-2 control-label text-right">Web</label>
+          <div class="row form-group" ng-show=editMode>
+            <div ng-class="{ 'has-error' : profileForm.webAgenzia.$invalid && !profileForm.webAgenzia.$pristine }">
+              <label class="col-xs-2 control-label text-right">Web</label>
 								<span class=col-sm-4>
 									<input name=webAgenzia class=form-control ng-pattern="/\(?(?:(http|https|ftp):\/\/)?(?:((?:[^\W\s]|\.|-|[:]{1})+)@{1})?((?:www.)?(?:[^\W\s]|\.|-)+[\.][^\W\s]{2,4}|localhost(?=\/)|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(?::(\d*))?([\/]?[^\s\?]*[\/]{1})*(?:\/?([^\s\n\?\[\]\{\}\#]*(?:(?=\.)){1}|[^\s\n\?\[\]\{\}\.\#]*)?([\.]{1}[^\s\?\#]*)?)?(?:\?{1}([^\s\n\#\[\]]*))?([\#][^\s\n]*)?\)?/" ng-model=webAgenzia>
 								</span>
-              </div>
             </div>
+          </div>
 
-            
-            <div class="form-group row" ng-show=!editMode>
-              <label class="col-xs-2 control-label text-right">VAT:</label>
-              <span class=col-sm-4>{{userData.VAT}}</span>
-            </div>
+          
+          <div class="form-group row" ng-show=!editMode>
+            <label class="col-xs-2 control-label text-right">VAT:</label>
+            <span class=col-sm-4>{{userData.VAT}}</span>
+          </div>
 
-            <div class="row form-group" ng-show=editMode>
-              <div ng-class="{ 'has-error' : profileForm.vat.$invalid && !profileForm.vat.$pristine }">
+          <div class="row form-group" ng-show=editMode>
+            <div ng-class="{ 'has-error' : profileForm.vat.$invalid && !profileForm.vat.$pristine }">
               <label class="col-xs-2 control-label text-right">VAT number*</label>
 								<span class=col-sm-4>
 									<input name=vat class=form-control ng-model=vat required>
 								</span>
-                </div>
             </div>
-
           </div>
-        </div>
 
-        <div style=clear:both></div>
-        <div ng-show=!editMode class=text-right style=margin-top:10px>
-          <button type=submit class="btn btn-lg btn-success btn-sm" ng-click="editMode=true;">
-            <i class="fa fa-edit"></i> edit
-          </button>
         </div>
-
-        <div ng-show=editMode class=text-right style=margin-top:10px>
-          <button type=submit class="btn btn-lg btn-success btn-sm" ng-click="editMode=false;doUpdateProfileAgenzia();" ng-disabled=profileForm.$invalid>
-            <i class="fa fa-edit"></i> Confirm
-          </button>
-          <button type=submit class="btn btn-lg btn-success btn-sm" ng-click="editMode=false;">
-            <i class="fa fa-angle-double-left"></i> Cancel
-          </button>
-        </div>
-
-        <div class=clearfix></div>
       </div>
+
+      <div style=clear:both></div>
+      <div ng-show=!editMode class=text-right style=margin-top:10px>
+        <button type=submit class="btn btn-lg btn-default btn-sm" ng-click="editMode=true;">
+          <i class="fa fa-edit"></i> edit
+        </button>
+      </div>
+
+      <div ng-show=editMode class=text-right style=margin-top:10px>
+        <button type=submit class="btn btn-lg btn-default btn-sm" ng-click="editMode=false;doUpdateProfileAgenzia();" ng-disabled=profileForm.$invalid>
+          <i class="fa fa-edit"></i> Confirm
+        </button>
+        <button type=submit class="btn btn-lg btn-default btn-sm" ng-click="editMode=false;">
+          <i class="fa fa-angle-double-left"></i> Cancel
+        </button>
+      </div>
+
+      <div class=clearfix></div>
     </div>
     <div class=clearfix></div>
   </div>

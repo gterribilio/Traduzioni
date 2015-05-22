@@ -1,30 +1,39 @@
-<section id="workareaTraduttoreSnippet" style="padding-top:150px;color:black;" class="background-default">
-  <div class="col-xs-6">
-    <pdf src="getJobTODO"></pdf>
-  </div>
-  <div class="col-xs-5">
+<div class="background-default" style="padding-top:100px;height:100vh">
+  <div class="row_shadow" style="padding: 40px 0px 40px 0px;">
+    <div style="margin-left:30px;">
+      <h2>WORKAREA</h2>
+    </div>
+    <div class="row_shadow">
+      <div class="col-xs-6">
+        <pdf src="getJobTODO"></pdf>
+      </div>
+      <div class="col-xs-5">
 	<textarea name="done" ng-model="job.TEXT_DONE" id="done">
 	</textarea>
-    <script>
-      // Replace the <textarea id="editor1"> with a CKEditor
-      // instance, using default configuration.
-      CKEDITOR.replace( 'done');
-    </script>
-    <div style="margin-top:30px;" class="text-center" ng-if="!accepted && job.STATO!='IN APPROVAL'">
-      <button ng-click="doAccept()" class="btn btn-md btn-success">
-        <i class='fa fa-check' /> Accept
-      </button>
-      <button ng-click="doDecline()" class="btn btn-md btn-danger">
-        <i class='fa fa-close' /> Decline
-      </button>
-    </div>
-    <div style="margin-top:30px;" class="text-center" ng-if="accepted && job.STATO!='IN APPROVAL'">
-      <button ng-click="doSave()" class="btn btn-md btn-warning">
-        <i class='fa fa-save' /> Save
-      </button>
-      <button ng-click="doSend()" class="btn btn-md btn-success">
-        <i class='fa fa-send' /> Send & Finish
-      </button>
+        <script>
+          // Replace the <textarea id="editor1"> with a CKEditor
+          // instance, using default configuration.
+          CKEDITOR.replace('done');
+        </script>
+        <div style="margin-top:30px;" class="text-center" ng-if="!accepted && job.STATO!='IN APPROVAL'">
+          <button ng-click="doAccept()" class="btn btn-md btn-default">
+            <i class='fa fa-check'/> Accept
+          </button>
+          <button ng-click="doDecline()" class="btn btn-md btn-default">
+            <i class='fa fa-close'/> Decline
+          </button>
+        </div>
+        <div style="margin-top:30px;" class="text-center" ng-if="accepted && job.STATO!='IN APPROVAL'">
+          <button ng-click="doSave()" class="btn btn-md btn-defalut">
+            <i class='fa fa-save'/> Save
+          </button>
+          <button ng-click="doSend()" class="btn btn-md btn-default">
+            <i class='fa fa-send'/> Send & Finish
+          </button>
+        </div>
+      </div>
+      <div class="clearfix"></div>
     </div>
   </div>
-</section>
+  <div class="clearfix"></div>
+</div>

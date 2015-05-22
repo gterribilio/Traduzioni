@@ -26,6 +26,23 @@ switch ($azione) {
 		$codetable=$_GET['codetable'];
 		$query = "SELECT ID_ITEM,DESCRIZIONE FROM CODETABLE WHERE ID_CODETABLE='".$codetable."'";
 	break;
+	
+	case "search":
+		$mothertongueSearchFrom=$_GET['mothertongueSearchFrom'];
+		$mothertongueSearchTo=$_GET['mothertongueSearchTo'];
+		$service=$_GET['service'];
+		$typeNumber=$_GET['typeNumber'];
+		$pagesNumber=$_GET['pagesNumber'];
+		$typeNumberVal=$_GET['typeNumberVal'];
+		$pagesNumberVal=$_GET['pagesNumberVal'];
+		$field=$_GET['field'];
+		$ktr=$_GET['ktr'];
+		$deadline=$_GET['deadline'];
+		$pricefrom=$_GET['pricefrom'];
+		$priceto=$_GET['priceto'];
+		
+		$sql = and
+	break;
 
 	case "getImagePath":
 		$user_id=$_GET['user_id'];

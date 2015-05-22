@@ -1,91 +1,105 @@
-<div class="row_shadow">
-	<h2>Certifications</h2>
-	<div ng-if="certificationList == NULL" class="alert alert-warning" role="alert">At the moment you don't have any languages certification! Can we help you?
-	</div>
-	<form name="certificationForm" ng-submit="doAddCertification()" novalidate> <!--disabilito validazione html5-->
-		<div class="panel panel-default well col-md-10" style="opacity:0.9;">
-			<div class="panel-body">
+<div class="row_shadow" style="padding: 40px 0px 40px 0px;">
+  <div style="margin-left:30px;">
+    <h2>CERTIFICATION</h2>
+  </div>
+  <div class="row_shadow">
+    <div ng-if="certificationList == NULL" class="alert alert-warning" role="alert">At the moment you don't have any
+      languages certification! Can we help you?
+    </div>
+    <form name="certificationForm" ng-submit="doAddCertification()" novalidate> <!--disabilito validazione html5-->
+      <div class="panel panel-default well col-md-10" style="opacity:0.9;">
+        <div class="panel-body">
 
-				<!-- INSTITUTE -->
-				<div class="row form-group">
-					<div ng-class="{ 'has-error' : certificationForm.instituteC.$invalid && !certificationForm.instituteC.$pristine }">
-						<label class="col-xs-2 control-label text-right ">Institute*</label>
+          <!-- INSTITUTE -->
+          <div class="row form-group">
+            <div
+              ng-class="{ 'has-error' : certificationForm.instituteC.$invalid && !certificationForm.instituteC.$pristine }">
+              <label class="col-xs-2 control-label text-right ">Institute*</label>
 						<span class="col-sm-4">
-							<input type="text" name="instituteC" class="form-control" ng-model="instituteC" required placeholder="" data-toggle="tooltip" data-placement="right" title="Name of the Institute"></span>
-						</div>
-					</div>
+							<input type="text" name="instituteC" class="form-control" ng-model="instituteC" required placeholder=""
+                     data-toggle="tooltip" data-placement="right" title="Name of the Institute"></span>
+            </div>
+          </div>
 
-					<div class="row form-group">
-						<!-- DATE -->
-						<div ng-class="{ 'has-error' : certificationForm.date.$invalid && !certificationForm.date.$pristine }">
-							<label for="date" class="col-xs-2 control-label text-right">Date</label>
+          <div class="row form-group">
+            <!-- DATE -->
+            <div ng-class="{ 'has-error' : certificationForm.date.$invalid && !certificationForm.date.$pristine }">
+              <label for="date" class="col-xs-2 control-label text-right">Date</label>
 							<span class="col-sm-4">
-								<input type="date" name="date" ng-model="date" class="form-control" placeholder="" ng-pattern="/^((\d{4})-(\d{2})-(\d{2}))$/" data-toggle="tooltip" data-placement="right" title="Format dd/mm/yyyy"/>
+								<input type="date" name="date" ng-model="date" class="form-control" placeholder=""
+                       ng-pattern="/^((\d{4})-(\d{2})-(\d{2}))$/" data-toggle="tooltip" data-placement="right"
+                       title="Format dd/mm/yyyy"/>
 							</span>
-						</div>
-					</div>
-					<div class="row form-group">
-						<!-- CERTIFICATION -->
-						<div ng-class="{ 'has-error' : certificationForm.certification.$invalid && !certificationForm.certification.$pristine }">
-							<label for="certification" class="col-xs-2 control-label text-right">Certification*</label>
-							<span class="col-sm-4"><input required type="text" name="certification" ng-model="certification" class="form-control" data-toggle="tooltip" data-placement="right" title="Name of Certification"/></span>
-						</div>
-					</div>
-					<div class="row form-group">
-						<!-- LEVEL -->
-						<div ng-class="{ 'has-error' : certificationForm.level.$invalid && !certificationForm.level.$pristine }">
-							<label class="col-xs-2 control-label text-right">Level*</label>
+            </div>
+          </div>
+          <div class="row form-group">
+            <!-- CERTIFICATION -->
+            <div
+              ng-class="{ 'has-error' : certificationForm.certification.$invalid && !certificationForm.certification.$pristine }">
+              <label for="certification" class="col-xs-2 control-label text-right">Certification*</label>
+              <span class="col-sm-4"><input required type="text" name="certification" ng-model="certification"
+                                            class="form-control" data-toggle="tooltip" data-placement="right"
+                                            title="Name of Certification"/></span>
+            </div>
+          </div>
+          <div class="row form-group">
+            <!-- LEVEL -->
+            <div ng-class="{ 'has-error' : certificationForm.level.$invalid && !certificationForm.level.$pristine }">
+              <label class="col-xs-2 control-label text-right">Level*</label>
 							<span class="col-sm-4">
-								<select class="form-control" name="level" ng-model="level" required ng-options="level.DESCRIZIONE for level in levels"></select>
+								<select class="form-control" name="level" ng-model="level" required
+                        ng-options="level.DESCRIZIONE for level in levels"></select>
 							</span>
-						</div>
-					</div>
+            </div>
+          </div>
 
-					<!-- SEND BUTTON -->
-					<div class="text-right" style="margin-top:10px;">
-						<button type="submit" class="btn btn-lg btn-success btn-sm" ng-disabled="certificationForm.$invalid">
-							<i class='fa fa-flag' /> Add Certification
-						</button>
-					</div>
-				</div>
-			</div>
-			<div style="clear:both;"></div>
-		</form>
+          <!-- SEND BUTTON -->
+          <div class="text-right" style="margin-top:10px;">
+            <button type="submit" class="btn btn-lg btn-default btn-sm" ng-disabled="certificationForm.$invalid">
+              <i class='fa fa-flag'/> Add Certification
+            </button>
+          </div>
+        </div>
+      </div>
+      <div style="clear:both;"></div>
+    </form>
 
-		<div ng-if="certificationList.length !=0">
-			<div id="{{$index}}" ng-repeat="certification in certificationList">
-				<div class="panel panel-default well col-md-10" style="opacity:0.9;">
-					<div class="panel-body">
-						<div class="row form-group">
-							<!-- INSTITUTE -->
-							<label class="col-xs-2 control-label text-right">Institute:</label>
-							<span class="col-sm-3">{{certification.INSTITUTE}}</span>
-							<!-- DATE -->
-							<label class="col-xs-2 control-label text-right">Date:</label>
-							<span class="col-sm-3">{{certification.DATE | date:'dd/MM/yyyy'}}</span>
-						</div>
-						<div class="row form-group">
-							<!-- CERTIFICATION -->
-							<label class="col-xs-2 control-label text-right">Certification:</label>
-							<span class="col-sm-3">{{certification.CERTIFICATION}}</span>
-						</div>
-						<div class="row form-group">
-							<!-- LEVEL -->
-							<label class="col-xs-2 control-label text-right">Level:</label>
-							<span class="col-sm-3">{{certification.LEVEL}}</span>
-						</div>
-						<!-- DELETE BUTTON -->
-						<form name="certificationForm" ng-submit="doDeleteCertification(certification.ID)" novalidate> <!--disabilito validazione html5-->
-							<div class="text-right" style="margin-top:10px;">
-								<button type="submit" class="btn btn-lg btn-success btn-sm">
-									<i class='fa fa-times'/> Delete Certification
-								</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div style="clear:both;"></div>
-	</div><!-- end row shadow -->
-
+    <div ng-if="certificationList.length !=0">
+      <div id="{{$index}}" ng-repeat="certification in certificationList">
+        <div class="panel panel-default well col-md-10" style="opacity:0.9;">
+          <div class="panel-body">
+            <div class="row form-group">
+              <!-- INSTITUTE -->
+              <label class="col-xs-2 control-label text-right">Institute:</label>
+              <span class="col-sm-3">{{certification.INSTITUTE}}</span>
+              <!-- DATE -->
+              <label class="col-xs-2 control-label text-right">Date:</label>
+              <span class="col-sm-3">{{certification.DATE | date:'dd/MM/yyyy'}}</span>
+            </div>
+            <div class="row form-group">
+              <!-- CERTIFICATION -->
+              <label class="col-xs-2 control-label text-right">Certification:</label>
+              <span class="col-sm-3">{{certification.CERTIFICATION}}</span>
+            </div>
+            <div class="row form-group">
+              <!-- LEVEL -->
+              <label class="col-xs-2 control-label text-right">Level:</label>
+              <span class="col-sm-3">{{certification.LEVEL}}</span>
+            </div>
+            <!-- DELETE BUTTON -->
+            <form name="certificationForm" ng-submit="doDeleteCertification(certification.ID)" novalidate>
+              <!--disabilito validazione html5-->
+              <div class="text-right" style="margin-top:10px;">
+                <button type="submit" class="btn btn-lg btn-default btn-sm">
+                  <i class='fa fa-times'/> Delete Certification
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="clear:both;"></div>
+  </div>
+  <!-- end row shadow -->
+</div>

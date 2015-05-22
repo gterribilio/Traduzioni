@@ -7,81 +7,139 @@
     <div class="row_shadow">
       <div class="row form-group">
         <!-- FROM LANGUAGE -->
-        <label class="col-xs-2 control-label text-right ">From (language):</label>
-						<span class="col-sm-3">
-              <select class="form-control" name="mothertongueSearchFrom" ng-model="mothertongueSearchFrom" ng-options="mothertongueSearchFrom.DESCRIZIONE for mothertongueSearchFrom in languages"></select>
+        <div
+          ng-class="{ 'has-error' : searchForm.mothertongueSearchFrom.$invalid && !searchForm.mothertongueSearchFrom.$pristine }">
+          <label class="col-xs-2 control-label text-right ">From*</label>
+						<span class="col-sm-2">
+              <select class="form-control" name="mothertongueSearchFrom" ng-model="mothertongueSearchFrom" required
+                      ng-options="mothertongueSearchFrom.DESCRIZIONE for mothertongueSearchFrom in languages"></select>
             </span>
+        </div>
         <!-- TO LANGUAGE -->
-        <label class="col-xs-2 control-label text-right ">To (language):</label>
-						<span class="col-sm-3">
-              <select class="form-control" name="mothertongueSearchTo" ng-model="mothertongueSearchTo" ng-options="mothertongueSearchTo.DESCRIZIONE for mothertongueSearchTo in languages"></select>
+        <div
+          ng-class="{ 'has-error' : searchForm.mothertongueSearchTo.$invalid && !searchForm.mothertongueSearchTo.$pristine }">
+
+          <label class="col-xs-2 control-label text-right ">To*</label>
+						<span class="col-sm-2">
+              <select class="form-control" name="mothertongueSearchTo" ng-model="mothertongueSearchTo" required
+                      ng-options="mothertongueSearchTo.DESCRIZIONE for mothertongueSearchTo in languages"></select>
             </span>
+        </div>
+
+        <!-- SERVICES -->
+        <div
+          ng-class="{ 'has-error' : searchForm.service.$invalid && !searchForm.service.$pristine }">
+          <label class="col-xs-2 control-label text-right">Service*</label>
+						<span class="col-sm-2">
+							<select class="form-control" name="service" ng-model="service" required
+                      ng-options="service.DESCRIZIONE for service in services"></select>
+						</span>
+        </div>
       </div>
 
-      <!-- FIELD -->
+      <div class="row form-group">
+        <div ng-class="{ 'has-error' : searchForm.typeNumberVal.$invalid && !searchForm.typeNumberVal.$pristine }">
+          <!-- TYPE NUMBER -->
+          <label class="col-sm-2 control-label text-right">
+            <input type="checkbox" ng-model="typeNumber" name="typeNumber"> Type Number</label>
+        <span class="col-sm-2">
+          <input type="number" ng-show="typeNumber" ng-pattern="/^[0-9]+$/" class="form-control"
+                 ng-model="typeNumberVal" name="typeNumberVal">
+        </span>
+        </div>
+
+        <!-- PAGES NUMBER -->
+        <div ng-class="{ 'has-error' : searchForm.pagesNumberVal.$invalid && !searchForm.pagesNumberVal.$pristine }">
+          <label class="col-sm-2 control-label text-right">
+            <input type="checkbox" ng-model="pagesNumber" name="pagesNumber"> Pages Number</label>
+
+          <span class="col-sm-2">
+            <input type="number" ng-show="pagesNumber" ng-pattern="/^[0-9]+$/" class="form-control"
+                   ng-model="pagesNumberVal"
+                   name="pagesNumberVal">
+          </span>
+        </div>
+      </div>
+
+      <div ng-show="!showAdvancedFields" class="text-right" style="margin-top:10px;">
+        <a style="cursor: pointer;" ng-click="showAdvancedFields=true;">
+          <i class="fa fa-plus"></i> more options
+        </a>
+      </div>
+      <div ng-show="showAdvancedFields" class="text-right" style="margin-top:10px;">
+        <a style="cursor: pointer;" ng-click="showAdvancedFields=false;">
+          <i class="fa fa-minus"></i> less options
+        </a>
+      </div>
+    </div>
+    <!-- end shadow -->
+
+    <div class="row_shadow" ng-show="showAdvancedFields">
+
       <div class="row form-group">
         <label class="col-xs-2 control-label text-right ">Field:</label>
-						<span class="col-sm-3">
-              <select class="form-control" name="field" ng-model="field" required ng-options="field.DESCRIZIONE for field in fields"></select>
+						<span class="col-sm-2">
+              <select class="form-control" name="field" ng-model="field" required
+                      ng-options="field.DESCRIZIONE for field in fields"></select>
             </span>
-      </div>
 
-      <!-- DEADLINE -->
-      <div class="row form-group">
+        <!-- KTR -->
+        <div ng-class="{ 'has-error' : searchForm.ktr.$invalid && !searchForm.ktr.$pristine }">
+          <label class="col-xs-2 control-label text-right ">KTR:</label>
+						<span class="col-sm-2">
+              <input type="number" name="ktr" ng-pattern="/^[0-9]+$/" class="form-control" ng-model="ktr">
+            </span>
+        </div>
+
+        <!-- DEADLINE -->
         <div ng-class="{ 'has-error' : searchForm.field.$invalid && !searchForm.field.$pristine }">
           <label class="col-xs-2 control-label text-right ">Deadline:</label>
-          <div id="sandbox-container" style="padding-left:10px;padding-right:10px;" class="input-group date col-sm-3">
-            <input type="text" class="form-control" ng-model="deadline" name="deadline" data-provide="datepicker" data-date-format="dd/mm/yyyy"><span class="input-group-addon">
+
+          <div id="sandbox-container" style="padding-left:10px;padding-right:10px;" class="input-group date col-sm-2">
+            <input type="text" class="form-control" ng-model="deadline" name="deadline" data-provide="datepicker"
+                   data-date-format="dd/mm/yyyy"><span class="input-group-addon">
             <i class="glyphicon glyphicon-calendar"></i></span>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="row_shadow" style="margin-top:40px;">
-
-      <!-- SERVICES -->
-      <div class="row form-group">
-        <label class="col-xs-2 control-label text-right">Service*</label>
-						<span class="col-sm-3">
-							<select class="form-control" name="service" ng-model="service" required ng-options="service.DESCRIZIONE for service in services"></select>
-						</span>
-      </div>
-
-      <!-- KTR -->
-      <div class="row form-group">
-        <label class="col-xs-2 control-label text-right ">KTR:</label>
-						<span class="col-sm-3">
-              <input type="text" name="field" class="form-control" disabled ng-model="field" placeholder="" data-toggle="tooltip" data-placement="right" title="Name of the Institute">
-            </span>
-      </div>
 
       <!-- PRICE RANGE -->
       <div class="row form-group">
-        <label class="col-xs-2 control-label text-right">Price Range:</label>
+        <div ng-class="{ 'has-error' : (searchForm.priceto.$invalid && !searchForm.priceto.$pristine) ||
+          (searchForm.pricefrom.$invalid && !searchForm.pricefrom.$pristine)}">
+          <label class="col-xs-2 control-label text-right">Price Range:</label>
+        </div>
 
+        <div ng-class="{ 'has-error' : searchForm.pricefrom.$invalid && !searchForm.pricefrom.$pristine }">
         <span class="col-sm-1">
-          <input type="number" name="pricefrom" class="form-control" ng-model="pricefrom"/>
+          <input type="number" name="pricefrom" ng-model="pricefrom" class="form-control" ng-pattern="/^[0-9]+$/"
+                 ng-model="pricefrom"/>
         </span>
+        </div>
 
-        <span class="col-sm-1">
-          <input type="number" name="priceto" class="form-control col-sm-2" ng-model="priceto" />
-        </span>
+        <div ng-class="{ 'has-error' : searchForm.priceto.$invalid && !searchForm.priceto.$pristine }">
+          <span class="col-sm-1">
+            <input type="number" name="priceto" ng-model="priceto" class="form-control col-sm-2" ng-pattern="/^[0-9]+$/"
+                   ng-model="priceto"/>
+          </span>
+        </div>
       </div>
-
-      <div class="text-center" style="margin-top:10px;">
-        <button type="submit" class="btn btn-lg btn-default">
-          <i class='fa fa-search' /> Search
-        </button>
-      </div>
-
-      <div class="clearfix"></div>
     </div>
   </form>
-</div>
+  <div class="text-center" style="margin-top:10px;">
+    <button type="submit" ng-click="doResetForm()" class="btn btn-lg btn-default btn-sm">
+      <i class='fa fa-times'/> RESET
+    </button>
+    <button type="submit" ng-click="doSearch()" class="btn btn-lg btn-default btn-sm" ng-disabled="searchForm.$invalid">
+      <i class='fa fa-eraser'/> SEARCH
+    </button>
+  </div>
+</div> <!-- row shadow esterna -->
 
-<div ng-if="certificationList.length !=0">
-  <div id="{{$index}}" ng-repeat="certification in certificationList">
+
+<div ng-if="searchResult == NULL" class="alert alert-warning" role="alert">No translator found</div>
+<div ng-if="searchResult != NULL">
+  <div id="{{$index}}" ng-repeat="item in searchResult">
     <div class="panel panel-default well col-md-10" style="opacity:0.9;">
       <div class="panel-body">
         <div class="row form-group">
@@ -103,10 +161,14 @@
           <span class="col-sm-3">{{certification.LEVEL}}</span>
         </div>
         <!-- DELETE BUTTON -->
-        <form name="searchForm" ng-submit="doDeleteCertification(certification.ID)" novalidate> <!--disabilito validazione html5-->
+        <form name="searchForm" ng-submit="doDeleteCertification(certification.ID)" novalidate>
+          <!--disabilito validazione html5-->
           <div class="text-right" style="margin-top:10px;">
-            <button type="submit" class="btn btn-lg btn-success btn-sm">
-              <i class='fa fa-times'/> Delete Certification
+            <button type="submit" class="btn btn-lg btn-default btn-sm">
+              <i class='fa fa-times'/> RESET
+            </button>
+            <button type="submit" class="btn btn-lg btn-default btn-sm">
+              <i class='fa fa-times'/> SEARCH
             </button>
           </div>
         </form>
