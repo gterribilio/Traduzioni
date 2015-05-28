@@ -40,7 +40,7 @@
             <label for="impiegatoAgenzia" class="col-xs-2 control-label text-right">Employees</label>
               <span class="col-sm-4">
                   <select class="form-control" id="impiegatoAgenzia" name="impiegatoAgenzia" ng-model="impiegatoAgenzia"
-                          ng-options="impiegatoAgenzia.DESCRIZIONE for impiegatoAgenzia in impiegatiAgenzia"
+                          ng-options="impiegatoAgenzia.DESCRIZIONE for impiegatoAgenzia in employees"
                           required></select>
               </span>
           </div>
@@ -87,7 +87,7 @@
 
               <div class="col-sm-4">
                 <select class="form-control" name="countryAgenzia" ng-model="countryAgenzia"
-                        ng-options="countryAgenzia.DESCRIZIONE for countryAgenzia in countriesAgenzia"
+                        ng-options="countryAgenzia.DESCRIZIONE for countryAgenzia in countries"
                         required></select>
               </div>
             </div>

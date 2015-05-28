@@ -25,9 +25,9 @@ var app = angular
 
 var app_cfg = {
 
-  "endpoint_server": "http://explico.altervista.org",
+  "endpoint_server": "http://www.glifico.com",
 
-  "endpoint_upload_server": "http://www.pastafrescalioni.it",
+  "endpoint_upload_server": "http://www.glifico.com",
 
   "environment": "development",
   "request": {
@@ -35,7 +35,7 @@ var app_cfg = {
   },
   "development": {
     "urls": {
-      "config_endpoint": "http://www.pastafrescalioni.it/config.json.php"
+      "config_endpoint": "http://www.glifico.com/config.json.php"
     },
     "request": {}
   },

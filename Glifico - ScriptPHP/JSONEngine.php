@@ -13,12 +13,6 @@ $json = array();
 $azione = $_GET['action'];
 $callback = $_GET['callback'];
 
-$nomeDB = "my_explico";
-
-header("Access-Control-Allow-Origin: *");
-header("Content-Type: application/json");
-header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
-
 switch ($azione) {
 
 	//helper codeTable
@@ -40,14 +34,12 @@ switch ($azione) {
 		$deadline=$_GET['deadline'];
 		$pricefrom=$_GET['pricefrom'];
 		$priceto=$_GET['priceto'];
-		
-		$sql = and
 	break;
 
 	case "getImagePath":
 		$user_id=$_GET['user_id'];
 		$query = "SELECT IMAGE FROM UTENTE WHERE ID=".$user_id;
-		$result = execQuery($query, $nomeDB);
+		$result = execQuery($query);
 		while($row1 = @mysql_fetch_array($result, MYSQL_ASSOC)) {
 			array_push($json, $row1);
 		}
@@ -106,14 +98,14 @@ switch ($azione) {
 
 			//recupero la mail dell'agenzia a cui inviare la mail
 			$query="SELECT EMAIL FROM UTENTE U, JOBS_TRANSLATION J WHERE J.ID=".$id_job." AND J.ID_AGENZIA=U.ID";
-			$result = execQuery($query, $nomeDB);
+			$result = execQuery($query);
 			while($row1 = @mysql_fetch_array($result, MYSQL_ASSOC))
 			{
 				array_push($jsonData, $row1);
 			}
 			//recupero lo username dell'utente che ha rifiutato il job
 			$query="SELECT USERNAME FROM UTENTE U, JOBS_TRANSLATION J WHERE J.ID=".$id_job." AND J.ID_TRADUTTORE=U.ID";
-			$result = execQuery($query, $nomeDB);
+			$result = execQuery($query);
 			while($row1 = @mysql_fetch_array($result, MYSQL_ASSOC))
 			{
 				array_push($jsonData2, $row1);
@@ -126,7 +118,7 @@ switch ($azione) {
 
 			//recupero la mail dell'agenzia a cui inviare la mail
 			$query="SELECT EMAIL FROM UTENTE U, JOBS_CORRECTION J WHERE J.ID=".$id_job." AND J.ID_AGENZIA=U.ID";
-			$result = execQuery($query, $nomeDB);
+			$result = execQuery($query);
 			while($row1 = @mysql_fetch_array($result, MYSQL_ASSOC))
 			{
 				array_push($jsonData, $row1);
@@ -134,7 +126,7 @@ switch ($azione) {
 
 			//recupero lo username dell'utente che ha rifiutato il job
 			$query="SELECT USERNAME FROM UTENTE U, JOBS_CORRECTION J WHERE J.ID=".$id_job." AND J.ID_TRADUTTORE=U.ID";
-			$result = execQuery($query, $nomeDB);
+			$result = execQuery($query);
 			while($row1 = @mysql_fetch_array($result, MYSQL_ASSOC))
 			{
 				array_push($jsonData2, $row1);
@@ -153,7 +145,7 @@ switch ($azione) {
 
 		//recupero la mail dell'agenzia a cui inviare la mail
 		$query="SELECT EMAIL FROM UTENTE WHERE ID=".$id_agenzia;
-		$result = execQuery($query, $nomeDB);
+		$result = execQuery($query);
 		while($row1 = @mysql_fetch_array($result, MYSQL_ASSOC))
 		{
 			array_push($jsonData, $row1);
@@ -185,10 +177,10 @@ switch ($azione) {
 		$currency=$_GET['currency'];
 		$user_id=$_GET['user_id'];
 		$query="SELECT * FROM `LANGUAGE_PAIR` WHERE `FROM`='".$from."' AND `TO`='".$to."' AND SERVICE='".$service."' AND FIELD='".$field."' AND USER_ID=".$user_id;
-		$result = execQuery($query, $nomeDB);
+		$result = execQuery($query);
 		if(mysql_num_rows($result)==0) {
 			$query = "INSERT INTO `LANGUAGE_PAIR`(`ID`, `USER_ID`, `FROM`, `TO`, `FIELD`, `SERVICE`, `PRICE`, `CURRENCY`) VALUES (NULL,".$user_id.",'".$from."','".$to."','".$field."','".$service."','".$price."','".$currency."')";
-			execQuery($query, $nomeDB);
+			execQuery($query);
 			$query = "SELECT * FROM `LANGUAGE_PAIR` WHERE USER_ID=".$user_id;
 		} else {
 			$json = json_encode(array("errCode"=>"406","errMsg"=>"Pair already present!"));
@@ -206,7 +198,7 @@ switch ($azione) {
 		$pair_id=$_GET['pair_id'];
 		$user_id=$_GET['user_id'];
 		$query = "DELETE FROM `LANGUAGE_PAIR` WHERE ID=".$pair_id;
-		execQuery($query, $nomeDB);
+		execQuery($query);
 		$query = "SELECT * FROM `LANGUAGE_PAIR` WHERE USER_ID=".$user_id;
 	break;
 
@@ -216,10 +208,10 @@ switch ($azione) {
 		$field=$_GET['field'];
 		$user_id=$_GET['user_id'];		
 		$query="SELECT * FROM `EDUCATION` WHERE `INSTITUTE`='".$institute."' AND `FIELD`='".$field."' AND USER_ID=".$user_id;
-		$result = execQuery($query, $nomeDB);
+		$result = execQuery($query);
 		if(mysql_num_rows($result)==0) {
 			$query = "INSERT INTO `EDUCATION`(`ID`, `USER_ID`, `INSTITUTE`, `FIELD`) VALUES (NULL,".$user_id.",'".$institute."','".$field."')";
-			execQuery($query, $nomeDB);
+			execQuery($query);
 			$query = "SELECT * FROM `EDUCATION` WHERE USER_ID=".$user_id;
 		} else {
 			$json = json_encode(array("errCode"=>"406","errMsg"=>"Education already present!"));
@@ -237,7 +229,7 @@ switch ($azione) {
 		$education_id=$_GET['education_id'];
 		$user_id=$_GET['user_id'];
 		$query = "DELETE FROM `EDUCATION` WHERE ID=".$education_id;
-		execQuery($query, $nomeDB);
+		execQuery($query);
 		$query = "SELECT * FROM `EDUCATION` WHERE USER_ID=".$user_id;
 	break;
 
@@ -250,10 +242,10 @@ switch ($azione) {
 		$user_id=$_GET['user_id'];
 		
 		$query="SELECT * FROM `CERTIFICATION` WHERE `INSTITUTE`='".$institute."' AND `CERTIFICATION`='".$certification."' AND `LEVEL`='".$level."' AND USER_ID=".$user_id;
-		$result = execQuery($query, $nomeDB);
+		$result = execQuery($query);
 		if(mysql_num_rows($result)==0) {
 		$query = "INSERT INTO `CERTIFICATION`(`ID`, `USER_ID`, `INSTITUTE`, `DATE`, `CERTIFICATION`, `LEVEL`) VALUES (NULL,".$user_id.",'".$institute."','".$date."','".$certification."','".$level."')";
-			execQuery($query, $nomeDB);
+			execQuery($query);
 			$query = "SELECT * FROM `CERTIFICATION` WHERE USER_ID=".$user_id;
 		} else {
 			$json = json_encode(array("errCode"=>"406","errMsg"=>"Certification already present!"));
@@ -271,7 +263,7 @@ switch ($azione) {
 		$certification_id=$_GET['certification_id'];
 		$user_id=$_GET['user_id'];
 		$query = "DELETE FROM `CERTIFICATION` WHERE ID=".$certification_id;
-		execQuery($query, $nomeDB);
+		execQuery($query);
 		$query = "SELECT * FROM `CERTIFICATION` WHERE USER_ID=".$user_id;
 	break;
 
@@ -360,7 +352,7 @@ switch ($azione) {
 		$email= $_GET['email'];
 
 		$query1 = "UPDATE UTENTE SET CITTA='".$citta."', PAESE='".$country."', VAT='".$vat."', EMAIL='".$email."' WHERE ID=".$id;
-		execQuery($query1, $nomeDB);
+		execQuery($query1);
 		if($ruolo=="TRADUTTORE") {
 			$query="UPDATE TRADUTTORE SET NOME='".$nomeTraduttore."', COGNOME='".$cognomeTraduttore."', DATA_NASCITA='".$birthdayTraduttore."'
 			, MADRELINGUA='".$mothertongueTraduttore."' WHERE ID=".$id;
@@ -370,7 +362,7 @@ switch ($azione) {
 			INDIRIZZO='".$indirizzoAgenzia."', CODICE_POSTALE='".$codicePostale."' 
 			, PHONE='".$telefonoAgenzia."', SITO_WEB='".$webAgenzia."' WHERE ID=".$id;
 		}
-		execQuery($query, $nomeDB);
+		execQuery($query);
 		$query = "SELECT U.ID, U.USERNAME, U.PASSWORD, U.SALE, U.RUOLO, U.EMAIL, U.CITTA, U.PAESE FROM UTENTE U WHERE U.ID=".$id;
 		$azione="login"; //emulazione comportamento di login!!
 	break;
@@ -402,7 +394,7 @@ switch ($azione) {
 
 //il metodo execQuery si troverà su "mysql.inc.php"
 if(!empty($query)) {
-	$result = execQuery($query, $nomeDB);
+	$result = execQuery($query);
 	while($row = @mysql_fetch_array($result, MYSQL_ASSOC))
 	{
 		array_push($json, $row);
@@ -417,7 +409,7 @@ if($azione=="login" && count($json)>0) {
 		$jsonDettaglio = array();
 		if($json[0]["RUOLO"] == "AGENZIA") {
 			$query = "SELECT U.*, A.* FROM UTENTE U, AGENZIA A WHERE A.ID = ".$json[0]["ID"]." AND A.ID = U.ID";
-			$result1 = execQuery($query, $nomeDB);
+			$result1 = execQuery($query);
 			while($row1 = @mysql_fetch_array($result1, MYSQL_ASSOC))
 			{
 				array_push($jsonDettaglio, $row1);
@@ -425,7 +417,7 @@ if($azione=="login" && count($json)>0) {
 		}else {
 			//GESTIONE TRADUTTORE
 			$query = "SELECT U.*, T.* FROM TRADUTTORE T, UTENTE U WHERE T.ID = ".$json[0]["ID"]." AND T.ID = U.ID";
-			$result1 = execQuery($query, $nomeDB);
+			$result1 = execQuery($query);
 			while($row1 = @mysql_fetch_array($result1, MYSQL_ASSOC))
 			{
 				array_push($jsonDettaglio, $row1);
@@ -467,10 +459,10 @@ else if($azione=="register") {
 
 		$query="INSERT INTO `UTENTE` (`ID`, `USERNAME`, `PASSWORD`, `SALE`, `RUOLO`, `EMAIL`, `CITTA`, `PAESE`, `IMAGE`, `PAYPAL`, `IBAN`) VALUES
 		(NULL, '".$username."','".$password."', '".$sale."', '".$ruolo."', '".$email."', '".$city."', '".$country."', NULL, NULL, NULL)";
-		$result = execQuery($query, $nomeDB);
+		$result = execQuery($query);
 
 		$query = "SELECT ID FROM `UTENTE` WHERE USERNAME = '".$username."'";
-		$result = execQuery($query, $nomeDB);
+		$result = execQuery($query);
 		$row = @mysql_fetch_array($result, MYSQL_ASSOC);
 		$uid = $row['ID'];
 		
@@ -487,13 +479,13 @@ else if($azione=="register") {
 
 			$query = "INSERT INTO `TRADUTTORE` (`ID`, `NOME`, `COGNOME`, `MADRELINGUA`, `HAS_NEW_MESSAGE`) VALUES
 			(".$uid.", '".$nome."',  '".$cognome."',  '".$mothertongue."', 'N')";
-			$result = execQuery($query, $nomeDB);
+			$result = execQuery($query);
 		}
 		else if($ruolo=="AGENZIA") {
 //AGENZIA
 			$query = "INSERT INTO `AGENZIA` (`ID`, `NOME`, `NUM_IMPIEGATI`, `SITO_WEB`) VALUES
 			(".$uid.", '".$nome."',  '".$employees."',  '".$website."')";
-			$result = execQuery($query, $nomeDB);
+			$result = execQuery($query);
 		}
 		else {
 //TODO se ci saranno altri ruoli

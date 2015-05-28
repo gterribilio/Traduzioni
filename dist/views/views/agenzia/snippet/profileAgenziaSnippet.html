@@ -37,7 +37,7 @@
           <div ng-show=editMode class="form-group row">
             <label for=impiegatoAgenzia class="col-xs-2 control-label text-right">Employees</label>
               <span class=col-sm-4>
-                  <select class=form-control id=impiegatoAgenzia name=impiegatoAgenzia ng-model=impiegatoAgenzia ng-options="impiegatoAgenzia.DESCRIZIONE for impiegatoAgenzia in impiegatiAgenzia" required></select>
+                  <select class=form-control id=impiegatoAgenzia name=impiegatoAgenzia ng-model=impiegatoAgenzia ng-options="impiegatoAgenzia.DESCRIZIONE for impiegatoAgenzia in employees" required></select>
               </span>
           </div>
 
@@ -80,7 +80,7 @@
               <label class="col-xs-2 text-right control-label">Country*</label>
 
               <div class=col-sm-4>
-                <select class=form-control name=countryAgenzia ng-model=countryAgenzia ng-options="countryAgenzia.DESCRIZIONE for countryAgenzia in countriesAgenzia" required></select>
+                <select class=form-control name=countryAgenzia ng-model=countryAgenzia ng-options="countryAgenzia.DESCRIZIONE for countryAgenzia in countries" required></select>
               </div>
             </div>
 

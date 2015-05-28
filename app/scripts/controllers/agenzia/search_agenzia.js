@@ -12,21 +12,28 @@ search.controller('SearchAgenziaCtrl', ['$scope', '$rootScope', '$window', 'serv
     }
 
     //tiro su la codetable delle languages
-    services.getCodeTable("codetable=3").success(function (data) {
-      //alert(JSON.stringify(data));
-      $scope.languages = data;
-    });
+    if($rootScope.languages == null) {
+      services.getCodeTable("codetable=3").success(function (data) {
+        //alert(JSON.stringify(data));
+        $rootScope.languages = data;
+      });
+    }
 
     //fields
-    services.getCodeTable("codetable=4").success(function (data) {
-      //alert(JSON.stringify(data));
-      $scope.fields = data;
-    });
+    if($rootScope.fields == null) {
+      services.getCodeTable("codetable=4").success(function (data) {
+        //alert(JSON.stringify(data));
+        $rootScope.fields = data;
+      });
+    }
 
-    services.getCodeTable("codetable=5").success(function (data) {
-      //alert(JSON.stringify(data));
-      $scope.services = data;
-    });
+    //services
+    if($rootScope.services == null) {
+      services.getCodeTable("codetable=5").success(function (data) {
+        //alert(JSON.stringify(data));
+        $rootScope.services = data;
+      });
+    }
 
     $scope.doResetForm = function () {
       $scope.mothertongueSearchFrom = null;

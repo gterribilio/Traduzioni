@@ -89,7 +89,7 @@
           <label class="col-xs-3 col-sm-offset-2 text-right control-label">Mothertongue</label>
 
           <div class=col-sm-3>
-            <select class=form-control name=mothertongueTraduttore ng-model=mothertongueTraduttore ng-options="mothertongueTraduttore.DESCRIZIONE for mothertongueTraduttore in mothertonguesTraduttore"></select>
+            <select class=form-control name=mothertongueTraduttore ng-model=mothertongueTraduttore ng-options="mothertongueTraduttore.DESCRIZIONE for mothertongueTraduttore in languages"></select>
           </div>
         </div>
 
@@ -98,7 +98,7 @@
           <label class="col-xs-3 col-sm-offset-2 text-right control-label">Country*</label>
 
           <div class=col-sm-3>
-            <select required class=form-control name=countryTraduttore ng-model=countryTraduttore ng-options="countryTraduttore.DESCRIZIONE for countryTraduttore in countriesTraduttore"></select>
+            <select required class=form-control name=countryTraduttore ng-model=countryTraduttore ng-options="countryTraduttore.DESCRIZIONE for countryTraduttore in countries"></select>
           </div>
           <div class=col-sm-4>
           <span ng-show="userForm.countryTraduttore.$invalid && !userForm.countryTraduttore.$pristine" class=help-block>Required field</span>

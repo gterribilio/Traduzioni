@@ -20,23 +20,28 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
     })(); //end function
 
     //tiro su la codetable del numero degli impiegati per agenzia
-    services.getCodeTable("codetable=1").success(function (data) {
-      //alert(JSON.stringify(data));
-      $scope.employeesAgenzia = data;
-    });
+    if($rootScope.employees == null) {
+      services.getCodeTable("codetable=1").success(function (data) {
+        //alert(JSON.stringify(data));
+        $rootScope.employees = data;
+      });
+    }
 
     //tiro su la codetable delle città
-    services.getCodeTable("codetable=2").success(function (data) {
-      //alert(JSON.stringify(data));
-      $scope.cittaeAgenzia = data;
-      $scope.countriesTraduttore = data;
-    });
+    if($rootScope.countries == null) {
+      services.getCodeTable("codetable=2").success(function (data) {
+        //alert(JSON.stringify(data));
+        $rootScope.countries = data;
+      });
+    }
 
     //tiro su la codetable delle languages
-    services.getCodeTable("codetable=3").success(function (data) {
-      //alert(JSON.stringify(data));
-      $scope.mothertonguesTraduttore = data;
-    });
+    if($rootScope.languages == null) {
+      services.getCodeTable("codetable=3").success(function (data) {
+        //alert(JSON.stringify(data));
+        $rootScope.languages = data;
+      });
+    }
 
     $rootScope.doLogout = function () {
       $location.path("/");

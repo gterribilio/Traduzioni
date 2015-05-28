@@ -76,30 +76,30 @@ home.controller('HomeAgenziaCtrl',  ['$scope', '$rootScope', '$window', 'service
     });//end success
 
     //tiro su la codetable delle città
-    services.getCodeTable("codetable=2").success(function (data){
-      //alert(JSON.stringify(data));
-      $scope.countriesAgenzia=data;
-
-      for(var i=0; i<data.length;i++) {
-        if(data[i].DESCRIZIONE==$rootScope.userData.PAESE) {
-          $scope.countryAgenzia = data[i];
-        }
+    if($rootScope.countries == null) {
+      services.getCodeTable("codetable=2").success(function (data) {
+        //alert(JSON.stringify(data));
+        $rootScope.countries = data;
+      });
+    }
+    for (var i = 0; i < $rootScope.countries.length; i++) {
+      if ($rootScope.countries[i].DESCRIZIONE == $rootScope.userData.PAESE) {
+        $scope.countryAgenzia = $rootScope.countries[i];
       }
-    });
+    }
 
     //tiro su la codetable del numero degli impiegati per agenzia
-    services.getCodeTable("codetable=1").success(function (data){
-      //alert(JSON.stringify(data));
-
-      $scope.impiegatiAgenzia=data;
-
-      for(var i=0; i<data.length;i++) {
-
-        if(data[i].DESCRIZIONE==$rootScope.userData.NUM_IMPIEGATI) {
-          $scope.impiegatoAgenzia =  data[i];
-        }
+    if($rootScope.employees == null) {
+      services.getCodeTable("codetable=1").success(function (data) {
+        //alert(JSON.stringify(data));
+        $rootScope.employees = data;
+      });
+    }
+    for (var i = 0; i < $rootScope.employees.length; i++) {
+      if ($rootScope.employees[i].DESCRIZIONE == $rootScope.userData.NUM_IMPIEGATI) {
+        $scope.impiegatoAgenzia = $rootScope.employees[i];
       }
-    });
+    }
 
     //aggiorna profilo agenzia
     $scope.doUpdateProfileAgenzia = function() {

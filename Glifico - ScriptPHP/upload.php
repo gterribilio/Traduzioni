@@ -10,7 +10,7 @@ require_once("./security.php");
 
 $azione = $_GET['action'];
 
-$GLOBALS['nomeDB'] = "my_explico";
+$GLOBALS['nomeDB'] = "glificoc33741";
 
 switch ($azione) {
 
