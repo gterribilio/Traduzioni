@@ -5,33 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11065f60-ee0e-4598-ac8a-b433e47c68e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Glifico - ScriptPHP/pic_facebook.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Glifico - ScriptPHP/p.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/scripts/scripts.e5918db5.js" />
-      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Glifico\dist\scripts\scripts.1fe01aa0.js" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Glifico\.idea\Explico.iml" afterPath="$PROJECT_DIR$/.idea/Glifico.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/.htaccess" afterPath="$PROJECT_DIR$/app/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/.htaccess" afterPath="$PROJECT_DIR$/dist/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Glifico - ScriptPHP/JSONEngine.php" afterPath="$PROJECT_DIR$/Glifico - ScriptPHP/JSONEngine.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/home.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/agenzia/home_agenzia.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/agenzia/home_agenzia.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/traduttore/home_traduttore.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/traduttore/home_traduttore.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Glifico - ScriptPHP/mysql.inc.php" afterPath="$PROJECT_DIR$/Glifico - ScriptPHP/mysql.inc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/agenzia/snippet/profileAgenziaSnippet.html" afterPath="$PROJECT_DIR$/app/views/agenzia/snippet/profileAgenziaSnippet.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/agenzia/snippet/profileAgenziaSnippet.html" afterPath="$PROJECT_DIR$/dist/views/agenzia/snippet/profileAgenziaSnippet.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/agenzia/snippet/profileAgenziaSnippet.html" afterPath="$PROJECT_DIR$/dist/views/views/agenzia/snippet/profileAgenziaSnippet.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/traduttore/snippet/profileTraduttoreSnippet.html" afterPath="$PROJECT_DIR$/app/views/traduttore/snippet/profileTraduttoreSnippet.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/traduttore/snippet/profileTraduttoreSnippet.html" afterPath="$PROJECT_DIR$/dist/views/traduttore/snippet/profileTraduttoreSnippet.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/traduttore/snippet/profileTraduttoreSnippet.html" afterPath="$PROJECT_DIR$/dist/views/views/traduttore/snippet/profileTraduttoreSnippet.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/snippet/registrazioneAgenziaSnippet.html" afterPath="$PROJECT_DIR$/dist/views/snippet/registrazioneAgenziaSnippet.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/snippet/registrazioneAgenziaSnippet.html" afterPath="$PROJECT_DIR$/dist/views/views/snippet/registrazioneAgenziaSnippet.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/agenzia/search_agenzia.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/agenzia/search_agenzia.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/upload.js" afterPath="$PROJECT_DIR$/app/scripts/upload.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Glifico - ScriptPHP/upload.php" afterPath="$PROJECT_DIR$/Glifico - ScriptPHP/upload.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Glifico - ScriptPHP/phpinfo.php" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Dropbox\angularjs\Glifico\Glifico - ScriptPHP\pic_facebook.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Explico.iws" />
@@ -762,7 +737,13 @@
       <option name="project" value="LOCAL" />
       <updated>1432796407933</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="- le immagini vengono scaricate adesso in base64 (stringa di testo) e non sono accessibili dal server&#10;- le codetable vengono salvate nel browser e non vengono fatte chiamate al server (ma non va bene, possovo cambiare nel tempo)&#10;- risolto errore 406 facebook">
+      <created>1432901740541</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1432901740541</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView">
@@ -821,7 +802,8 @@
     <MESSAGE value="20150520" />
     <MESSAGE value="20150522" />
     <MESSAGE value="20150528" />
-    <option name="LAST_COMMIT_MESSAGE" value="20150528" />
+    <MESSAGE value="- le immagini vengono scaricate adesso in base64 (stringa di testo) e non sono accessibili dal server&#10;- le codetable vengono salvate nel browser e non vengono fatte chiamate al server (ma non va bene, possovo cambiare nel tempo)&#10;- risolto errore 406 facebook" />
+    <option name="LAST_COMMIT_MESSAGE" value="- le immagini vengono scaricate adesso in base64 (stringa di testo) e non sono accessibili dal server&#10;- le codetable vengono salvate nel browser e non vengono fatte chiamate al server (ma non va bene, possovo cambiare nel tempo)&#10;- risolto errore 406 facebook" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
