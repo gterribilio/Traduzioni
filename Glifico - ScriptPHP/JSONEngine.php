@@ -1,5 +1,9 @@
 <?php
 
+header('Access-Control-Allow-Origin: *');  
+header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type, Content-Range, Content-Disposition, Content-Description');
+
 //Includo il file che contiene le funzioni per la connessione 
 require_once("./mysql.inc.php");
 require_once("./security.php");
@@ -35,7 +39,7 @@ switch ($azione) {
 		$pricefrom=$_GET['pricefrom'];
 		$priceto=$_GET['priceto'];
 	break;
-
+	
 	case "getImagePath":
 		$user_id=$_GET['user_id'];
 		$query = "SELECT IMAGE FROM UTENTE WHERE ID=".$user_id;
@@ -371,7 +375,7 @@ switch ($azione) {
 		//modulo di registrazione
 		$username=$_GET['username'];
 		$email=$_GET['email'];
-		$query = "SELECT U.ID FROM `UTENTE` U WHERE USERNAME = '".$username."' OR EMAIL='".$email."'";
+		$query = "SELECT U.ID FROM `UTENTE` U WHERE EMAIL='".$email."'";
 	break;
 
 	case "dettaglio_job":
@@ -399,6 +403,23 @@ if(!empty($query)) {
 	{
 		array_push($json, $row);
 	}
+}
+
+if($azione=="getUserProfilePicture") {
+	$uid = $_GET['user_id'];
+	$query = "SELECT * FROM UTENTE WHERE ID =".$uid;
+	$result = execQuery($query);
+	$row = @mysql_fetch_array($result, MYSQL_ASSOC);
+	if($row['IMAGE'] != null) {
+	//caso immagine presente
+	$path = "./uploadedFiles/".$uid."/".$row['IMAGE'];
+	}
+	else {
+	//caso immagine non presente
+	$path = "./images/profile_picture.jpg";			
+	}
+	$b64image = base64_encode(file_get_contents($path,FILE_USE_INCLUDE_PATH));
+	$json = array("base64"=>$b64image);
 }
 
 if($azione=="login" && count($json)>0) {
@@ -433,12 +454,13 @@ if($azione=="login" && count($json)>0) {
 else if($azione=="register") {
 //SE LA SELECT DI PRIMA HA GIA' TORNATO RISULTATI, SIGNIFICA CHE ESISTE GIA' L'UTENTE
 	if(count($json)>0) {
-		$json = array("errCode"=>"406", "errMsg"=>"Username ".$username." already present.");
+		$json = array("errCode"=>"406", "errMsg"=>"Email already present.");
 	}
 	else {
 
 		$username=$_GET['username'];
 		$password=$_GET['password'];
+		$origin_password=$_GET['password'];
 		$sale=md5($password.$username.rand_string(10));
 		$password=md5($sale.$password);
 		$ruolo=$_GET['ruolo'];
@@ -467,13 +489,16 @@ else if($azione=="register") {
 		$uid = $row['ID'];
 		
 		//GESTIONE DELL'IMMAGINE DEL PROFILO LINKEDIN
-		if(!empty($pictureUrl) && $social == 'LINKEDIN') {
+		if($social == 'LINKEDIN') {
 			//VEDI UPLOAD.PHP
 			uploadImageFromLinkedin($uid,$pictureUrl);
-		} else if (!empty($pictureUrl) && $social == 'FACEBOOK') {
+		} else if ( $social == 'FACEBOOK') {
 			//VEDI UPLOAD.PHP
-			uploadImageFromFacebook($uid,$pictureUrl,$password);
-		}
+			$pictureUrl = "http://graph.facebook.com/".$origin_password."/picture?type=large";
+			uploadImageFromFacebook($uid,$pictureUrl);
+		} 
+		//nel caso di nuova registrazione è la funzione getUserProfilePicture che si occupa di valorizzare
+		//immagine con immagine di default
 
 		if($ruolo=="TRADUTTORE") {
 

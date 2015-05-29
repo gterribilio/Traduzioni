@@ -23,61 +23,96 @@ home.controller('HomeTraduttoreCtrl', ['$scope', '$rootScope', '$window', 'servi
     $scope.vat = $rootScope.userData.VAT;
 
     //tiro su la codetable delle città
-    if ($rootScope.countries == null) {
+    function setCodeTableEntry2() {
+      for (var i = 0; i < $rootScope.countries.length; i++) {
+        if ($rootScope.countries[i].DESCRIZIONE == $rootScope.userData.PAESE) {
+          $scope.countryTraduttore = $rootScope.countries[i];
+        }
+      }
+    }
+
+    if (customFactory.get('countries') == null) {
       services.getCodeTable("codetable=2").success(function (data) {
         //alert(JSON.stringify(data));
         $rootScope.countries = data;
+        customFactory.set('countries', $rootScope.countries);
+        setCodeTableEntry2();
       });
     }
-    for (var i = 0; i < $rootScope.countries.length; i++) {
-      if ($rootScope.countries[i].DESCRIZIONE == $rootScope.userData.PAESE) {
-        $scope.countryTraduttore = $rootScope.countries[i];
+    else {
+      $rootScope.countries = customFactory.get('countries');
+      setCodeTableEntry2();
+    }
+
+
+    //tiro su la codetable delle languages
+    function setCodeTableEntry3() {
+      for (var i = 0; i < $rootScope.languages.length; i++) {
+        if ($rootScope.languages[i].DESCRIZIONE == $rootScope.userData.MADRELINGUA) {
+          $scope.mothertongueTraduttore = $rootScope.languages[i];
+        }
       }
     }
 
-    //tiro su la codetable delle languages
-    if ($rootScope.languages == null) {
+    if (customFactory.get('languages') == null) {
       services.getCodeTable("codetable=3").success(function (data) {
         //alert(JSON.stringify(data));
         $rootScope.languages = data;
+        customFactory.set('languages', $rootScope.languages);
+        setCodeTableEntry3();
       });
     }
-    for (var i = 0; i < $rootScope.languages.length; i++) {
-      if ($rootScope.languages[i].DESCRIZIONE == $rootScope.userData.MADRELINGUA) {
-        $scope.mothertongueTraduttore = $rootScope.languages[i];
-      }
+    else {
+      $rootScope.languages = customFactory.get('languages');
+      setCodeTableEntry3();
     }
 
     //fields
-    if ($rootScope.fields == null) {
+    if (customFactory.get('fields') == null) {
       services.getCodeTable("codetable=4").success(function (data) {
         //alert(JSON.stringify(data));
         $rootScope.fields = data;
+        customFactory.set('fields', $rootScope.fields);
       });
+    }
+    else {
+      $rootScope.fields = customFactory.get('fields');
     }
 
     //services
-    if ($rootScope.services == null) {
+    if (customFactory.get('services') == null) {
       services.getCodeTable("codetable=5").success(function (data) {
         //alert(JSON.stringify(data));
         $rootScope.services = data;
+        customFactory.set('services', $rootScope.services);
       });
+    }
+    else {
+      $rootScope.services = customFactory.get('services');
     }
 
     //currency
-    if ($rootScope.currencies == null) {
+    if (customFactory.get('currencies') == null) {
       services.getCodeTable("codetable=6").success(function (data) {
         //alert(JSON.stringify(data));
         $rootScope.currencies = data;
+        customFactory.set('currencies', $rootScope.currencies);
       });
+    }
+    else {
+      $rootScope.currencies = customFactory.get('currencies');
     }
 
     //level
-    if ($rootScope.levels == null) {
+    if (customFactory.get('levels') == null) {
       services.getCodeTable("codetable=7").success(function (data) {
         //alert(JSON.stringify(data));
         $rootScope.levels = data;
+        customFactory.set('levels', $rootScope.levels);
       });
+    }
+    else {
+      $rootScope.levels = customFactory.get('levels');
     }
 
     //ottengo le lenguage pair al caricamento della pagina
@@ -94,7 +129,7 @@ home.controller('HomeTraduttoreCtrl', ['$scope', '$rootScope', '$window', 'servi
             $scope.pairList = data;
             //alert(JSON.stringify(data));
           }
-        });//end succes
+        });//end success
 
       services.getFromRESTServer(
         "user_id=" + $rootScope.userData.ID, "getEducation")
@@ -122,7 +157,7 @@ home.controller('HomeTraduttoreCtrl', ['$scope', '$rootScope', '$window', 'servi
             $scope.certificationList = data;
             //alert(JSON.stringify(data));
           }
-        });//end succes
+        });//end success
 
     })();
 
@@ -143,11 +178,15 @@ home.controller('HomeTraduttoreCtrl', ['$scope', '$rootScope', '$window', 'servi
         else {
           //alert('immagini uguali');
         }
-        //alert(JSON.stringify(data));
-        $rootScope.image = function () {
-          return APP_CFG.endpoint_server + '/uploadedFiles/' + $rootScope.userData.ID + '/' + $rootScope.userData.IMAGE;
-          //alert('image');
-        };
+        services.getFromRESTServer("user_id=" + $rootScope.userData.ID, "getUserProfilePicture")
+          .success(function (data) {
+            if (data.jsonError != null || data.errCode != null) {
+              alert(JSON.stringify(data));
+            }
+            else {
+              $scope.image = data.base64;
+            }
+          });//end success
       }
     });//end success
 

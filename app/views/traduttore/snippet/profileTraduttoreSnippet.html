@@ -8,8 +8,7 @@
         <div id="item_first_row_list" class="col-xs-3" ng-controller="UploadCtrl">
 
           <div id="container_image_profile">
-            <img class="thumb_img" width="180" height="180"
-                 ng-src="{{userData.IMAGE == null ? 'images/profile_picture.jpg' : image()}}"/>
+            <img class="thumb_img" width="180" height="180" ng-src="data:image/jpeg;base64,{{image}}"/>
 
             <p id="text_image_profile">
               <i class="fa fa-camera"> <span class="button" ng-file-select ng-model="files">Update image</span></i>

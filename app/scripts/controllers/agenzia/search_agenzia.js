@@ -12,27 +12,39 @@ search.controller('SearchAgenziaCtrl', ['$scope', '$rootScope', '$window', 'serv
     }
 
     //tiro su la codetable delle languages
-    if($rootScope.languages == null) {
+    if (customFactory.get('languages') == null) {
       services.getCodeTable("codetable=3").success(function (data) {
         //alert(JSON.stringify(data));
         $rootScope.languages = data;
+        customFactory.set('languages', $rootScope.languages);
       });
+    }
+    else {
+      $rootScope.languages = customFactory.get('languages');
     }
 
     //fields
-    if($rootScope.fields == null) {
+    if (customFactory.get('fields') == null) {
       services.getCodeTable("codetable=4").success(function (data) {
         //alert(JSON.stringify(data));
         $rootScope.fields = data;
+        customFactory.set('fields', $rootScope.fields);
       });
+    }
+    else {
+      $rootScope.fields = customFactory.get('fields');
     }
 
     //services
-    if($rootScope.services == null) {
+    if (customFactory.get('services') == null) {
       services.getCodeTable("codetable=5").success(function (data) {
         //alert(JSON.stringify(data));
         $rootScope.services = data;
+        customFactory.set('services', $rootScope.services);
       });
+    }
+    else {
+      $rootScope.services = customFactory.get('services');
     }
 
     $scope.doResetForm = function () {

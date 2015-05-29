@@ -1,8 +1,8 @@
 //inject angular file upload directives and services.
 var app = angular.module('fileUpload', ['angularFileUpload']);
 
-app.controller('UploadCtrl', ['$scope', '$rootScope', '$upload', 'APP_CFG', 'customFactory',
-  function ($scope, $rootScope, $upload, APP_CFG, customFactory) {
+app.controller('UploadCtrl', ['$scope', '$rootScope', '$upload', 'APP_CFG', 'customFactory', 'services',
+  function ($scope, $rootScope, $upload, APP_CFG, customFactory, services) {
     $scope.$watch('files', function () {
       $scope.upload($scope.files);
     });
@@ -25,15 +25,20 @@ app.controller('UploadCtrl', ['$scope', '$rootScope', '$upload', 'APP_CFG', 'cus
 
             //faccio gli stessi step di home_traduttore.js ma qui prendo sicuramente l'ultima immagine uploadata
             $rootScope.userData.IMAGE = config.file.name;
-            customFactory.set('userData',$rootScope.userData);
+            customFactory.set('userData', $rootScope.userData);
 
-            $rootScope.image = function () {
-              return APP_CFG.endpoint_server + '/uploadedFiles/' + $rootScope.userData.ID + '/' + $rootScope.userData.IMAGE;
-              //alert('image');
-            };
+            services.getFromRESTServer("user_id=" + $rootScope.userData.ID, "getUserProfilePicture")
+              .success(function (data) {
+                if (data.jsonError != null || data.errCode != null) {
+                  alert(JSON.stringify(data));
+                }
+                else {
+                  $scope.image = data.base64;
+                }
+              });//end success
 
           }).error(function () {
-            $.notify("Error during file upload! Please check your firewall or internet connection",{
+            $.notify("Error during file upload! Please check your firewall or internet connection", {
               type: 'danger',
               allow_dismiss: true
             });

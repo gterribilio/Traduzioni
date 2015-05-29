@@ -20,27 +20,39 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
     })(); //end function
 
     //tiro su la codetable del numero degli impiegati per agenzia
-    if($rootScope.employees == null) {
+    if (customFactory.get('employees') == null) {
       services.getCodeTable("codetable=1").success(function (data) {
         //alert(JSON.stringify(data));
         $rootScope.employees = data;
+        customFactory.set('employees', $rootScope.employees);
       });
+    }
+    else {
+      $rootScope.employees = customFactory.get('employees');
     }
 
     //tiro su la codetable delle città
-    if($rootScope.countries == null) {
+    if (customFactory.get('countries') == null) {
       services.getCodeTable("codetable=2").success(function (data) {
         //alert(JSON.stringify(data));
         $rootScope.countries = data;
+        customFactory.set('countries', $rootScope.countries);
       });
+    }
+    else {
+      $rootScope.countries = customFactory.get('countries');
     }
 
     //tiro su la codetable delle languages
-    if($rootScope.languages == null) {
+    if (customFactory.get('languages') == null) {
       services.getCodeTable("codetable=3").success(function (data) {
         //alert(JSON.stringify(data));
         $rootScope.languages = data;
+        customFactory.set('languages', $rootScope.languages);
       });
+    }
+    else {
+      $rootScope.languages = customFactory.get('languages');
     }
 
     $rootScope.doLogout = function () {
@@ -200,7 +212,7 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
             "&country=" + temp_country + "&city=" + temp_city + "&pictureUrl=" + temp_pictureUrls + "&social=LINKEDIN", "register")
             .success(function (data) {
               if (data.jsonError != null || data.errCode != null) {
-                $.notify("Username already present! Please sign in!", {
+                $.notify("Email already present! Please sign in!", {
                   type: 'danger',
                   allow_dismiss: true
                 });
@@ -257,15 +269,16 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
         //var temp_location = $rootScope.facebookData.location.name.split(',');
         //var temp_city = temp_location[0];
         //var temp_country = temp_location[1];
-        $scope.facebookImage = "http://graph.facebook.com/" + $rootScope.facebookData.id + "/picture?type=large";
+        // RECUPERO DAL SERVER CAUSA ERRORE 406
+        // $scope.facebookImage = "http://graph.facebook.com/" + $rootScope.facebookData.id + "/picture?type=large";
         services.getFromRESTServer(
           "username=" + $rootScope.facebookData.email + "&password=" + $rootScope.facebookData.id
           + "&nome=" + $rootScope.facebookData.first_name +
           "&cognome=" + $rootScope.facebookData.last_name + "&email=" + $rootScope.facebookData.email + "&ruolo=" + role +
-            /*"&country=" + temp_country + "&city=" + temp_city +*/ "&pictureUrl=" + $scope.facebookImage + "&social=FACEBOOK", "register")
+          "&social=FACEBOOK", "register")
           .success(function (data) {
             if (data.jsonError != null || data.errCode != null) {
-              $.notify("Username already present! Please sign in!", {
+              $.notify("Email already present! Please sign in!", {
                 type: 'danger',
                 allow_dismiss: true
               });
