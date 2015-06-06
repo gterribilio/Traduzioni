@@ -20,40 +20,22 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
     })(); //end function
 
     //tiro su la codetable del numero degli impiegati per agenzia
-    if (customFactory.get('employees') == null) {
-      services.getCodeTable("codetable=1").success(function (data) {
-        //alert(JSON.stringify(data));
-        $rootScope.employees = data;
-        customFactory.set('employees', $rootScope.employees);
-      });
-    }
-    else {
-      $rootScope.employees = customFactory.get('employees');
-    }
+    services.getCodeTable("codetable=1").success(function (data) {
+      //alert(JSON.stringify(data));
+      $rootScope.employees = data;
+    });
 
     //tiro su la codetable delle città
-    if (customFactory.get('countries') == null) {
-      services.getCodeTable("codetable=2").success(function (data) {
-        //alert(JSON.stringify(data));
-        $rootScope.countries = data;
-        customFactory.set('countries', $rootScope.countries);
-      });
-    }
-    else {
-      $rootScope.countries = customFactory.get('countries');
-    }
+    services.getCodeTable("codetable=2").success(function (data) {
+      //alert(JSON.stringify(data));
+      $rootScope.countries = data;
+    });
 
     //tiro su la codetable delle languages
-    if (customFactory.get('languages') == null) {
-      services.getCodeTable("codetable=3").success(function (data) {
-        //alert(JSON.stringify(data));
-        $rootScope.languages = data;
-        customFactory.set('languages', $rootScope.languages);
-      });
-    }
-    else {
-      $rootScope.languages = customFactory.get('languages');
-    }
+    services.getCodeTable("codetable=3").success(function (data) {
+      //alert(JSON.stringify(data));
+      $rootScope.languages = data;
+    });
 
     $rootScope.doLogout = function () {
       $location.path("/");

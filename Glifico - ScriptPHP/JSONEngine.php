@@ -26,18 +26,33 @@ switch ($azione) {
 	break;
 	
 	case "search":
+		$sql="";
 		$mothertongueSearchFrom=$_GET['mothertongueSearchFrom'];
 		$mothertongueSearchTo=$_GET['mothertongueSearchTo'];
 		$service=$_GET['service'];
-		$typeNumber=$_GET['typeNumber'];
-		$pagesNumber=$_GET['pagesNumber'];
-		$typeNumberVal=$_GET['typeNumberVal'];
-		$pagesNumberVal=$_GET['pagesNumberVal'];
+		$user_id=$_GET['user_id'];
 		$field=$_GET['field'];
-		$ktr=$_GET['ktr'];
-		$deadline=$_GET['deadline'];
+		if(isset($field)) $sql.= " AND FIELD='".$field."'";
 		$pricefrom=$_GET['pricefrom'];
+		if(isset($pricefrom)) $sql.= " AND PRICE>=".$pricefrom;
 		$priceto=$_GET['priceto'];
+		if(isset($priceto)) $sql.= " AND PRICE<=".$priceto;
+
+		$query = "SELECT UT.ID, T.NOME, T.COGNOME, T.DATA_NASCITA, UT.PAESE, T.MADRELINGUA, UT.RATING, UT.NUM_RATING, LP.FROM, LP.TO, LP.PRICE, LP.CURRENCY, INNER_CERT.NUM_CERTIFICATIONS, IF(INNER_COMMENTS.NUM_COMMENTI IS NULL, '0', INNER_COMMENTS.NUM_COMMENTI) AS NUM_COMMENTI, LANGUAGES.NUM_LANGUAGES, IF(INNER_JC.NUM_CORRECTIONS IS NULL,0,INNER_JC.NUM_CORRECTIONS) + IF(INNER_JT.NUM_TRANSLATIONS IS NULL,0,INNER_JT.NUM_TRANSLATIONS) AS TOT_CORR_TRAD
+
+		FROM UTENTE AS UT LEFT JOIN COMMENT AS C ON UT.ID=C.ID_TRADUTTORE LEFT JOIN LANGUAGE_PAIR AS LP ON UT.ID=LP.USER_ID 
+
+			LEFT JOIN (SELECT U.ID, GROUP_CONCAT(DISTINCT CERTIFICATION) AS NUM_CERTIFICATIONS FROM CERTIFICATION, UTENTE U WHERE U.ID = CERTIFICATION.USER_ID  GROUP BY U.ID) AS INNER_CERT ON INNER_CERT.ID = UT.ID 
+
+			LEFT JOIN (SELECT U.ID, COUNT(*) AS NUM_COMMENTI FROM COMMENT, UTENTE U WHERE U.ID = COMMENT.ID_TRADUTTORE  GROUP BY U.ID) AS INNER_COMMENTS ON INNER_COMMENTS.ID = UT.ID
+
+			LEFT JOIN (SELECT U.ID, CONCAT(GROUP_CONCAT(DISTINCT LP.FROM),',', GROUP_CONCAT(DISTINCT LP.TO)) AS NUM_LANGUAGES FROM LANGUAGE_PAIR AS LP, UTENTE U WHERE U.ID = LP.USER_ID GROUP BY U.ID) AS LANGUAGES ON LANGUAGES.ID = UT.ID, TRADUTTORE T
+        
+			LEFT JOIN (SELECT U.ID, COUNT(*) AS NUM_CORRECTIONS FROM JOBS_CORRECTION JC, UTENTE U WHERE U.ID=JC.ID_TRADUTTORE AND ID_AGENZIA=".$user_id." AND STATO NOT IN('COMPETITION','ENGAGMENT') GROUP BY U.ID) AS INNER_JC ON INNER_JC.ID=T.ID
+        
+			LEFT JOIN (SELECT U.ID, COUNT(*) AS NUM_TRANSLATIONS FROM JOBS_TRANSLATION JT, UTENTE U WHERE U.ID=JT.ID_TRADUTTORE AND ID_AGENZIA=".$user_id." AND STATO NOT IN('COMPETITION','ENGAGMENT') GROUP BY U.ID) AS INNER_JT ON INNER_JT.ID=T.ID  
+                  		
+		WHERE T.ID=UT.ID AND LP.FROM='".$mothertongueSearchFrom."' AND LP.TO='".$mothertongueSearchTo."' AND LP.SERVICE='".$service."'".$sql." GROUP BY UT.ID, LP.FROM, LP.TO ORDER BY LP.PRICE DESC";
 	break;
 	
 	case "getImagePath":
@@ -419,7 +434,7 @@ if($azione=="getUserProfilePicture") {
 	$path = "./images/profile_picture.jpg";			
 	}
 	$b64image = base64_encode(file_get_contents($path,FILE_USE_INCLUDE_PATH));
-	$json = array("base64"=>$b64image);
+	$json = array("id"=>$row['ID'],"base64"=>$b64image);
 }
 
 if($azione=="login" && count($json)>0) {

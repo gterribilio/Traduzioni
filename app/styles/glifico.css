@@ -238,4 +238,17 @@ article {
   padding: 10px 15px 10px 15px;
 }
 
+#searchResultTable td {
+  vertical-align: middle;
+}
 
+#searchResultTable th a {
+  cursor: pointer;
+}
+
+div.tooltip-inner {
+  max-width: 450px;
+}
+.tooltip div p{
+  font-size: 14px;
+}

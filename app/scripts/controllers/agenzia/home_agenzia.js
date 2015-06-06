@@ -11,8 +11,11 @@ home.controller('HomeAgenziaCtrl', ['$scope', '$rootScope', '$window', 'services
 
     $rootScope.isLogged = customFactory.get('isLogged');
     $rootScope.userData = customFactory.get('userData');
-    if (customFactory.get('isLogged') == null || customFactory.get('userData') == null) {
+    if ($rootScope.isLogged == null || $rootScope.userData == null) {
       $location.path("/");
+    }
+    if ($rootScope.isLogged != null && $rootScope.userData != null && $rootScope.userData.RUOLO == 'TRADUTTORE') {
+      $location.path("/home_traduttore");
     }
 
     //RECUPERO I DATI DALLO USERDATA E LI RIPASSO A VARIABILI TEMPORANEE IN MODO TALE DA
@@ -85,18 +88,11 @@ home.controller('HomeAgenziaCtrl', ['$scope', '$rootScope', '$window', 'services
       }
     }
 
-    if (customFactory.get('countries') == null) {
-      services.getCodeTable("codetable=2").success(function (data) {
-        //alert(JSON.stringify(data));
-        $rootScope.countries = data;
-        setCodeTableEntry2();
-        customFactory.set('countries', $rootScope.countries);
-      });
-    }
-    else {
-      $rootScope.countries = customFactory.get('countries');
+    services.getCodeTable("codetable=2").success(function (data) {
+      //alert(JSON.stringify(data));
+      $rootScope.countries = data;
       setCodeTableEntry2();
-    }
+    });
 
     //tiro su la codetable del numero degli impiegati per agenzia
     function setCodeTableEntry1() {
@@ -107,18 +103,11 @@ home.controller('HomeAgenziaCtrl', ['$scope', '$rootScope', '$window', 'services
       }
     }
 
-    if (customFactory.get('employees') == null) {
-      services.getCodeTable("codetable=1").success(function (data) {
-        //alert(JSON.stringify(data));
-        $rootScope.employees = data;
-        setCodeTableEntry1();
-        customFactory.set('employees', $rootScope.employees);
-      });
-    }
-    else {
-      $rootScope.employees = customFactory.get('employees');
+    services.getCodeTable("codetable=1").success(function (data) {
+      //alert(JSON.stringify(data));
+      $rootScope.employees = data;
       setCodeTableEntry1();
-    }
+    });
 
     //aggiorna profilo agenzia
     $scope.doUpdateProfileAgenzia = function () {

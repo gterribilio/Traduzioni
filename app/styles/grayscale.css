@@ -48,8 +48,7 @@ p {
 }
 
 i {
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 12px;
 }
 
 @media (min-width: 767px) {
@@ -400,4 +399,10 @@ img::selection {
 
 img::-moz-selection {
   background: 0 0;
+}
+
+/*sottolineato*/
+em {
+  font-style: normal;         /* Removes italics */
+  text-decoration: underline; /* Makes underline */
 }

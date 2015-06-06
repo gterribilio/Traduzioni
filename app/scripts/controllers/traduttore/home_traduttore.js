@@ -9,9 +9,12 @@ home.controller('HomeTraduttoreCtrl', ['$scope', '$rootScope', '$window', 'servi
 
     $rootScope.isLogged = customFactory.get('isLogged');
     $rootScope.userData = customFactory.get('userData');
-    if (customFactory.get('isLogged') == null || customFactory.get('userData') == null) {
-
+    if ($rootScope.isLogged == null || $rootScope.userData == null) {
       $location.path("/");
+    }
+    if ($rootScope.isLogged != null && $rootScope.userData != null && $rootScope.userData.RUOLO == 'AGENZIA') {
+
+      $location.path("/home_agenzia");
     }
 
     //pre-inizializzo i valori dei campi per update registrazione
@@ -31,19 +34,12 @@ home.controller('HomeTraduttoreCtrl', ['$scope', '$rootScope', '$window', 'servi
       }
     }
 
-    if (customFactory.get('countries') == null) {
-      services.getCodeTable("codetable=2").success(function (data) {
-        //alert(JSON.stringify(data));
-        $rootScope.countries = data;
-        customFactory.set('countries', $rootScope.countries);
-        setCodeTableEntry2();
-      });
-    }
-    else {
-      $rootScope.countries = customFactory.get('countries');
+    //countries
+    services.getCodeTable("codetable=2").success(function (data) {
+      //alert(JSON.stringify(data));
+      $rootScope.countries = data;
       setCodeTableEntry2();
-    }
-
+    });
 
     //tiro su la codetable delle languages
     function setCodeTableEntry3() {
@@ -54,68 +50,39 @@ home.controller('HomeTraduttoreCtrl', ['$scope', '$rootScope', '$window', 'servi
       }
     }
 
-    if (customFactory.get('languages') == null) {
-      services.getCodeTable("codetable=3").success(function (data) {
-        //alert(JSON.stringify(data));
-        $rootScope.languages = data;
-        customFactory.set('languages', $rootScope.languages);
-        setCodeTableEntry3();
-      });
-    }
-    else {
-      $rootScope.languages = customFactory.get('languages');
+    //languages
+    services.getCodeTable("codetable=3").success(function (data) {
+      //alert(JSON.stringify(data));
+      $rootScope.languages = data;
       setCodeTableEntry3();
-    }
+    });
 
     //fields
-    if (customFactory.get('fields') == null) {
-      services.getCodeTable("codetable=4").success(function (data) {
-        //alert(JSON.stringify(data));
-        $rootScope.fields = data;
-        customFactory.set('fields', $rootScope.fields);
-      });
-    }
-    else {
-      $rootScope.fields = customFactory.get('fields');
-    }
+    services.getCodeTable("codetable=4").success(function (data) {
+      //alert(JSON.stringify(data));
+      $rootScope.fields = data;
+    });
 
-    //services
-    if (customFactory.get('services') == null) {
-      services.getCodeTable("codetable=5").success(function (data) {
-        //alert(JSON.stringify(data));
-        $rootScope.services = data;
-        customFactory.set('services', $rootScope.services);
-      });
-    }
-    else {
-      $rootScope.services = customFactory.get('services');
-    }
+  //services
+    services.getCodeTable("codetable=5").success(function (data) {
+      //alert(JSON.stringify(data));
+      $rootScope.services = data;
+    });
 
-    //currency
-    if (customFactory.get('currencies') == null) {
-      services.getCodeTable("codetable=6").success(function (data) {
-        //alert(JSON.stringify(data));
-        $rootScope.currencies = data;
-        customFactory.set('currencies', $rootScope.currencies);
-      });
-    }
-    else {
-      $rootScope.currencies = customFactory.get('currencies');
-    }
+  //currency
+    services.getCodeTable("codetable=6").success(function (data) {
+      //alert(JSON.stringify(data));
+      $rootScope.currencies = data;
+    });
 
-    //level
-    if (customFactory.get('levels') == null) {
-      services.getCodeTable("codetable=7").success(function (data) {
-        //alert(JSON.stringify(data));
-        $rootScope.levels = data;
-        customFactory.set('levels', $rootScope.levels);
-      });
-    }
-    else {
-      $rootScope.levels = customFactory.get('levels');
-    }
+  //level
+    services.getCodeTable("codetable=7").success(function (data) {
+      //alert(JSON.stringify(data));
+      $rootScope.levels = data;
+      customFactory.set('levels', $rootScope.levels);
+    });
 
-    //ottengo le lenguage pair al caricamento della pagina
+  //ottengo le lenguage pair al caricamento della pagina
     (function init() {
       services.getFromRESTServer(
         "user_id=" + $rootScope.userData.ID, "getPair")
@@ -271,7 +238,7 @@ home.controller('HomeTraduttoreCtrl', ['$scope', '$rootScope', '$window', 'servi
     $scope.doDeleteEducation = function (educationID) {
       //alert(pairID);
       services.getFromRESTServer("education_id=" + educationID + "&user_id="
-      + $rootScope.userData.ID, "deleteEducation")
+        + $rootScope.userData.ID, "deleteEducation")
         .success(function (data) {
           if (data.jsonError != null || data.errCode != null) {
             //alert (data.errMsg); Nessun dato trovato
@@ -306,7 +273,7 @@ home.controller('HomeTraduttoreCtrl', ['$scope', '$rootScope', '$window', 'servi
     $scope.doDeleteCertification = function (certificationID) {
       //alert(CertificationID);
       services.getFromRESTServer("certification_id=" + certificationID + "&user_id="
-      + $rootScope.userData.ID, "deleteCertification")
+        + $rootScope.userData.ID, "deleteCertification")
         .success(function (data) {
           if (data.jsonError != null || data.errCode != null) {
             //alert (data.errMsg); Nessun dato trovato

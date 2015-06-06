@@ -1,12 +1,16 @@
 <?php
 
+//Lasciare questi header qua, altrimenti non funziona upload dell'immagine profilo su server
+header('Access-Control-Allow-Origin: *');  
+header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type, Content-Range, Content-Disposition, Content-Description');
+
 require_once("./utility.inc.php");
 require_once("./mysql.inc.php");
 require_once("./security.php");
+require_once("./resizeImage.php");
 
 $azione = $_GET['action'];
-
-$GLOBALS['nomeDB'] = "my_explico";
 
 switch ($azione) {
 
@@ -20,12 +24,15 @@ switch ($azione) {
 		}
 
 		$destination = 'uploadedFiles/'.$_POST[user_id]."/".$filename;
+		$destination_thumb = 'uploadedFiles/'.$_POST[user_id]."/thumb_".$filename;
 		//scrivo il file nella cartella dell'utente
 		move_uploaded_file( $_FILES['file']['tmp_name'] , $destination );
+		
+		generate_image_thumbnail($destination, $destination_thumb);
 
 		//aggiorno il path dell'immagine
-		$query = "UPDATE UTENTE SET IMAGE= '".$filename."' WHERE ID=".$_POST[user_id];
-		execQuery($query, $GLOBALS['nomeDB']);
+		$query = "UPDATE UTENTE SET IMAGE= 'thumb_".$filename."' WHERE ID=".$_POST[user_id];
+		execQuery($query);
 	break;
 	
 	}
@@ -37,6 +44,7 @@ function uploadImageFromFacebook($id, $image_path){
 		mkdir("./uploadedFiles/".$id, 0770);
 	}
 	$destination = 'uploadedFiles/'.$id."/imageProfile.jpg";
+	$destination_thumb = 'uploadedFiles/'.$id."/thumb_imageProfile.jpg";
 	
 	//scrivo il file nella cartella dell'utente
 
@@ -50,9 +58,11 @@ function uploadImageFromFacebook($id, $image_path){
     curl_close($curl);
     fclose($file_handler);
 	
+	generate_image_thumbnail($destination, $destination_thumb);
+	
 	//aggiorno il path dell'immagine
-	$query = "UPDATE UTENTE SET IMAGE= 'imageProfile.jpg' WHERE ID=".$id;
-	execQuery($query, $GLOBALS['nomeDB']);
+	$query = "UPDATE UTENTE SET IMAGE= 'thumb_imageProfile.jpg' WHERE ID=".$id;
+	execQuery($query);
 }
 
 //LINKEDIN
@@ -62,6 +72,7 @@ function uploadImageFromLinkedin($id, $image_path){
 		mkdir("./uploadedFiles/".$id, 0770);
 	}
 	$destination = 'uploadedFiles/'.$id."/imageProfile.jpg";
+	$destination_thumb = 'uploadedFiles/'.$id."/thumb_imageProfile.jpg";
 	
 	//scrivo il file nella cartella dell'utente
 
@@ -80,9 +91,11 @@ function uploadImageFromLinkedin($id, $image_path){
 	fwrite($fp, $data);
 	fclose($fp);
 	
+	generate_image_thumbnail($destination, $destination_thumb);
+	
 	//aggiorno il path dell'immagine
-	$query = "UPDATE UTENTE SET IMAGE= 'imageProfile.jpg' WHERE ID=".$id;
-	execQuery($query, $GLOBALS['nomeDB']);
+	$query = "UPDATE UTENTE SET IMAGE= 'thumb_imageProfile.jpg' WHERE ID=".$id;
+	execQuery($query);
 }
 
 //FUNZIONI USATE PER FACEBOOK

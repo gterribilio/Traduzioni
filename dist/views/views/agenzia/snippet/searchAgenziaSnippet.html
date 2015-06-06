@@ -1,6 +1,5 @@
 <div class=row_shadow style="padding: 40px 0px 40px 0px">
-
-  <form name=searchForm ng-submit=doSearch() novalidate> 
+  <form name=searchForm novalidate> 
     <div style=margin-left:30px>
       <h2>SEARCH</h2>
     </div>
@@ -21,7 +20,6 @@
               <select class=form-control name=mothertongueSearchTo ng-model=mothertongueSearchTo required ng-options="mothertongueSearchTo.DESCRIZIONE for mothertongueSearchTo in languages"></select>
             </span>
         </div>
-
         
         <div ng-class="{ 'has-error' : searchForm.service.$invalid && !searchForm.service.$pristine }">
           <label class="col-xs-2 control-label text-right">Service*</label>
@@ -32,135 +30,131 @@
       </div>
 
       <div class="row form-group">
-        <div ng-class="{ 'has-error' : searchForm.typeNumberVal.$invalid && !searchForm.typeNumberVal.$pristine }">
-          
-          <label class="col-sm-2 control-label text-right">
-            <input type=checkbox ng-model=typeNumber name=typeNumber> Type Number</label>
-        <span class=col-sm-2>
-          <input type=number ng-show=typeNumber ng-pattern="/^[0-9]+$/" class=form-control ng-model=typeNumberVal name=typeNumberVal>
-        </span>
-        </div>
-
         
-        <div ng-class="{ 'has-error' : searchForm.pagesNumberVal.$invalid && !searchForm.pagesNumberVal.$pristine }">
-          <label class="col-sm-2 control-label text-right">
-            <input type=checkbox ng-model=pagesNumber name=pagesNumber> Pages Number</label>
-
-          <span class=col-sm-2>
-            <input type=number ng-show=pagesNumber ng-pattern="/^[0-9]+$/" class=form-control ng-model=pagesNumberVal name=pagesNumberVal>
-          </span>
-        </div>
-      </div>
-
-      <div ng-show=!showAdvancedFields class=text-right style=margin-top:10px>
-        <a style="cursor: pointer" ng-click="showAdvancedFields=true;">
-          <i class="fa fa-plus"></i> more options
-        </a>
-      </div>
-      <div ng-show=showAdvancedFields class=text-right style=margin-top:10px>
-        <a style="cursor: pointer" ng-click="showAdvancedFields=false;">
-          <i class="fa fa-minus"></i> less options
-        </a>
-      </div>
-    </div>
-    
-
-    <div class=row_shadow ng-show=showAdvancedFields>
-
-      <div class="row form-group">
         <label class="col-xs-2 control-label text-right">Field:</label>
 						<span class=col-sm-2>
-              <select class=form-control name=field ng-model=field required ng-options="field.DESCRIZIONE for field in fields"></select>
+              <select class=form-control name=field ng-model=field ng-options="field.DESCRIZIONE for field in fields"></select>
             </span>
 
-        
-        <div ng-class="{ 'has-error' : searchForm.ktr.$invalid && !searchForm.ktr.$pristine }">
-          <label class="col-xs-2 control-label text-right">KTR:</label>
-						<span class=col-sm-2>
-              <input type=number name=ktr ng-pattern="/^[0-9]+$/" class=form-control ng-model=ktr>
-            </span>
-        </div>
-
-        
-        <div ng-class="{ 'has-error' : searchForm.field.$invalid && !searchForm.field.$pristine }">
-          <label class="col-xs-2 control-label text-right">Deadline:</label>
-
-          <div id=sandbox-container style=padding-left:10px;padding-right:10px class="input-group date col-sm-2">
-            <input class=form-control ng-model=deadline name=deadline data-provide=datepicker data-date-format=dd/mm/yyyy><span class=input-group-addon>
-            <i class="glyphicon glyphicon-calendar"></i></span>
-          </div>
-        </div>
-      </div>
-
-      
-      <div class="row form-group">
         <div ng-class="{ 'has-error' : (searchForm.priceto.$invalid && !searchForm.priceto.$pristine) ||
           (searchForm.pricefrom.$invalid && !searchForm.pricefrom.$pristine)}">
-          <label class="col-xs-2 control-label text-right">Price Range:</label>
+          <label class="col-xs-2 control-label text-right">Price Range (€/KTR)</label>
         </div>
 
         <div ng-class="{ 'has-error' : searchForm.pricefrom.$invalid && !searchForm.pricefrom.$pristine }">
         <span class=col-sm-1>
-          <input type=number name=pricefrom ng-model=pricefrom class=form-control ng-pattern="/^[0-9]+$/" ng-model="pricefrom">
+          <input name=pricefrom ng-model=pricefrom class=form-control ng-pattern="/^[0-9]+$/" ng-model="pricefrom">
         </span>
         </div>
 
         <div ng-class="{ 'has-error' : searchForm.priceto.$invalid && !searchForm.priceto.$pristine }">
           <span class=col-sm-1>
-            <input type=number name=priceto ng-model=priceto class="form-control col-sm-2" ng-pattern="/^[0-9]+$/" ng-model="priceto">
+            <input name=priceto ng-model=priceto class="form-control col-sm-2" ng-pattern="/^[0-9]+$/" ng-model="priceto">
           </span>
         </div>
       </div>
     </div>
+    <button type=hidden autofocus>
+    <div class=text-center style=margin:40px>
+      <button ng-click=doResetForm() class="btn btn-lg btn-default btn-sm">
+        <i class="fa fa-times"> RESET
+      </button>
+      <button ng-click=doSearch() class="btn btn-lg btn-default btn-sm" ng-disabled=searchForm.$invalid>
+        <i class="fa fa-eraser"> SEARCH
+      </button>
+    </div>
   </form>
-  <div class=text-center style=margin-top:10px>
-    <button type=submit ng-click=doResetForm() class="btn btn-lg btn-default btn-sm">
-      <i class="fa fa-times"> RESET
-    </button>
-    <button type=submit ng-click=doSearch() class="btn btn-lg btn-default btn-sm" ng-disabled=searchForm.$invalid>
-      <i class="fa fa-eraser"> SEARCH
-    </button>
-  </div>
-</div> 
 
+  
 
-<div ng-if="searchResult == NULL" class="alert alert-warning" role=alert>No translator found</div>
-<div ng-if="searchResult != NULL">
-  <div id={{$index}} ng-repeat="item in searchResult">
-    <div class="panel panel-default well col-md-10" style=opacity:0.9>
-      <div class=panel-body>
-        <div class="row form-group">
+  <div class=row_shadow>
+    <div ng-if="searchResult == NULL" class="alert alert-warning" role=alert>No jobs found</div>
+    <div ng-if="searchResult != NULL">
+      <table id=searchResultTable class="table table-condensed sortable">
+        <thead>
+        <tr>
+
+          <th>#
+          <th>
+          <th>
+            <a ng-click="orderByField='NOME'; reverseSort = !reverseSort">
+              Name
+              <span ng-show="orderByField == 'NOME'">
+              <span ng-show=!reverseSort><i class="fa fa-sort-asc"></i></span>
+                <span ng-show=reverseSort><i class="fa fa-sort-desc"></i></span>
+              </span>
+            </a>
           
-          <label class="col-xs-2 control-label text-right">Institute:</label>
-          <span class=col-sm-3>{{certification.INSTITUTE}}</span>
+
+          <th>
+            <a ng-click="orderByField='RATING/(NUM_RATING+1)'; reverseSort = !reverseSort">
+              Rating
+              <span ng-show="orderByField == 'RATING/(NUM_RATING+1)'">
+                <span ng-show=!reverseSort><i class="fa fa-sort-asc"></i></span>
+                <span ng-show=reverseSort><i class="fa fa-sort-desc"></i></span>
+              </span>
+            </a>
           
-          <label class="col-xs-2 control-label text-right">Date:</label>
-          <span class=col-sm-3>{{certification.DATE | date:'dd/MM/yyyy'}}</span>
-        </div>
-        <div class="row form-group">
+          <th>
+            <a ng-click="orderByField='NUM_COMMENTI'; reverseSort = !reverseSort">
+              # Comments
+              <span ng-show="orderByField == 'NUM_COMMENTI'">
+                <span ng-show=!reverseSort><i class="fa fa-sort-asc"></i></span>
+                <span ng-show=reverseSort><i class="fa fa-sort-desc"></i></span>
+              </span>
+            </a>
           
-          <label class="col-xs-2 control-label text-right">Certification:</label>
-          <span class=col-sm-3>{{certification.CERTIFICATION}}</span>
-        </div>
-        <div class="row form-group">
+          <th>
+            <a ng-click="orderByField='PRICE'; reverseSort = !reverseSort">
+              Price per KTR
+              <span ng-show="orderByField == 'PRICE'">
+                <span ng-show=!reverseSort><i class="fa fa-sort-asc"></i></span>
+                <span ng-show=reverseSort><i class="fa fa-sort-desc"></i></span>
+              </span>
+            </a>
           
-          <label class="col-xs-2 control-label text-right">Level:</label>
-          <span class=col-sm-3>{{certification.LEVEL}}</span>
-        </div>
+          <th>
+            <a ng-click="orderByField='TOT_CORR_TRAD'; reverseSort = !reverseSort">
+              # Collaborations
+              <span ng-show="orderByField == 'TOT_CORR_TRAD'">
+                <span ng-show=!reverseSort><i class="fa fa-sort-asc"></i></span>
+                <span ng-show=reverseSort><i class="fa fa-sort-desc"></i></span>
+              </span>
+            </a>
+          
         
-        <form name=searchForm ng-submit=doDeleteCertification(certification.ID) novalidate>
+        
+        <tbody>
+        <tr ng-repeat="item in searchResult|orderBy:orderByField:reverseSort">
+          <td><input type=checkbox name=indexSelected ng-model=indexSelected>
+          <td>
+            <img style="border-radius: 5px" width=80 height=80 ng-src="data:image/jpeg;base64,{{item.image}}">
           
-          <div class=text-right style=margin-top:10px>
-            <button type=submit class="btn btn-lg btn-default btn-sm">
-              <i class="fa fa-times"> RESET
-            </button>
-            <button type=submit class="btn btn-lg btn-default btn-sm">
-              <i class="fa fa-times"> SEARCH
-            </button>
-          </div>
-        </form>
-      </div>
+          <td>
+            <a class=tooltipUI style=color:#FFF href=#demo2_tip onmouseover="tooltip.pop(this, '#demo2_tip',
+            {position:1, offsetX:-20, effect:'slide'})"><em>{{item.NOME}} {{item.COGNOME}}</em></a>
+
+            <div style=display:none>
+              <div id=demo2_tip style="width: 300px">
+                <div class=text-left>
+                  <img style="border-radius: 5px;margin:0px 10px 10px 0px" width=100 height=100 ng-src="data:image/jpeg;base64,{{item.image}}">
+                  <b>{{item.NOME}} {{item.COGNOME}}</b><br>
+                  Birthday: <i> {{item.DATA_NASCITA}}</i><br>
+                  From: <i>{{item.PAESE}}</i><br>
+                  Mothertongue: <i> {{item.MADRELINGUA}}</i><br>
+                  Know languages: <i>{{item.NUM_LANGUAGES}}</i><br>
+                  Certifications: <i>{{item.NUM_CERTIFICATIONS}}</i><br>
+                </div>
+              </div>
+            </div>
+          
+          <td><span style="pointer-events: none;float:left" id=div_rating class=star-rating star-rating rating-value=item.RATING/item.NUM_RATING data-max=5></span>
+          <td><i class="fa fa-lg fa-comments-o"></i>&nbsp;&nbsp;&nbsp;{{item.NUM_COMMENTI}}
+          <td>{{item.PRICE}} {{item.CURRENCY}}
+          <td>{{item.TOT_CORR_TRAD!='0' ? 'other ' + item.TOT_CORR_TRAD + ' collaborations' : ''}}
+        
+        
+      </table>
     </div>
   </div>
 </div>
-<div style=clear:both></div>
