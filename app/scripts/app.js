@@ -94,6 +94,14 @@ app.config(['$routeProvider', '$httpProvider', '$linkedInProvider',
           }]
         }
       }).
+      when('/translatorDetail/:user_id', {
+        templateUrl: 'views/agenzia/translatorDetail.html', controller: 'TranslatorDetailCtrl',
+        resolve: {
+          'MyServiceData': ['customFactory', function (customFactory) {
+            return customFactory.promise;
+          }]
+        }
+      }).
       otherwise({redirectTo: '/'});
 
     var $http,

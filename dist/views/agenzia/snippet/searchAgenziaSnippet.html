@@ -61,17 +61,18 @@
                    ng-model="priceto"/>
           </span>
         </div>
+        <div class="clearfix" />
+        <button style="display:none;" autofocus="true"/>
+        <div class="text-right" style="margin:30px 0 0 30px;">
+          <button ng-click="doResetForm()" class="btn btn-lg btn-default btn-sm">
+            <i class='fa fa-times'/> RESET
+          </button>
+          <button ng-click="doSearch()" class="btn btn-lg btn-default btn-sm"
+                  ng-disabled="searchForm.$invalid">
+            <i class='fa fa-eraser'/> SEARCH
+          </button>
+        </div>
       </div>
-    </div>
-    <button type="hidden" autofocus="true" />
-    <div class="text-center" style="margin:40px;">
-      <button ng-click="doResetForm()" class="btn btn-lg btn-default btn-sm">
-        <i class='fa fa-times'/> RESET
-      </button>
-      <button ng-click="doSearch()" class="btn btn-lg btn-default btn-sm"
-              ng-disabled="searchForm.$invalid">
-        <i class='fa fa-eraser'/> SEARCH
-      </button>
     </div>
   </form>
 
@@ -138,11 +139,18 @@ end shadow
   <div class="row_shadow">
     <div ng-if="searchResult == NULL" class="alert alert-warning" role="alert">No jobs found</div>
     <div ng-if="searchResult != NULL">
+      <form name="sendAJobForm" ng-submit="" novalidate>
+        <div style="margin:30px 0 30px 0;">
+          <button type="submit" class="btn btn-lg btn-default">
+            <i class='fa fa-envelope'/> Send a Job
+          </button>
+        </div>
+      </form>
       <table id="searchResultTable" class="table table-condensed sortable">
         <thead>
         <tr>
 
-          <th>#</th>
+          <th><input type="checkbox"></th>
           <th></th>
           <th>
             <a ng-click="orderByField='NOME'; reverseSort = !reverseSort">
@@ -199,23 +207,23 @@ end shadow
             <img style="border-radius: 5px;" width="80" height="80" ng-src='data:image/jpeg;base64,{{item.image}}'/>
           </td>
           <td>
-            <a class="tooltipUI" style="color:#FFF;" href="#demo2_tip" onmouseover="tooltip.pop(this, '#demo2_tip',
-            {position:1, offsetX:-20, effect:'slide'})"><em>{{item.NOME}} {{item.COGNOME}}</em></a>
-
-            <div style="display:none;">
-              <div id="demo2_tip" style="width: 300px;">
-                <div class='text-left'>
-                  <img style="border-radius: 5px;margin:0px 10px 10px 0px;" width="100" height="100"
-                       ng-src='data:image/jpeg;base64,{{item.image}}'/>
-                  <b>{{item.NOME}} {{item.COGNOME}}</b><br/>
-                  Birthday: <i> {{item.DATA_NASCITA}}</i><br/>
-                  From: <i>{{item.PAESE}}</i><br/>
-                  Mothertongue: <i> {{item.MADRELINGUA}}</i><br/>
-                  Know languages: <i>{{item.NUM_LANGUAGES}}</i><br/>
-                  Certifications: <i>{{item.NUM_CERTIFICATIONS}}</i><br/>
+            <a href="#/translatorDetail/{{item.ID}}" style="color:#FFF;" class="tooltipCSS">
+              <em>{{item.NOME}} {{item.COGNOME}}</em>
+              <span>
+                <div id="{{item.ID}}">
+                  <div class='text-left'>
+                    <img style="border-radius: 5px;margin:0px 7px 7px 0px;" width="100" height="100"
+                         ng-src='data:image/jpeg;base64,{{item.image}}'/>
+                    <b>{{item.NOME}} {{item.COGNOME}}</b><br/>
+                    Birthday: <i> {{item.DATA_NASCITA | date: "dd-MM-yyyy"}}</i><br/>
+                    From: <i>{{itesm.PAESE}}</i><br/>
+                    Mothertongue: <i> {{item.MADRELINGUA}}</i><br/>
+                    Know languages: <i>{{item.NUM_LANGUAGES}}</i><br/>
+                    Certifications: <i>{{item.NUM_CERTIFICATIONS}}</i><br/>
+                  </div>
                 </div>
-              </div>
-            </div>
+              </span>
+            </a>
           </td>
           <td><span style="pointer-events: none;float:left;" id="div_rating"
                     class="star-rating"

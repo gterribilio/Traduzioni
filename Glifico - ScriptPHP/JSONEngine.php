@@ -24,6 +24,34 @@ switch ($azione) {
 		$codetable=$_GET['codetable'];
 		$query = "SELECT ID_ITEM,DESCRIZIONE FROM CODETABLE WHERE ID_CODETABLE='".$codetable."'";
 	break;
+
+	case "getUserData":
+		$user_id = $_GET['user_id'];
+		$query = "SELECT U.ID, U.RUOLO, U.EMAIL, U.CITTA, U.PAESE, U.VAT FROM UTENTE U WHERE U.ID=".$user_id;
+		$result = execQuery($query);
+		while($row1 = @mysql_fetch_array($result, MYSQL_ASSOC)) {
+			array_push($json, $row1);
+		}
+		if($json[0]["RUOLO"] == "AGENZIA") {
+			$query = "SELECT U.ID, U.RUOLO, U.CITTA, U.PAESE, U.VAT, U.RATING, U.NUM_RATING, A.* FROM UTENTE U, AGENZIA A WHERE A.ID = ".$json[0]["ID"]." AND A.ID = U.ID";
+			$result1 = execQuery($query);
+			while($row1 = @mysql_fetch_array($result1, MYSQL_ASSOC))
+			{
+				array_push($jsonDettaglio, $row1);
+			}
+		}else {
+			//GESTIONE TRADUTTORE
+			$query = "SELECT U.ID, U.RUOLO, U.EMAIL, U.CITTA, U.PAESE, U.VAT,  U.RATING, U.NUM_RATING, T.* FROM TRADUTTORE T, UTENTE U WHERE T.ID = ".$json[0]["ID"]." AND T.ID = U.ID";
+			$result1 = execQuery($query);
+			while($row1 = @mysql_fetch_array($result1, MYSQL_ASSOC))
+			{
+				array_push($jsonDettaglio, $row1);
+			}
+		}
+		//TODO : da decidere se lasciare sto cavolo di array di array come oggetto di ritorno!
+		$json = array(0 => array_merge($json[0], $jsonDettaglio[0]));
+
+	break;
 	
 	case "search":
 		$sql="";
@@ -46,7 +74,7 @@ switch ($azione) {
 
 			LEFT JOIN (SELECT U.ID, COUNT(*) AS NUM_COMMENTI FROM COMMENT, UTENTE U WHERE U.ID = COMMENT.ID_TRADUTTORE  GROUP BY U.ID) AS INNER_COMMENTS ON INNER_COMMENTS.ID = UT.ID
 
-			LEFT JOIN (SELECT U.ID, CONCAT(GROUP_CONCAT(DISTINCT LP.FROM),',', GROUP_CONCAT(DISTINCT LP.TO)) AS NUM_LANGUAGES FROM LANGUAGE_PAIR AS LP, UTENTE U WHERE U.ID = LP.USER_ID GROUP BY U.ID) AS LANGUAGES ON LANGUAGES.ID = UT.ID, TRADUTTORE T
+			LEFT JOIN (SELECT U.ID, CONCAT(GROUP_CONCAT(DISTINCT LP.FROM),', ', GROUP_CONCAT(DISTINCT LP.TO)) AS NUM_LANGUAGES FROM LANGUAGE_PAIR AS LP, UTENTE U WHERE U.ID = LP.USER_ID GROUP BY U.ID) AS LANGUAGES ON LANGUAGES.ID = UT.ID, TRADUTTORE T
         
 			LEFT JOIN (SELECT U.ID, COUNT(*) AS NUM_CORRECTIONS FROM JOBS_CORRECTION JC, UTENTE U WHERE U.ID=JC.ID_TRADUTTORE AND ID_AGENZIA=".$user_id." AND STATO NOT IN('COMPETITION','ENGAGMENT') GROUP BY U.ID) AS INNER_JC ON INNER_JC.ID=T.ID
         
