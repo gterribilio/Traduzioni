@@ -4,12 +4,12 @@
       <div style="float:left;"><h2>TRANSLATOR PROFILE</h2></div>
       <form name="sendAJobForm" ng-submit="" novalidate>
         <div style="float:left;" class="text-right col-sm-2">
-          <button type="submit" class="btn btn-lg btn-default">
+          <a href="#/send_a_job/{{traduttoreDetail.ID}}" class="btn btn-lg btn-default">
             <i class='fa fa-envelope'/> Send a Job
-          </button>
+          </a>
         </div>
       </form>
-      <div class="clearfix" />
+      <div class="clearfix"/>
     </div>
     <div class="row_shadow">
       <div class="row row-eq-height">
@@ -18,41 +18,71 @@
           <div id="container_image_profile">
             <img class="thumb_img" width="180" height="180" ng-src="data:image/jpeg;base64,{{image}}"/>
           </div>
-          <div style="pointer-events: none;margin:10px 40px 0 40px;" id="div_rating"
+          <div style="pointer-events: none;margin:10px 40px 20px 40px;" id="div_rating"
                class="star-rating"
-               star-rating rating-value="traduttoreDetail.RATING/traduttoreDetail.NUM_RATING" data-max="5"></div>
+               star-rating rating-value="traduttoreDetail.RATING/traduttoreDetail.NUM_RATING" data-max="5">
+          </div>
+          <div class="text-center" ng-show="!showComments">
+            <a style="cursor: pointer;" ng-click="showComments=true;">
+              <i class="fa fa-plus"></i> show comments
+            </a>
+          </div>
+          <div class="text-center" ng-show="showComments">
+            <a style="cursor: pointer;" ng-click="showComments=false;">
+              <i class="fa fa-minus"></i> hide comments
+            </a>
+          </div>
         </div>
-        <div id="item_second_row_list" class="col-xs-5">
+        <div id="item_second_row_list" class="col-xs-4">
           <div class="row form-group">
-            <label class="col-xs-3 control-label text-right">Name Surname:</label>
-            <span class="col-sm-4">{{traduttoreDetail.NOME}} {{traduttoreDetail.COGNOME}}</span>
+            <label class="col-xs-5 control-label text-right">Name Surname:</label>
+            <span class="col-sm-5">{{traduttoreDetail.NOME}} {{traduttoreDetail.COGNOME}}</span>
 
           </div>
 
           <!-- birthdayTraduttore -->
           <div class="form-group row">
-            <label class="col-xs-3 control-label text-right">Birthday:</label>
-            <span class="col-sm-4">{{traduttoreDetail.DATA_NASCITA | date:'dd/MM/yyyy'}}</span>
+            <label class="col-xs-5 control-label text-right">Birthday:</label>
+            <span class="col-sm-5">{{traduttoreDetail.DATA_NASCITA | date:'dd/MM/yyyy'}}</span>
           </div>
 
           <!--  CITTA & COUNTRY -->
           <div class="form-group row">
-            <label class="col-xs-3 control-label text-right">City:</label>
-            <span class="col-sm-4">{{traduttoreDetail.CITTA}}, {{traduttoreDetail.PAESE}}</span>
+            <label class="col-xs-5 control-label text-right">City:</label>
+            <span class="col-sm-5">{{traduttoreDetail.CITTA}}, {{traduttoreDetail.PAESE}}</span>
           </div>
 
           <!-- MADRELINGUA -->
           <div class="form-group row">
-            <label class="col-xs-3 control-label text-right">Mothertongue:</label>
-            <span class="col-sm-4">{{traduttoreDetail.MADRELINGUA}}</span>
+            <label class="col-xs-5 control-label text-right">Mothertongue:</label>
+            <span class="col-sm-5">{{traduttoreDetail.MADRELINGUA}}</span>
           </div>
 
           <!-- VAT NUMBER -->
           <div class="form-group row">
-            <label class="col-xs-3 control-label text-right">VAT number:</label>
-            <span class="col-sm-4">{{traduttoreDetail.VAT}}</span>
+            <label class="col-xs-5 control-label text-right">VAT number:</label>
+            <span class="col-sm-5">{{traduttoreDetail.VAT}}</span>
           </div>
         </div>
+
+        <div class="col-xs-6" ng-show="showComments">
+          <div class="row form-group">
+            <label>Feedback:</label>
+            <div ng-if="commentsAll != NULL">
+              <ul class="list-group" style="overflow-y: scroll; max-height: 250px;">
+                <li id="{{$index}}" ng-repeat="comment in commentsAll" ng-transclude-custom class="list-group-item">
+                  <article>{{comment.COMMENTO}}</article>
+                </li>
+              </ul>
+            </div>
+            <div ng-if="commentsAll == NULL">
+              <li class="list-group-item">
+                <article>No comment yet</article>
+              </li>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>

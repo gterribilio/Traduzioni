@@ -31,7 +31,14 @@ var common = angular.module('CommonModule', [])
 		},
 		set: function(setter,data) {
 			localStorage[setter] = securizer.encrypt(angular.toJson(data || "undefined"));
-		}
+		},
+    getSessionStorage: function(getter) {
+      var present = sessionStorage[getter];
+      return present ? angular.fromJson(securizer.decrypt(present)) : null;
+    },
+    setSessionStorage: function(setter,data) {
+      sessionStorage[setter] = securizer.encrypt(angular.toJson(data || "undefined"));
+    }
 	}
 }]);
 

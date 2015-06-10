@@ -44,13 +44,25 @@ search.controller('SearchAgenziaCtrl', ['$scope', '$rootScope', '$window', 'serv
 
 
     $scope.doSearch = function () {
+
+      var filter = {
+        mothertongueSearchFrom: $scope.mothertongueSearchFrom.DESCRIZIONE,
+        mothertongueSearchTo: $scope.mothertongueSearchTo.DESCRIZIONE,
+        service: $scope.service.DESCRIZIONE,
+        field: (($scope.field && $scope.field.DESCRIZIONE) ? $scope.field.DESCRIZIONE : ""),
+        pricefrom: $scope.pricefrom,
+        priceto: $scope.priceto
+      }
+
+      customFactory.setSessionStorage('filter', filter);
+
       services.getFromRESTServer(
-        "mothertongueSearchFrom=Italian" /*+ $scope.mothertongueSearchFrom.DESCRIZIONE*/ +
-        //"mothertongueSearchFrom=" + $scope.mothertongueSearchFrom.DESCRIZIONE +
-          "&mothertongueSearchTo=French" /*+ $scope.mothertongueSearchTo.DESCRIZIONE*/ +
-        //"&mothertongueSearchTo=" + $scope.mothertongueSearchTo.DESCRIZIONE +
-          "&service=simultaneous interpretation" /*$scope.service.DESCRIZIONE*/ +
-        //"&service=" + $scope.service.DESCRIZIONE +
+        //"mothertongueSearchFrom=Italian" /*+ $scope.mothertongueSearchFrom.DESCRIZIONE*/ +
+        "mothertongueSearchFrom=" + $scope.mothertongueSearchFrom.DESCRIZIONE +
+          //"&mothertongueSearchTo=French" /*+ $scope.mothertongueSearchTo.DESCRIZIONE*/ +
+        "&mothertongueSearchTo=" + $scope.mothertongueSearchTo.DESCRIZIONE +
+          //"&service=simultaneous interpretation" /*$scope.service.DESCRIZIONE*/ +
+        "&service=" + $scope.service.DESCRIZIONE +
         (($scope.field && $scope.field.DESCRIZIONE) ? "&field=" + $scope.field.DESCRIZIONE : "") +
         ($scope.pricefrom ? "&pricefrom=" + $scope.pricefrom : "") +
         ($scope.priceto ? "&priceto=" + $scope.priceto : "") +
@@ -82,7 +94,7 @@ search.controller('SearchAgenziaCtrl', ['$scope', '$rootScope', '$window', 'serv
     }
 
     //TODO CANCELLARE E RIPRISTINARE I CAMPI DELLA SUBMIT
-    $scope.doSearch();
+    //$scope.doSearch();
 
     $scope.doResetForm = function () {
       $scope.mothertongueSearchFrom = null;

@@ -30,6 +30,16 @@ search.controller('TranslatorDetailCtrl', ['$scope', '$rootScope', '$window', 's
         }
       });//end success
 
+    services.getFromRESTServer("user_id=" + $scope.user_id, "getAllTranslatorComments").success(function (data) {
+      if (data.jsonError != null || data.errCode != null) {
+        //alert(JSON.stringify(data));
+      }
+      else {
+        $scope.commentsAll = data;
+        //alert(JSON.stringify(data));
+      }
+    });//end success
+
     services.getFromRESTServer(
       "user_id=" + $scope.user_id, "getPair")
       .success(function (data) {

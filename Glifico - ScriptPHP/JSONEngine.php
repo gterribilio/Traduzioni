@@ -358,10 +358,16 @@ switch ($azione) {
 		$query = "SELECT * FROM COMMENT WHERE ID_AGENZIA=".$user_id." ORDER BY DATA DESC LIMIT 3";
 	break;
 	
-	//ottieni gli ultimi 3 commenti dell'agenzia
+	//ottieni tutti i commenti dell'agenzia
 	case "getAllAgencyComments":
 		$user_id=$_GET['user_id'];
 		$query = "SELECT * FROM COMMENT WHERE ID_AGENZIA=".$user_id." ORDER BY DATA";
+	break;
+	
+	//ottieni gli ultimi 3 commenti del traduttore
+	case "getAllTranslatorComments":
+		$user_id=$_GET['user_id'];
+		$query = "SELECT * FROM COMMENT WHERE ID_TRADUTTORE=".$user_id." ORDER BY DATA";
 	break;
 
 	//login utente

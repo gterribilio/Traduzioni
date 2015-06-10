@@ -102,6 +102,14 @@ app.config(['$routeProvider', '$httpProvider', '$linkedInProvider',
           }]
         }
       }).
+      when('/send_a_job/:user_id', {
+        templateUrl: 'views/agenzia/send_a_job.html', controller: 'SendAJobCtrl',
+        resolve: {
+          'MyServiceData': ['customFactory', function (customFactory) {
+            return customFactory.promise;
+          }]
+        }
+      }).
       otherwise({redirectTo: '/'});
 
     var $http,

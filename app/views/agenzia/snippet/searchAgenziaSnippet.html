@@ -61,7 +61,7 @@
                    ng-model="priceto"/>
           </span>
         </div>
-        <div class="clearfix" />
+        <div class="clearfix"/>
         <button style="display:none;" autofocus="true"/>
         <div class="text-right" style="margin:30px 0 0 30px;">
           <button ng-click="doResetForm()" class="btn btn-lg btn-default btn-sm">
@@ -75,66 +75,6 @@
       </div>
     </div>
   </form>
-
-  <!-- TYPE NUMBER
-  <div ng-class="{ 'has-error' : searchForm.typeNumberVal.$invalid && !searchForm.typeNumberVal.$pristine }">
-    <label class="col-sm-2 control-label text-right">
-      <input type="checkbox" ng-model="typeNumber" name="typeNumber"> Type Number</label>
-  <span class="col-sm-2">
-    <input type="number" ng-show="typeNumber" ng-pattern="/^[0-9]+$/" class="form-control"
-           ng-model="typeNumberVal" name="typeNumberVal">
-  </span>
-  </div>
-
-  PAGES NUMBER
-  <div ng-class="{ 'has-error' : searchForm.pagesNumberVal.$invalid && !searchForm.pagesNumberVal.$pristine }">
-    <label class="col-sm-2 control-label text-right">
-      <input type="checkbox" ng-model="pagesNumber" name="pagesNumber"> Pages Number</label>
-
-    <span class="col-sm-2">
-      <input type="number" ng-show="pagesNumber" ng-pattern="/^[0-9]+$/" class="form-control"
-             ng-model="pagesNumberVal"
-             name="pagesNumberVal">
-    </span>
-  </div>
-</div>
-
-<div ng-show="!showAdvancedFields" class="text-right" style="margin-top:10px;">
-  <a style="cursor: pointer;" ng-click="showAdvancedFields=true;">
-    <i class="fa fa-plus"></i> more options
-  </a>
-</div>
-<div ng-show="showAdvancedFields" class="text-right" style="margin-top:10px;">
-  <a style="cursor: pointer;" ng-click="showAdvancedFields=false;">
-    <i class="fa fa-minus"></i> less options
-  </a>
-</div>
-</div>
-end shadow
-
-<div class="row_shadow" ng-show="showAdvancedFields">
-
-<div class="row form-group">
-
-  KTR
-  <div ng-class="{ 'has-error' : searchForm.ktr.$invalid && !searchForm.ktr.$pristine }">
-    <label class="col-xs-2 control-label text-right ">KTR:</label>
-                  <span class="col-sm-2">
-        <input type="number" name="ktr" ng-pattern="/^[0-9]+$/" class="form-control" ng-model="ktr">
-      </span>
-  </div>
-
-  DEADLINE
-  <div ng-class="{ 'has-error' : searchForm.field.$invalid && !searchForm.field.$pristine }">
-    <label class="col-xs-2 control-label text-right ">Deadline:</label>
-
-    <div id="sandbox-container" style="padding-left:10px;padding-right:10px;" class="input-group date col-sm-2">
-      <input type="text" class="form-control" ng-model="deadline" name="deadline" data-provide="datepicker"
-             data-date-format="dd/mm/yyyy"><span class="input-group-addon">
-      <i class="glyphicon glyphicon-calendar"></i></span>
-    </div>
-  </div>
-</div>-->
 
   <div class="row_shadow">
     <div ng-if="searchResult == NULL" class="alert alert-warning" role="alert">No jobs found</div>

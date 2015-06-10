@@ -1,0 +1,89 @@
+<div class="background-default" style="min-height:100vh;margin-top:100px;">
+  <div class="row_shadow" style="padding: 40px 0px 40px 0px;">
+    <div style="margin-left:30px;">
+      <h2>SEND A JOB</h2>
+    </div>
+    <div class="row_shadow">
+      <label>Recipient: </label>
+      <ul class="list-group" style="overflow-y: scroll; max-height: 250px;">
+        <li id="{{$index}}" ng-repeat="recipient in recipientList" ng-transclude-custom class="list-group-item">
+          <article>{{recipient}}</article>
+        </li>
+      </ul>
+    </div>
+
+    <div class="row_shadow" style="padding: 40px 0px 40px 0px;">
+      <div style="margin-left:30px;">
+        <h2>JOB SIMULATOR</h2>
+      </div>
+      <div class="row_shadow">
+
+        <div class="form-group row">
+          <label class="col-xs-2 control-label text-right">From:</label>
+          <span class="col-sm-2">{{filter.mothertongueSearchFrom}}</span>
+          <label class="col-xs-2 control-label text-right">To:</label>
+          <span class="col-sm-2">{{filter.mothertongueSearchTo}}</span>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-xs-2 control-label text-right">Service:</label>
+          <span class="col-sm-2">{{filter.service}}</span>
+          <label class="col-xs-2 control-label text-right">Field:</label>
+          <span class="col-sm-2">{{filter.field}}</span>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-xs-2 control-label text-right">Price Range:</label>
+          <span class="col-sm-2">{{filter.pricefrom}}</span>
+          <label class="col-xs-2 control-label text-right">to: </label>
+          <span class="col-sm-2">{{filter.priceto}}</span>
+        </div>
+
+        <div class="form-group row">
+          <!-- DEADLINE -->
+          <div ng-class="{ 'has-error' : searchForm.field.$invalid && !searchForm.field.$pristine }">
+            <label class="col-xs-2 control-label text-right ">Deadline:</label>
+
+            <div id="sandbox-container" style="padding-left:10px;padding-right:10px;" class="input-group date col-sm-2">
+              <input type="text" class="form-control" ng-model="deadline" name="deadline" data-provide="datepicker"
+                     data-date-format="dd/mm/yyyy"><span class="input-group-addon">
+              <i class="glyphicon glyphicon-calendar"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <!-- TYPE NUMBER -->
+          <div ng-class="{ 'has-error' : searchForm.typeNumberVal.$invalid && !searchForm.typeNumberVal.$pristine }">
+            <label class="col-sm-2 control-label text-right">
+              <input type="checkbox" ng-model="typeNumber" name="typeNumber"> Type Number</label>
+          <span class="col-sm-2">
+            <input type="number" ng-show="typeNumber" ng-pattern="/^[0-9]+$/" class="form-control"
+                   ng-model="typeNumberVal" name="typeNumberVal">
+          </span>
+          </div>
+
+          <!-- PAGES NUMBER -->
+          <div ng-class="{ 'has-error' : searchForm.pagesNumberVal.$invalid && !searchForm.pagesNumberVal.$pristine }">
+            <label class="col-sm-2 control-label text-right">
+              <input type="checkbox" ng-model="pagesNumber" name="pagesNumber"> Pages Number</label>
+          <span class="col-sm-2">
+            <input type="number" ng-show="pagesNumber" ng-pattern="/^[0-9]+$/" class="form-control"
+                   ng-model="pagesNumberVal" name="pagesNumberVal">
+          </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row_shadow" style="padding: 40px 0px 40px 0px;">
+      <div style="margin-left:30px;">
+        <h2>CALCULATE</h2>
+      </div>
+      <div class="row_shadow">
+        asd RECUPERARE I FILTRI NELLA SEARCH HOME. TYPE NUMBER E PAGE NUMBER SONO MUTUALMENTE ESCLUSIVI
+      </div>
+    </div>
+
+  </div>
+</div>
