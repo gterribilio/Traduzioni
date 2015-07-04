@@ -115,56 +115,55 @@ direttive
       }
     }
   });
+/*
+ * quando sei in un ng-repeat nel tuo scope hai la variabile $last
+ la puoi usare anche nel dom hai anche la $index
 
-  /*
-   * quando sei in un ng-repeat nel tuo scope hai la variabile $last
-   la puoi usare anche nel dom hai anche la $index
-
-   VariableTypeDetails
-   $index
-   number
-   iterator offset of the repeated element (0..length-1)
-   $first
-   boolean
-   true if the repeated element is first in the iterator.
-   $middle
-   boolean
-   true if the repeated element is between the first and last in the iterator.
-   $last
-   boolean
-   true if the repeated element is last in the iterator.
-   $even
-   boolean
-   true if the iterator position $index is even (otherwise false).
-   $odd
-   boolean
-   true if the iterator position $index is odd (otherwise false).
-   https://docs.angularjs.org/api/ng/directive/ngRepeat
+ VariableTypeDetails
+ $index
+ number
+ iterator offset of the repeated element (0..length-1)
+ $first
+ boolean
+ true if the repeated element is first in the iterator.
+ $middle
+ boolean
+ true if the repeated element is between the first and last in the iterator.
+ $last
+ boolean
+ true if the repeated element is last in the iterator.
+ $even
+ boolean
+ true if the iterator position $index is even (otherwise false).
+ $odd
+ boolean
+ true if the iterator position $index is odd (otherwise false).
+ https://docs.angularjs.org/api/ng/directive/ngRepeat
 
 
-   quindi la direttiva si attacca al tuo ng-repeat e legge la variabile $last che c'è nello scope del dom
-   in caso sia true setta un timeout (con delay 0 [leggi https://docs.angularjs.org/api/ng/service/$timeout])
-   e genera un evento chiamato ngRepeatFinished
-   a quel punto della direttiva siccome angular nel dom sta renderizzando l'ultimo elemento praticamente il timeout serve ad aspettare che sia veramente tutto finito ed emettere il segnale
-   anche perchè rischieresti di non fare il digest della roba che stai aggiungendo il dom
-   quindi il timeout farà il refresh del dom e quindi all'emissione dell'evento tu aggiungi senza problemi il tuo readmore()
+ quindi la direttiva si attacca al tuo ng-repeat e legge la variabile $last che c'è nello scope del dom
+ in caso sia true setta un timeout (con delay 0 [leggi https://docs.angularjs.org/api/ng/service/$timeout])
+ e genera un evento chiamato ngRepeatFinished
+ a quel punto della direttiva siccome angular nel dom sta renderizzando l'ultimo elemento praticamente il timeout serve ad aspettare che sia veramente tutto finito ed emettere il segnale
+ anche perchè rischieresti di non fare il digest della roba che stai aggiungendo il dom
+ quindi il timeout farà il refresh del dom e quindi all'emissione dell'evento tu aggiungi senza problemi il tuo readmore()
 
-   1. il timeout causa il refresh del dom:    If set to false skips model dirty checking, otherwise will invoke fn within the $apply block.
-   (default: true)
-   2. il timeout serve ad aspettare che sia veramente finito tutto (siccome ha delay uguale a 0): IL TIMEOUT SERVE PER REFRESHARE
-   IL DOM!!!!!!!!!!!!!!!!
+ 1. il timeout causa il refresh del dom:    If set to false skips model dirty checking, otherwise will invoke fn within the $apply block.
+ (default: true)
+ 2. il timeout serve ad aspettare che sia veramente finito tutto (siccome ha delay uguale a 0): IL TIMEOUT SERVE PER REFRESHARE
+ IL DOM!!!!!!!!!!!!!!!!
 
-   volendo puoi migliorare la direttiva dandogli un attributo che emette l'evento che gli passi tu
-   link: function(scope, elm, attrs) {
-   if (scope.$last === true) {
-   var eventToEmit = scope.$eval(attrs.NomeDirettiva);
-   if(eventToEmit != null){
-   $timeout(function () {
-   scope.$emit(eventToEmit);
-   });
-   }
-   }
-   }
-   };
+ volendo puoi migliorare la direttiva dandogli un attributo che emette l'evento che gli passi tu
+ link: function(scope, elm, attrs) {
+ if (scope.$last === true) {
+ var eventToEmit = scope.$eval(attrs.NomeDirettiva);
+ if(eventToEmit != null){
+ $timeout(function () {
+ scope.$emit(eventToEmit);
+ });
+ }
+ }
+ }
+ };
 
-   * */
+ * */

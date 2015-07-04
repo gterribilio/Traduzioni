@@ -14,6 +14,7 @@ search.controller('TranslatorDetailCtrl', ['$scope', '$rootScope', '$window', 's
     }
 
     $scope.user_id = $routeParams.user_id;
+    $scope.showComments=false;
 
     $rootScope.image = null;
 

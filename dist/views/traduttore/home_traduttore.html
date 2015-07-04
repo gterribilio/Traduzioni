@@ -1,14 +1,33 @@
 <!-- Home Traduttore -->
-<div class="background-default">
-	<!-- Profile Section -->
-	<div template-snippet name="traduttore/snippet/profileTraduttoreSnippet" id="profileTraduttoreSnippet" style="padding-top:100px;"></div>
+<div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" tab role="tablist">
+    <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a>
+    </li>
+    <li role="presentation"><a href="#languages_pair" aria-controls="languages_pair" role="tab" data-toggle="tab">Languages Pair</a></li>
+    <li role="presentation"><a href="#education" aria-controls="education" role="tab" data-toggle="tab">Education</a></li>
+    <li role="presentation"><a href="#certification" aria-controls="certification" role="tab" data-toggle="tab">Certification</a></li>
+  </ul>
 
-	<!-- Languages Pair Section -->
-	<div template-snippet name="traduttore/snippet/languagesPairSnippet" id="languagesPairSnippet" style="padding-top:30px;"></div>
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="profile">
+      <!-- Profile Section -->
+      <div template-snippet name="traduttore/snippet/profileTraduttoreSnippet" id="profileTraduttoreSnippet"></div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="languages_pair">
+      <!-- Languages Pair Section -->
+      <div template-snippet name="traduttore/snippet/languagesPairSnippet" id="languagesPairSnippet"></div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="education">
+      <!-- Ecucation Section -->
+      <div template-snippet name="traduttore/snippet/educationTraduttoreSnippet" id="educationTraduttoreSnippet"></div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="certification">
+      <!-- Certification Section -->
+      <div template-snippet name="traduttore/snippet/certificationsTraduttoreSnippet"
+           id="certificationTraduttoreSnippet"></div>
+    </div>
+  </div>
 
-	<!-- Ecucation Section -->
-	<div template-snippet name="traduttore/snippet/educationTraduttoreSnippet" id="educationTraduttoreSnippet" style="padding-top:30px;"></div>
-
-	<!-- Certification Section -->
-	<div template-snippet name="traduttore/snippet/certificationsTraduttoreSnippet" id="certificationTraduttoreSnippet" style="padding-top:30px;"></div>
 </div>

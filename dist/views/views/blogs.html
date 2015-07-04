@@ -1,0 +1,81 @@
+
+<section class="blog parallax1">
+
+  
+  <section class=callout>
+    <div class=container>
+      <h3 class=animated data-animate=fadeInDown data-animate-delay=300>What's up <span class=color>behind </span>the languages?</h3>
+    </div>
+    
+  </section>
+  
+
+  <div class=container style=padding-top:0px>
+
+    <div class=text-right>
+      <button type=button ng-click=closeBlog() class="btn btn-default">
+        <i class="fa fa-chevron-left"> Back</i>
+      </button>
+    </div>
+
+    <div class=row>
+      <div class="panel panel-default col-sm-3" style="height:450px;margin:4%; position:relative" ng-repeat="blog in allBlogs">
+        <div class="panel-body black text-justify">
+          <img style=width:100% ng-src="data:image/jpeg;base64,{{blog.IMAGE}}">
+
+          <div class="title text-left">{{blog.TITOLO}}</div>
+          <p>Author: {{blog.AUTORE}}</p>
+
+          <p>Date: {{blog.DATA_CREAZIONE}}</p>
+
+          <p>
+
+          <div ng-bind-html=blog.TESTO_LIMITED></div>
+          </p>
+
+          <div style=position:absolute;bottom:0;right:0;margin:10px>
+            <button type=button data-toggle=modal data-target=#singleBlog ng-click=setArticle(blog.ID) class="btn btn-default btn-xs">
+              <i class="fa fa-share">
+                Read All
+              </i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+  
+</section>
+
+
+<div class="modal fade" id=singleBlog tabindex=-1 role=dialog aria-labelledby=myModalLabel aria-hidden=true>
+  <div class=modal-dialog>
+    <div class=modal-content>
+      <div class=modal-header>
+        <button type=button class=close data-dismiss=modal aria-label=Close><span aria-hidden=true>&times;</span></button>
+        <h4 style=color:black class=modal-title id=myModalLabel>{{article.TITOLO}}</h4>
+      </div>
+      <div class="modal-body text-justify">
+        <img style=width:100% ng-src="data:image/jpeg;base64,{{article.IMAGE}}">
+
+        <div class="title text-left">{{article.TITOLO}}</div>
+        <p>Author: {{article.AUTORE}}</p>
+
+        <p>Creation date: {{article.DATA_CREAZIONE}}</p>
+
+        <p>
+
+        <div ng-bind-html=article.TESTO></div>
+        </p>
+
+      </div>
+      
+      <div class=modal-footer>
+        <button type=button class="btn btn-default" data-dismiss=modal>Close</button>
+      </div>
+    </div>
+  </div>
+  
+</div>

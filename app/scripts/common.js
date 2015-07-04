@@ -4,47 +4,48 @@
 
 var common = angular.module('CommonModule', [])
 
-/*  FACTORY  */
+  /*  FACTORY  */
 
-.factory('customFactory', ['APP_CFG','services', '$q', function(APP_CFG, services, $q) {
+  .factory('customFactory', ['APP_CFG', 'services', '$q', function (APP_CFG, services, $q) {
 
-	var securizer = null;
-	var deferred = $q.defer();
-	var promise = deferred.promise;
+    var securizer = null;
+    var deferred = $q.defer();
+    var promise = deferred.promise;
 
-	//config initialization...
-	services.getConfiguration().then(
-		function (data, status) {
-			angular.extend(APP_CFG, data.data); //unione verso APP_CFG
-			securizer = new Secur(APP_CFG.defaultKK);
-			deferred.resolve("OK!");
-			//console.debug("Configurazioni acquisite dal server: " + angular.toJson(APP_CFG));
-		});
+    //config initialization...
+    services.getConfiguration().then(
+      function (data, status) {
+        angular.extend(APP_CFG, data.data); //unione verso APP_CFG
+        securizer = new Secur(APP_CFG.defaultKK);
+        deferred.resolve("OK!");
+        //console.debug("Configurazioni acquisite dal server: " + angular.toJson(APP_CFG));
+      });
 
-	return {
+    return {
 
-		promise: promise,
+      promise: promise,
 
-		get: function(getter) {
-			var present = localStorage[getter];
-			return present ? angular.fromJson(securizer.decrypt(present)) : null;
-		},
-		set: function(setter,data) {
-			localStorage[setter] = securizer.encrypt(angular.toJson(data || "undefined"));
-		},
-    getSessionStorage: function(getter) {
-      var present = sessionStorage[getter];
-      return present ? angular.fromJson(securizer.decrypt(present)) : null;
-    },
-    setSessionStorage: function(setter,data) {
-      sessionStorage[setter] = securizer.encrypt(angular.toJson(data || "undefined"));
+      get: function (getter) {
+        var present = localStorage[getter];
+        return present ? angular.fromJson(securizer.decrypt(present)) : null;
+      },
+      set: function (setter, data) {
+        localStorage[setter] = securizer.encrypt(angular.toJson(data || "undefined"));
+      },
+      getSessionStorage: function (getter) {
+        var present = sessionStorage[getter];
+        return present ? angular.fromJson(securizer.decrypt(present)) : null;
+      },
+      setSessionStorage: function (setter, data) {
+        sessionStorage[setter] = securizer.encrypt(angular.toJson(data || "undefined"));
+      }
     }
-	}
-}]);
+  }]);
 
 var Secur = (function () {
   var kk;
   var p = {iter: 1000, ts: 128, ks: 256};
+
   function init(kk) {
     var self = this;
     initialize(kk);
@@ -77,5 +78,6 @@ var Secur = (function () {
     }
 
   }
+
   return init;
 })();

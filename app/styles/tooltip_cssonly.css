@@ -9,7 +9,7 @@ a.tooltipCSS span {
 a.tooltipCSS:hover span{
   display:inline; position:absolute; color:#222;
   border:1px solid #CCC; background:#FFF;}
-.callout {z-index:20;position:absolute;top:30px;border:0;left:-12px;}
+.calloutCSS {z-index:20;position:absolute;top:30px;border:0;left:-12px;}
 
 /*CSS3 extras*/
 a.tooltipCSS span

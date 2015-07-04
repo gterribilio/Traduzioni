@@ -5,28 +5,902 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11065f60-ee0e-4598-ac8a-b433e47c68e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/scripts/scripts.c4fa9824.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/agenzia/send_a_job.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/agenzia/send_a_job.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/views/agenzia/send_a_job.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/controllers/agenzia/send_a_job.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/scripts/scripts.ba504d1f.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/_favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/about.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/accordion.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/accordion.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/arrow-left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/arrow-left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/arrow-left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/arrow-right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/arrow-right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/arrow-right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/headers/banner-img-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/blog-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/blog-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/blog-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/blog-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/blog-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/blog-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/blog-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/blog-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/blog-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/blog.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/blog.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/dark_rounded/btnNext.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/dark_square/btnNext.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/facebook/btnNext.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/light_rounded/btnNext.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/light_square/btnNext.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/dark_rounded/btnNext.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/dark_square/btnNext.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/facebook/btnNext.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/light_rounded/btnNext.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/light_square/btnNext.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/dark_rounded/btnPrevious.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/dark_square/btnPrevious.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/facebook/btnPrevious.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/light_rounded/btnPrevious.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/light_square/btnPrevious.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/dark_rounded/btnPrevious.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/dark_square/btnPrevious.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/facebook/btnPrevious.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/light_rounded/btnPrevious.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/light_square/btnPrevious.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/client-logo-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/client-logo-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/client-logo-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/client-logo-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/client-logo-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/client-logo-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/client-logo-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/client-logo-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/client-logo-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/client-logo-4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/client-logo-4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/client-logo-4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/client-logo-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/client-logo-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/client-logo-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/client-logo-6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/client-logo-6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/client-logo-6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/client-logo-7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/client-logo-7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/client-logo-7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/client-logo-8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/client-logo-8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/client-logo-8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/close-btn-dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/close-btn-dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/close-btn-dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/close-btn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/close-btn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/close-btn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/closeBtn.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/dark_rounded/contentPattern.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/dark_square/contentPattern.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/dark_rounded/contentPattern.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/dark_square/contentPattern.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/facebook/contentPatternBottom.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/facebook/contentPatternBottom.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/facebook/contentPatternLeft.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/facebook/contentPatternLeft.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/facebook/contentPatternRight.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/facebook/contentPatternRight.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/facebook/contentPatternTop.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/facebook/contentPatternTop.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/counter.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/counter.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/plugins/buttons/icons/cross.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/default/default_thumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/default/default_thumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/dark_rounded/default_thumbnail.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/dark_square/default_thumbnail.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/facebook/default_thumbnail.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/light_rounded/default_thumbnail.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/light_square/default_thumbnail.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/dark_rounded/default_thumbnail.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/dark_square/default_thumbnail.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/facebook/default_thumbnail.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/light_rounded/default_thumbnail.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/light_square/default_thumbnail.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/plugins/link-icons/icons/doc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/plugins/link-icons/icons/email.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/plugins/link-icons/icons/external.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/plugins/link-icons/icons/feed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/fonts/flexslider-icon.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/css/fonts/flexslider-icon.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/fonts/flexslider-icon.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/css/fonts/flexslider-icon.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/fonts/flexslider-icon.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/css/fonts/flexslider-icon.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/giuseppe_terribilio.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/giuseppe_terribilio.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/src/grid.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/images/html-view-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/images/html-view-10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/images/html-view-11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/images/html-view-12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/images/html-view-13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/images/html-view-14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/images/html-view-15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/images/html-view-16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/images/html-view-17.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/images/html-view-18.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/images/html-view-19.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/images/html-view-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/images/html-view-20.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/images/html-view-21.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/images/html-view-22.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/images/html-view-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/images/html-view-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/images/html-view-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/images/html-view-6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/images/html-view-7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/images/html-view-8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/images/html-view-9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/plugins/link-icons/icons/im.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/imonitor-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/imonitor-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/imonitor-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/imonitor-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/headers/intro-bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/headers/intro-bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/plugins/buttons/icons/key.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/loader-dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/loader-dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/loader-dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/dark_rounded/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/dark_square/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/default/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/facebook/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/light_rounded/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/light_square/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/dark_rounded/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/dark_square/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/default/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/facebook/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/light_rounded/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/light_square/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/loader.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/loader.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/loader.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/london-bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/luca_sapone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/luca_sapone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/marker.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/marker.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/marker.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/new_icon_speech.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/parallax/parallax-bg-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/parallax/parallax-bg-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/parallax/parallax-bg-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/parallax/parallax-bg-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/parallax/parallax-bg-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/parallax/parallax-bg-4-dark.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/parallax/parallax-bg-4-dark.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/parallax/parallax-bg-4-dark.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/parallax/parallax-bg-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/parallax/parallax-bg-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/parallax/parallax-bg-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/parallax/parallax-bg-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/parallax/parallax-bg-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/parallax/parallax-bg-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/parrot_large.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/parrot_large.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/pattern-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/pattern-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/pattern-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/pattern-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/pattern-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/pattern-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/pattern-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/pattern-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/pattern-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/headers/pattern-img-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/headers/pattern-img-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/headers/pattern-img-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/plugins/link-icons/icons/pdf.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/plus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/plus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/plus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/profile_picture.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/portfolio/project-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/portfolio/project-10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/portfolio/project-11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/portfolio/project-12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/portfolio/project-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/portfolio/project-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/portfolio/project-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/portfolio/project-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/portfolio/project-6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/portfolio/project-7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/portfolio/project-8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/portfolio/project-9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/registrazione_agenzia.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/registrazione_traduttore.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/sissi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/sissi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/site-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/site-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/site-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/headers/slider-img-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/headers/slider-img-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/headers/slider-img-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/headers/slider-img-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/headers/slider-img-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/headers/slider-img-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/headers/slider-img-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/headers/slider-img-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/headers/slider-img-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/headers/slider-img-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/headers/slider-img-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/headers/slider-img-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/dark_rounded/sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/dark_square/sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/default/sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/facebook/sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/light_rounded/sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/light_square/sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/dark_rounded/sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/dark_square/sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/default/sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/facebook/sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/light_rounded/sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/light_square/sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/default/sprite_next.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/default/sprite_next.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/default/sprite_prev.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/default/sprite_prev.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/default/sprite_x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/default/sprite_x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/prettyPhoto/default/sprite_y.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/prettyPhoto/default/sprite_y.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/team-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/team-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/team-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/team-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/team-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/team-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/team-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/team-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/team-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/team-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/team-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/team-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/testimonials.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/testimonials.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/plugins/buttons/icons/tick.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/plugins/link-icons/icons/visited.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/plugins/link-icons/icons/xls.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/scripts/SmoothScroll.ffa58490.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/SmoothScroll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/js/SmoothScroll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/player/YTPlayer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/css/player/YTPlayer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/animate.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/css/animate.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/base.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/css/base.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/styles/base.eb9c5580.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/blog-main.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/blog-single.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/snippet/blogSnippet.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/snippet/blogSnippet.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/views/snippet/blogSnippet.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/blogs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/blogs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/views/blogs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/styles/colors/blue.3870dc51.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/colors/blue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/css/colors/blue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/colors/cool-gray.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/css/colors/cool-gray.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/styles/custom.662a08db.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/custom.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/custom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/js/custom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/theme/dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/css/theme/dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/colors/deep-blue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/css/colors/deep-blue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/directivesFromVendor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/features.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/fonts/flexslider-icon.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/css/fonts/flexslider-icon.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/styles/flexslider.bae7cc3f.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/flexslider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/css/flexslider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/styles/font-awesome.1f9e9d1a.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/src/forms.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/colors/gray.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/css/colors/gray.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/grayscale.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/grayscale.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/images/grayscale.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/colors/green.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/css/colors/green.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/styles/grid.7d32bdfb.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/grid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/src/grid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/css/grid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/home2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/home2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/views/home2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/ie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/src/ie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/index-parallax.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/index-pattern.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/index-slider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/index-video.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/index-zoom.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/index.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/jquery-1.11.0.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/js/jquery-1.11.0.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/jquery.appear.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/js/jquery.appear.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/jquery.countTo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/js/jquery.countTo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/jquery.easing.1.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/js/jquery.easing.1.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/jquery.fitvids.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/js/jquery.fitvids.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/scripts/jquery.flexslider.668763f3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/jquery.flexslider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/js/jquery.flexslider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/jquery.fs.tipper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/js/jquery.fs.tipper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/jquery.isotope.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/js/jquery.isotope.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/jquery.mb.YTPlayer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/js/jquery.mb.YTPlayer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/jquery.parallax-1.1.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/js/jquery.parallax-1.1.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/scripts/jquery.prettyPhoto.34b50578.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/jquery.prettyPhoto.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/js/jquery.prettyPhoto.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/jquery.superslides.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/js/jquery.superslides.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/styles/layout.bbc47731.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/layout.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/css/layout.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/styles/theme/light.afc286c4.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/theme/light.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/css/theme/light.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/colors/lime.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/css/colors/lime.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/php/mail.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/styles/main.c538c37e.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/styles/media-queries.c45019d0.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/media-queries.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/css/media-queries.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dump/my_explico_dump_20150625.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dump/my_explico_dump_20150627.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dump/my_explico_dump_20150703.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/panel/options-panel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/panel/options-panel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/colors/orange.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/css/colors/orange.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/prettyPhoto.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/css/prettyPhoto.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/print.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/src/print.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/project-1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/project-2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/colors/purple.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/css/colors/purple.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/plugins/buttons/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/plugins/fancy-type/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/plugins/link-icons/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/plugins/rtl/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/colors/red.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/css/colors/red.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/snippet/registrazioneSnippet.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/snippet/registrazioneSnippet.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/views/snippet/registrazioneSnippet.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/styles/reset.7eb82346.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/reset.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/src/reset.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/css/reset.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/screen.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/plugins/buttons/screen.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/plugins/fancy-type/screen.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/plugins/link-icons/screen.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/plugins/rtl/screen.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/scripts/scripts.b391b912.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts_nuovi_da_aggiungere.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/soon.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testi_articoli_blog.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/Documentation/assets/blueprint-css/src/typography.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vecchia_homejs.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/colors/yellow.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themeforest-7617329-andare-parallax-one-page-theme/HTML/css/colors/yellow.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Glifico - ScriptPHP/security.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/contact.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/gif-load.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/icon_speech.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/intro-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/privacy.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/yeoman.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/glifico.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/grayscale.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/home_traduttore.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/snippet/registrazioneAgenziaSnippet.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/snippet/registrazioneTraduttoreSnippet.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/scripts/scripts.c4fa9824.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/styles/main.2a30405c.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/snippet/registrazioneAgenziaSnippet.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/snippet/registrazioneTraduttoreSnippet.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/views/snippet/registrazioneAgenziaSnippet.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/views/snippet/registrazioneTraduttoreSnippet.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Glifico - ScriptPHP/uploadedFiles/Desert.jpg" afterPath="$PROJECT_DIR$/Glifico - ScriptPHP/uploadedFiles/Desert.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/app/fonts/FontAwesome.otf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/dist/fonts/FontAwesome.otf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Glifico - ScriptPHP/INSERT COUNTRY SCRIPT.xls" afterPath="$PROJECT_DIR$/Glifico - ScriptPHP/INSERT COUNTRY SCRIPT.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Oauth2.0 Linkedin.pdf" afterPath="$PROJECT_DIR$/Oauth2.0 Linkedin.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/images/about.jpg" afterPath="$PROJECT_DIR$/app/images/about.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/link/images/anchor.png" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/link/images/anchor.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/link/images/hidpi/anchor.png" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/link/images/hidpi/anchor.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/skins/moono/images/arrow.png" afterPath="$PROJECT_DIR$/app/ckeditor/skins/moono/images/arrow.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/skins/moono/images/close.png" afterPath="$PROJECT_DIR$/app/ckeditor/skins/moono/images/close.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/skins/moono/images/hidpi/close.png" afterPath="$PROJECT_DIR$/app/ckeditor/skins/moono/images/hidpi/close.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/images/closeBtn.gif" afterPath="$PROJECT_DIR$/app/images/closeBtn.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codetable.xls" afterPath="$PROJECT_DIR$/codetable.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/currency.xls" afterPath="$PROJECT_DIR$/currency.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/app/fonts/fontawesome-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/dist/fonts/fontawesome-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/app/fonts/fontawesome-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/dist/fonts/fontawesome-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/app/fonts/fontawesome-webfont.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/dist/fonts/fontawesome-webfont.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/app/fonts/fontawesome-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/dist/fonts/fontawesome-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/dist/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/dist/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/dist/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/dist/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/magicline/images/icon-rtl.png" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/magicline/images/icon-rtl.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/magicline/images/icon.png" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/magicline/images/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/magicline/images/hidpi/icon.png" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/magicline/images/hidpi/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/icons.png" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/icons.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/skins/moono/icons.png" afterPath="$PROJECT_DIR$/app/ckeditor/skins/moono/icons.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/icons_hidpi.png" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/icons_hidpi.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/skins/moono/icons_hidpi.png" afterPath="$PROJECT_DIR$/app/ckeditor/skins/moono/icons_hidpi.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/skins/moono/images/lock-open.png" afterPath="$PROJECT_DIR$/app/ckeditor/skins/moono/images/lock-open.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/skins/moono/images/hidpi/lock-open.png" afterPath="$PROJECT_DIR$/app/ckeditor/skins/moono/images/hidpi/lock-open.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/skins/moono/images/lock.png" afterPath="$PROJECT_DIR$/app/ckeditor/skins/moono/images/lock.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/skins/moono/images/hidpi/lock.png" afterPath="$PROJECT_DIR$/app/ckeditor/skins/moono/images/hidpi/lock.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/assets/inlineall/logo.png" afterPath="$PROJECT_DIR$/app/ckeditor/samples/assets/inlineall/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/images/logo.png" afterPath="$PROJECT_DIR$/app/images/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/about/dialogs/logo_ckeditor.png" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/about/dialogs/logo_ckeditor.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/images/london-bg.jpg" afterPath="$PROJECT_DIR$/app/images/london-bg.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mapping_linkedin.doc" afterPath="$PROJECT_DIR$/mapping_linkedin.doc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/images/new_icon_speech.png" afterPath="$PROJECT_DIR$/app/images/new_icon_speech.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/image/images/noimage.png" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/image/images/noimage.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.fla" afterPath="$PROJECT_DIR$/app/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.fla" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.swf" afterPath="$PROJECT_DIR$/app/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.swf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/images/profile_picture.jpg" afterPath="$PROJECT_DIR$/app/images/profile_picture.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/skins/moono/images/refresh.png" afterPath="$PROJECT_DIR$/app/ckeditor/skins/moono/images/refresh.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/skins/moono/images/hidpi/refresh.png" afterPath="$PROJECT_DIR$/app/ckeditor/skins/moono/images/hidpi/refresh.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/images/registrazione_agenzia.jpg" afterPath="$PROJECT_DIR$/app/images/registrazione_agenzia.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/images/registrazione_traduttore.jpg" afterPath="$PROJECT_DIR$/app/images/registrazione_traduttore.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/assets/sample.jpg" afterPath="$PROJECT_DIR$/app/ckeditor/samples/assets/sample.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/.buildignore" afterPath="$PROJECT_DIR$/app/.buildignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/.htaccess" afterPath="$PROJECT_DIR$/app/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/.htaccess" afterPath="$PROJECT_DIR$/dist/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/.jshintrc" afterPath="$PROJECT_DIR$/test/.jshintrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/404.html" afterPath="$PROJECT_DIR$/app/404.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/404.html" afterPath="$PROJECT_DIR$/dist/404.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/404.html" afterPath="$PROJECT_DIR$/dist/views/404.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/CHANGES.md" afterPath="$PROJECT_DIR$/app/ckeditor/CHANGES.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/ckeditor/CHANGES.md" afterPath="$PROJECT_DIR$/dist/ckeditor/CHANGES.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Glifico - ScriptPHP/JSONEngine.php" afterPath="$PROJECT_DIR$/Glifico - ScriptPHP/JSONEngine.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/LICENSE.md" afterPath="$PROJECT_DIR$/app/ckeditor/LICENSE.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/scayt/LICENSE.md" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/scayt/LICENSE.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/wsc/LICENSE.md" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/wsc/LICENSE.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/ckeditor/LICENSE.md" afterPath="$PROJECT_DIR$/dist/ckeditor/LICENSE.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Procfile" afterPath="$PROJECT_DIR$/Procfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/README.md" afterPath="$PROJECT_DIR$/app/ckeditor/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/scayt/README.md" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/scayt/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/wsc/README.md" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/wsc/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/ckeditor/README.md" afterPath="$PROJECT_DIR$/dist/ckeditor/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/about/dialogs/about.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/about/dialogs/about.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/agenzia/snippet/aboutYourAgencySnippet.html" afterPath="$PROJECT_DIR$/app/views/agenzia/snippet/aboutYourAgencySnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/agenzia/snippet/aboutYourAgencySnippet.html" afterPath="$PROJECT_DIR$/dist/views/agenzia/snippet/aboutYourAgencySnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/agenzia/snippet/aboutYourAgencySnippet.html" afterPath="$PROJECT_DIR$/dist/views/views/agenzia/snippet/aboutYourAgencySnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/af.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/af.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/af.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/af.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/ajax.html" afterPath="$PROJECT_DIR$/app/ckeditor/samples/ajax.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/link/dialogs/anchor.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/link/dialogs/anchor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/angular-file-upload-shim.js" afterPath="$PROJECT_DIR$/app/scripts/angular-file-upload-shim.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/angular-file-upload.js" afterPath="$PROJECT_DIR$/app/scripts/angular-file-upload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/animate.css" afterPath="$PROJECT_DIR$/app/styles/animate.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/api.html" afterPath="$PROJECT_DIR$/app/ckeditor/samples/api.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/appendto.html" afterPath="$PROJECT_DIR$/app/ckeditor/samples/appendto.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/ar.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/ar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/ar.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/ar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/bg.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/bg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/bg.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/bg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/bn.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/bn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/bootstrap-datepicker.js" afterPath="$PROJECT_DIR$/app/scripts/bootstrap-datepicker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/bootstrap-datepicker3.css" afterPath="$PROJECT_DIR$/app/styles/bootstrap-datepicker3.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/bootstrap-social.css" afterPath="$PROJECT_DIR$/app/styles/bootstrap-social.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/bs.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/bs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/build-config.js" afterPath="$PROJECT_DIR$/app/ckeditor/build-config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/ckeditor/build-config.js" afterPath="$PROJECT_DIR$/dist/ckeditor/build-config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/ca.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/ca.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/traduttore/snippet/certificationsTraduttoreSnippet.html" afterPath="$PROJECT_DIR$/app/views/traduttore/snippet/certificationsTraduttoreSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/traduttore/snippet/certificationsTraduttoreSnippet.html" afterPath="$PROJECT_DIR$/dist/views/traduttore/snippet/certificationsTraduttoreSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/traduttore/snippet/certificationsTraduttoreSnippet.html" afterPath="$PROJECT_DIR$/dist/views/views/traduttore/snippet/certificationsTraduttoreSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/wsc/dialogs/ciframe.html" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/wsc/dialogs/ciframe.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/ckeditor.js" afterPath="$PROJECT_DIR$/app/ckeditor/ckeditor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/ckeditor/ckeditor.js" afterPath="$PROJECT_DIR$/dist/ckeditor/ckeditor.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/common.js" afterPath="$PROJECT_DIR$/app/scripts/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/config.js" afterPath="$PROJECT_DIR$/app/ckeditor/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/ckeditor/config.js" afterPath="$PROJECT_DIR$/dist/ckeditor/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Glifico - ScriptPHP/config.json.php" afterPath="$PROJECT_DIR$/Glifico - ScriptPHP/config.json.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Glifico - ScriptPHP/config.json" afterPath="$PROJECT_DIR$/Glifico - ScriptPHP/config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/snippet/contactSnippet.html" afterPath="$PROJECT_DIR$/app/views/snippet/contactSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/snippet/contactSnippet.html" afterPath="$PROJECT_DIR$/dist/views/snippet/contactSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/snippet/contactSnippet.html" afterPath="$PROJECT_DIR$/dist/views/views/snippet/contactSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/contents.css" afterPath="$PROJECT_DIR$/app/ckeditor/contents.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/ckeditor/contents.css" afterPath="$PROJECT_DIR$/dist/ckeditor/contents.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/traduttore/snippet/correctionTraduttoreSnippet.html" afterPath="$PROJECT_DIR$/app/views/traduttore/snippet/correctionTraduttoreSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/traduttore/snippet/correctionTraduttoreSnippet.html" afterPath="$PROJECT_DIR$/dist/views/traduttore/snippet/correctionTraduttoreSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/traduttore/snippet/correctionTraduttoreSnippet.html" afterPath="$PROJECT_DIR$/dist/views/views/traduttore/snippet/correctionTraduttoreSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/cs.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/cs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/cs.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/cs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/cy.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/cy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/cy.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/cy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/da.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/da.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/da.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/da.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/datafiltering.html" afterPath="$PROJECT_DIR$/app/ckeditor/samples/datafiltering.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/de.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/de.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/de.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/de.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/pastefromword/filter/default.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/pastefromword/filter/default.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/skins/moono/dialog.css" afterPath="$PROJECT_DIR$/app/ckeditor/skins/moono/dialog.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/plugins/dialog/dialog.html" afterPath="$PROJECT_DIR$/app/ckeditor/samples/plugins/dialog/dialog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/dialog/dialogDefinition.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/dialog/dialogDefinition.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/skins/moono/dialog_ie.css" afterPath="$PROJECT_DIR$/app/ckeditor/skins/moono/dialog_ie.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/skins/moono/dialog_ie7.css" afterPath="$PROJECT_DIR$/app/ckeditor/skins/moono/dialog_ie7.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/skins/moono/dialog_ie8.css" afterPath="$PROJECT_DIR$/app/ckeditor/skins/moono/dialog_ie8.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/skins/moono/dialog_iequirks.css" afterPath="$PROJECT_DIR$/app/ckeditor/skins/moono/dialog_iequirks.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives.js" afterPath="$PROJECT_DIR$/app/scripts/directives.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/divreplace.html" afterPath="$PROJECT_DIR$/app/ckeditor/samples/divreplace.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/skins/moono/editor.css" afterPath="$PROJECT_DIR$/app/ckeditor/skins/moono/editor.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/skins/moono/editor_gecko.css" afterPath="$PROJECT_DIR$/app/ckeditor/skins/moono/editor_gecko.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/skins/moono/editor_ie.css" afterPath="$PROJECT_DIR$/app/ckeditor/skins/moono/editor_ie.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/skins/moono/editor_ie7.css" afterPath="$PROJECT_DIR$/app/ckeditor/skins/moono/editor_ie7.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/skins/moono/editor_ie8.css" afterPath="$PROJECT_DIR$/app/ckeditor/skins/moono/editor_ie8.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/skins/moono/editor_iequirks.css" afterPath="$PROJECT_DIR$/app/ckeditor/skins/moono/editor_iequirks.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/traduttore/snippet/educationTraduttoreSnippet.html" afterPath="$PROJECT_DIR$/app/views/traduttore/snippet/educationTraduttoreSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/traduttore/snippet/educationTraduttoreSnippet.html" afterPath="$PROJECT_DIR$/dist/views/traduttore/snippet/educationTraduttoreSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/traduttore/snippet/educationTraduttoreSnippet.html" afterPath="$PROJECT_DIR$/dist/views/views/traduttore/snippet/educationTraduttoreSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/el.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/el.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/el.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/el.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/en-au.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/en-au.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/en-ca.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/en-ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/en-gb.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/en-gb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/en.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/en.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/en.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/en.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/plugins/enterkey/enterkey.html" afterPath="$PROJECT_DIR$/app/ckeditor/samples/plugins/enterkey/enterkey.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/eo.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/eo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/eo.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/eo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/es.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/es.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/es.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/es.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/et.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/et.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/et.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/et.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/eu.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/eu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/explico.js" afterPath="$PROJECT_DIR$/app/scripts/explico.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/fa.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/fa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/fa.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/fa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fbChannel.html" afterPath="$PROJECT_DIR$/app/fbChannel.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/fbChannel.html" afterPath="$PROJECT_DIR$/dist/fbChannel.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/fbChannel.html" afterPath="$PROJECT_DIR$/dist/views/fbChannel.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/fi.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/fi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/fi.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/fi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/fo.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/fo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/font-awesome.css" afterPath="$PROJECT_DIR$/app/css/font-awesome.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/app/css/font-awesome.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/app/fonts/fontawesome-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/dist/fonts/fontawesome-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/fr-ca.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/fr-ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/fr.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/fr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/fr.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/fr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/plugins/wysiwygarea/fullpage.html" afterPath="$PROJECT_DIR$/app/ckeditor/samples/plugins/wysiwygarea/fullpage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/gl.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/gl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/gl.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/gl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/dist/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/gu.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/gu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/he.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/he.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/he.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/he.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/hi.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/hi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home.html" afterPath="$PROJECT_DIR$/app/views/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/home.html" afterPath="$PROJECT_DIR$/dist/views/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/home.html" afterPath="$PROJECT_DIR$/dist/views/views/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/home.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/home.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/agenzia/home_agenzia.html" afterPath="$PROJECT_DIR$/app/views/agenzia/home_agenzia.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/agenzia/home_agenzia.html" afterPath="$PROJECT_DIR$/dist/views/agenzia/home_agenzia.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/agenzia/home_agenzia.html" afterPath="$PROJECT_DIR$/dist/views/views/agenzia/home_agenzia.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/agenzia/home_agenzia.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/agenzia/home_agenzia.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/traduttore/home_traduttore.html" afterPath="$PROJECT_DIR$/app/views/traduttore/home_traduttore.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/traduttore/home_traduttore.html" afterPath="$PROJECT_DIR$/dist/views/traduttore/home_traduttore.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/traduttore/home_traduttore.html" afterPath="$PROJECT_DIR$/dist/views/views/traduttore/home_traduttore.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/traduttore/home_traduttore.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/traduttore/home_traduttore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/hr.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/hr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/hr.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/hr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/hu.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/hu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/hu.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/hu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/id.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/id.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/id.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/id.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/image/dialogs/image.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/image/dialogs/image.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Glifico - ScriptPHP/index.html" afterPath="$PROJECT_DIR$/Glifico - ScriptPHP/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/index.html" afterPath="$PROJECT_DIR$/app/ckeditor/samples/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/index.html" afterPath="$PROJECT_DIR$/dist/views/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/inlineall.html" afterPath="$PROJECT_DIR$/app/ckeditor/samples/inlineall.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/inlinebycode.html" afterPath="$PROJECT_DIR$/app/ckeditor/samples/inlinebycode.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/inlinetextarea.html" afterPath="$PROJECT_DIR$/app/ckeditor/samples/inlinetextarea.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/traduttore/snippet/interpretationTraduttoreSnippet.html" afterPath="$PROJECT_DIR$/app/views/traduttore/snippet/interpretationTraduttoreSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/traduttore/snippet/interpretationTraduttoreSnippet.html" afterPath="$PROJECT_DIR$/dist/views/traduttore/snippet/interpretationTraduttoreSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/traduttore/snippet/interpretationTraduttoreSnippet.html" afterPath="$PROJECT_DIR$/dist/views/views/traduttore/snippet/interpretationTraduttoreSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/is.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/is.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/it.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/it.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/it.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/it.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/ja.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/ja.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/ja.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/ja.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/traduttore/jobs_traduttore.html" afterPath="$PROJECT_DIR$/app/views/traduttore/jobs_traduttore.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/traduttore/jobs_traduttore.html" afterPath="$PROJECT_DIR$/dist/views/traduttore/jobs_traduttore.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/traduttore/jobs_traduttore.html" afterPath="$PROJECT_DIR$/dist/views/views/traduttore/jobs_traduttore.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/traduttore/jobs_traduttore.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/traduttore/jobs_traduttore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/jquery.easing.min.js" afterPath="$PROJECT_DIR$/app/scripts/jquery.easing.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/jquery.html" afterPath="$PROJECT_DIR$/app/ckeditor/samples/jquery.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/adapters/jquery.js" afterPath="$PROJECT_DIR$/app/ckeditor/adapters/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/ka.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/ka.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/karma.conf.js" afterPath="$PROJECT_DIR$/karma.conf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/karma.conf.js" afterPath="$PROJECT_DIR$/test/karma.conf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/km.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/km.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/km.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/km.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/ko.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/ko.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/ku.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/ku.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/ku.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/ku.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/assets/uilanguages/languages.js" afterPath="$PROJECT_DIR$/app/ckeditor/samples/assets/uilanguages/languages.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/traduttore/snippet/languagesPairSnippet.html" afterPath="$PROJECT_DIR$/app/views/traduttore/snippet/languagesPairSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/traduttore/snippet/languagesPairSnippet.html" afterPath="$PROJECT_DIR$/dist/views/traduttore/snippet/languagesPairSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/traduttore/snippet/languagesPairSnippet.html" afterPath="$PROJECT_DIR$/dist/views/views/traduttore/snippet/languagesPairSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/link/dialogs/link.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/link/dialogs/link.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/linkedin profile.txt" afterPath="$PROJECT_DIR$/linkedin profile.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/snippet/loginSnippet.html" afterPath="$PROJECT_DIR$/app/views/snippet/loginSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/snippet/loginSnippet.html" afterPath="$PROJECT_DIR$/dist/views/snippet/loginSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/snippet/loginSnippet.html" afterPath="$PROJECT_DIR$/dist/views/views/snippet/loginSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/lt.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/lt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/lt.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/lt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/lv.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/lv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/lv.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/lv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/plugins/magicline/magicline.html" afterPath="$PROJECT_DIR$/app/ckeditor/samples/plugins/magicline/magicline.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/main.js" afterPath="$PROJECT_DIR$/test/spec/controllers/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/mk.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/mk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/mn.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/mn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/ms.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/ms.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/plugins/dialog/assets/my_dialog.js" afterPath="$PROJECT_DIR$/app/ckeditor/samples/plugins/dialog/assets/my_dialog.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dump/my_explico_dump_20150325.sql" afterPath="$PROJECT_DIR$/dump/my_explico_dump_20150325.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dump/my_explico_dump_20150428.sql" afterPath="$PROJECT_DIR$/dump/my_explico_dump_20150428.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dump/my_explico_dump_20150506.sql" afterPath="$PROJECT_DIR$/dump/my_explico_dump_20150506.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dump/my_explico_dump_20150525.sql" afterPath="$PROJECT_DIR$/dump/my_explico_dump_20150525.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dump/my_explico_dump_20150531.sql" afterPath="$PROJECT_DIR$/dump/my_explico_dump_20150531.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Glifico - ScriptPHP/mysql.inc.php" afterPath="$PROJECT_DIR$/Glifico - ScriptPHP/mysql.inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/nb.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/nb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/nb.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/nb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/nl.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/nl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/nl.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/nl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/no.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/no.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/no.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/no.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/scripts/oldieshim.8907f769.js" afterPath="$PROJECT_DIR$/dist/scripts/oldieshim.8907f769.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/scayt/dialogs/options.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/scayt/dialogs/options.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/plugins/htmlwriter/outputforflash.html" afterPath="$PROJECT_DIR$/app/ckeditor/samples/plugins/htmlwriter/outputforflash.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/plugins/htmlwriter/outputhtml.html" afterPath="$PROJECT_DIR$/app/ckeditor/samples/plugins/htmlwriter/outputhtml.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/assets/outputxhtml/outputxhtml.css" afterPath="$PROJECT_DIR$/app/ckeditor/samples/assets/outputxhtml/outputxhtml.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Glifico - ScriptPHP/p.php" afterPath="$PROJECT_DIR$/Glifico - ScriptPHP/p.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/clipboard/dialogs/paste.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/clipboard/dialogs/paste.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Glifico - ScriptPHP/phpinfo.php" afterPath="$PROJECT_DIR$/Glifico - ScriptPHP/phpinfo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/pl.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/pl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/pl.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/pl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/assets/posteddata.php" afterPath="$PROJECT_DIR$/app/ckeditor/samples/assets/posteddata.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/snippet/privacySnippet.html" afterPath="$PROJECT_DIR$/app/views/snippet/privacySnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/snippet/privacySnippet.html" afterPath="$PROJECT_DIR$/dist/views/snippet/privacySnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/snippet/privacySnippet.html" afterPath="$PROJECT_DIR$/dist/views/views/snippet/privacySnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/agenzia/snippet/profileAgenziaSnippet.html" afterPath="$PROJECT_DIR$/app/views/agenzia/snippet/profileAgenziaSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/agenzia/snippet/profileAgenziaSnippet.html" afterPath="$PROJECT_DIR$/dist/views/agenzia/snippet/profileAgenziaSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/agenzia/snippet/profileAgenziaSnippet.html" afterPath="$PROJECT_DIR$/dist/views/views/agenzia/snippet/profileAgenziaSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/traduttore/snippet/profileTraduttoreSnippet.html" afterPath="$PROJECT_DIR$/app/views/traduttore/snippet/profileTraduttoreSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/traduttore/snippet/profileTraduttoreSnippet.html" afterPath="$PROJECT_DIR$/dist/views/traduttore/snippet/profileTraduttoreSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/traduttore/snippet/profileTraduttoreSnippet.html" afterPath="$PROJECT_DIR$/dist/views/views/traduttore/snippet/profileTraduttoreSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Glifico - ScriptPHP/provaUploadImmagineFacebook.php" afterPath="$PROJECT_DIR$/Glifico - ScriptPHP/provaUploadImmagineFacebook.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/pt-br.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/pt-br.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/pt.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/pt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/pt.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/pt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/skins/moono/readme.md" afterPath="$PROJECT_DIR$/app/ckeditor/skins/moono/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/readmore.min.js" afterPath="$PROJECT_DIR$/app/scripts/readmore.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/readonly.html" afterPath="$PROJECT_DIR$/app/ckeditor/samples/readonly.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/replacebyclass.html" afterPath="$PROJECT_DIR$/app/ckeditor/samples/replacebyclass.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/replacebycode.html" afterPath="$PROJECT_DIR$/app/ckeditor/samples/replacebycode.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Glifico - ScriptPHP/resizeImage.php" afterPath="$PROJECT_DIR$/Glifico - ScriptPHP/resizeImage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/ro.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/ro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/robots.txt" afterPath="$PROJECT_DIR$/app/robots.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/robots.txt" afterPath="$PROJECT_DIR$/dist/robots.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/ru.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/ru.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/ru.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/ru.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/sample.css" afterPath="$PROJECT_DIR$/app/ckeditor/samples/sample.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/sample.js" afterPath="$PROJECT_DIR$/app/ckeditor/samples/sample.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/sample_posteddata.php" afterPath="$PROJECT_DIR$/app/ckeditor/samples/sample_posteddata.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/agenzia/snippet/searchAgenziaSnippet.html" afterPath="$PROJECT_DIR$/app/views/agenzia/snippet/searchAgenziaSnippet.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/agenzia/snippet/searchAgenziaSnippet.html" afterPath="$PROJECT_DIR$/dist/views/agenzia/snippet/searchAgenziaSnippet.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/agenzia/snippet/searchAgenziaSnippet.html" afterPath="$PROJECT_DIR$/dist/views/views/agenzia/snippet/searchAgenziaSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/agenzia/search_agenzia.html" afterPath="$PROJECT_DIR$/app/views/agenzia/search_agenzia.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/agenzia/search_agenzia.html" afterPath="$PROJECT_DIR$/dist/views/agenzia/search_agenzia.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/agenzia/search_agenzia.html" afterPath="$PROJECT_DIR$/dist/views/views/agenzia/search_agenzia.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/agenzia/search_agenzia.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/agenzia/search_agenzia.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/agenzia/send_a_job.html" afterPath="$PROJECT_DIR$/app/views/agenzia/send_a_job.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/agenzia/send_a_job.html" afterPath="$PROJECT_DIR$/dist/views/agenzia/send_a_job.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/agenzia/send_a_job.html" afterPath="$PROJECT_DIR$/dist/views/views/agenzia/send_a_job.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/agenzia/send_a_job.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/agenzia/send_a_job.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services.js" afterPath="$PROJECT_DIR$/app/scripts/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/si.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/si.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/si.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/si.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/sjcl.js" afterPath="$PROJECT_DIR$/app/scripts/sjcl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/sk.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/sk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/sk.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/sk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/sl.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/sl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/sl.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/sl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/specialchar.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/specialchar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/sq.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/sq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/sq.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/sq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/sr-latn.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/sr-latn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/sr.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/sr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/styles.js" afterPath="$PROJECT_DIR$/app/ckeditor/styles.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/ckeditor/styles.js" afterPath="$PROJECT_DIR$/dist/ckeditor/styles.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/sv.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/sv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/sv.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/sv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/swfobject.js" afterPath="$PROJECT_DIR$/app/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/swfobject.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/tabindex.html" afterPath="$PROJECT_DIR$/app/ckeditor/samples/tabindex.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/table/dialogs/table.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/table/dialogs/table.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/tabletools/dialogs/tableCell.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/tabletools/dialogs/tableCell.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/th.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/th.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/th.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/th.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/scayt/dialogs/toolbar.css" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/scayt/dialogs/toolbar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/plugins/toolbar/toolbar.html" afterPath="$PROJECT_DIR$/app/ckeditor/samples/plugins/toolbar/toolbar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/tooltip.css" afterPath="$PROJECT_DIR$/app/styles/tooltip.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/tooltip_cssonly.css" afterPath="$PROJECT_DIR$/app/styles/tooltip_cssonly.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/tr.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/tr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/tr.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/tr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/traduttore/snippet/translationTraduttoreSnippet.html" afterPath="$PROJECT_DIR$/app/views/traduttore/snippet/translationTraduttoreSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/traduttore/snippet/translationTraduttoreSnippet.html" afterPath="$PROJECT_DIR$/dist/views/traduttore/snippet/translationTraduttoreSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/traduttore/snippet/translationTraduttoreSnippet.html" afterPath="$PROJECT_DIR$/dist/views/views/traduttore/snippet/translationTraduttoreSnippet.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/agenzia/translatorDetail.html" afterPath="$PROJECT_DIR$/app/views/agenzia/translatorDetail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/agenzia/translatorDetail.html" afterPath="$PROJECT_DIR$/dist/views/agenzia/translatorDetail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/agenzia/translatorDetail.html" afterPath="$PROJECT_DIR$/dist/views/views/agenzia/translatorDetail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/agenzia/translator_detail.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/agenzia/translator_detail.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/tt.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/tt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/tt.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/tt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/ug.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/ug.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/ug.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/ug.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/uicolor.html" afterPath="$PROJECT_DIR$/app/ckeditor/samples/uicolor.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/uilanguages.html" afterPath="$PROJECT_DIR$/app/ckeditor/samples/uilanguages.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/uk.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/uk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/uk.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/uk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/upload.js" afterPath="$PROJECT_DIR$/app/scripts/upload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Glifico - ScriptPHP/upload.php" afterPath="$PROJECT_DIR$/Glifico - ScriptPHP/upload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Glifico - ScriptPHP/utility.inc.php" afterPath="$PROJECT_DIR$/Glifico - ScriptPHP/utility.inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/styles/vendor.476df695.css" afterPath="$PROJECT_DIR$/dist/styles/vendor.476df695.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/scripts/vendor.694d186f.js" afterPath="$PROJECT_DIR$/dist/scripts/vendor.694d186f.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/vi.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/vi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/vi.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/vi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web.js" afterPath="$PROJECT_DIR$/web.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/traduttore/workarea.html" afterPath="$PROJECT_DIR$/app/views/traduttore/workarea.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/traduttore/workarea.html" afterPath="$PROJECT_DIR$/dist/views/traduttore/workarea.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/traduttore/workarea.html" afterPath="$PROJECT_DIR$/dist/views/views/traduttore/workarea.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/traduttore/workarea.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/traduttore/workarea.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/wsc/dialogs/wsc.css" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/wsc/dialogs/wsc.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/wsc/dialogs/wsc.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/wsc/dialogs/wsc.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/wsc/dialogs/wsc_ie.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/wsc/dialogs/wsc_ie.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/samples/xhtmlstyle.html" afterPath="$PROJECT_DIR$/app/ckeditor/samples/xhtmlstyle.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/zh-cn.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/zh-cn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/lang/zh.js" afterPath="$PROJECT_DIR$/app/ckeditor/lang/zh.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/zh.js" afterPath="$PROJECT_DIR$/app/ckeditor/plugins/specialchar/dialogs/lang/zh.js" />
     </list>
     <ignored path="Explico.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,11 +931,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="send_a_job.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="send_a_job.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/agenzia/send_a_job.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7349043">
-              <caret line="83" column="103" selection-start-line="83" selection-start-column="103" selection-end-line="83" selection-end-column="103" />
+            <state vertical-scroll-proportion="-7.0416665">
+              <caret line="61" column="65" selection-start-line="61" selection-start-column="65" selection-end-line="61" selection-end-column="65" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -77,27 +951,32 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="my_explico_dump_20150625.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dump/my_explico_dump_20150625.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my_explico_dump_20150627.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dump/my_explico_dump_20150627.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="translatorDetail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/agenzia/translatorDetail.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#3;n#div#0;n#!!top" expanded="true" />
-              </folding>
+              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -106,7 +985,7 @@
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/agenzia/translator_detail.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="85" column="49" selection-start-line="85" selection-start-column="49" selection-end-line="85" selection-end-column="49" />
+              <caret line="86" column="49" selection-start-line="86" selection-start-column="49" selection-end-line="86" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -116,7 +995,7 @@
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/agenzia/search_agenzia.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+              <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -126,12 +1005,8 @@
         <entry file="file://$PROJECT_DIR$/app/views/agenzia/snippet/searchAgenziaSnippet.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="76" column="9" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <marker date="1433929634000" expanded="true" signature="2171:2330" placeholder="{...}" />
-              </folding>
+              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -140,7 +1015,7 @@
         <entry file="file://$PROJECT_DIR$/app/scripts/common.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="23" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="23" />
+              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -366,7 +1241,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -381,13 +1256,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="GlificoWorkspace" />
+              <option name="myItemId" value="Glifico" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Glifico" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Glifico" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dump" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -645,7 +1534,7 @@
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23680556" sideWeight="0.08388158" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16483517" sideWeight="0.5208333" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16483517" sideWeight="0.47916666" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16415869" sideWeight="0.47916666" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24960254" sideWeight="0.49449036" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.049822062" sideWeight="0.4936407" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19475357" sideWeight="0.29714286" order="2" side_tool="true" content_ui="tabs" />
@@ -715,10 +1604,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bower_components/ngLinkedIn/ngLinkedIn-0.1.4/ngLinkedIn.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -820,20 +1710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/snippet/registrazioneTraduttoreSnippet.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.230769">
-          <caret line="110" column="85" selection-start-line="110" selection-start-column="85" selection-end-line="110" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/snippet/registrazioneAgenziaSnippet.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7443038">
-          <caret line="113" column="90" selection-start-line="113" selection-start-column="90" selection-end-line="113" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Glifico - ScriptPHP/upload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19456366">
@@ -869,13 +1745,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/readmore.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.67895544">
@@ -887,20 +1756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="116" column="5" selection-start-line="116" selection-start-column="5" selection-end-line="116" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/home_traduttore.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/glifico.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="252" column="15" selection-start-line="252" selection-start-column="15" selection-end-line="252" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -922,13 +1777,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/grayscale.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="403" column="14" selection-start-line="403" selection-start-column="14" selection-end-line="403" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1027,7 +1875,7 @@
     <entry file="file://$PROJECT_DIR$/app/scripts/common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="23" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="23" />
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1035,7 +1883,7 @@
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/agenzia/translator_detail.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="85" column="49" selection-start-line="85" selection-start-column="49" selection-end-line="85" selection-end-column="49" />
+          <caret line="86" column="49" selection-start-line="86" selection-start-column="49" selection-end-line="86" selection-end-column="49" />
           <folding />
         </state>
       </provider>
@@ -1051,7 +1899,7 @@
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/agenzia/search_agenzia.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -1059,42 +1907,23 @@
     <entry file="file://$PROJECT_DIR$/app/views/agenzia/snippet/searchAgenziaSnippet.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="9" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1433929634000" expanded="true" signature="2171:2330" placeholder="{...}" />
-          </folding>
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/agenzia/translatorDetail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#3;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/agenzia/send_a_job.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7349043">
-          <caret line="83" column="103" selection-start-line="83" selection-start-column="103" selection-end-line="83" selection-end-column="103" />
+        <state vertical-scroll-proportion="-7.0416665">
+          <caret line="61" column="65" selection-start-line="61" selection-start-column="65" selection-end-line="61" selection-end-column="65" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -1106,6 +1935,22 @@
             <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dump/my_explico_dump_20150627.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dump/my_explico_dump_20150625.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

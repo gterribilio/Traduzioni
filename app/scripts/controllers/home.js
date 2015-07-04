@@ -2,12 +2,19 @@
 
 var home = angular.module('HomeCtrlModule', []);
 
-home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$location', '$anchorScroll', 'customFactory', '$q',
-  function ($scope, $rootScope, $window, services, $location, $anchorScroll, customFactory, $q) {
+home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$location', '$anchorScroll', 'customFactory', '$sce',
+  function ($scope, $rootScope, $window, services, $location, $anchorScroll, customFactory, $sce) {
 
     $rootScope.showLogin = false;
+    $rootScope.register = false;
+    $rootScope.showBlog = false;
     $rootScope.showWorkarea = false;
     $scope.usernamePresent = false;
+
+    $scope.userType = "translator";
+    $scope.ruolo = "TRADUTTORE";
+
+    $rootScope.image = null;
 
     // questa funzione di init peermette ogni qualvolta l'utente esce senza chiudere la pagina in cui si trova di mandarlo alla home da loggato nel caso
     //in cui nel session storage ci siano ancora i dati
@@ -70,13 +77,10 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
         });
     };
 
-    $scope.doRegisterTraduttore = function () {
-      var temp_mothertongue = ($scope.mothertongueTraduttore == null) ? null : $scope.mothertongueTraduttore.DESCRIZIONE;
-      var temp_country = ($scope.countryTraduttore == null) ? null : $scope.countryTraduttore.DESCRIZIONE;
+    $scope.doRegister = function () {
       services.getFromRESTServer(
-        "username=" + $scope.usernameTraduttore + "&password=" + $scope.passwordTraduttore + "&nome=" + $scope.nomeTraduttore +
-        "&cognome=" + $scope.cognomeTraduttore + "&email=" + $scope.emailTraduttore + "&ruolo=TRADUTTORE" +
-        "&country=" + temp_country + "&mothertongue=" + temp_mothertongue, "register")
+        "username=" + $scope.username + "&password=" + $scope.password + "&email=" + $scope.email + "&ruolo=" + $scope.ruolo
+        , "register")
         .success(function (data) {
           if (data.jsonError != null || data.errCode != null) {
             $.notify(data.errMsg, {
@@ -85,19 +89,16 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
             });
           }
           else {
-            $scope.doAccedi($scope.usernameTraduttore, $scope.passwordTraduttore);
+            $scope.doAccedi($scope.username, $scope.password);
           }
         });
     }
 
-    $scope.doRegisterAgenzia = function () {
-      var temp_citta = ($scope.countryAgenzia == null) ? null : $scope.countryAgenzia.DESCRIZIONE;
-      var temp_employee = ($scope.employeeAgenzia == null) ? null : $scope.employeeAgenzia.DESCRIZIONE;
+    $scope.doRegisterTemp = function () {
+
       services.getFromRESTServer(
-        "username=" + $scope.usernameAgenzia + "&password=" + $scope.passwordAgenzia + "&nome=" + $scope.nomeAgenzia +
-        "&email=" + $scope.emailAgenzia + "&ruolo=AGENZIA" + "&employees=" + temp_employee +
-        "&country=" + temp_citta + "&website=" + $scope.websiteAgenzia, "register").
-        success(function (data) {
+        "type=" + $scope.userType + "&email=" + $scope.email, "registerTemp")
+        .success(function (data) {
           if (data.jsonError != null || data.errCode != null) {
             $.notify(data.errMsg, {
               type: 'danger',
@@ -105,9 +106,13 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
             });
           }
           else {
-            $scope.doAccedi($scope.usernameAgenzia, $scope.passwordAgenzia);
+            $.notify("Thanks for your support! We'll contact you when our service is online!", {
+              type: 'success',
+              allow_dismiss: true
+            });
           }
         });
+
     }
 
     $scope.doAccedi = function (a, b) {
@@ -117,7 +122,7 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
             $.notify(data.errMsg, {
               type: 'danger',
               allow_dismiss: true
-            });
+            }, {z_index: 1000});
           }
           else {
 
@@ -190,7 +195,7 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
           services.getFromRESTServer(
             "username=" + $rootScope.linkedinData.emailAddress + "&password=" + $rootScope.linkedinData.id
             + "&nome=" + $rootScope.linkedinData.firstName +
-            "&cognome=" + $rootScope.linkedinData.lastName + "&email=" + $rootScope.linkedinData.emailAddress + "&ruolo=" + role +
+            "&cognome=" + $rootScope.linkedinData.lastName + "&email=" + $rootScope.linkedinData.emailAddress + "&ruolo=" + $scope.ruolo +
             "&country=" + temp_country + "&city=" + temp_city + "&pictureUrl=" + temp_pictureUrls + "&social=LINKEDIN", "register")
             .success(function (data) {
               if (data.jsonError != null || data.errCode != null) {
@@ -208,7 +213,7 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
       });//end authorize
     }//end linkedinRegister
 
-    $scope.linkedinLogin = function (role) {
+    $scope.linkedinLogin = function () {
       IN.User.authorize(function () {
 
         IN.API.Profile("me").fields(["firstName", "lastName", "location:(name,country:(code))", "pictureUrl", "emailAddress", "id"]).result(function (data) {
@@ -224,7 +229,7 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
 
 
     /**************** FACEBOOK ****************/
-    $scope.facebookRegister = function (role) {
+    $scope.facebookRegister = function () {
       FB.getLoginStatus(function (response) {
         if (response.status === 'connected') {
           doRegisterFacebook(role);
@@ -244,7 +249,7 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
       });
     }//end facebookRegister
 
-    function doRegisterFacebook(role) {
+    function doRegisterFacebook() {
 
       FB.api('/me', function (response) {
         $rootScope.facebookData = response;
@@ -256,7 +261,7 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
         services.getFromRESTServer(
           "username=" + $rootScope.facebookData.email + "&password=" + $rootScope.facebookData.id
           + "&nome=" + $rootScope.facebookData.first_name +
-          "&cognome=" + $rootScope.facebookData.last_name + "&email=" + $rootScope.facebookData.email + "&ruolo=" + role +
+          "&cognome=" + $rootScope.facebookData.last_name + "&email=" + $rootScope.facebookData.email + "&ruolo=" + $scope.ruolo +
           "&social=FACEBOOK", "register")
           .success(function (data) {
             if (data.jsonError != null || data.errCode != null) {
@@ -272,7 +277,7 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
       });
     }
 
-    $scope.facebookLogin = function (role) {
+    $scope.facebookLogin = function () {
       FB.getLoginStatus(function (response) {
         if (response.status === 'connected') {
           doLoginFacebook();
@@ -300,5 +305,49 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
     }
 
     /**************** END FACEBOOK *******************/
+
+    services.getFromRESTServer(
+      "", "getBlogArticle")
+      .success(function (data) {
+        if (data.jsonError != null || data.errCode != null) {
+        }
+        else {
+          $rootScope.blogs = data;
+          for (var i = 0; i < $rootScope.blogs.length; i++) {
+            $rootScope.blogs[i].TESTO_LIMITED = $sce.trustAsHtml($rootScope.blogs[i].TESTO_LIMITED);
+            $rootScope.blogs[i].TESTO = $sce.trustAsHtml($rootScope.blogs[i].TESTO);
+          }
+        }
+      });
+
+    services.getFromRESTServer(
+      "", "getAllBlogArticle")
+      .success(function (data) {
+        if (data.jsonError != null || data.errCode != null) {
+        }
+        else {
+          $rootScope.allBlogs = data;
+          for (var i = 0; i < $rootScope.allBlogs.length; i++) {
+            $rootScope.allBlogs[i].TESTO_LIMITED = $sce.trustAsHtml($rootScope.allBlogs[i].TESTO_LIMITED);
+            $rootScope.allBlogs[i].TESTO = $sce.trustAsHtml($rootScope.allBlogs[i].TESTO);
+          }
+        }
+      });
+
+    $scope.showAllBlogsArticle = function () {
+      $location.path("/blogs");
+    }
+
+    $scope.closeBlog = function() {
+      $location.path("/");
+    }
+
+    $scope.setArticle = function(id) {
+      for (var i = 0; i < $rootScope.allBlogs.length; i++) {
+        if ($rootScope.allBlogs[i].ID == id) {
+          $rootScope.article = $rootScope.allBlogs[i];
+        }
+      }
+    }
 
   }]);//end Controller

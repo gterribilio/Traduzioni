@@ -33,7 +33,7 @@ app.controller('UploadCtrl', ['$scope', '$rootScope', '$upload', 'APP_CFG', 'cus
                   alert(JSON.stringify(data));
                 }
                 else {
-                  $scope.image = data.base64;
+                  $rootScope.image = data.base64;
                 }
               });//end success
 

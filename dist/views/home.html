@@ -1,6 +1,53 @@
-<div id="login" class="login" ng-show="showLogin">
-  <div class="panel panel-default well col-md-2 col-md-offset-10">
-    <button type="button" class="close" scroll-on-click href="#intro" ng-click="$parent.showLogin=false;"><span
+<!-- Navigation -->
+<section navigation id="navigation" class="hide-nav" ng-show="!isLogged">
+  <!-- Navigation Container -->
+  <div class="nav-container">
+
+    <!-- Site Logo -->
+    <a href="#home" class="site-logo scroll">Glifico</a>
+
+    <a class="mobile-nav-button"><i class="fa fa-bars"></i></a>
+
+    <!-- Navigation Menu -->
+    <div id="navigation_menu" class="nav-menu">
+      <ul class="nav-custom">
+        <li><a href="#home" class="scroll link">Home</a></li>
+        <li>
+          <a class="scroll link" ng-click="showLogin=true;" href="#login">Log In</a>
+        </li>
+        <li>
+          <a class="scroll link" ng-click="register=true;" href="#register">Register</a>
+        </li>
+        <li>
+          <a class="scroll link" ng-click="showBlog=true;" href="#blog">Blog</a>
+        </li>
+        <li><a href="#about" class="scroll link">About</a></li>
+        <li><a href="#services" class="scroll link">Services</a></li>
+        <!--<li><a href="#portfolio" class="scroll link">Portfolio</a></li>-->
+        <li><a href="#pricing" class="scroll link">Pricing</a></li>
+        <li><a href="#team" class="scroll link">Team</a></li>
+        <!--<li>
+          <a href="#blog" class="scroll link">Blog <i class="fa fa-chevron-down"></i></a>
+          <ul>
+            <li><a href="blog-main.html">Blog Main</a></li>
+            <li><a href="blog-single.html">Blog Single</a></li>
+          </ul>
+        </li>-->
+        <!-- end drop down -->
+        <!-- <li><a href="features.html" class="scroll link">Features</a></li> -->
+        <li><a href="#contact" class="scroll link">Contact</a></li>
+      </ul>
+    </div>
+    <!-- end nav menu -->
+  </div>
+  <!-- end nav container -->
+</section>
+<!-- end navigation section -->
+
+<div id="login" style="margin-right:10px;" class="login" ng-show="showLogin">
+  <div class="panel col-md-2 col-md-offset-10">
+    <button style="margin-right: -15px;" type="button" class="close scroll" href="#home"
+            ng-click="showLogin=false;"><span
       aria-hidden="true" class="glyphicon glyphicon-remove-circle"></span><span class="sr-only">Close</span></button>
     <div class="panel-body">
       <div template-snippet id="loginSnippet" name="snippet/loginSnippet" style="margin-top:15px;"></div>
@@ -8,196 +55,848 @@
   </div>
 </div>
 
-<!-- Intro Header -->
-<header id="intro" class="intro">
-  <div class="intro-body">
-    <div class="container" style="width:60%;">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 style="margin-top:30px;" class="brand-heading">Welcome to Glifico</h1>
+<!-- Home Section -->
+<section id="home" class="home parallax6">
+  <div id="slides" slides class="container header">
 
-          <p class="intro-text">"TRANSLATION CANNOT BE DISSOCIATED FROM THE NOTION OF PROGRESS"</p>
-
-          <p>JEAH-FRANCOIS JOLY</p>
-
-          <div style="margin-bottom:100px;"/>
-          <div style="float:left;opacity:0.6;">
-            <a role="button" scroll-on-click href="#registrazione_agenzia" class="btn btn-default btn-lg"> <i
-              class="fa fa-angle-double-down animated"></i>&nbsp;Are you an agency?</a>
-          </div>
-          <div style="float:right;opacity:0.6;">
-            <a role="button" scroll-on-click href="#registrazione_traduttore" class="btn btn-default btn-lg"><i
-              class="fa fa-angle-double-down animated"></i>&nbsp;Are you a translator?</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-<!-- Registrazione Agenzia Section -->
-<section template-snippet name="snippet/registrazioneAgenziaSnippet" id="registrazione_agenzia"
-         class="content-section text-center"></section>
-
-<!-- Registrazione Traduttori Section -->
-
-<section template-snippet name="snippet/registrazioneTraduttoreSnippet" id="registrazione_traduttore"
-         class="content-section text-center background-default"></section>
-
-<!-- About Section -->
-<section id="about" class="content-section text-center">
-  <div class="row_shadow" style="padding: 40px 0px 40px 0px;">
-  <h2>About US</h2>
-
-  <div class="row_shadow">
-    <div class="col-lg-10 col-lg-offset-1 text-justify">
-      <p>Explico è la piattaforma che permette alle agenzie di traduzione di entrare in contatto con traduttori e
-        interpreti di tutto il mondo e di tutte le lingue ampliando così le possibilità lavorative di entrambi gli
-        utenti del sito.</p>
-
-      <p>La nostra <strong><i>vision</i></strong> è permettere una comunicazione più immediata tra agenzie e traduttori
-        e/o interpreti freelance sparsi nel mondo aiutando gli stessi ad incrementare le proprie opportunità di lavoro e
-        tenendo alto il valore dell’ equo compenso.</p>
-
-      <p style="margin-bottom:30px;">La nostra <strong><i>mission</i></strong> è creare un ambiente dinamico,
-        interattivo e automatizzato che permetta alle agenzie di poter trovare il traduttore migliore per le specifiche
-        esigenze lavorative, offrendo di conseguenza uno strumento in più ai freelance per aumentare il loro campo di
-        azione.</p>
-
-      <i>“Internet dev’essere uno strumento di aiuto nella vita lavorativa quotidiana e non un competitor contro cui
-        doversi confrontare. Sarebbe uno scontro impari ai danni della Professionalità”. [Luca Sapone, CEO Explico] </i>
-
-      <div style="clear:both;"></div>
-
-      <a class="btn btn-default col-xs-12" type="button" data-toggle="collapse" data-target="#collapseExample1"
-         aria-expanded="false" aria-controls="collapseExample1" style="margin-top:30px;">
-        Perchè la piattaforma non è aperta agli utenti finali e si rivolge alle agenzie?
-      </a>
-
-      <div class="collapse" id="collapseExample1">
-        <div class="" style="margin-top:10px;">
-          <p>Noi crediamo fortemente che il lavoro delle agenzie sia un valore aggiunto di notevole importanza:
-            ponendosi come intermediari fra committente e freelance offrono la garanzia del servizio offerto ai primi e
-            garantiscono al freelance il giusto riconoscimento della propria professionalità.. </p>
-
-          <p>Crediamo che l’industria linguistica abbia bisogno di committenti, agenzie e freelance e che ognuno possa
-            svolgere il proprio lavoro nel modo più professionale possibile senza scavalcare le peculiarità di ognuno
-            degli attori citati. </p>
-        </div>
-      </div>
-
-      <a class="btn btn-default col-xs-12" type="button" data-toggle="collapse" data-target="#collapseExample2"
-         aria-expanded="false" aria-controls="collapseExample2" style="margin-top:30px;">
-        Perchè un traduttore/interprete dovrebbe iscriversi?
-      </a>
-
-      <div class="collapse" id="collapseExample2">
-        <div class="" style="margin-top:10px;">
-          <p>Innanzitutto è uno strumento in più messo a loro disposizione per aumentare le proprie possibilità
-            lavorative. </p>
-
-          <p>In secondo luogo Explico garantisce di essere contattati da agenzie che potranno valutare le competenze,
-            gli esempi di traduzione, i feedback ricevuti ed altri parametri di ogni professionista scegliendo la
-            persona più idonea per il lavoro da svolgere, dando soddisfazione ai meriti professionali.</p>
-        </div>
-      </div>
-
-      <a class="btn btn-default col-xs-12" type="button" data-toggle="collapse" data-target="#collapseExample3"
-         aria-expanded="false" aria-controls="collapseExample3" style="margin-top:30px;">
-        Perchè è nato il progetto Explico?
-      </a>
-
-      <div class="collapse" id="collapseExample3">
-        <div class="" style="margin-top:10px;">
-          <p>Explico è nato perchè, sempre più spesso, il mondo dell’industria linguistica deve confrontarsi con le
-            richieste di ribasso del prezzo, e ciò mette spesso a rischio la qualità dei servizi offerti. Adesso sarà
-            possibile offrire la propria professionalità e farla valere per quello che merita.</p>
-
-          <p>Allo stesso tempo le agenzie saranno in grado di fornire informazioni ai committenti in modo chiaro, veloce
-            e preciso. Si elimina quella parte di contrattazione spesso molto antipatica in cui una delle parti deve
-            cedere qualcosa. In questo modo tuttosarà chiaro sin dall’inizio: dal preventivo di costo ai guadagni
-            effettivi dei professionisti e delle agenzie.</p>
-        </div>
-      </div>
-    </div>
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</section>
-
-<!-- Privacy Section -->
-<section id="privacy" class="content-section text-center">
-  <div class="row_shadow" style="padding: 40px 0px 40px 0px;">
-    <h2>PRIVACY</h2>
-
-    <div class="row_shadow">
-      <div class="col-lg-10 col-lg-offset-1">
-        <p style="margin-bottom:30px;">Questa Applicazione raccoglie alcuni Dati Personali dei propri Utenti. </p>
-
-        <p style="font-weight:bold;">Titolare del Trattamento dei Dati</p>
-
-        <p>Explico srl - Via Monti 52 - 20123, Milan (Italy),</p>
-
-        <p style="margin-bottom:30px;">info@explico.com</p>
-
-        <!-- Button trigger modal -->
-        <a class="btn btn-default" data-toggle="modal" data-target="#myModal">
-          Leggi la privacy completa di Explico</a>
-
-        <div class="clearfix"></div>
-      </div>
-      <div class="clearfix"></div>
-    </div>
-    <!-- Modal -->
-</section>
-
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-          aria-hidden="true">&times;</span></button>
-        <h4 style="color:black;" class="modal-title" id="myModalLabel">PRIVACY</h4>
-      </div>
-      <div class="modal-body">
-        <div template-snippet name="snippet/privacySnippet" id="privacySnippet"></div>
-      </div>
-      <!-- end modal content -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-  <!-- end myModal -->
-</div>
-
-<!-- Contact Section -->
-<section template-snippet name="snippet/contactSnippet" id="contact" class="content-section text-center"></section>
-
-<nav class="navbar navbar-custom navbar-fixed-bottom" role="navigation">
-  <div class="container">
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-      <ul class="nav navbar-nav">
-        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-        <li class="hidden">
-          <a href="#page-top"></a>
-        </li>
-        <li>
-          <a scroll-on-click href="#intro">Home</a>
-        </li>
-        <li>
-          <a scroll-on-click href="#about">About</a>
-        </li>
-        <li>
-          <a scroll-on-click href="#privacy">Privacy</a>
-        </li>
-        <li>
-          <a scroll-on-click href="#contact">Contact</a>
-        </li>
+    <!-- Site Logo -->
+    <span class="logo animated" data-animate="fadeInDown" data-animate-delay="1000">Glifico</span>
+    <!-- Text Slider -->
+    <div header-text class="header-text">
+      <ul class="text-slider">
+        <li class="text-slides">Get more<span class="greenyellow"> free time</span></li>
+        <li class="text-slides">Get more<span class="greenyellow"> money</span></li>
+        <li class="text-slides">Get more<span class="greenyellow"> opportunities</span></li>
+        <li class="text-slides">Get more<span class="greenyellow"> coffee breaks</span></li>
+        <li class="text-slides">Get more<span class="greenyellow"> organization</span></li>
+        <li class="text-slides">Get rid of<span class="color normal"> advertising</span></li>
+        <li class="text-slides">Get rid of<span class="color normal"> sending CV</span></li>
+        <li class="text-slides">Get rid of<span class="color normal"> negotiating</span></li>
+        <li class="text-slides">Get rid of<span class="color normal"> risk</span></li>
+        <li class="text-slides">Get rid of<span class="color normal"> insecurity</span></li>
       </ul>
     </div>
-    <!-- /.navbar-collapse -->
+    <!-- end text slider -->
+
+    <h4 class="slogan">"The fastest way to find translators and interpreters all around the world"</h4>
+
+    <!-- Social Media Links -->
+    <div class="social-media">
+      <h4>Spread the Word</h4>
+      <ul class="social-links">
+        <li><a target="_blank" href="https://www.facebook.com/glifico"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
+        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+      </ul>
+    </div>
+    <!-- end social media links -->
+    <a href="#about" class="header-down-arrow scroll link"></a>
   </div>
-  <!-- /.container -->
-</nav>
+  <!-- end header container -->
+</section>
+<!-- end home section -->
+
+<section id="register" class="section" ng-show="register">
+  <button type="button" class="close scroll" href="#home"
+          ng-click="register=false;"><span
+    aria-hidden="true" class="glyphicon glyphicon-remove-circle"></span><span class="sr-only">Close</span></button>
+  <div class="container">
+    <h2 class="title">Register</h2>
+    <h4 class="subtitle">Nothing more simple than insert your email, username and password</h4>
+
+    <div template-snippet name="snippet/registrazioneSnippet" id="registrazione"></div>
+  </div>
+</section>
+
+<!-- blog section -->
+<div template-snippet name="snippet/blogSnippet" id="blog" ng-show="showBlog"></div>
+
+<!-- About Section -->
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="title">About Us</h2>
+    <h4 class="subtitle">Everything you need to find your translator and be sure to get you job done!</h4>
+
+    <div class="one-third column animated" data-animate="fadeInLeft" data-animate-delay="400">
+      <div class="icon-box"><i class="fa fa-info fa-4x"></i></div>
+      <h5>About Glifico</h5>
+
+      <div class="text-justify">Glifico is a platform that allows translation agencies to contact translators and
+        interpreters from all the world and translate documents into any languages.
+      </div>
+    </div>
+    <div class="one-third column animated" data-animate="fadeIn" data-animate-delay="400">
+      <div class="icon-box"><i class="fa fa-eye fa-4x"></i></div>
+      <h5>Our Vision</h5>
+
+      <div class="text-justify">We want to create a brand new way to communicate and collaborate faster and easier
+        without geographical limits, increasing job opportunities and the efficiency of the usual workflow.
+      </div>
+    </div>
+    <div class="one-third column animated" data-animate="fadeInRight" data-animate-delay="400">
+      <div class="icon-box"><i class="fa fa-rocket fa-4x"></i></div>
+      <h5>Our Mission</h5>
+
+      <div class="text-justify">To create a dynamic and interactive environment that allows allows agencies to
+        find the best translators or interpreters for a specific project using a system validation data based on rating
+        and feedback.
+      </div>
+    </div>
+  </div>
+  <!-- end container -->
+</section>
+<!-- end about section -->
+
+
+<!-- Testimonials -->
+<section class="testimonials parallax1">
+
+  <!-- Callout Title -->
+  <section class="callout">
+    <div class="container">
+      <h3 class="animated" data-animate="fadeInDown" data-animate-delay="300">Here’s what <span
+        class="color">people </span>are saying</h3>
+    </div>
+    <!-- end container -->
+  </section>
+  <!-- end callout title -->
+
+  <div class="container">
+    <ul class="testimonial-slider">
+      <!-- Testimonial 1 -->
+      <li class="t-slide">
+        <h4>Glifico is an awesome project and it’s coming to be our main way to contact
+          freelances</h4>
+
+        <p>Lexicon</p>
+
+        <p>*****</p>
+      </li>
+      <!-- Testimonial 2 -->
+      <li class="t-slide">
+        <h4>Sometimes it happens to be disoriented if a customer ask for a translation in a rare language, but on
+          Glifico we can find a solution to do it</h4>
+
+        <p>Linguo Translation</p>
+
+        <p>****</p>
+      </li>
+      <!-- Testimonial 3 -->
+      <li class="t-slide">
+        <h4>It’s extremely easy to use. Fast. Organized. You can know exactly how much you are gonna spend for a job and
+          give a price to your customers immediately</h4>
+
+        <p>Russian Translating</p>
+
+        <p>****</p>
+      </li>
+      <!-- Testimonial 4 -->
+      <li class="t-slide">
+        <h4>Sometimes it’s hard to find the best translator for a project. In this way we can find exactly what we are
+          looking for</h4>
+
+        <p>Yeminli Translators</p>
+
+        <p>***</p>
+      </li>
+      <!-- Testimonial 5 -->
+      <li class="t-slide">
+        <h4>It’s really fast! You send a request for a job, giving all the detail and the translator have just to answer
+          yes or no. - Fordítóiroda Budapest</h4>
+
+        <p>Fordítóiroda Budapest</p>
+
+        <p>****</p>
+      </li>
+      <!-- Testimonial 6 -->
+      <li class="t-slide">
+        <h4>It’s like I sent my contact to all agencies in the world and I can collaborate with an agency laying in
+          another part of the world</h4>
+
+        <p>Sebastian C.</p>
+
+        <p>*****</p>
+      </li>
+      <!-- Testimonial 7 -->
+      <li class="t-slide">
+        <h4>I can easly manage my jobs and work on Glifico everywhere I go. Last translation has been made from a
+          friends computer while we were in holiday</h4>
+
+        <p>Levente B</p>
+
+        <p>****</p>
+      </li>
+    </ul>
+    <!-- end testimonials list -->
+  </div>
+  <!-- end container -->
+</section>
+<!-- end testimonials -->
+
+<!-- Services Section -->
+<section id="services" class="section">
+  <!-- TODO AL MOMENTO QUESTA PARTE E' COMMENTATA
+  <div class="container">
+    <h2 class="title">What Andare Provides</h2>
+    <h4 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, enim.</h4>
+
+    <div class="animated" data-animate="fadeInUp" data-animate-delay="400">
+      <img src="images/imonitor-1.png" alt="Monitor Image" class="scale-with-grid mockup"
+           title="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which"/>
+    </div>
+  </div>
+  -->
+  <!-- end container -->
+
+  <!-- "tipped" class data-title="" serve per i tooltip-->
+
+  <section class="services-list parallax2">
+    <div class="container">
+      <div class="row row-home">
+        <div class="four columns animated service-item" data-animate="bounceInDown" data-animate-delay="300">
+          <i class="fa fa-wrench fa-3x tipped" data-title="Easy to use"></i>
+          <h5>Easy to use</h5>
+          Only one minute to learn how to use it
+        </div>
+        <div class="four columns animated service-item" data-animate="bounceInDown" data-animate-delay="300">
+          <i class="fa fa-bolt fa-3x tipped" data-title="Fast"></i>
+          <h5>Fast</h5>
+          No more waste of time
+        </div>
+        <div class="four columns animated service-item" data-animate="bounceInDown" data-animate-delay="300">
+          <i class="fa fa-cloud fa-3x tipped" data-title="Cloud"></i>
+          <h5>Cloud</h5>
+          Keep your jobs on a cloud platform and reach it from everywhere
+        </div>
+        <div class="four columns animated service-item" data-animate="bounceInDown" data-animate-delay="300">
+          <i class="fa fa-briefcase fa-3x tipped" data-title="Your professional profile"></i>
+          <h5>Your professional profile</h5>
+          Now you are a businessman. Create your resume to be seen by everybody
+        </div>
+      </div>
+      <!-- end row -->
+      <div class="row row-home">
+        <div class="four columns animated service-item" data-animate="bounceInDown" data-animate-delay="300">
+          <i class="fa fa-calendar-o fa-3x tipped" data-title="Schedule your jobs"></i>
+          <h5>Schedule your jobs</h5>
+          Schedule your activities and control their progress
+        </div>
+        <div class="four columns animated service-item" data-animate="bounceInDown" data-animate-delay="300">
+          <i class="fa fa-comments fa-3x tipped" data-title="Comments"></i>
+          <h5>Comments</h5>
+          Comments are the fastest way to create your own professional references and to spin up your business
+        </div>
+        <div class="four columns animated service-item" data-animate="bounceInDown" data-animate-delay="300">
+          <i class="fa fa-video-camera fa-3x tipped" data-title="Video Presentation"></i>
+          <h5>Video Presentation</h5>
+          Create your own video presentation to show your language skills
+        </div>
+        <div class="four columns animated service-item" data-animate="bounceInDown" data-animate-delay="300">
+          <i class="fa fa-star fa-3x tipped" data-title="Rating"></i>
+          <h5>Rating</h5>
+          Increse your stars to show your professional level
+        </div>
+      </div>
+      <!-- end row -->
+    </div>
+    <!-- end container -->
+  </section>
+  <!-- end parallax section -->
+</section>
+<!-- end services section-->
+
+<!-- Counter -->
+<section class="counter parallax3">
+
+  <!-- Callout Title -->
+  <section class="callout">
+    <div class="container">
+      <h3 class="animated" data-animate="fadeInDown" data-animate-delay="300">Glifico by the <span
+        class="color">numbers!</span></h3>
+    </div>
+    <!-- end container -->
+  </section>
+  <!-- end callout title -->
+
+  <div class="container">
+
+    <!-- Counter Column -->
+    <div class="four columns">
+      <div class="icon-box"><i class="fa fa-coffee fa-4x"></i></div>
+      <div class="count" data-to="354">
+        <h1 class="count-number"></h1>
+        <h5>Extra <span class="color">Coffe breaks</span></h5>
+      </div>
+      <!-- end counter data -->
+    </div>
+    <!-- end counter column -->
+
+    <!-- Counter Column -->
+    <div class="four columns">
+      <div class="icon-box"><i class="fa fa-smile-o fa-4x"></i></div>
+      <div class="count" data-to="203">
+        <h1 class="count-number"></h1>
+        <h5>Happy <span class="color">Clients</span></h5>
+      </div>
+      <!-- end counter data -->
+    </div>
+    <!-- end counter column -->
+
+    <!-- Counter Column -->
+    <div class="four columns">
+      <div class="icon-box"><i class="fa fa-users fa-4x"></i></div>
+      <div class="count" data-to="467">
+        <h1 class="count-number"></h1>
+        <h5>New <span class="color">Contacts</span></h5>
+      </div>
+      <!-- end counter data -->
+    </div>
+    <!-- end counter column -->
+
+    <!-- Counter Column -->
+    <div class="four columns">
+      <div class="icon-box"><i class="fa fa-envelope-o fa-4x"></i></div>
+      <div class="count" data-to="647">
+        <h1 class="count-number"></h1>
+        <h5>Emails <span class="color">spared</span></h5>
+      </div>
+      <!-- end counter data -->
+    </div>
+    <!-- end counter column -->
+
+  </div>
+  <!-- end container -->
+</section>
+<!-- end counter -->
+
+
+<!-- Pricing Section -->
+<section id="pricing" class="section">
+  <div class="container">
+    <h2 class="title">We charge you just for a new job</h2>
+    <!--<h4 class="subtitle">Our plans are versatile and affordable</h4>-->
+
+    <!-- Pricing Table -->
+    <div class="one-third column price-table animated" data-animate="fadeInLeft" data-animate-delay="400">
+      <h4>Basic</h4>
+
+      <div class="price-table-container">
+        <div class="price">Free</div>
+        <p>Looking for new translators?</p>
+        <ul>
+          <li><span class="color">Search </span>professionist
+          </li>
+          <li><span class="color">Looking </span>at the prices
+          </li>
+          <li><span class="color">Looking </span>at the rating
+          </li>
+          <li><span class="color">Looking </span>at the
+            comments
+          </li>
+          <li><span class="color">Manage </span>your jobs</li>
+          <li><span class="color">Submit </span>a job request
+          </li>
+        </ul>
+      </div>
+      <!-- end price table container -->
+      <a href="#login" ng-click="showLogin=true" class="price-button scroll link">Sign Up Now</a>
+    </div>
+    <!-- end price table -->
+
+    <!-- Pricing Table -->
+    <div class="one-third column price-table animated" data-animate="fadeIn" data-animate-delay="400">
+      <h4 class="selected">Agency Services</h4>
+
+      <div class="price-table-container">
+        <div class="price">2<span class="dollar">%</span></div>
+        <p>Want to submit a job? We charge just one time and only if the professional accept your job</p>
+        <ul>
+          <li><span class="color">+2% </span>fee on the total
+            price
+          </li>
+          <li><span class="color">+2% </span>fee on the
+            interpretation job
+          </li>
+          <li><span class="color">Search </span>professionist
+          </li>
+          <li><span class="color">Looking </span>at the prices
+          </li>
+          <li><span class="color">Looking </span>at the rating
+          </li>
+          <li><span class="color">Looking </span>at the
+            comments
+          </li>
+          <li><span class="color">Manage </span>your jobs</li>
+          <li><span class="color">Sending </span>a job request
+          </li>
+        </ul>
+      </div>
+      <!-- end price table container -->
+      <a href="#login" ng-click="showLogin=true" class="price-button scroll link">Sign Up Now</a>
+    </div>
+    <!-- end price table -->
+
+    <!-- Pricing Table -->
+    <div class="one-third column price-table animated" data-animate="fadeInRight" data-animate-delay="400">
+      <h4>Translating Services</h4>
+
+      <div class="price-table-container">
+        <div class="price">2<span class="dollar">%</span></div>
+        <p>There’s an agency that needs your knowledge but you aren’t sure if they are gonna pay your time?</p>
+        <ul>
+          <li><span class="color">2% fee </span>from the total
+            price
+          </li>
+          <li><span class="color">Search </span>professionist
+          </li>
+          <li><span class="color">Looking </span>at the prices
+          </li>
+          <li><span class="color">Looking </span>at the rating
+          </li>
+          <li><span class="color">Looking </span>at the
+            comments
+          </li>
+          <li><span class="color">Manage </span>your jobs</li>
+          <li><span class="color">Sending </span>a job request
+          </li>
+        </ul>
+      </div>
+      <!-- end price table container -->
+      <a href="#login" ng-click="showLogin=true" class="price-button scroll link">Sign Up Now</a>
+    </div>
+    <!-- end price table -->
+
+  </div>
+  <!-- end container -->
+</section>
+<!-- end pricing section -->
+
+<section id="accordion" class="section accordion parallax4">
+  <div class="container">
+
+    <!--
+    <div class="eight columns animated" data-animate="fadeInLeft" data-animate-delay="500">
+      <img src="images/parrot_large.jpg" width="300" height="400" alt="Glifico Parrot Logo"
+           class="scale-with-grid mockup"/>
+    </div>
+    -->
+    <!-- end parrot logo mockup -->
+
+    <div class="col-sm-10 accordion-container">
+      <h2 class="title">Want to know more about Glifico?</h2>
+      <h4 class="subtitle white">Here is what we think about the project</h4>
+
+      <div class="accordion-button white"><i class="fa fa-arrow-circle-o-down fa-lg"></i>Why for agencies?
+      </div>
+      <div class="accordion-content active text-justify white">
+        <p>We are confident that the agencies work is an important mark-up because the intermediate between the
+          customers and freelance needs. They can guarantee quality of service to their customers and proper recognition
+          of the freelance's professionalism.</p>
+
+        <p>We believe the linguistic industry needs all the actual actors (agencies, freelance and commitment) and each
+          of them should do his own work in the most professional way without going over someone’s head.</p>
+      </div>
+
+      <div class="accordion-button white"><i class="fa fa-arrow-circle-o-right fa-lg"></i>Why should an interpreter or
+        translator sign in?
+      </div>
+      <div class="accordion-content text-justify white">
+        <p>Glifico is a new way for professionals to boost their work opportunities. They can get in touch with agencies
+          throughout the world. On the other hand Glifico allows agencies to choose the right
+          professionist looking at the rating or the comments of other agencies that have collaborated in the past or
+          some example of translation or some video where the interpreters can present themselves. That’s important for
+          a personal satisfaction of the professionists.</p>
+      </div>
+
+      <div class="accordion-button white"><i class="fa fa-arrow-circle-o-right fa-lg"></i>Why was Glifico born?
+      </div>
+      <div class="accordion-content text-justify white">
+        <p>In this world it happens (always more frequently) that the linguistic industry has to face with customers who
+          are interested in asking only for lower prices. Obviously it causes a problem for the quality of the service.
+          Now professionists can offer their own skills for how much it worth.</p>
+
+        <p>At the same time, agencies can give information to the customers in a clearly, precise and fast way. You
+          don’t need to negotiate! That’s annoying. In this way everything will be clear from the beginning and that
+          makes Glifico faster.</p>
+
+      </div>
+    </div>
+    <!-- end eight col accordion section -->
+
+  </div>
+  <!-- end container -->
+</section>
+<!-- end accordion section -->
+
+
+<section id="team" class="section">
+  <div class="container">
+    <h2 class="title">Our Team</h2>
+    <h4 class="subtitle">We are here to keep in contact with our users</h4>
+
+    <div class="five columns team">
+      <div class="team-photo">
+        <img src="images/luca_sapone.png" alt="" class="scale-with-grid">
+
+        <div class="mask"></div>
+        <h5>Connect with Luca</h5>
+        <ul class="team-social-links">
+          <li><a href="https://www.facebook.com/luca.sapone.5"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+      </div>
+      <!-- end team photo -->
+
+      <h4>Luca Sapone</h4>
+      <h6>Founder and CEO</h6>
+
+      <p>My desire is creating something really professional for professionists</p>
+
+      <div class="skillbar clearfix " data-percent="80%">
+        <div class="skillbar-title"><span>Public Relations</span></div>
+        <div class="skillbar-bar"></div>
+        <div class="skill-bar-percent">80%</div>
+      </div>
+      <!-- end skill bar -->
+
+      <div class="skillbar clearfix " data-percent="90%">
+        <div class="skillbar-title"><span>Marketing</span></div>
+        <div class="skillbar-bar"></div>
+        <div class="skill-bar-percent">90%</div>
+      </div>
+      <!-- end skill bar -->
+
+      <div class="skillbar clearfix " data-percent="95%">
+        <div class="skillbar-title"><span>Customers Care</span></div>
+        <div class="skillbar-bar"></div>
+        <div class="skill-bar-percent">95%</div>
+      </div>
+      <!-- end skill bar -->
+
+    </div>
+    <!-- end team column -->
+
+    <div class="five columns team">
+      <div class="team-photo">
+        <img src="images/giuseppe_terribilio.jpg" alt="" class="scale-with-grid">
+
+        <div class="mask"></div>
+        <h5>Connet with Giuseppe</h5>
+        <ul class="team-social-links">
+          <li><a href="https://www.facebook.com/gterribilio"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+      </div>
+      <!-- end team photo -->
+
+      <h4>Giuseppe Terribilio</h4>
+      <h6>Co-Founder, CTO and Senior Developer</h6>
+
+      <p>"Programmers are tools for converting caffeine into code"</p>
+
+      <div class="skillbar clearfix " data-percent="85%">
+        <div class="skillbar-title"><span>HTML5</span></div>
+        <div class="skillbar-bar"></div>
+        <div class="skill-bar-percent">85%</div>
+      </div>
+      <!-- end skill bar -->
+
+      <div class="skillbar clearfix " data-percent="95%">
+        <div class="skillbar-title"><span>AngularJS</span></div>
+        <div class="skillbar-bar"></div>
+        <div class="skill-bar-percent">95%</div>
+      </div>
+      <!-- end skill bar -->
+
+      <div class="skillbar clearfix " data-percent="80%">
+        <div class="skillbar-title"><span>NodeJS</span></div>
+        <div class="skillbar-bar"></div>
+        <div class="skill-bar-percent">80%</div>
+      </div>
+      <!-- end skill bar -->
+
+    </div>
+    <!-- end team column -->
+
+    <div class="five columns team">
+      <div class="team-photo">
+        <img src="images/sissi.png" alt="" class="scale-with-grid">
+
+        <div class="mask"></div>
+        <h5>Connect with Sissi</h5>
+        <ul class="team-social-links">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+      </div>
+      <!-- end team photo -->
+
+      <h4>Sissi</h4>
+      <h6>Consultant for interpreting and translating fields</h6>
+
+      <p>Glad to share my experience to create a brand new fastest way to work</p>
+
+      <div class="skillbar clearfix " data-percent="92%">
+        <div class="skillbar-title"><span>Translating </span></div>
+        <div class="skillbar-bar"></div>
+        <div class="skill-bar-percent">92%</div>
+      </div>
+      <!-- end skill bar -->
+
+      <div class="skillbar clearfix " data-percent="97%">
+        <div class="skillbar-title"><span>Interpreting</span></div>
+        <div class="skillbar-bar"></div>
+        <div class="skill-bar-percent">97%</div>
+      </div>
+      <!-- end skill bar -->
+
+      <div class="skillbar clearfix " data-percent="86%">
+        <div class="skillbar-title"><span>Consulting</span></div>
+        <div class="skillbar-bar"></div>
+        <div class="skill-bar-percent">86%</div>
+      </div>
+      <!-- end skill bar -->
+
+    </div>
+    <!-- end team column -->
+
+  </div>
+  <!-- end container -->
+</section>
+<!-- end team section -->
+
+<!-- TODO AL MOMENTO NON VIENE GESTITO IL VIDEO
+<section id="video" class="full-video">
+  <div class="video-msg">
+    <h1>We are incredible</h1>
+    <a href="#about" class="button scroll">Find out why</a>
+  </div>
+  <!-- end video message
+
+  <div id="P1" class="player video-container"
+       data-property="{videoURL:'https://www.youtube.com/watch?v=GELKWLdCTv8',containment:'#video', autoPlay:true, showControls:false, mute:true, startAt:0, opacity:1}"></div>
+  <!-- end video container
+</section>
+<!-- end video section -->
+
+<!-- TODO AL MOMENTO NON VIENE GESTITO UN BLOG
+<section id="blog" class="section">
+  <div class="container">
+    <h2 class="title">We're always doing something cool</h2>
+    <h4 class="subtitle">Check out the latest from our blog</h4>
+
+    <div class="one-third column post-preview animated" data-animate="fadeInLeft" data-animate-delay="400">
+      <a href="#" class="post-img">
+        <img src="images/blog-1.jpg" alt="" class="scale-with-grid">
+
+        <div class="mask"></div>
+        <h5>Read the full article</h5>
+      </a><!-- end post image
+      <a href="#" class="post-title">A Day in The Life of a Designer Has Lots of Freedom</a>
+      <ul class="post-meta">
+        <li><i class="fa fa-user"></i> <a href="#">John Doe</a></li>
+        <li><i class="fa fa-calendar"></i> 10/15/2015</li>
+        <li><i class="fa fa-comments"></i> <a href="#">3</a> comments</li>
+      </ul>
+      <!-- end post meta
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, deserunt ut consequuntur est ea dolore
+        accusantium illo consequatur quos laudantium eum doloribus reprehenderit at? Veniam, obcaecati, facilis, ad,
+        nihil sit eaque minus fugiat magnam perspiciatis quia rem quae consequuntur sint cumque iste.</p>
+      <a href="#">Read more &raquo;</a>
+    </div>
+    <!-- end post preview
+
+    <div class="one-third column post-preview animated" data-animate="fadeIn" data-animate-delay="400">
+      <a href="#" class="post-img">
+        <img src="images/blog-2.jpg" alt="" class="scale-with-grid">
+
+        <div class="mask"></div>
+        <h5>Read the full article</h5>
+      </a><!-- end post image
+      <a href="#" class="post-title">Climbing The Ladder of Life is What We're All About</a>
+      <ul class="post-meta">
+        <li><i class="fa fa-user"></i> <a href="#">John Doe</a></li>
+        <li><i class="fa fa-calendar"></i> 10/15/2015</li>
+        <li><i class="fa fa-comments"></i> <a href="#">3</a> comments</li>
+      </ul>
+      <!-- end post meta
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, deserunt ut consequuntur est ea dolore
+        accusantium illo consequatur quos laudantium eum doloribus reprehenderit at? Veniam, obcaecati, facilis, ad,
+        nihil sit eaque minus fugiat magnam perspiciatis quia rem quae consequuntur sint cumque iste.</p>
+      <a href="#">Read more &raquo;</a>
+    </div>
+    <!-- end post preview
+
+    <div class="one-third column post-preview animated" data-animate="fadeInRight" data-animate-delay="400">
+      <a href="#" class="post-img">
+        <img src="images/blog-3.jpg" alt="" class="scale-with-grid">
+
+        <div class="mask"></div>
+        <h5>Read the full article</h5>
+      </a><!-- end post image
+      <a href="#" class="post-title">Client Calls are Always a Top Priority No Matter What</a>
+      <ul class="post-meta">
+        <li><i class="fa fa-user"></i> <a href="#">John Doe</a></li>
+        <li><i class="fa fa-calendar"></i> 10/15/2015</li>
+        <li><i class="fa fa-comments"></i> <a href="#">3</a> comments</li>
+      </ul>
+      <!-- end post meta
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, deserunt ut consequuntur est ea dolore
+        accusantium illo consequatur quos laudantium eum doloribus reprehenderit at? Veniam, obcaecati, facilis, ad,
+        nihil sit eaque minus fugiat magnam perspiciatis quia rem quae consequuntur sint cumque iste.</p>
+      <a href="#">Read more &raquo;</a>
+    </div>
+    <!-- end post preview
+
+    <div class="row full-blog-link">
+      <a href="#" class="button">Read our full blog</a>
+    </div>
+
+  </div>
+  <!-- end container
+</section>
+<!-- end blog section -->
+
+<!-- TESTIMONIAL
+<section class="static-testimonial parallax5">
+  <div class="container">
+    <blockquote>
+      <i class="fa fa-quote-left"></i>
+      <i class="fa fa-quote-right"></i>
+      Color does not add a pleasant quality to design - it reinforces it.
+      <span>Pierre Bonnard</span>
+    </blockquote>
+    <!-- end quote
+  </div>
+  <!-- end container
+
+  <section class="client-logos">
+    <div class="container clients">
+      <ul>
+        <li class="two columns"><img src="images/client-logo-1.png" alt="" class="scale-with-grid"></li>
+        <li class="two columns"><img src="images/client-logo-2.png" alt="" class="scale-with-grid"></li>
+        <li class="two columns"><img src="images/client-logo-3.png" alt="" class="scale-with-grid"></li>
+        <li class="two columns"><img src="images/client-logo-4.png" alt="" class="scale-with-grid"></li>
+        <li class="two columns"><img src="images/client-logo-5.png" alt="" class="scale-with-grid"></li>
+        <li class="two columns"><img src="images/client-logo-6.png" alt="" class="scale-with-grid"></li>
+        <li class="two columns"><img src="images/client-logo-7.png" alt="" class="scale-with-grid"></li>
+        <li class="two columns"><img src="images/client-logo-8.png" alt="" class="scale-with-grid"></li>
+      </ul>
+    </div>
+  </section>
+  <!-- end client logo section
+</section>
+<!-- end static testimonial section -->
+
+<!-- SEZIONE CONTATTI -->
+<section template-snippet name="snippet/contactSnippet" id="contact" class="section"></section>
+
+
+<!-- Google Map -->
+<section id="map" class="section">
+
+  <!-- Callout Title -->
+  <section class="callout">
+    <div class="container">
+      <h3 class="animated" data-animate="fadeInDown" data-animate-delay="300">Come out and <span
+        class="color">see us!</span></h3>
+    </div>
+    <!-- end container -->
+  </section>
+  <!-- end callout title -->
+
+  <div id="google-map" google-map></div>
+</section>
+<!-- end map section -->
+
+
+<section id="footer-top" class="section">
+  <div class="container">
+    <ul class="social-links">
+      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
+      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+      <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+    </ul>
+    <!-- end social links -->
+    <a href="mailto:info.startuproject@gmail.com">info.startuproject@gmail.com</a><br/>
+    Turin, Italy
+  </div>
+  <!-- end container -->
+</section>
+<!-- end footer top section -->
+
+<section id="footer-bottom" class="section">
+  <div class="container">
+    <a href="#home" class="scroll button-to-top">
+      <i class="fa fa-angle-double-up"></i>
+    </a>
+
+    <h2>Glifico</h2>
+
+    <p><span class="color">Made in Italy</span><br/>
+      &copy; 2015 All rights reserved.</p>
+  </div>
+  <!-- end container -->
+</section>
+<!-- end footer bottom section -->
+
+
+<!-- Options Panel (remove me for production) -
+<section id="options-panel" class="close-panel">
+
+  <!-- Panel Button
+  <a class="panel-button">Options</a>
+
+  <!-- Color Options
+  <div class="area">
+    <h5>Color Options</h5>
+    <a title="blue" class="switch blue"></a>
+    <a title="gray" class="switch gray"></a>
+    <a title="orange" class="switch orange"></a>
+    <a title="purple" class="switch purple"></a>
+    <a title="green" class="switch green"></a>
+    <a title="yellow" class="switch yellow"></a>
+    <a title="red" class="switch red"></a>
+    <a title="lime" class="switch lime"></a>
+    <a title="deep-blue" class="switch deep-blue"></a>
+    <a title="cool-gray" class="switch cool-gray"></a>
+  </div>
+  <!-- end panel area
+
+  <!-- Theme (Light Dark
+  <div class="area">
+    <h5>Theme Options</h5>
+    <a title="dark" class="theme dark"></a>
+    <a title="light" class="theme light"></a>
+  </div>
+  <!-- end panel area
+
+  <!-- Header Templates
+  <div class="area">
+    <h5>Home Templates</h5>
+    <select onChange="window.document.location.href=this.options[this.selectedIndex].value;">
+      <option selected="selected">Parallax Background</option>
+      <option value="index-slider.html">Full Screen Slider</option>
+      <option value="index-zoom.html">Slow Zoom Background</option>
+      <option value="index-video.html">Full Screen Video</option>
+      <option value="index-pattern.html">Pattern Background</option>
+    </select>
+  </div>
+  <!-- end panel area
+</section>
+<!-- end options panel -->
+
+<!-- END NEW HOME FROM ANDARE TEMPLATE -->

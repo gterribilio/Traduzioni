@@ -1,53 +1,36 @@
-<form name=contactForm ng-submit=doContatta() novalidate>
-  <div class=row_shadow style="padding: 40px 0px 40px 0px">
+<div class=container>
 
-    <h2>Contacts</h2>
+  <h2 class=title>There's no better time than now</h2>
+  <h4 class=subtitle>Get in touch, let's work together</h4>
 
-    <div class=row_shadow>
-      <p>Feel free to email us to provide some feedback on our service, give us suggestions for new features and themes,
-        or to just say hello!</p>
-      
-      <div class="form-group row" style=margin-top:40px ng-class="{ 'has-error' : contactForm.email.$invalid && !contactForm.email.$pristine }">
-        <label class="col-xs-3 col-sm-offset-2 text-right control-label">Email*</label>
+  <div class=contact-form>
+    <form name=contactForm ng-submit=doContatta() novalidate>
+      <div class="eight columns animated" data-animate=fadeInLeft data-animate-delay=400>
 
-        <div class="col-sm-5 col-xs-9">
-          <input type=email name=email class=form-control ng-model=email required placeholder="">
-        </div>
-      </div>
-      <p ng-show="contactForm.email.$invalid && !contactForm.email.$pristine" class=help-block>Insert a valid
-        email</p>
-
-      
-      <div class="form-group row" ng-class="{ 'has-error' : contactForm.subject.$invalid && !contactForm.subject.$pristine }">
-        <label class="col-xs-3 col-sm-offset-2 text-right control-label text-right">Subject*</label>
-
-        <div class="col-sm-5 col-xs-9">
-          <input name=subject class=form-control ng-model=subject required placeholder="">
-        </div>
-      </div>
-      <span ng-show="contactForm.subject.$invalid && !contactForm.subject.$pristine" class=help-block>Required field</span>
-
-      
-      <div class="form-group row" ng-class="{ 'has-error' : text.text.$invalid && !text.text.$pristine }">
-        <label class="col-xs-3 col-sm-offset-2 text-right control-label text-right">Text*</label>
-
-        <div class="col-sm-5 col-xs-9">
-          <textarea class=form-control name=text ng-model=text required rows=5></textarea>
-        </div>
-      </div>
-      <span ng-show="contactForm.text.$invalid && !contactForm.text.$pristine" class=help-block>Required field</span>
-
-      <div style=margin-top:10px class=form-group>
         
-        <div class=text-center>
-          <button type=submit class="btn btn-default" ng-disabled=contactForm.$invalid><i class="fa fa-envelope animated"></i>&nbsp;Send
-          </button>
+        <div class=form-group ng-class="{ 'has-error' : contactForm.email.$invalid && !contactForm.email.$pristine }">
+          <input type=email name=email class=form-control ng-model=email required placeholder=Email*>
+        </div>
+
+        
+        <div class=form-group ng-class="{ 'has-error' : contactForm.subject.$invalid && !contactForm.subject.$pristine }">
+          <input name=subject class=form-control ng-model=subject required placeholder=Subject*>
+        </div>
+        
+      </div>
+
+      <div class="eight columns animated" data-animate=fadeInRight data-animate-delay=400>
+
+        
+        <div ng-class="{ 'has-error' : contactForm.text.$invalid && !contactForm.text.$pristine }">
+          <textarea class=form-control name=text ng-model=text required rows=4 placeholder=Text*></textarea>
         </div>
       </div>
 
-      <p> Explico - Registered office: Torino - Via Dei Babbi, 10</p>
-
-      <p>Explico - London Succursal - babbion street, 85</p>
-    </div>
+      <button type=submit class=btn ng-disabled=contactForm.$invalid><i class="fa fa-envelope"></i>&nbsp;Send
+      </button>
+    </form>
   </div>
-</form>
+  
+
+</div>

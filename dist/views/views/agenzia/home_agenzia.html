@@ -1,9 +1,22 @@
 
-<div class=background-default>
+<div>
   
-  <div template-snippet name=agenzia/snippet/profileAgenziaSnippet id=profileAgenziaSnippet style=padding-top:100px></div>
+  <ul class="nav nav-tabs" tab role=tablist>
+    <li role=presentation class=active><a href=#profile aria-controls=profile role=tab data-toggle=tab>Profile</a>
+    </li>
+    <li role=presentation><a href=#about aria-controls=about role=tab data-toggle=tab>About Your Agency</a></li>
+  </ul>
 
   
-  <div template-snippet name=agenzia/snippet/aboutYourAgencySnippet id=aboutYourAgencySnippet style=padding-top:30px></div>
+  <div class=tab-content>
+    <div role=tabpanel class="tab-pane fade in active" id=profile>
+      
+      <div template-snippet name=agenzia/snippet/profileAgenziaSnippet id=profileAgenziaSnippet></div>
+    </div>
+    <div role=tabpanel class="tab-pane fade" id=about>
+      
+      <div template-snippet name=agenzia/snippet/aboutYourAgencySnippet id=aboutYourAgencySnippet></div>
+    </div>
+  </div>
 
 </div>

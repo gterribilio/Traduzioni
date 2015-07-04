@@ -1,198 +1,235 @@
-<div class=background-default style=min-height:100vh;margin-top:100px>
-  <div class=row_shadow style="padding: 40px 0px 40px 0px">
-    <div style=margin-left:30px>
-      <div style=float:left><h2>TRANSLATOR PROFILE</h2></div>
-      <form name=sendAJobForm ng-submit="" novalidate>
-        <div style=float:left class="text-right col-sm-2">
-          <a href=#/send_a_job/{{traduttoreDetail.ID}} class="btn btn-lg btn-default">
-            <i class="fa fa-envelope"> Send a Job
-          </a>
-        </div>
-      </form>
-      <div class="clearfix">
-    </div>
-    <div class=row_shadow>
-      <div class="row row-eq-height">
-        <div id=item_first_row_list class=col-xs-2>
 
-          <div id=container_image_profile>
-            <img class=thumb_img width=180 height=180 ng-src="data:image/jpeg;base64,{{image}}">
-          </div>
-          <div style="pointer-events: none;margin:10px 40px 20px 40px" id=div_rating class=star-rating star-rating rating-value=traduttoreDetail.RATING/traduttoreDetail.NUM_RATING data-max=5>
-          </div>
-          <div class=text-center ng-show=!showComments>
-            <a style="cursor: pointer" ng-click="showComments=true;">
-              <i class="fa fa-plus"></i> show comments
-            </a>
-          </div>
-          <div class=text-center ng-show=showComments>
-            <a style="cursor: pointer" ng-click="showComments=false;">
-              <i class="fa fa-minus"></i> hide comments
-            </a>
-          </div>
-        </div>
-        <div id=item_second_row_list class=col-xs-4>
-          <div class="row form-group">
-            <label class="col-xs-5 control-label text-right">Name Surname:</label>
-            <span class=col-sm-5>{{traduttoreDetail.NOME}} {{traduttoreDetail.COGNOME}}</span>
-
-          </div>
-
-          
-          <div class="form-group row">
-            <label class="col-xs-5 control-label text-right">Birthday:</label>
-            <span class=col-sm-5>{{traduttoreDetail.DATA_NASCITA | date:'dd/MM/yyyy'}}</span>
-          </div>
-
-          
-          <div class="form-group row">
-            <label class="col-xs-5 control-label text-right">City:</label>
-            <span class=col-sm-5>{{traduttoreDetail.CITTA}}, {{traduttoreDetail.PAESE}}</span>
-          </div>
-
-          
-          <div class="form-group row">
-            <label class="col-xs-5 control-label text-right">Mothertongue:</label>
-            <span class=col-sm-5>{{traduttoreDetail.MADRELINGUA}}</span>
-          </div>
-
-          
-          <div class="form-group row">
-            <label class="col-xs-5 control-label text-right">VAT number:</label>
-            <span class=col-sm-5>{{traduttoreDetail.VAT}}</span>
-          </div>
-        </div>
-
-        <div class=col-xs-6 ng-show=showComments>
-          <div class="row form-group">
-            <label>Feedback:</label>
-            <div ng-if="commentsAll != NULL">
-              <ul class=list-group style="overflow-y: scroll; max-height: 250px">
-                <li id={{$index}} ng-repeat="comment in commentsAll" ng-transclude-custom class=list-group-item>
-                  <article>{{comment.COMMENTO}}</article>
-                </li>
-              </ul>
-            </div>
-            <div ng-if="commentsAll == NULL">
-              <li class=list-group-item>
-                <article>No comment yet</article>
-              </li>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
+<div>
+  
+  <ul class="nav nav-tabs" tab role=tablist>
+    <li role=presentation class=active><a href=#profile aria-controls=profile role=tab data-toggle=tab>Translator
+      Profile</a>
+    </li>
+    <li role=presentation><a href=#languages_pair aria-controls=languages_pair role=tab data-toggle=tab>Languages
+      Pair</a></li>
+    <li role=presentation><a href=#education aria-controls=education role=tab data-toggle=tab>Education</a>
+    </li>
+    <li role=presentation><a href=#certification aria-controls=certification role=tab data-toggle=tab>Certification</a>
+    </li>
+  </ul>
 
   
-  <div class=row_shadow style="padding: 40px 0px 40px 0px">
-    <div style=margin-left:30px>
-      <h2>LANGUAGE PAIR</h2>
-    </div>
-    <div class=row_shadow>
-      <div ng-if="pairList == NULL" class="alert alert-warning" role=alert>No pair list found</div>
-      <div ng-if="pairList != NULL">
-        <div id={{$index}} ng-repeat="pair in pairList">
-          <div class="panel panel-default well col-md-7" style=opacity:0.9>
+  <div class=tab-content>
+    <div role=tabpanel class="tab-pane fade in active" id=profile>
+      
+
+      <div class=container-fluid>
+        <h2 class=title>Translator Profile</h2>
+
+        <div class=container-inner>
+          <div class="panel panel-default" style=opacity:0.9>
             <div class=panel-body>
-              <div class="row form-group">
-                
-                <label class="col-xs-2 control-label text-right">From:</label>
-                <span class=col-sm-3>{{pair.FROM}}</span>
-                
-                <label class="col-xs-2 control-label text-right">To:</label>
-                <span class=col-sm-3>{{pair.TO}}</span>
-              </div>
-              <div class="row form-group">
-                
-                <label class="col-xs-2 control-label text-right">Field:</label>
-                <span class=col-sm-3>{{pair.FIELD}}</span>
-              </div>
-              <div class="row form-group">
-                
-                <label class="col-xs-2 control-label text-right">Service:</label>
-                <span class=col-sm-3>{{pair.SERVICE}}</span>
-              </div>
-              <div class="row form-group">
-                
-                <label class="col-xs-2 control-label text-right">Price:</label>
-                <span class=col-sm-3>{{pair.PRICE}}</span>
+              <div class="form-froup row">
+                <div style=float:right class="text-right col-sm-2">
+                  <form name=sendAJobForm ng-submit="" novalidate>
+                    <a href=#/send_a_job/{{traduttoreDetail.ID}} class="btn btn-lg btn-default">
+                      <i class="fa fa-envelope"> Send a Job
+                    </a>
+                  </form>
+                </div>
+
+                <div class="animated col-xs-2" data-animate=fadeInLeft data-animate-delay=400>
+                  <div id=container_image_profile>
+
+                    <img class=thumb_img width=180 height=180 ng-src="data:image/jpeg;base64,{{image}}">
+                  </div>
+                  <div style="pointer-events: none;margin:10px 25px" id=div_rating class=star-rating star-rating rating-value=traduttoreDetail.RATING/traduttoreDetail.NUM_RATING data-max=5>
+                  </div>
+                  <div class=text-center ng-show=!showComments>
+                    <a style="cursor: pointer" ng-click="showComments=true;">
+                      <i class="fa fa-plus"></i> show comments
+                    </a>
+                  </div>
+                  <div class=text-center ng-show=showComments>
+                    <a style="cursor: pointer" ng-click="showComments=false;">
+                      <i class="fa fa-minus"></i> hide comments
+                    </a>
+                  </div>
+                </div>
 
                 
-                <label class="col-xs-2 control-label text-right">Currency:</label>
-                <span class=col-sm-3>{{pair.CURRENCY}}</span>
+                <div class="col-xs-4 animated" data-animate=fadeInRight data-animate-delay=400>
+                  <div class="row form-group">
+                    <label class="col-xs-5 control-label text-right">Name Surname:</label>
+                    <span class=col-sm-5>{{traduttoreDetail.NOME}} {{traduttoreDetail.COGNOME}}</span>
+
+                  </div>
+
+                  
+                  <div class="form-group row">
+                    <label class="col-xs-5 control-label text-right">Birthday:</label>
+                    <span class=col-sm-5>{{traduttoreDetail.DATA_NASCITA | date:'dd/MM/yyyy'}}</span>
+                  </div>
+
+                  
+                  <div class="form-group row">
+                    <label class="col-xs-5 control-label text-right">City:</label>
+                    <span class=col-sm-5>{{traduttoreDetail.CITTA}}, {{traduttoreDetail.PAESE}}</span>
+                  </div>
+
+                  
+                  <div class="form-group row">
+                    <label class="col-xs-5 control-label text-right">Mothertongue:</label>
+                    <span class=col-sm-5>{{traduttoreDetail.MADRELINGUA}}</span>
+                  </div>
+
+                  
+                  <div class="form-group row">
+                    <label class="col-xs-5 control-label text-right">VAT number:</label>
+                    <span class=col-sm-5>{{traduttoreDetail.VAT}}</span>
+                  </div>
+                </div>
+
+              </div>
+
+              <div style=margin-top:10px class="form-group row col-xs-6" ng-show=showComments>
+                <label>{{traduttoreDetail.NOME}}' feedback:</label>
+                <ul class=list-group>
+                  <div ng-if="commentsAll != NULL">
+                    <li ng-repeat="comment in commentsAll" ng-transclude-custom class=list-group-item>
+                      <article>{{comment.COMMENTO}}</article>
+                    </li>
+                  </div>
+                  <div ng-if="commentsAll == NULL">
+                    <li class=list-group-item>
+                      <article>No comment yet</article>
+                    </li>
+                  </div>
+                </ul>
               </div>
             </div>
           </div>
         </div>
+        
       </div>
-      <div class=clearfix></div>
+      
     </div>
-  </div>
+    
 
 
-  
-  <div class=row_shadow style="padding: 40px 0px 40px 0px">
-    <div style=margin-left:30px>
-      <h2>EDUCATION</h2>
-    </div>
-    <div class=row_shadow>
-      <div ng-if="educationList == NULL" class="alert alert-warning" role=alert>No education found</div>
-      <div ng-if="educationList != NULL">
-        <div id={{$index}} ng-repeat="education in educationList">
-          <div class="panel panel-default well col-md-7" style=opacity:0.9>
-            <div class=panel-body>
-              <div class="row form-group">
-                
-                <label class="col-xs-2 control-label text-right">Institute:</label>
-                <span class=col-sm-3>{{education.INSTITUTE}}</span>
-                
-                <label class="col-xs-2 control-label text-right">Field:</label>
-                <span class=col-sm-3>{{education.FIELD}}</span>
+    <div role=tabpanel class="tab-pane fade" id=languages_pair>
+      
+      <div class=container-fluid>
+        <h2 class=title>Language Pair</h2>
+
+        <div class=container-inner>
+          <div ng-if="pairList == NULL" class="alert alert-warning" role=alert>No pair list found</div>
+          <div ng-if="pairList != NULL">
+            <div id={{$index}}_pairList ng-repeat="pair in pairList">
+              <div class="panel panel-default">
+                <div class=panel-body>
+                  <div class="row form-group">
+                    
+                    <label class="col-xs-2 control-label text-right">From:</label>
+                    <span class=col-sm-3>{{pair.FROM}}</span>
+                    
+                    <label class="col-xs-2 control-label text-right">To:</label>
+                    <span class=col-sm-3>{{pair.TO}}</span>
+                  </div>
+                  <div class="row form-group">
+                    
+                    <label class="col-xs-2 control-label text-right">Field:</label>
+                    <span class=col-sm-3>{{pair.FIELD}}</span>
+                  </div>
+                  <div class="row form-group">
+                    
+                    <label class="col-xs-2 control-label text-right">Service:</label>
+                    <span class=col-sm-3>{{pair.SERVICE}}</span>
+                  </div>
+                  <div class="row form-group">
+                    
+                    <label class="col-xs-2 control-label text-right">Price:</label>
+                    <span class=col-sm-3>{{pair.PRICE}}</span>
+
+                    
+                    <label class="col-xs-2 control-label text-right">Currency:</label>
+                    <span class=col-sm-3>{{pair.CURRENCY}}</span>
+                  </div>
+                </div>
               </div>
+            </div>
+          </div>
+          <div class=clearfix></div>
+        </div>
+      </div>
+    </div>
+    <div role=tabpanel class="tab-pane fade" id=education>
+      
+      <div class=container-fluid>
+        <h2 class=title>Education</h2>
+
+        <div class=container-inner>
+          <div class="panel panel-default" style=opacity:0.9>
+            <div class=panel-body>
+              <div ng-if="educationList == NULL" class="alert alert-warning" role=alert>No education found</div>
+              <div ng-if="educationList != NULL">
+                <div id={{$index}} ng-repeat="education in educationList">
+                  <div class="panel panel-default">
+                    <div class=panel-body>
+                      <div class="row form-group">
+                        
+                        <label class="col-xs-2 control-label text-right">Institute:</label>
+                        <span class=col-sm-3>{{education.INSTITUTE}}</span>
+                        
+                        <label class="col-xs-2 control-label text-right">Field:</label>
+                        <span class=col-sm-3>{{education.FIELD}}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class=clearfix></div>
             </div>
           </div>
         </div>
       </div>
-      <div class=clearfix></div>
     </div>
-  </div>
+    <div role=tabpanel class="tab-pane fade" id=certification>
+      
+      <div class=container-fluid>
+        <h2 class=title>Certification</h2>
 
-  
-  <div class=row_shadow style="padding: 40px 0px 40px 0px">
-    <div style=margin-left:30px>
-      <h2>CERTIFICATION</h2>
-    </div>
-    <div class=row_shadow>
-      <div ng-if="certificationList == NULL" class="alert alert-warning" role=alert>No certification found</div>
-      <div ng-if="certificationList != NULL">
-        <div id={{$index}} ng-repeat="certification in certificationList">
-          <div class="panel panel-default well col-md-7" style=opacity:0.9>
+        <div class=container-inner>
+          <div class="panel panel-default" style=opacity:0.9>
             <div class=panel-body>
-              <div class="row form-group">
-                
-                <label class="col-xs-2 control-label text-right">Institute:</label>
-                <span class=col-sm-3>{{certification.INSTITUTE}}</span>
-                
-                <label class="col-xs-2 control-label text-right">Date:</label>
-                <span class=col-sm-3>{{certification.DATE | date:'dd/MM/yyyy'}}</span>
+              <div ng-if="certificationList == NULL" class="alert alert-warning" role=alert>No certification found
               </div>
-              <div class="row form-group">
-                
-                <label class="col-xs-2 control-label text-right">Certification:</label>
-                <span class=col-sm-3>{{certification.CERTIFICATION}}</span>
+              <div ng-if="certificationList != NULL">
+                <div id={{$index}} ng-repeat="certification in certificationList">
+                  <div class="panel panel-default">
+                    <div class=panel-body>
+                      <div class="row form-group">
+                        
+                        <label class="col-xs-2 control-label text-right">Institute:</label>
+                        <span class=col-sm-3>{{certification.INSTITUTE}}</span>
+                        
+                        <label class="col-xs-2 control-label text-right">Date:</label>
+                        <span class=col-sm-3>{{certification.DATE | date:'dd/MM/yyyy'}}</span>
+                      </div>
+                      <div class="row form-group">
+                        
+                        <label class="col-xs-2 control-label text-right">Certification:</label>
+                        <span class=col-sm-3>{{certification.CERTIFICATION}}</span>
+                      </div>
+                      <div class="row form-group">
+                        
+                        <label class="col-xs-2 control-label text-right">Level:</label>
+                        <span class=col-sm-3>{{certification.LEVEL}}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="row form-group">
-                
-                <label class="col-xs-2 control-label text-right">Level:</label>
-                <span class=col-sm-3>{{certification.LEVEL}}</span>
-              </div>
+              <div class=clearfix></div>
             </div>
           </div>
         </div>
       </div>
-      <div class=clearfix></div>
     </div>
   </div>
 </div>

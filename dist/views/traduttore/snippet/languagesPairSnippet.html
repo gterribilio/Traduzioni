@@ -1,13 +1,12 @@
-<div class="row_shadow" style="padding: 40px 0px 40px 0px;">
-  <div style="margin-left:30px;">
-    <h2>LANGUAGE PAIR</h2>
-  </div>
-  <div class="row_shadow">
+<div class="container-fluid">
+  <h2 class="title">Language Pair</h2>
+
+  <div class="container-inner">
     <div ng-if="pairList == NULL" class="alert alert-warning" role="alert">At the moment you don't have any languages
       pair! Can we help you?
     </div>
     <form name="pairForm" ng-submit="doAddPair()" novalidate> <!--disabilito validazione html5-->
-      <div class="panel panel-default well col-md-10" style="opacity:0.9;">
+      <div class="panel panel-default" style="opacity:0.9;">
         <div class="panel-body">
           <div class="row form-group">
             <!-- FROM -->
@@ -84,7 +83,7 @@
 
     <div ng-if="pairList.length !=0">
       <div id="{{$index}}" ng-repeat="pair in pairList">
-        <div class="panel panel-default well col-md-10" style="opacity:0.9;">
+        <div class="panel panel-default" style="opacity:0.9;">
           <div class="panel-body">
             <div class="row form-group">
               <!-- FROM -->

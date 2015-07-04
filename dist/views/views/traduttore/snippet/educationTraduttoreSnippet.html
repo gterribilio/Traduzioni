@@ -1,13 +1,12 @@
-<div class=row_shadow style="padding: 40px 0px 40px 0px">
-  <div style=margin-left:30px>
-    <h2>EDUCATION</h2>
-  </div>
-  <div class=row_shadow>
+<div class=container-fluid>
+  <h2 class=title>Education</h2>
+
+  <div class=container-inner>
     <div ng-if="educationList == NULL" class="alert alert-warning" role=alert>At the moment you don't have any
       education skills! Can we help you?
     </div>
     <form name=educationForm ng-submit=doAddEducation() novalidate> 
-      <div class="panel panel-default well col-md-10" style=opacity:0.9>
+      <div class="panel panel-default" style=opacity:0.9>
         <div class=panel-body>
           <div class="row form-group">
             
@@ -38,7 +37,7 @@
 
     <div ng-if="educationList.length !=0">
       <div id={{$index}} ng-repeat="education in educationList">
-        <div class="panel panel-default well col-md-10" style=opacity:0.9>
+        <div class="panel panel-default" style=opacity:0.9>
           <div class=panel-body>
             <div class="row form-group">
               

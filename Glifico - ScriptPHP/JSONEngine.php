@@ -14,19 +14,19 @@ require_once("./upload.php");
 
 $json = array();
 //leggo l'azione passata in "GET" da eseguire per settare bene la query
-$azione = $_GET['action'];
+$azione = mysql_escape_mimic($_GET['action']);
 $callback = $_GET['callback'];
 
 switch ($azione) {
 
 	//helper codeTable
 	case "get_codetable":
-		$codetable=$_GET['codetable'];
+		$codetable=mysql_escape_mimic($_GET['codetable']);
 		$query = "SELECT ID_ITEM,DESCRIZIONE FROM CODETABLE WHERE ID_CODETABLE='".$codetable."'";
 	break;
 
 	case "getUserData":
-		$user_id = $_GET['user_id'];
+		$user_id = mysql_escape_mimic($_GET['user_id']);
 		$query = "SELECT U.ID, U.RUOLO, U.EMAIL, U.CITTA, U.PAESE, U.VAT FROM UTENTE U WHERE U.ID=".$user_id;
 		$result = execQuery($query);
 		while($row1 = @mysql_fetch_array($result, MYSQL_ASSOC)) {
@@ -55,11 +55,11 @@ switch ($azione) {
 	
 	case "search":
 		$sql="";
-		$mothertongueSearchFrom=$_GET['mothertongueSearchFrom'];
-		$mothertongueSearchTo=$_GET['mothertongueSearchTo'];
-		$service=$_GET['service'];
-		$user_id=$_GET['user_id'];
-		$field=$_GET['field'];
+		$mothertongueSearchFrom=mysql_escape_mimic($_GET['mothertongueSearchFrom']);
+		$mothertongueSearchTo=mysql_escape_mimic($_GET['mothertongueSearchTo']);
+		$service=mysql_escape_mimic($_GET['service']);
+		$user_id=mysql_escape_mimic($_GET['user_id']);
+		$field=mysql_escape_mimic($_GET['field']);
 		if(isset($field)) $sql.= " AND FIELD='".$field."'";
 		$pricefrom=$_GET['pricefrom'];
 		if(isset($pricefrom)) $sql.= " AND PRICE>=".$pricefrom;
@@ -84,7 +84,7 @@ switch ($azione) {
 	break;
 	
 	case "getImagePath":
-		$user_id=$_GET['user_id'];
+		$user_id=mysql_escape_mimic($_GET['user_id']);
 		$query = "SELECT IMAGE FROM UTENTE WHERE ID=".$user_id;
 		$result = execQuery($query);
 		while($row1 = @mysql_fetch_array($result, MYSQL_ASSOC)) {
@@ -92,25 +92,34 @@ switch ($azione) {
 		}
 	break;
 
+	case "getBlogArticle":
+		$query = "SELECT * FROM BLOG_ARTICLE ORDER BY DATA_CREAZIONE DESC LIMIT 6";
+	break;
+
+	case "getAllBlogArticle":
+		$query = "SELECT * FROM BLOG_ARTICLE ORDER BY DATA_CREAZIONE DESC";
+	break;
+
 	//invio email con subject e text
 	case "contact":
-		$email=$_GET['email'];
-		$subject=addslashes($_GET['subject']);
-		$text=$_GET['text'];
-		sendMail($email,$subject,$text);
+		$email=mysql_escape_mimic($_GET['email']);
+		$subject=mysql_escape_mimic($_GET['subject']);
+		$text=mysql_escape_mimic($_GET['text']);
+		sendCustomMail($email,"luca.sapone86@gmail.com ",$subject, "Questo messaggio è stato inviato da ".$email."</p><p>".$text."</p>");
+
 	break;
 	
 	//checkUsername
 	case "checkUsername":
-		$username=$_GET['username'];
+		$username=mysql_escape_mimic($_GET['username']);
 		$query="SELECT * FROM UTENTE WHERE BINARY USERNAME='".$username."'";
 	break;
 
 	//aggiorna lo status della traduzione
 	case "update_job_status":
-		$id_job = $_GET['id_job'];
-		$tipo_job = $_GET['tipo_job'];
-		$status_job = $_GET['status'];
+		$id_job = mysql_escape_mimic($_GET['id_job']);
+		$tipo_job = mysql_escape_mimic($_GET['tipo_job']);
+		$status_job = mysql_escape_mimic($_GET['status']);
 		if($tipo_job=="translation") {
 			$query="UPDATE JOBS_TRANSLATION set STATO='".$status_job."' WHERE ID=".$id_job;
 		}
@@ -123,9 +132,9 @@ switch ($azione) {
 	// In teoria bisogna solo settarlo nel caso competition, nel caso engagment viene già
 	// assegnato dall'agenzia!
 	case "doAccept":
-		$id_job = $_GET['id_job'];
-		$tipo_job = $_GET['tipo_job'];
-		$user_id = $_GET['user_id'];
+		$id_job = mysql_escape_mimic($_GET['id_job']);
+		$tipo_job = mysql_escape_mimic($_GET['tipo_job']);
+		$user_id = mysql_escape_mimic($_GET['user_id']);
 		if($tipo_job=="translation") {
 			$query="UPDATE JOBS_TRANSLATION set ID_TRADUTTORE='".$user_id."' WHERE ID=".$id_job;
 		}
@@ -136,9 +145,9 @@ switch ($azione) {
 
 	//quando il traduttore accetta il lavoro, bisogna settare ID_TRADUTTORE
 	case "doDecline":
-		$id_job = $_GET['id_job'];
-		$tipo_job = $_GET['tipo_job'];
-		$user_id = $_GET['user_id'];
+		$id_job = mysql_escape_mimic($_GET['id_job']);
+		$tipo_job = mysql_escape_mimic($_GET['tipo_job']);
+		$user_id = mysql_escape_mimic($_GET['user_id']);
 		$jsonData = array();
 		$jsonData2 = array();
 		if($tipo_job=="translation") {
@@ -185,9 +194,9 @@ switch ($azione) {
 
 	//quando il traduttore accetta il lavoro, bisogna settare ID_TRADUTTORE
 	case "doSend":
-		$id_job = $_GET['id_job'];
-		$tipo_job = $_GET['tipo_job'];
-		$id_agenzia = $_GET['id_agenzia'];
+		$id_job = mysql_escape_mimic($_GET['id_job']);
+		$tipo_job = mysql_escape_mimic($_GET['tipo_job']);
+		$id_agenzia = mysql_escape_mimic($_GET['id_agenzia']);
 		$jsonData = array();
 
 		//recupero la mail dell'agenzia a cui inviare la mail
@@ -203,9 +212,9 @@ switch ($azione) {
 	break;
 
 	case "save_job":
-		$id_job=$_GET['id_job'];
-		$text=$_GET['text'];
-		$tipo_job=$_GET['tipo_job'];
+		$id_job=mysql_escape_mimic($_GET['id_job']);
+		$text=mysql_escape_mimic($_GET['text']);
+		$tipo_job=mysql_escape_mimic($_GET['tipo_job']);
 		if($tipo_job=="translation") {
 			$query="UPDATE JOBS_TRANSLATION SET TEXT_DONE='".$text."' WHERE ID=".$id_job;
 
@@ -216,13 +225,13 @@ switch ($azione) {
 
 	//aggiunge lingue al profilo dell'utente
 	case "addPair":
-		$from=$_GET['from'];
-		$to=$_GET['to'];
-		$field=$_GET['field'];
-		$service=$_GET['service'];
-		$price=$_GET['price'];
-		$currency=$_GET['currency'];
-		$user_id=$_GET['user_id'];
+		$from=mysql_escape_mimic($_GET['from']);
+		$to=mysql_escape_mimic($_GET['to']);
+		$field=mysql_escape_mimic($_GET['field']);
+		$service=mysql_escape_mimic($_GET['service']);
+		$price=mysql_escape_mimic($_GET['price']);
+		$currency=mysql_escape_mimic($_GET['currency']);
+		$user_id=mysql_escape_mimic($_GET['user_id']);
 		$query="SELECT * FROM `LANGUAGE_PAIR` WHERE `FROM`='".$from."' AND `TO`='".$to."' AND SERVICE='".$service."' AND FIELD='".$field."' AND USER_ID=".$user_id;
 		$result = execQuery($query);
 		if(mysql_num_rows($result)==0) {
@@ -236,14 +245,14 @@ switch ($azione) {
 
 	//get language pair
 	case "getPair":
-		$user_id=$_GET['user_id'];
+		$user_id=mysql_escape_mimic($_GET['user_id']);
 		$query = "SELECT * FROM `LANGUAGE_PAIR` WHERE USER_ID=".$user_id;
 	break;
 
 	//delete language pair
 	case "deletePair":
-		$pair_id=$_GET['pair_id'];
-		$user_id=$_GET['user_id'];
+		$pair_id=mysql_escape_mimic($_GET['pair_id']);
+		$user_id=mysql_escape_mimic($_GET['user_id']);
 		$query = "DELETE FROM `LANGUAGE_PAIR` WHERE ID=".$pair_id;
 		execQuery($query);
 		$query = "SELECT * FROM `LANGUAGE_PAIR` WHERE USER_ID=".$user_id;
@@ -251,9 +260,9 @@ switch ($azione) {
 
 	//aggiunge education al profilo dell'utente
 	case "addEducation":
-		$institute=$_GET['institute'];
-		$field=$_GET['field'];
-		$user_id=$_GET['user_id'];		
+		$institute=mysql_escape_mimic($_GET['institute']);
+		$field=mysql_escape_mimic($_GET['field']);
+		$user_id=mysql_escape_mimic($_GET['user_id']);		
 		$query="SELECT * FROM `EDUCATION` WHERE `INSTITUTE`='".$institute."' AND `FIELD`='".$field."' AND USER_ID=".$user_id;
 		$result = execQuery($query);
 		if(mysql_num_rows($result)==0) {
@@ -267,14 +276,14 @@ switch ($azione) {
 
 	//get Education
 	case "getEducation":
-		$user_id=$_GET['user_id'];
+		$user_id=mysql_escape_mimic($_GET['user_id']);
 		$query = "SELECT * FROM `EDUCATION` WHERE USER_ID=".$user_id;
 	break;
 
 	//delete Education
 	case "deleteEducation":
 		$education_id=$_GET['education_id'];
-		$user_id=$_GET['user_id'];
+		$user_id=mysql_escape_mimic($_GET['user_id']);
 		$query = "DELETE FROM `EDUCATION` WHERE ID=".$education_id;
 		execQuery($query);
 		$query = "SELECT * FROM `EDUCATION` WHERE USER_ID=".$user_id;
@@ -282,11 +291,11 @@ switch ($azione) {
 
 	//aggiunge certification al profilo dell'utente
 	case "addCertification":
-		$institute=$_GET['institute'];
-		$date=$_GET['date'];
-		$certification=$_GET['certification'];
-		$level=$_GET['level'];
-		$user_id=$_GET['user_id'];
+		$institute=mysql_escape_mimic($_GET['institute']);
+		$date=mysql_escape_mimic($_GET['date']);
+		$certification=mysql_escape_mimic($_GET['certification']);
+		$level=mysql_escape_mimic($_GET['level']);
+		$user_id=mysql_escape_mimic($_GET['user_id']);
 		
 		$query="SELECT * FROM `CERTIFICATION` WHERE `INSTITUTE`='".$institute."' AND `CERTIFICATION`='".$certification."' AND `LEVEL`='".$level."' AND USER_ID=".$user_id;
 		$result = execQuery($query);
@@ -301,14 +310,14 @@ switch ($azione) {
 
 	//get certification
 	case "getCertification":
-		$user_id=$_GET['user_id'];
+		$user_id=mysql_escape_mimic($_GET['user_id']);
 		$query = "SELECT * FROM `CERTIFICATION` WHERE USER_ID=".$user_id;
 	break;
 
 	//delete certification
 	case "deleteCertification":
-		$certification_id=$_GET['certification_id'];
-		$user_id=$_GET['user_id'];
+		$certification_id=mysql_escape_mimic($_GET['certification_id']);
+		$user_id=mysql_escape_mimic($_GET['user_id']);
 		$query = "DELETE FROM `CERTIFICATION` WHERE ID=".$certification_id;
 		execQuery($query);
 		$query = "SELECT * FROM `CERTIFICATION` WHERE USER_ID=".$user_id;
@@ -316,7 +325,7 @@ switch ($azione) {
 
 	//ottieni translation jobs in deadline
 	case "getInDeadlineTranslationJobs":
-		$user_id=$_GET['user_id'];
+		$user_id=mysql_escape_mimic($_GET['user_id']);
 		$query = "SELECT * FROM JOBS_TRANSLATION WHERE
 		IF(STATO = '".$GLOBALS["statiPrenotazione"]["DECLINED"]."' AND ID_TRADUTTORE !=".$user_id." , true, false) OR
 		IF(STATO = '".$GLOBALS["statiPrenotazione"]["ENGAGMENT"]."' AND ID_TRADUTTORE= ".$user_id."  , true, false) OR
@@ -329,13 +338,13 @@ switch ($azione) {
 
 	//ottieni translation jobs done
 	case "getDoneTranslationJobs":
-		$user_id=$_GET['user_id'];
+		$user_id=mysql_escape_mimic($_GET['user_id']);
 		$query = "SELECT * FROM JOBS_TRANSLATION WHERE STATO IN ('".$GLOBALS["statiPrenotazione"]["CLOSED"]."') AND ID_TRADUTTORE=".$user_id." ORDER BY DATA_SCADENZA";
 	break;
 
 	//ottieni correction jobs in deadline
 	case "getInDeadlineCorrectionJobs":
-		$user_id=$_GET['user_id'];
+		$user_id=mysql_escape_mimic($_GET['user_id']);
 		$query = "SELECT * FROM JOBS_CORRECTION WHERE
 		IF(STATO = '".$GLOBALS["statiPrenotazione"]["DECLINED"]."' AND ID_TRADUTTORE !=".$user_id." , true, false) OR
 		IF(STATO = '".$GLOBALS["statiPrenotazione"]["ENGAGMENT"]."' AND ID_TRADUTTORE= ".$user_id."  , true, false) OR
@@ -348,33 +357,33 @@ switch ($azione) {
 
 	//ottieni correction jobs done
 	case "getDoneCorrectionJobs":
-		$user_id=$_GET['user_id'];
+		$user_id=mysql_escape_mimic($_GET['user_id']);
 		$query = "SELECT * FROM JOBS_CORRECTION WHERE STATO IN ('".$GLOBALS["statiPrenotazione"]["CLOSED"]."') AND ID_TRADUTTORE=".$user_id." ORDER BY DATA_SCADENZA";
 	break;
 	
 	//ottieni gli ultimi 3 commenti dell'agenzia
 	case "getAgencyComments":
-		$user_id=$_GET['user_id'];
+		$user_id=mysql_escape_mimic($_GET['user_id']);
 		$query = "SELECT * FROM COMMENT WHERE ID_AGENZIA=".$user_id." ORDER BY DATA DESC LIMIT 3";
 	break;
 	
 	//ottieni tutti i commenti dell'agenzia
 	case "getAllAgencyComments":
-		$user_id=$_GET['user_id'];
+		$user_id=mysql_escape_mimic($_GET['user_id']);
 		$query = "SELECT * FROM COMMENT WHERE ID_AGENZIA=".$user_id." ORDER BY DATA";
 	break;
 	
 	//ottieni gli ultimi 3 commenti del traduttore
 	case "getAllTranslatorComments":
-		$user_id=$_GET['user_id'];
+		$user_id=mysql_escape_mimic($_GET['user_id']);
 		$query = "SELECT * FROM COMMENT WHERE ID_TRADUTTORE=".$user_id." ORDER BY DATA";
 	break;
 
 	//login utente
 	case "login":
 		$is_mod_utente=false;
-		$user=$_GET['username'];
-		$password=$_GET['password'];
+		$user=mysql_escape_mimic($_GET['username']);
+		$password=mysql_escape_mimic($_GET['password']);
 		/*OPERATORE BINARY PERMETTE DI ESEGUIRE QUERY CASE SENSITIVE*/
 		$query = "SELECT U.ID, U.USERNAME, U.PASSWORD, U.SALE, U.RUOLO, U.EMAIL, U.CITTA, U.PAESE, U.VAT FROM UTENTE U WHERE BINARY U.USERNAME='".$user."'";
 	break;
@@ -383,26 +392,26 @@ switch ($azione) {
 	case "updateProfile":
 		$is_mod_utente=true;
 		//campi traduttore
-		$nomeTraduttore=$_GET['nomeTraduttore'];
-		$cognomeTraduttore=$_GET['cognomeTraduttore'];
-		$birthdayTraduttore=$_GET['birthdayTraduttore'];
-		$mothertongueTraduttore=$_GET['mothertongueTraduttore'];
-		$vat=$_GET['vat'];
+		$nomeTraduttore=mysql_escape_mimic($_GET['nomeTraduttore']);
+		$cognomeTraduttore=mysql_escape_mimic($_GET['cognomeTraduttore']);
+		$birthdayTraduttore=mysql_escape_mimic($_GET['birthdayTraduttore']);
+		$mothertongueTraduttore=mysql_escape_mimic($_GET['mothertongueTraduttore']);
+		$vat=mysql_escape_mimic($_GET['vat']);
 		
 		//campi agenzia
-		$nomeAgenzia=$_GET['nome'];
-		$impiegatiAgenzia=$_GET['impiegati'];
-		$indirizzoAgenzia=$_GET['indirizzo'];
-		$codicePostale=$_GET['codicePostale'];
-		$telefonoAgenzia=$_GET['telefono'];
-		$webAgenzia=$_GET['web'];
+		$nomeAgenzia=mysql_escape_mimic($_GET['nome']);
+		$impiegatiAgenzia=mysql_escape_mimic($_GET['impiegati']);
+		$indirizzoAgenzia=mysql_escape_mimic($_GET['indirizzo']);
+		$codicePostale=mysql_escape_mimic($_GET['codicePostale']);
+		$telefonoAgenzia=mysql_escape_mimic($_GET['telefono']);
+		$webAgenzia=mysql_escape_mimic($_GET['web']);
 		
 		//campi comuni
-		$citta=$_GET['citta'];
-		$country=$_GET['country'];
-		$ruolo=$_GET['ruolo'];
-		$id=$_GET['id'];
-		$email= $_GET['email'];
+		$citta=mysql_escape_mimic($_GET['citta']);
+		$country=mysql_escape_mimic($_GET['country']);
+		$ruolo=mysql_escape_mimic($_GET['ruolo']);
+		$id=mysql_escape_mimic($_GET['id']);
+		$email= mysql_escape_mimic($_GET['email']);
 
 		$query1 = "UPDATE UTENTE SET CITTA='".$citta."', PAESE='".$country."', VAT='".$vat."', EMAIL='".$email."' WHERE ID=".$id;
 		execQuery($query1);
@@ -422,14 +431,20 @@ switch ($azione) {
 	
 	case "register":
 		//modulo di registrazione
-		$username=$_GET['username'];
-		$email=$_GET['email'];
-		$query = "SELECT U.ID FROM `UTENTE` U WHERE EMAIL='".$email."'";
+		$username=mysql_escape_mimic($_GET['username']);
+		$email=mysql_escape_mimic($_GET['email']);
+		$query = "SELECT U.ID FROM `UTENTE` U WHERE USERNAME='".$username."'";
+	break;
+
+	case "registerTemp":
+		//modulo di registrazione
+		$email=mysql_escape_mimic($_GET['email']);
+		$query = "SELECT U.ID FROM `UTENTE_TEMP` U WHERE EMAIL='".$email."'";
 	break;
 
 	case "dettaglio_job":
-		$id_job = $_GET['id_job'];
-		$tipo_job = $_GET['tipo_job'];
+		$id_job = mysql_escape_mimic($_GET['id_job']);
+		$tipo_job = mysql_escape_mimic($_GET['tipo_job']);
 		if($tipo_job=="translation") {
 			$query="SELECT * FROM JOBS_TRANSLATION where ID=".$id_job;
 		}
@@ -439,7 +454,7 @@ switch ($azione) {
 	break;
 
 	case "reportAbuse":
-		$id_commento=$_GET['id'];
+		$id_commento=mysql_escape_mimic($_GET['id']);
 		sendCustomMail("reportAbuse@explico.com ", "luca.sapone86@gmail.com ", "Report abuse sul commento ".$id_commento, 
 		"Ciao Luca, è stato inviato il report abuse per il commento <strong>".$id_commento."</strong>");
 	break;
@@ -455,7 +470,7 @@ if(!empty($query)) {
 }
 
 if($azione=="getUserProfilePicture") {
-	$uid = $_GET['user_id'];
+	$uid = mysql_escape_mimic($_GET['user_id']);
 	$query = "SELECT * FROM UTENTE WHERE ID =".$uid;
 	$result = execQuery($query);
 	$row = @mysql_fetch_array($result, MYSQL_ASSOC);
@@ -503,30 +518,30 @@ if($azione=="login" && count($json)>0) {
 else if($azione=="register") {
 //SE LA SELECT DI PRIMA HA GIA' TORNATO RISULTATI, SIGNIFICA CHE ESISTE GIA' L'UTENTE
 	if(count($json)>0) {
-		$json = array("errCode"=>"406", "errMsg"=>"Email already present.");
+		$json = array("errCode"=>"406", "errMsg"=>"Username already present.");
 	}
 	else {
 
-		$username=$_GET['username'];
-		$password=$_GET['password'];
-		$origin_password=$_GET['password'];
+		$username=mysql_escape_mimic($_GET['username']);
+		$password=mysql_escape_mimic($_GET['password']);
+		$origin_password=mysql_escape_mimic($_GET['password']);
 		$sale=md5($password.$username.rand_string(10));
 		$password=md5($sale.$password);
-		$ruolo=$_GET['ruolo'];
-		$email=$_GET['email'];
-		$country=$_GET['country'];
-		$city=$_GET['city'];
-		$pictureUrl = $_GET['pictureUrl'];
-		$social = $_GET['social'];
+		$ruolo=mysql_escape_mimic($_GET['ruolo']);
+		$email=mysql_escape_mimic($_GET['email']);
+		$country=mysql_escape_mimic($_GET['country']);
+		$city=mysql_escape_mimic($_GET['city']);
+		$pictureUrl = mysql_escape_mimic($_GET['pictureUrl']);
+		$social = mysql_escape_mimic($_GET['social']);
 		
 //campi traduttore
-		$nome=$_GET['nome'];
-		$cognome=$_GET['cognome'];
-		$mothertongue=$_GET['mothertongue'];
+		$nome=mysql_escape_mimic($_GET['nome']);
+		$cognome=mysql_escape_mimic($_GET['cognome']);
+		$mothertongue=mysql_escape_mimic($_GET['mothertongue']);
 
 //campi agenzia
-		$employees=$_GET['employees'];
-		$website=$_GET['website'];
+		$employees=mysql_escape_mimic($_GET['employees']);
+		$website=mysql_escape_mimic($_GET['website']);
 
 		$query="INSERT INTO `UTENTE` (`ID`, `USERNAME`, `PASSWORD`, `SALE`, `RUOLO`, `EMAIL`, `CITTA`, `PAESE`, `IMAGE`, `PAYPAL`, `IBAN`) VALUES
 		(NULL, '".$username."','".$password."', '".$sale."', '".$ruolo."', '".$email."', '".$city."', '".$country."', NULL, NULL, NULL)";
@@ -565,8 +580,25 @@ else if($azione=="register") {
 //TODO se ci saranno altri ruoli
 		}
 		$json = array("Risultato"=>"OK");
+	}	
+} 
+
+else if($azione=="registerTemp") {
+//SE LA SELECT DI PRIMA HA GIA' TORNATO RISULTATI, SIGNIFICA CHE ESISTE GIA' L'UTENTE
+	if(count($json)>0) {
+		$json = array("errCode"=>"406", "errMsg"=>"Email already present.");
 	}
-} else if($azione=="checkUsername") {
+	else {
+
+		$type=mysql_escape_mimic($_GET['type']);
+		$query="INSERT INTO `UTENTE_TEMP` (`EMAIL`, `TYPE`) VALUES
+		('".$email."','".$type."')";
+		$result = execQuery($query);
+		$json = array("Risultato"=>"OK");
+	}
+}
+
+else if($azione=="checkUsername") {
 	if(count($json)>0) {
 		$json = array("errCode"=>"408", "errMsg"=>"Username ".$username." already present");
 	}
@@ -588,11 +620,11 @@ if(count($json)>0) {
 	}else if($azione=="prenotazione"){
 //$jsonstring = json_encode(array("Risultato"=>"OK"));
 		$jsonstring = json_encode(array("errCode"=>"400","errMsg"=>"Slot già prenotato."));
-//sendMail($id_ripe);
+
 	}else if($azione=="annulla_ripetizione"){
 //$jsonstring = json_encode(array("Risultato"=>"OK"));
 		$jsonstring = json_encode(array("errCode"=>"401","errMsg"=>"Impossibile annullare la ripetizione. E' stata gia' confermata dal docente."));
-//sendMail($id_ripe);
+
 	}else if($azione=="contact" || $azione=="reportAbuse"){
 //va sempre a buon fine l'invio della mail
 		$jsonstring = array("Risultato"=>"OK");

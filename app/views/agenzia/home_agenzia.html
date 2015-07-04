@@ -1,9 +1,22 @@
-<!-- Home Traduttore -->
-<div class="background-default">
-  <!-- Profile Section -->
-  <div template-snippet name="agenzia/snippet/profileAgenziaSnippet" id="profileAgenziaSnippet" style="padding-top:100px;"></div>
+<!-- Home Agenzia -->
+<div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" tab role="tablist">
+    <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a>
+    </li>
+    <li role="presentation"><a href="#about" aria-controls="about" role="tab" data-toggle="tab">About Your Agency</a></li>
+  </ul>
 
-  <!-- Languages Pair Section -->
-  <div template-snippet name="agenzia/snippet/aboutYourAgencySnippet" id="aboutYourAgencySnippet" style="padding-top:30px;"></div>
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="profile">
+      <!-- Profile Section -->
+      <div template-snippet name="agenzia/snippet/profileAgenziaSnippet" id="profileAgenziaSnippet"></div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="about">
+      <!-- About Section -->
+      <div template-snippet name="agenzia/snippet/aboutYourAgencySnippet" id="aboutYourAgencySnippet"></div>
+    </div>
+  </div>
 
 </div>

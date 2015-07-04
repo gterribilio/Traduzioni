@@ -331,6 +331,27 @@ module.exports = function (grunt) {
           dest: '<%= yeoman.dist %>'
         }]
       },
+      customCSS: {
+        files: [
+          { src:"<%= yeoman.app %>/styles/custom.css", dest:"<%= yeoman.dist %>/styles/custom.css" },
+          { src:"<%= yeoman.app %>/styles/base.css", dest:"<%= yeoman.dist %>/styles/base.css" },
+          { src:"<%= yeoman.app %>/styles/grid.css", dest:"<%= yeoman.dist %>/styles/grid.css" },
+          { src:"<%= yeoman.app %>/styles/reset.css", dest:"<%= yeoman.dist %>/styles/reset.css" },
+          { src:"<%= yeoman.app %>/styles/layout.css", dest:"<%= yeoman.dist %>/styles/layout.css" },
+          { src:"<%= yeoman.app %>/styles/flexslider.css", dest:"<%= yeoman.dist %>/styles/flexslider.css" },
+          { src:"<%= yeoman.app %>/styles/media-queries.css", dest:"<%= yeoman.dist %>/styles/media-queries.css" },
+          { src:"<%= yeoman.app %>/styles/font-awesome.css", dest:"<%= yeoman.dist %>/styles/font-awesome.css" },
+          { src:"<%= yeoman.app %>/styles/theme/light.css", dest:"<%= yeoman.dist %>/styles/theme/light.css" },
+          { src:"<%= yeoman.app %>/styles/colors/blue.css", dest:"<%= yeoman.dist %>/styles/colors/blue.css" },
+        ]
+      },
+      customJS: {
+        files: [
+          { src:"<%= yeoman.app %>/scripts/SmoothScroll.js", dest:"<%= yeoman.dist %>/scripts/SmoothScroll.js" },
+          { src:"<%= yeoman.app %>/scripts/jquery.prettyPhoto.js", dest:"<%= yeoman.dist %>/scripts/jquery.prettyPhoto.js" },
+          { src:"<%= yeoman.app %>/scripts/jquery.flexslider.js", dest:"<%= yeoman.dist %>/scripts/jquery.flexslider.js" },
+        ]
+      },
       styles: {
         expand: true,
         cwd: '<%= yeoman.app %>/styles',
@@ -401,6 +422,8 @@ module.exports = function (grunt) {
     'concat',
     'ngAnnotate',
     'copy:dist',
+    'copy:customCSS',
+    'copy:customJS',
     'cdnify',
     'cssmin',
     'uglify',

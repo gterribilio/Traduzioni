@@ -1,0 +1,40 @@
+body{background-color: #1d1e1e;}
+h1, h2, h3, h4, h5, h6, a.blog-tag:hover {color:#fff;}
+body, .nav li a, .mobile-nav-button, 
+.callout h3, .price-table, .skill-bar-percent, a.blog-tag{color: #717171;}
+#preloader {background-color: #1d1e1e;}
+.loader {background: url(../../images/loader-dark.png); background-size:50px 50px;}
+.site-logo, .site-logo:hover, ul.blog-categories li a{color: #fff;}
+#navigation, .price-table, .skillbar, .callout-box, a.social-btn, a.blog-tag {background: #2f2f2f;}
+.nav ul, .option-set li a.selected,
+.option-set li a:hover, .price-table h4, a.price-button {background: #262626;}
+.option-set li a, .option-set li a.selected,
+.option-set li a:hover, {border:1px solid #2f2f2f;}
+.price-table ul li{border-bottom: 1px dashed #717171;}
+a.price-button:hover, a.price-button.selected{background: #191919;}
+.accordion{
+	background: 
+	url(../../images/pattern-1.png) left top repeat,
+	url(../../images/parallax/parallax-bg-4-dark.jpg) center center fixed;
+}
+.contact-form input,
+.contact-form textarea,
+input, textarea{color:#717171; background:rgba(47,47,47,.1);}
+.callout-box{border-left: 4px solid #6c6c6c;}
+a.social-btn{color:#6c6c6c;}
+.alert.congrats{
+	border:1px solid rgba(39,174,96,.2);
+	background: rgba(39,174,96,.6);
+	color: rgba(255,255,255,.5);}
+.alert.info{
+	border:1px solid rgba(41,128,185,.2);
+	background: rgba(41,128,185,.6);
+	color: rgba(255,255,255,.5);}
+.alert.warning{
+	border:1px solid rgba(243,156,18,.2);
+	background: rgba(243,156,18,.6);
+	color: rgba(255,255,255,.5);}
+.alert.danger{
+	border:1px solid rgba(192,57,43,.2);
+	background: rgba(192,57,43,.6);
+	color: rgba(255,255,255,.5);}

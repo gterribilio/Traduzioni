@@ -151,7 +151,7 @@ home.controller('HomeTraduttoreCtrl', ['$scope', '$rootScope', '$window', 'servi
               alert(JSON.stringify(data));
             }
             else {
-              $scope.image = data.base64;
+              $rootScope.image = data.base64;
             }
           });//end success
       }

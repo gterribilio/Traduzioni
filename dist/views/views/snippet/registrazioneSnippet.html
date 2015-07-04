@@ -1,0 +1,72 @@
+<form name=userForm novalidate> 
+
+
+<div class="form-group row col-sm-offset-4" ng-class="{ 'has-error' : userForm.username.$invalid && !userForm.username.$pristine}">
+  <div class=col-sm-5>
+    <input name=username class=form-control ng-model=username ng-blur=checkUsername(username) required ng-minlength=6 placeholder=Username*>
+  </div>
+  <div class="col-sm-7 text-justify">
+          <span ng-show="userForm.username.$invalid && !userForm.username.$pristine && userForm.username.$error.minlength" class=help-block>Username must be at least 6 characters</span>
+  </div>
+</div>
+
+
+<div class="form-group row col-sm-offset-4" ng-class="{ 'has-error' : userForm.password.$invalid && !userForm.password.$pristine }">
+
+  <div class=col-sm-5>
+    <input type=password id=password name=password class=form-control ng-model=password required placeholder=Password* ng-pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$/">
+  </div>
+  <div class="col-sm-7 text-justify">
+    <p ng-show="userForm.password.$invalid && !userForm.password.$pristine && userForm.password.$error.pattern" class=help-block>Password must be at least 4 characters, max 8 and must include at least one uppercase
+      character, one lowercase character
+      and a number</p>
+  </div>
+</div>
+
+
+<div class="form-group row col-sm-offset-4" ng-class="{ 'has-error' : userForm.passwordR.$invalid && !userForm.passwordR.$pristine}">
+
+  <div class=col-sm-5>
+    <input type=password id=passwordR name=passwordR pw-check=password class=form-control required ng-model=passwordR placeholder="Retype Password*" ng-pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$/">
+  </div>
+  <div class="col-sm-7 text-justify">
+          <span ng-show="userForm.passwordR.$invalid && !userForm.passwordR.$pristine && userForm.passwordR.$error.pattern" class=help-block>Password must be at least 4 characters, max 8 and must include at least one uppercase character, one lowercase character
+        and a number</span>
+  </div>
+</div>
+
+
+<div class="form-group row col-sm-offset-4 has-error text-justify" ng-show=userForm.passwordR.$error.pwmatch>
+  <span class=help-block>Password mismatching</span>
+</div>
+
+
+<div class="form-group row col-sm-offset-4" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+  <div class=col-sm-5>
+    <input type=email name=email class=form-control ng-model=email required placeholder=email*>
+  </div>
+</div>
+
+
+<div class="form-group row">
+  <div class=radio-inline>
+    <label><input type=radio ng-model=ruolo value=TRADUTTORE>Translator/Interpreter</label>
+  </div>
+  <div class=radio-inline>
+    <label><input type=radio ng-model=ruolo value=AGENZIA>Agency</label>
+  </div>
+</div>
+
+<div style=margin-top:10px class=form-group>
+  
+  <div class=text-center>
+    <button type=submit ng-click=doRegister() class=btn ng-disabled=userForm.$invalid><i class="fa fa-pencil-square-o"></i> Register
+    </button>
+    <a class="btn btn-social btn-linkedin" ng-click=linkedinRegister()>
+      <i class="fa fa-linkedin"></i> Register with LinkedIn</a>
+    <a class="btn btn-social btn-facebook" ng-click=facebookRegister()>
+      <i class="fa fa-facebook"></i> Register with Facebook</a>
+  </div>
+</div>
+
+</form>

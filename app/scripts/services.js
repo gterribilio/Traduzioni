@@ -59,7 +59,7 @@ services
            */
         }
       });
-    }
+    };
 
     /***************** RETURN PER TUTTI I SERVICES ****************/
     return service;

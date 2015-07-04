@@ -1,41 +1,43 @@
-<form name=userForm novalidate ng-controller=HomeCtrl>
-  <div class=row_shadow style="padding: 40px 0px 40px 0px">
-    <div style=margin-left:30px>
-      <h2>ABOUT YOUR AGENCY</h2>
-    </div>
-    <div class=row_shadow>
-      <div style=float:left><label>Your rating:</label></div>
-      <div style="pointer-events: none;margin-left:15px;margin-bottom:30px;float:left" id=div_rating class=star-rating star-rating rating-value=userData.RATING/userData.NUM_RATING data-max=5></div>
-      <div class=clearfix></div>
+<div class=container-fluid>
+  <h2 class=title>About Your Agency</h2>
 
-      <label>Your feedback:</label>
-      <ul class=list-group>
-        <div ng-if="comments != NULL">
-          <li id={{$index}} ng-repeat="comment in comments" ng-transclude-custom class=list-group-item>
-            <article>{{comment.COMMENTO}}</article>
-            <div class=text-right>
-              <button type=button ng-click="alert(comment.ID); reportAbuse(comment.ID)" class="btn btn-default btn-xs">
-                <i class="fa fa-check-square-o">
-                  Report abuse
-                </i>
-              </button>
-            </div>
-          </li>
+  <div class=container-inner>
+    <div class="panel panel-default" style=opacity:0.9>
+      <div class=panel-body>
+
+        <div style=float:left><label>Your rating:</label></div>
+        <div style="pointer-events: none;margin-left:15px;margin-bottom:30px;float:left" id=div_rating class=star-rating star-rating rating-value=userData.RATING/userData.NUM_RATING data-max=5></div>
+        <div class=clearfix></div>
+
+        <label>Your feedback:</label>
+        <ul class=list-group>
+          <div ng-if="comments != NULL">
+            <li id={{$index}} ng-repeat="comment in comments" ng-transclude-custom class=list-group-item>
+              <article>{{comment.COMMENTO}}</article>
+              <div class=text-right>
+                <button type=button ng-click="alert(comment.ID); reportAbuse(comment.ID)" class="btn btn-default btn-xs">
+                  <i class="fa fa-check-square-o">
+                    Report abuse
+                  </i>
+                </button>
+              </div>
+            </li>
+          </div>
+          <div ng-if="comments == NULL">
+            <li class=list-group-item>
+              <article>No comment yet</article>
+            </li>
+          </div>
+        </ul>
+        <div class=text-right>
+          <a class="btn btn-default" data-toggle=modal data-target=#myModal>
+            <i class="fa fa-comments"> Read All</i>
+          </a>
         </div>
-        <div ng-if="comments == NULL">
-          <li class=list-group-item>
-            <article>No comment yet</article>
-          </li>
-        </div>
-      </ul>
-      <div class="row text-right">
-        <a class="btn btn-default" data-toggle=modal data-target=#myModal>
-          <i class="fa fa-comments"> Read All</i>
-        </a>
       </div>
     </div>
   </div>
-</form>
+</div>
 
 <div class="modal fade" id=myModal tabindex=-1 role=dialog aria-labelledby=myModalLabel aria-hidden=true>
   <div class=modal-dialog>

@@ -1,0 +1,209 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Template Documentation Template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Andare&rdquo; Documentation by &ldquo;Nathan Brown&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">Andare One Page Parallax Theme</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 4/25/2014<br>
+					By: Nathan Brown<br>
+					Email: <a href="mailto:nbrown.austin@gmail.com">nbrown.austin@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/room122">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This theme features basic HTML5 with a well commented layout. The page is broken into sections which are clearly defined in the code structure. Below I'll cover some of the areas of HTML.</p>
+		<p><strong>-
+        Navigation</strong></strong></p>
+		<p><img src="assets/images/html-view-1.jpg" width="755" height="482"></p>
+		<p>The main navigation is a simple unordered list. In order to create a drop down sub menu from a menu item simply add a new unordered list within a top level list item. An example is highlighted in blue above.</p>
+		<p>Also, note that the site logo is text (highlighted in red above). You can update the text to your site name, or add an image logo instead.	The grean box above shows the mobile nav button that only appears on mobile devices. This button acts as a drop down for the main menu on small screens.</p>
+	  <p><strong>- Header</strong></p>
+	  <p>There are 5 HTML files included. Each one contains a different header, or home page template.	The layout for each header is pretty basic.</p>
+	  <p><img src="assets/images/html-view-2.jpg" width="777" height="408"></p>
+	  <p>The blue highlight above shows the location of the text slides. The text enclosed in the span tags will appear in color versus the default white text. The red highlight shows the social media links. You can update these with links to your social profiles. The icons used for these links are within the Font Awesome icon collection. More about Font Awesome can be found below in the Credits section.</p>
+      <strong>- About Section</strong>
+      <p>The about section contains a three column layout and features animation when the section scrolls into view.</p>
+      <p><img src="assets/images/html-view-3.jpg" width="723" height="379"></p>
+<p>The blue highlight above shows the class and attributes needed to animate an item when it comes into view. The animation options are found within animate.css. More on animate.css can be found below in the CSS and Credits section.</p>
+<p>The red highlight shows the classes needed to utilize the 16 column grid that this theme is built on. The &quot;one-third&quot; establishes a 3 column layout across the grid.</p>
+	  <p><strong>- Testimonials</strong></p>
+	  <p>The testimonials section utilizes Flexslider to rotate between quotes.</p>
+	  <p><img src="assets/images/html-view-4.jpg" width="713" height="348"></p>
+	  <p>The blue highlight shows the list item for a single quote. You can add more quotes by adding list items in the same format shown above.</p>
+	  <p>The red highlight shows the parallax class for the background image of this section. This class establishes the parallax effect when the page is scrolled.<br>
+      </p>
+	  <p><strong>- Services Section</strong></p>
+	  <p>This section contains a list of services that feature a tooltip. The blue highlight below show the class and attributes needed to setup a tooltip. Edit the &quot;data-title&quot; attribute to whatever you like.</p>
+	  <p><img src="assets/images/html-view-5.jpg" width="688" height="234"></p>
+	  <p><br>
+	    <strong>- Portfolio Section</strong></p>
+	  <p>The portfolio section contains a list of items that are filterable. The blue highlight below shows the filter list. The &quot;data-option-value&quot; must be set to the class of the container div of the portfolio item that falls within that filter.</p>
+	  <p><img src="assets/images/html-view-6.jpg" width="634" height="339"></p>
+	  <p>The red highlight above show the class and link needed to open the portfolio item in the expander format. The download includes two project examples. &quot;Project-1.html&quot; contains a slider example, and &quot;project-2.html&quot; contains a video example.</p>
+	  <p><img src="assets/images/html-view-7.jpg" width="497" height="138"></p>
+	  <p>The green highlight above shows the link and attribute needed to open a project in a lightbox or modal window. This feature utilizes the PrettyPhoto plugin. More about this plugin can be found in the Credits section.</p>
+	  <p><strong>- Counter</strong></p>
+	  <p>The counters section contains for counters. The blue highlight below shows the class and attribute need for a counter. You can edit the &quot;data-to&quot; attribute to change where the counter stops.</p>
+	  <p><img src="assets/images/html-view-8.jpg" width="506" height="142"></p>
+	  <p><strong>- Pricing Tables</strong></p>
+	  <p>The block of HTML below is for a single pricing table. The blue highlight show the unordered list in the center of the table along with tooltips.</p>
+	  <p><img src="assets/images/html-view-9.jpg" width="644" height="361"></p>
+	  <p><strong>- Accordion Section</strong></p>
+	  <p>The HTML below shows a single accordion area. The blue highlight shows the class needed to establish the button toggle for the accordion content and the red highlight shows the class needed to establish the accordion content.</p>
+	  <p><img src="assets/images/html-view-10.jpg" width="640" height="134"></p>
+	  <p><strong>- Team Section</strong></p>
+	  <p>The team section is broken into a four column layout. The block of HTML below show a portion of a team members column.</p>
+	  <p><img src="assets/images/html-view-11.jpg" width="662" height="371"></p>
+	  <p>The blue highlight show the social links that appear when hovering over the team members photo. The red highlight shows the attribute needed to establish the skillbar level. Edit the &quot;data-precent&quot; to change the skillbar level.</p>
+	  <p><strong>- Video Section</strong></p>
+	  <p>This section contains a video background. The blue highlight below shows the link that you can edit to change the video background. This section utilizes the YTPlayer.js plugin.</p>
+	  <p><img src="assets/images/html-view-12.jpg" width="695" height="192"></p>
+	  <p><strong>- Blog Section</strong></p>
+	  <p>This section contains a 3 column layout of blog post previews. The HTML block below shows one column. It contains a preview iamge with hover feature, a title, meta data, and a summary of the post.</p>
+	  <p><img src="assets/images/html-view-13.jpg" width="663" height="294"></p>
+	  <p><strong>- Static Testimonial and Client Logos</strong></p>
+	  <p>This section contains a simple quote, a full background image and a list of client logos. Simply edit the image links to add your own logos.</p>
+	  <p><img src="assets/images/html-view-14.jpg" width="705" height="322"></p>
+	  <p><strong>- Contact Form</strong></p>
+	  <p>The contact form is a simple HTML form that features validation and a simple PHP mail script to send the message. The HTML block below shows the feedback messages from the form validation (highlighted in blue), and the actual HTML form inputs (highlighted in red).</p>
+	  <p><img src="assets/images/html-view-15.jpg" width="667" height="492"></p>
+	  <p>To edit where the form sends to, open php/mail.php and edit lines 7 and 8 with your email address and the subject line of the email.</p>
+	  <p><img src="assets/images/html-view-16.jpg" width="320" height="42"></p>
+	  <p><strong>- Google Map Section</strong></p>
+	  <p>This section contains a Google Map background.</p>
+	  <p><img src="assets/images/html-view-17.jpg" width="693" height="217"></p>
+	  <p>To edit the pointer on the map open js/custom.js and edit the coordinates on line 465.</p>
+	  <p><img src="assets/images/html-view-18.jpg" width="427" height="48"></p>
+	  <p>You can also change the pointer tooltip within this file on line 485.</p>
+	  <p><img src="assets/images/html-view-19.jpg" width="680" height="43"></p>
+	  <p><strong>- Footer</strong></p>
+	  <p>The footer is pretty simple. The HTML block below shows all of the footer code. The blue highlight shows the social media icons that you can edit with links to your profile pages.</p>
+	  <p><img src="assets/images/html-view-20.jpg" width="532" height="376"></p>
+<hr>
+
+		<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+		<p>This theme uses thirteen CSS files. Five of them are the core structure, and the others  contain plugin CSS. </p>
+		<p><img src="assets/images/html-view-21.jpg" width="528" height="314"></p>
+		<p><strong><em>----- Core CSS -----</em></strong></p>
+		<p><strong>- reset.css</strong></p>
+		<p>This file resets all browsers to the same basic style. Things like margins and padding are all set to zero to start.</p>
+		<p><strong>- base.css</strong></p>
+	  <p>This file holds all of the base elements of the theme. Such as  links, typography, and other basic styles. Changes made to this document will effect the theme site wide. The file is clearly commented and structured for easy editing.</p>
+	  <p><strong>- layout.css</strong></p>
+		<p>This file holds layout styles for  the theme, and styles specific to sections. This file is the most extensive, and probably the first place to look if you plan to edit the theme css.</p>
+		<p><strong>- grid.css</strong></p>
+		<p>This file contains the core structure of the theme. It also handles the resizing of the layout based on the mobile device screen. The file utilizes media queries to accomplish this. No adjustments are necessary within this file.		</p>
+		<p><strong>- media-queries.css</strong></p>
+		<p>This file handles some of the layout changes needed for mobile devices and smaller screens.</p>
+		<p><strong>- colors/*.css</strong></p>
+		<p>These files contain color schemes for the theme. The default color is red. So if you remove the link to any files within the &quot;color&quot; directory the theme will default to red.</p>
+		<p><strong>- theme/*.css</strong></p>
+		<p>These files are for the light or dark theme. If you remove the link to the files within the &quot;theme&quot; directory the theme will default to the light version.</p>
+		<p><strong>- panel/options-panel.css</strong></p>
+		<p>This css file is specific to the pull out options panel in the demo. You can remove this file for production.</p>
+<p><strong><em>----- Plugin CSS -----</em></strong></p>
+		<p><strong>-animate.min.css</strong></p>
+		<p>This file contains the options for css animations. Check out <a href="http://daneden.github.io/animate.css/">http://daneden.github.io/animate.css/</a> for all the options.</p>
+		<p><strong>- flexslider.css</strong></p>
+		<p>This file contains the styles for the sliders found throughout the theme. Check out <a href="http://www.woothemes.com/flexslider/">http://www.woothemes.com/flexslider/</a> for more info.</p>
+<p><strong>- prettyPhoto.css</strong></p>
+		<p>This file contains the default theme for the PrettyPhoto plugin. See <a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/">http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/</a> for details on this plugin.</p>
+		<p><strong>- font-awesome.css</strong></p>
+		<p>This is the theme gets all of its icons from. Check out <a href="http://fortawesome.github.io/Font-Awesome/">http://fortawesome.github.io/Font-Awesome/</a> for all the available icons.</p>
+		<p><strong>- YTPlayer.css</strong></p>
+		<p>This file contains the styles for the video backgrounds. See <a href="http://pupunzi.open-lab.com/mb-jquery-components/jquery-mb-ytplayer/">http://pupunzi.open-lab.com/mb-jquery-components/jquery-mb-ytplayer/</a> for all the options.</p>
+<hr>
+		
+		<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme imports between sixteen javascript files.</p>
+		<p><img src="assets/images/html-view-22.jpg" width="682" height="298"></p>
+		<ol>
+		  <li><a href="http://jquery.com/" target="_blank">jQuery</a> -	jQuery version 1.11.0</li>
+		  <li><a href="https://github.com/morr/jquery.appear" target="_blank">jQuery.Appear</a> - This plugin tracks an elements appearance in the browser viewport</li>
+		  <li><a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/" target="_blank">PrettyPhoto</a> - This plugin allows for the elegant pop windows in the galleries.</li>
+		  <li><a href="https://github.com/kswedberg/jquery-smooth-scroll" target="_blank">SmoothScroll</a> - Makes same page links scroll smoothly.</li>
+		  <li><a href="http://ianlunn.co.uk/plugins/jquery-parallax/" target="_blank">jQuery.Parallax</a> - Creates the parallaz scrolling effect.</li>
+		  <li><a href="http://gsgd.co.uk/sandbox/jquery/easing/" target="_blank">jQuery Easing Plugin</a> - This plugin is for fine tuning animation effects.</li>
+		  <li><a href="http://nicinabox.com/superslides" target="_blank">SuperSlides</a> - Used to create full screen slider.</li>
+		  <li><a href="http://www.woothemes.com/flexslider/" target="_blank">FlexSlider</a> - This is the plugin that controls the slider animations.</li>
+		  <li><a href="http://isotope.metafizzy.co/" target="_blank">Isotope</a> - Used to create and filter the portfolio layout.</li>
+		  <li><a href="http://pupunzi.open-lab.com/mb-jquery-components/jquery-mb-ytplayer/" target="_blank">YTPlayer</a> - Full screen video backgrounds.</li>
+		  <li><a href="http://fitvidsjs.com/" target="_blank">Fitvids</a> - Fit a video within a container.</li>
+		  <li><a href="https://github.com/mhuggins/jquery-countTo" target="_blank">CounTo</a> - Used to create counters.</li>
+		  <li><a href="https://github.com/benplum/Tipper" target="_blank">Tipper</a> - Used to create custom tooltips.</li>
+		  <li><a href="https://code.google.com/p/jquery-ui-map/" target="_blank">Google Maps</a> - Used to create the Google Maps background.</li>
+		  <li>Custom - This file contains some custom jQuery for use in the themea along with calls to plugins.</li>
+		  <li>Options Panel - This file contains some custom code for the options panel. (remove for production)</li>
+		</ol>
+		
+<hr>
+		
+		<h3 id="credits">&nbsp;</h3>
+		<h3><strong>D) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+<p>I've used the following images, icons or other files as listed.
+  
+<ul>
+			<li>The theme features the incredible icons from <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a>.</li>
+			<li>The title font used is <a href="http://www.latofonts.com/" target="_blank">Lato</a></li>
+			<li>The theme is built upon the amazing <a href="http://www.getskeleton.com/" target="_blank">Skeleton Boilerplate</a></li>
+			<li>The images used in the online preview are from <a href="http://creattica.com/" target="_blank" rel="nofollow">Creattica</a>, <a href="http://deathtothestockphoto.com/" target="_blank">Death to Stock</a> and <a href="http://unsplash.com/" target="_blank">Unsplash</a>.</li>
+			<li>The product mockups are from <a href="http://www.psdcovers.com/" target="_blank">PSDCovers</a>.</li>
+			<li>The theme uses various Javascript plugins <em>(see above Javascript section for details)</em>.</li>
+	  </ul>
+		
+  <hr>
+		
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Best!<br>
+		  Nathan Brown
+		</strong></p>
+<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

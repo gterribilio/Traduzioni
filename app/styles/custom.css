@@ -1,0 +1,229 @@
+.login {
+  position:absolute;
+  top:10px;
+  opacity:0.9;
+  z-index: 120;
+}
+
+.close-inverse {
+  color: #FFF;
+  text-shadow: 0 1px 0 #000;
+}
+
+strong {
+  font-weight:bold;
+}
+
+.slogan {
+  font-weight: 300;
+  color: #FFFFFF;
+  padding:3%;
+}
+
+.social-media {
+  padding-top:10%;
+}
+
+.greenyellow {
+  color: #3FC37B;
+}
+
+.red {
+  color: red;
+}
+
+.black {
+  color: #000000;
+}
+
+.blueviolet {
+  color: #7030A0;
+}
+
+[data-notify="container"] {
+ visibility: visible;
+}
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+/*sottolineato*/
+em {
+  font-style: normal;         /* Removes italics */
+  text-decoration: underline; /* Makes underline */
+}
+
+.well {
+  background:transparent;
+  padding:0;
+}
+
+/**** FIX per glyphicon che hanno altezza maggiore di input ****/
+
+.input-group .input-group-addon {
+  line-height: 1!important;
+  top:0px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container-inner {
+  padding: 20px 0;
+}
+
+.container-fluid {
+  background-color: #F7F7F7;
+}
+
+/**************** BUTTON FILE UPLOAD ****************/
+
+.upload-buttons input[type="file"] {
+  width: 6.3em \0/IE9;
+}
+
+.upload-button {
+  Height: 26px;
+  line-height: 30px;
+  padding: 0 10px;
+  background: #CCC;
+  appearance: button;
+  -moz-appearance: button; /* Firefox */
+  -webkit-appearance: button; /* Safari and Chrome */
+  position: relative;
+  text-align: center;
+  top: 7px;
+  cursor: pointer;
+}
+
+/**************** END BUTTON FILE UPLOAD ****************/
+
+/**************** PROFILE IMAGE *************************/
+
+#container_image_profile
+{
+  height:180px;
+  width:180px;
+  position:relative;
+}
+
+.thumb_img
+{
+  position:absolute;
+  left:0;
+  top:0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#text_image_profile
+{
+  z-index:100;
+  position:absolute;
+  color:white;
+  bottom:0;
+  background-color: black;
+  opacity:0.4;
+  padding-left:10px;
+  cursor: pointer;
+  width:180px;
+  margin:0;
+}
+
+#text_image_profile:hover
+{
+  background-color: black;
+  opacity:0.8;
+}
+
+/**************** END PROFILE IMAGE *************************/
+
+/**************** RATING ****************/
+.rating{
+  color: #a9a9a9;
+  margin: 0;
+  padding: 0;
+}
+
+ul.rating {
+  display: inline-block;
+}
+
+.rating li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 1px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.rating .filled {
+  color: #fd0;
+}
+/**************** END RATING ****************/
+
+/**************** READMORE ****************/
+
+article {
+  color:#333;
+}
+
+/**************** END READMORE ****************/
+
+/**************** OVERRIDE SLIDER PROPERTY ****************/
+
+.jslider div.jslider-value {color:white; background-color: transparent;}
+
+.jslider div.jslider-label {color:white!important;}
+
+/**************** END OVERRIDE SLIDER PROPERTY ****************/
+
+.comment_item {
+  border-top: 1px solid #e5e5e5;
+  color: #333!important;
+  padding: 10px 15px 10px 15px;
+}
+
+#searchResultTable td {
+  vertical-align: middle;
+}
+
+#searchResultTable th a {
+  cursor: pointer;
+}
+
+div.tooltip-inner {
+  max-width: 450px;
+}
+.tooltip div p{
+  font-size: 14px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #FFF;
+}
+
+/* --------------------------------
+Blog
+-------------------------------- */
+
+.blog{
+  background:
+  url(../images/pattern-1.png) left top repeat,
+  url(../images/blog.jpg) center center fixed;
+  padding:0 0 96px 0;
+  text-align: center;
+  overflow: hidden;
+  color:#fff;
+}
+.blog h4{color:#fff;}
+
+/* --------------------------------
+End Blog
+-------------------------------- */

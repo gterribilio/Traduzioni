@@ -53,7 +53,7 @@ home.controller('HomeAgenziaCtrl', ['$scope', '$rootScope', '$window', 'services
               alert(JSON.stringify(data));
             }
             else {
-              $scope.image = data.base64;
+              $rootScope.image = data.base64;
             }
           });//end succes
       }

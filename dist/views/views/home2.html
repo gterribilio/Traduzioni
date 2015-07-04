@@ -1,0 +1,258 @@
+
+<section navigation id=navigation class=hide-nav ng-show=!isLogged>
+  
+  <div class=nav-container>
+
+    
+    <a href=#home class="site-logo scroll">Glifico</a>
+
+    <a class=mobile-nav-button><i class="fa fa-bars"></i></a>
+
+    
+    <div id=navigation_menu class=nav-menu>
+      <ul class=nav-custom>
+        <li><a href=#home class="scroll link">Home</a></li>
+
+        <li>
+          <a class="scroll link" ng-click="showBlog=true;" href=#blog>Blog</a>
+        </li>
+        <li><a href=#about class="scroll link">About</a></li>
+        
+        
+        
+        
+        <li><a href=#contact class="scroll link">Contact</a></li>
+      </ul>
+    </div>
+    
+  </div>
+  
+</section>
+
+
+<div id=login style=margin-right:10px class=login ng-show=showLogin>
+  <div class="panel col-md-2 col-md-offset-10">
+    <button style="margin-right: -15px" type=button class="close scroll" href=#home ng-click="showLogin=false;"><span aria-hidden=true class="glyphicon glyphicon-remove-circle"></span><span class=sr-only>Close</span></button>
+    <div class=panel-body>
+      <div template-snippet id=loginSnippet name=snippet/loginSnippet style=margin-top:15px></div>
+    </div>
+  </div>
+</div>
+
+
+<section id=home class="home parallax6">
+  <div id=slides slides class="container header">
+
+    
+    <span class="logo animated" data-animate=fadeInDown data-animate-delay=1000>Glifico</span>
+    
+    <div header-text class=header-text>
+      <ul class=text-slider>
+        <li class=text-slides>Get more<span class=greenyellow> free time</span></li>
+        <li class=text-slides>Get more<span class=greenyellow> money</span></li>
+        <li class=text-slides>Get more<span class=greenyellow> opportunities</span></li>
+        <li class=text-slides>Get more<span class=greenyellow> coffee breaks</span></li>
+        <li class=text-slides>Get more<span class=greenyellow> organization</span></li>
+        <li class=text-slides>Get rid of<span class="color normal"> advertising</span></li>
+        <li class=text-slides>Get rid of<span class="color normal"> sending CV</span></li>
+        <li class=text-slides>Get rid of<span class="color normal"> negotiating</span></li>
+        <li class=text-slides>Get rid of<span class="color normal"> risk</span></li>
+        <li class=text-slides>Get rid of<span class="color normal"> insecurity</span></li>
+      </ul>
+    </div>
+    
+    <h4 class=title><span class="color white">OUR SITE IS NOT READY YET </span><span class=color>BUT WE ARE COMING SOON</span>
+      <span class=tipped data-title="Glifico is a start-up project. <br/>
+            We are developing it from the beginning and (obviously) at the beginning everything it's arduous. <br/>
+            We need your support to make it easier and to boost our work! Write your email in the blank below.<br/>
+            Tell us we are doing something pleasant for you!"><i class="fa fa-question-circle"></i></span></h4>
+
+    <div id=timer data-animated=FadeIn coming-soon>
+      
+
+      <div id=days class=timer_box></div>
+      <div id=hours class=timer_box></div>
+      <div id=minutes class=timer_box></div>
+      <div id=seconds class=timer_box></div>
+    </div>
+
+    <div class="row form-group">
+
+      <form name=registerForm ng-submit=doRegisterTemp() novalidate>
+        
+
+        <div class="row form-group col-sm-offset-3 col-sm-9" style="margin-top: 10px">
+          <div class="col-sm-4 text-right">
+            <div class=radio-inline>
+              <label><input type=radio ng-model=userType value=translator>Translator/Interpreter</label>
+            </div>
+            <div class=radio-inline>
+              <label><input type=radio ng-model=userType value=agency>Agency</label>
+            </div>
+          </div>
+          <div class=col-sm-3 ng-class="{ 'has-error' : registerForm.email.$invalid && !registerForm.email.$pristine }">
+            <input type=email name=email class=form-control ng-model=email required placeholder="Your e-mail supports us*">
+          </div>
+          <div class=col-sm-1>
+            <button type=submit class=btn ng-disabled=registerForm.$invalid><i class="fa fa-envelope"></i>&nbsp;Send
+            </button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+
+    <a href=#about class="header-down-arrow scroll link"></a>
+  </div>
+  
+</section>
+
+
+
+<div template-snippet name=snippet/blogSnippet id=blog ng-show=showBlog></div>
+
+
+<section id=about class=section>
+  <div class=container>
+    <h2 class=title>About Us</h2>
+    <h4 class=subtitle>Everything you need to find your translator and be sure to get you job done!</h4>
+
+    <div class="one-third column animated" data-animate=fadeInLeft data-animate-delay=400>
+      <div class=icon-box><i class="fa fa-info fa-4x"></i></div>
+      <h5>About Glifico</h5>
+
+      <div class=text-justify>Glifico is a platform that allows translation agencies to contact translators and
+        interpreters from all over the world and translate documents into any language.
+      </div>
+    </div>
+    <div class="one-third column animated" data-animate=fadeIn data-animate-delay=400>
+      <div class=icon-box><i class="fa fa-eye fa-4x"></i></div>
+      <h5>Our Vision</h5>
+
+      <div class=text-justify>We want to create a brand new way to communicate and collaborate faster and easier
+        without geographical limits, increasing job opportunities and the efficiency of the usual workflow.
+      </div>
+    </div>
+    <div class="one-third column animated" data-animate=fadeInRight data-animate-delay=400>
+      <div class=icon-box><i class="fa fa-rocket fa-4x"></i></div>
+      <h5>Our Mission</h5>
+
+      <div class=text-justify>To create a dynamic and interactive environment that allows agencies to find the best
+        translators or interpreters for a specific project using a system validation data based on rating
+        and feedback.
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+<section id=accordion class="section accordion parallax4">
+  <div class=container>
+
+    
+    
+
+    <div class="col-sm-10 accordion-container">
+      <h2 class=title>Want to know more about Glifico?</h2>
+      <h4 class="subtitle white">Here is what we think about the project</h4>
+
+      <div class="accordion-button white"><i class="fa fa-arrow-circle-o-down fa-lg"></i>Why for agencies?
+      </div>
+      <div class="accordion-content active text-justify white">
+        <p>We are confident that the agencies work is an important mark-up because the intermediate between the
+          customers and freelance needs. They can guarantee quality of service to their customers and proper recognition
+          of the freelance's professionalism.</p>
+
+        <p>We believe the linguistic industry needs all the actual actors (agencies, freelance and commitment) and each
+          of them should do his own work in the most professional way without going over someone’s head.</p>
+      </div>
+
+      <div class="accordion-button white"><i class="fa fa-arrow-circle-o-right fa-lg"></i>Why should an interpreter or
+        translator sign in?
+      </div>
+      <div class="accordion-content text-justify white">
+        <p>Glifico is a new way for professionals to boost their work opportunities. They can get in touch with agencies
+          throughout the world. On the other hand Glifico allows agencies to choose the right
+          professionist looking at the rating or the comments of other agencies that have collaborated in the past or
+          some example of translation or some video where the interpreters can present themselves. That’s important for
+          a personal satisfaction of the professionists.</p>
+      </div>
+
+      <div class="accordion-button white"><i class="fa fa-arrow-circle-o-right fa-lg"></i>Why was Glifico born?
+      </div>
+      <div class="accordion-content text-justify white">
+        <p>In this world it happens (always more frequently) that the linguistic industry has to face with customers who
+          are interested in asking only for lower prices. Obviously it causes a problem for the quality of the service.
+          Now professionists can offer their own skills for how much it worth.</p>
+
+        <p>At the same time, agencies can give information to the customers in a clearly, precise and fast way. You
+          don’t need to negotiate! That’s annoying. In this way everything will be clear from the beginning and that
+          makes Glifico faster.</p>
+
+      </div>
+    </div>
+    
+
+  </div>
+  
+</section>
+
+
+
+
+<section template-snippet name=snippet/contactSnippet id=contact class=section></section>
+
+
+
+<section id=map class=section>
+
+  
+  <section class=callout>
+    <div class=container>
+      <h3 class=animated data-animate=fadeInDown data-animate-delay=300>Come out and <span class=color>see us!</span></h3>
+    </div>
+    
+  </section>
+  
+
+  <div id=google-map google-map></div>
+</section>
+
+
+
+<section id=footer-top class=section>
+  <div class=container>
+    <ul class=social-links>
+      <li><a href=#><i class="fa fa-facebook"></i></a></li>
+      <li><a href=#><i class="fa fa-twitter"></i></a></li>
+      <li><a href=#><i class="fa fa-vimeo-square"></i></a></li>
+      <li><a href=#><i class="fa fa-google-plus"></i></a></li>
+      <li><a href=#><i class="fa fa-pinterest"></i></a></li>
+    </ul>
+    
+    <a href=mailto:info.startuproject@gmail.com>info.startuproject@gmail.com</a><br>
+    Turin, Italy
+  </div>
+  
+</section>
+
+
+<section id=footer-bottom class=section>
+  <div class=container>
+    <a href=#home class="scroll button-to-top">
+      <i class="fa fa-angle-double-up"></i>
+    </a>
+
+    <h2>Glifico</h2>
+
+    <p><span class=color>Made in Italy</span><br>
+      &copy; 2015 All rights reserved.</p>
+  </div>
+  
+</section>
+
+
+
+
+
