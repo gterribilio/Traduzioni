@@ -52,7 +52,7 @@ Home (Header) Section
 }
 .home:after {clear: both;}
 .header{
-	padding-top: 10%;
+	padding-top: 3%;
 	text-align: center;
 }
 .header .logo{
