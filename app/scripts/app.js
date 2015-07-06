@@ -25,9 +25,9 @@ var app = angular
 
 var app_cfg = {
 
-  "endpoint_server": "http://www.glifico.com",
+  "endpoint_server": "http://52.26.216.27",
 
-  "endpoint_upload_server": "www.glifico.com",
+  "endpoint_upload_server": "52.26.216.27",
 
   "environment": "development",
   "request": {
@@ -35,7 +35,7 @@ var app_cfg = {
   },
   "development": {
     "urls": {
-      "config_endpoint": "http://www.glifico.com/config.json.php"
+      "config_endpoint": "http://52.26.216.27/config.json.php"
     },
     "request": {}
   },

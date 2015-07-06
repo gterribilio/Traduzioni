@@ -14,8 +14,6 @@
     <file url="file://$PROJECT_DIR$/app/scripts/explico.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/services.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/upload.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/styles/glifico.css" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/styles/grayscale.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/agenzia/home_agenzia.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/agenzia/search_agenzia.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/agenzia/send_a_job.html" charset="UTF-8" />
