@@ -4,12 +4,108 @@
     <option name="ANALYSIS_IN_BACKGROUND" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11065f60-ee0e-4598-ac8a-b433e47c68e3" name="Default" comment="20150704">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dump/my_explico_dump_20150706.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/.htaccess" afterPath="$PROJECT_DIR$/app/.htaccess" />
+    <list default="true" id="11065f60-ee0e-4598-ac8a-b433e47c68e3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RecordDNSTophost.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/scripts/SmoothScroll.d566b996.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/amazonAWS.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/styles/base.7b608314.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/styles/colors/blue.23ee1906.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/styles/custom.efc1bba3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/styles/flexslider.3e751663.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/styles/font-awesome.6c182b58.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/styles/grid.e6bef0cd.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/scripts/jquery.flexslider.c65abaef.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/scripts/jquery.prettyPhoto.fddf8de2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/styles/layout.bbc47731.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/styles/main.b6200fa0.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/styles/media-queries.13f6400c.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/scripts/oldieshim.0d8f8fe3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/styles/reset.b33fc0c8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/scripts/scripts.55cfa6ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Glifico - ScriptPHP/security.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/scripts/vendor.333d7fee.js" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\about.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\accordion.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\arrow-left.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\arrow-right.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\blog-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\blog-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\blog-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\blog.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\client-logo-1.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\client-logo-2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\client-logo-3.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\client-logo-4.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\client-logo-5.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\client-logo-6.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\client-logo-7.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\client-logo-8.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\close-btn-dark.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\close-btn.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\closeBtn.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\counter.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\giuseppe_terribilio.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\headers\intro-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\headers\pattern-img-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\headers\slider-img-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\headers\slider-img-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\headers\slider-img-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\headers\slider-img-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\imonitor-1.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\loader-dark.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\loader.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\london-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\luca_sapone.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\marker.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\new_icon_speech.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\parallax\parallax-bg-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\parallax\parallax-bg-4-dark.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\parallax\parallax-bg-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\parallax\parallax-bg-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\parrot_large.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\pattern-1.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\pattern-2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\pattern-3.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\plus.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\profile_picture.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\registrazione_agenzia.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\registrazione_traduttore.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\sissi.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\site-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\team-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\team-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\team-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\team-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\images\testimonials.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\scripts\SmoothScroll.ffa58490.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\scripts\jquery.flexslider.668763f3.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\scripts\jquery.prettyPhoto.34b50578.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\scripts\oldieshim.bfe322b1.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\scripts\scripts.99469d52.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\scripts\vendor.cd5f5d8d.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\styles\base.eb9c5580.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\styles\colors\blue.3870dc51.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\styles\custom.662a08db.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\styles\flexslider.bae7cc3f.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\styles\font-awesome.1f9e9d1a.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\styles\grid.7d32bdfb.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\styles\layout.b510c376.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\styles\main.c538c37e.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\styles\media-queries.c45019d0.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\terribilio.gi\Projects\Glifico\dist\styles\reset.7eb82346.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/.htaccess" afterPath="$PROJECT_DIR$/dist/.htaccess" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/home.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/home.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/index.html" afterPath="$PROJECT_DIR$/dist/views/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/traduttore/snippet/interpretationTraduttoreSnippet.html" afterPath="$PROJECT_DIR$/dist/views/traduttore/snippet/interpretationTraduttoreSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/views/traduttore/snippet/interpretationTraduttoreSnippet.html" afterPath="$PROJECT_DIR$/dist/views/views/traduttore/snippet/interpretationTraduttoreSnippet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/layout.css" afterPath="$PROJECT_DIR$/app/styles/layout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Glifico - ScriptPHP/utility.inc.php" afterPath="$PROJECT_DIR$/Glifico - ScriptPHP/utility.inc.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Explico.iws" />
@@ -30,7 +126,80 @@
     <favorites_list name="Explico" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="195" column="17" selection-start-line="195" selection-start-column="17" selection-end-line="195" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/styles/layout.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bower.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bower.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.730769">
+              <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap-notify.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bower_components/remarkable-bootstrap-notify/bootstrap-notify-3.1.3/bootstrap-notify.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.807693">
+              <caret line="100" column="24" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="24" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/home.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.41714287">
+              <caret line="251" column="35" selection-start-line="251" selection-start-column="35" selection-end-line="251" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap-notify.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bower_components/remarkable-bootstrap-notify/bootstrap-notify.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -84,7 +253,6 @@
         <option value="$PROJECT_DIR$/app/styles/grayscale.css" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/agenzia/home_agenzia.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/traduttore/home_traduttore.js" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/home.js" />
         <option value="$PROJECT_DIR$/app/styles/tooltip.css" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/agenzia/translatorDetail.js" />
         <option value="$PROJECT_DIR$/app/views/traduttore/snippet/profileTraduttoreSnippet.html" />
@@ -96,13 +264,14 @@
         <option value="$PROJECT_DIR$/app/scripts/controllers/agenzia/search_agenzia.js" />
         <option value="$PROJECT_DIR$/app/views/agenzia/snippet/searchAgenziaSnippet.html" />
         <option value="$PROJECT_DIR$/app/views/agenzia/send_a_job.html" />
-        <option value="$PROJECT_DIR$/app/styles/layout.css" />
         <option value="$PROJECT_DIR$/app/views/home.html" />
         <option value="$PROJECT_DIR$/app/views/home2.html" />
+        <option value="$PROJECT_DIR$/app/.htaccess" />
+        <option value="$PROJECT_DIR$/app/styles/layout.css" />
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/scripts/app.js" />
-        <option value="$PROJECT_DIR$/app/.htaccess" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/home.js" />
       </list>
     </option>
   </component>
@@ -271,47 +440,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="remarkable-bootstrap-notify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Glifico" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Glifico" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="remarkable-bootstrap-notify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap-notify-3.1.3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Glifico" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Glifico" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
+              <option name="myItemId" value="Glifico - ScriptPHP" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -326,22 +455,22 @@
     <property name="editor.config.accepted" value="true" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="SearchEverywhereHistoryKey" value="hta&#9;FILE&#9;file://C:/Users/terribilio.gi/Projects/Glifico/app/.htaccess&#10;app&#9;FILE&#9;file://C:/Users/terribilio.gi/Projects/Glifico/app/scripts/app.js&#10;index&#9;FILE&#9;file://C:/Users/terribilio.gi/Projects/Glifico/app/index.html&#10;servic&#9;FILE&#9;file://C:/Users/terribilio.gi/Projects/Glifico/app/scripts/services.js&#10;common&#9;FILE&#9;file://C:/Users/terribilio.gi/Projects/Glifico/app/scripts/common.js&#10;htaccess&#9;FILE&#9;file:///Users/giuseppe/Projects/Glifico/app/.htaccess&#10;bower.&#9;FILE&#9;file:///Users/giuseppe/Projects/Glifico/bower.json&#10;home.html&#9;FILE&#9;file:///Users/giuseppe/Projects/Glifico/app/views/home.html&#10;home2&#9;FILE&#9;file:///Users/giuseppe/Projects/Glifico/app/views/home2.html&#10;layout.css&#9;FILE&#9;file:///Users/giuseppe/Projects/Glifico/app/styles/layout.css&#10;sear&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/views/agenzia/snippet/searchAgenziaSnippet.html&#10;search&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/scripts/controllers/agenzia/search_agenzia.js&#10;de&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/views/agenzia/translatorDetail.html&#10;tra&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/scripts/controllers/agenzia/translator_detail.js&#10;about&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/views/agenzia/snippet/aboutYourAgencySnippet.html&#10;home_age&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/scripts/controllers/agenzia/home_agenzia.js&#10;tran&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/views/agenzia/translatorDetail.html&#10;tooltip&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/styles/tooltip_cssonly.css&#10;searcha&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/views/agenzia/snippet/searchAgenziaSnippet.html&#10;transl&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/scripts/controllers/agenzia/translator_detail.js&#10;searchagenzia&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/views/agenzia/snippet/searchAgenziaSnippet.html&#10;home&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/scripts/controllers/traduttore/home_traduttore.js&#10;profile&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/views/traduttore/snippet/profileTraduttoreSnippet.html&#10;index.html&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/index.html&#10;home.&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/scripts/controllers/home.js&#10;hom&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/scripts/controllers/agenzia/home_agenzia.js&#10;profilea&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/views/agenzia/snippet/profileAgenziaSnippet.html&#10;hometr&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/views/traduttore/home_traduttore.html&#10;index.&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/index.html&#10;directive&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/scripts/directives.js&#10;explic&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/scripts/explico.js&#10;snippe&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/views/agenzia/snippet/profileAgenziaSnippet.html&#10;searc&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/views/agenzia/snippet/searchAgenziaSnippet.html&#10;explico&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/styles/explico.css&#10;home_&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/scripts/controllers/agenzia/home_agenzia.js&#10;inde&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/index.html&#10;trans&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/views/traduttore/snippet/translationTraduttoreSnippet.html&#10;aboutagen&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/views/agenzia/snippet/aboutYourAgencySnippet.html&#10;transla&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/views/traduttore/snippet/translationTraduttoreSnippet.html&#10;jobs&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/views/traduttore/jobs_traduttore.html&#10;home_agen&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/scripts/controllers/agenzia/home_agenzia.js&#10;searchagenziasnipp&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/views/agenzia/snippet/searchAgenziaSnippet.html&#10;home.js&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/scripts/controllers/home.js&#10;upl&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/scripts/upload.js&#10;cert&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/views/traduttore/snippet/certificationsTraduttoreSnippet.html&#10;home_tra&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/scripts/controllers/traduttore/home_traduttore.js&#10;registrazionetr&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/views/snippet/registrazioneTraduttoreSnippet.html&#10;home_a&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/scripts/controllers/agenzia/home_agenzia.js&#10;registra&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/views/snippet/registrazioneAgenziaSnippet.html&#10;homeage&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/scripts/controllers/agenzia/home_agenzia.js" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="136" />
+    <property name="SearchEverywhereHistoryKey" value="home.&#9;FILE&#9;file://C:/Users/terribilio.gi/Projects/Glifico/app/scripts/controllers/home.js&#10;app&#9;FILE&#9;file://C:/Users/terribilio.gi/Projects/Glifico/app/scripts/app.js&#10;home.js&#9;FILE&#9;file://C:/Users/terribilio.gi/Projects/Glifico/app/scripts/controllers/home.js&#10;bower&#9;FILE&#9;file://C:/Users/terribilio.gi/Projects/Glifico/bower.json&#10;index&#9;FILE&#9;file://C:/Users/terribilio.gi/Projects/Glifico/app/index.html&#10;layou&#9;FILE&#9;file://C:/Users/terribilio.gi/Projects/Glifico/app/styles/layout.css&#10;hta&#9;FILE&#9;file://C:/Users/terribilio.gi/Projects/Glifico/app/.htaccess&#10;servic&#9;FILE&#9;file://C:/Users/terribilio.gi/Projects/Glifico/app/scripts/services.js&#10;common&#9;FILE&#9;file://C:/Users/terribilio.gi/Projects/Glifico/app/scripts/common.js&#10;htaccess&#9;FILE&#9;file:///Users/giuseppe/Projects/Glifico/app/.htaccess&#10;bower.&#9;FILE&#9;file:///Users/giuseppe/Projects/Glifico/bower.json&#10;home.html&#9;FILE&#9;file:///Users/giuseppe/Projects/Glifico/app/views/home.html&#10;home2&#9;FILE&#9;file:///Users/giuseppe/Projects/Glifico/app/views/home2.html&#10;layout.css&#9;FILE&#9;file:///Users/giuseppe/Projects/Glifico/app/styles/layout.css&#10;sear&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/views/agenzia/snippet/searchAgenziaSnippet.html&#10;search&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/scripts/controllers/agenzia/search_agenzia.js&#10;de&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/views/agenzia/translatorDetail.html&#10;tra&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/scripts/controllers/agenzia/translator_detail.js&#10;about&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/views/agenzia/snippet/aboutYourAgencySnippet.html&#10;home_age&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/scripts/controllers/agenzia/home_agenzia.js&#10;tran&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/views/agenzia/translatorDetail.html&#10;tooltip&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/styles/tooltip_cssonly.css&#10;searcha&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/views/agenzia/snippet/searchAgenziaSnippet.html&#10;transl&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/scripts/controllers/agenzia/translator_detail.js&#10;searchagenzia&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/views/agenzia/snippet/searchAgenziaSnippet.html&#10;home&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/scripts/controllers/traduttore/home_traduttore.js&#10;profile&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/views/traduttore/snippet/profileTraduttoreSnippet.html&#10;index.html&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/index.html&#10;hom&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/scripts/controllers/agenzia/home_agenzia.js&#10;profilea&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/views/agenzia/snippet/profileAgenziaSnippet.html&#10;hometr&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/views/traduttore/home_traduttore.html&#10;index.&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/index.html&#10;directive&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/scripts/directives.js&#10;explic&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/scripts/explico.js&#10;snippe&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/views/agenzia/snippet/profileAgenziaSnippet.html&#10;searc&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/views/agenzia/snippet/searchAgenziaSnippet.html&#10;explico&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/styles/explico.css&#10;home_&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/scripts/controllers/agenzia/home_agenzia.js&#10;inde&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/index.html&#10;trans&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/views/traduttore/snippet/translationTraduttoreSnippet.html&#10;aboutagen&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/views/agenzia/snippet/aboutYourAgencySnippet.html&#10;transla&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/views/traduttore/snippet/translationTraduttoreSnippet.html&#10;jobs&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/views/traduttore/jobs_traduttore.html&#10;home_agen&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/scripts/controllers/agenzia/home_agenzia.js&#10;searchagenziasnipp&#9;FILE&#9;file:///Users/giuseppe/Dropbox/angularjs/Glifico/app/views/agenzia/snippet/searchAgenziaSnippet.html&#10;upl&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/scripts/upload.js&#10;cert&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/views/traduttore/snippet/certificationsTraduttoreSnippet.html&#10;home_tra&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/scripts/controllers/traduttore/home_traduttore.js&#10;registrazionetr&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/views/snippet/registrazioneTraduttoreSnippet.html&#10;home_a&#9;FILE&#9;file://C:/Users/terribilio.gi/Dropbox/angularjs/Glifico/app/scripts/controllers/agenzia/home_agenzia.js" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="133" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="50" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="141" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="50" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="142" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="354" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="799" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="70" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="230" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="70" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="229" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="70" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="230" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="380" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="539" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
@@ -565,7 +694,13 @@
       <option name="project" value="LOCAL" />
       <updated>1436029857596</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="20150704">
+      <created>1436194204723</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1436194204723</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView">
@@ -581,19 +716,19 @@
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.290938" sideWeight="0.91611844" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2662957" sideWeight="0.91611844" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23680556" sideWeight="0.08388158" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16483517" sideWeight="0.5208333" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21115065" sideWeight="0.47916666" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3440095" sideWeight="0.47916666" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24960254" sideWeight="0.49449036" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.049822062" sideWeight="0.4936407" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19475357" sideWeight="0.29714286" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12218268" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -658,13 +793,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/scripts/jquery.easing.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/traduttore/jobs_traduttore.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -676,13 +804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="34" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Glifico - ScriptPHP/upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19456366">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -739,13 +860,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8239645">
           <caret line="182" column="1" selection-start-line="182" selection-start-column="1" selection-end-line="182" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -885,13 +999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/layout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/traduttore/home_traduttore.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -910,13 +1017,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="183" column="27" selection-start-line="183" selection-start-column="27" selection-end-line="183" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -962,41 +1062,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/remarkable-bootstrap-notify/bootstrap-notify-3.1.3/bootstrap-notify.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1436177676511" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/remarkable-bootstrap-notify/bootstrap-notify-3.1.3/test_meteor.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/remarkable-bootstrap-notify/bootstrap-notify.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1436177676511" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846">
-          <caret line="174" column="0" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1016,18 +1085,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.807601">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23737374">
           <caret line="211" column="3" selection-start-line="211" selection-start-column="3" selection-end-line="211" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/layout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/remarkable-bootstrap-notify/bootstrap-notify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.730769">
+          <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/remarkable-bootstrap-notify/bootstrap-notify-3.1.3/bootstrap-notify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693">
+          <caret line="100" column="24" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="195" column="17" selection-start-line="195" selection-start-column="17" selection-end-line="195" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Glifico - ScriptPHP/upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42095238">
+          <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Glifico - ScriptPHP/JSONEngine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6152381">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41714287">
+          <caret line="251" column="35" selection-start-line="251" selection-start-column="35" selection-end-line="251" selection-end-column="35" />
           <folding />
         </state>
       </provider>

@@ -27,7 +27,7 @@ var app_cfg = {
 
   "endpoint_server": "http://52.26.216.27",
 
-  "endpoint_upload_server": "52.26.216.27",
+  "endpoint_upload_server": "http://52.26.216.27",
 
   "environment": "development",
   "request": {
@@ -47,7 +47,7 @@ app.config(['$routeProvider', '$httpProvider', '$linkedInProvider',
   function ($routeProvider, $httpProvider, $linkedInProvider) {
     $routeProvider.
       when('/', {
-        templateUrl: 'views/home2.html', controller: 'HomeCtrl',
+        templateUrl: 'views/home.html', controller: 'HomeCtrl',
         resolve: {
           'MyServiceData': ['customFactory', function (customFactory) {
             return customFactory.promise;

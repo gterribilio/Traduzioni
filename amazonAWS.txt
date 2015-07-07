@@ -1,0 +1,14 @@
+AMAZON AWS
+
+- IP: http://52.26.216.27/
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-LAMP.html
+ssh -i keyPairAmazonAWS.pem ubuntu@52.26.216.27 per connettermi in SSH
+https://winscp.net/eng/docs/guide_amazon_ec2
+http://www.thatsgeeky.com/2011/10/connect-to-amazons-linux-via-winscp-as-root/
+https://community.bitnami.com/t/how-to-transfer-files-to-server-winscp-gives-permission-denied/1365
+Click Advanced options
+Go to Environment --> SCP/Shell (on left)
+Select Shell: "sudo su -"
+https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-14-04
+http://stackoverflow.com/questions/5165183/apache-permissions-php-file-create-mkdir-fail
+chown theuser:theuser -R /var/www/website/

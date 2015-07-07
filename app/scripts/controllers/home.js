@@ -232,13 +232,13 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
     $scope.facebookRegister = function () {
       FB.getLoginStatus(function (response) {
         if (response.status === 'connected') {
-          doRegisterFacebook(role);
+          doRegisterFacebook();
         } else { //gestisco sia lo stato NOT_AUTHORIZED che lo stato UNKNOWN
           FB.login(function (response) {
             // Handle the response object, like in statusChangeCallback() in our demo
             // code.
             if (response.status === 'connected') {
-              doRegisterFacebook(role);
+              doRegisterFacebook();
             }
             //else non fare niente
           }, {

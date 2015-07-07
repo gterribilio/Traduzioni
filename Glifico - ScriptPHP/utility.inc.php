@@ -10,8 +10,8 @@ $GLOBALS["statiPrenotazione"] = array (
 	"IN APPROVAL" => "IN APPROVAL", 
 	"CLOSED" => "CLOSED");
 
-$id_safe = mysql_escape_mimic($_GET["ID"]);
-if(isset($id_safe)) {
+if(isset($_GET["ID"])) {
+	$id_safe = mysql_escape_mimic($_GET["ID"]);
 	sendMail($id_safe);
 	echo "Email inviata!!";
 }
