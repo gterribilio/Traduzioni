@@ -216,7 +216,7 @@ Blog
 .blog{
   background:
   url(../images/pattern-1.png) left top repeat,
-  url(../images/blog.jpg) center center fixed;
+  url(../images/blog.jpg) 50% 50% fixed;
   padding:0 0 96px 0;
   text-align: center;
   overflow: hidden;

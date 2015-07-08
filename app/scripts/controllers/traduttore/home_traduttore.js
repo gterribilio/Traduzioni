@@ -5,8 +5,6 @@ var home = angular.module('HomeCtrlTraduttoreModule', []);
 home.controller('HomeTraduttoreCtrl', ['$scope', '$rootScope', '$window', 'services', '$location', 'customFactory', 'APP_CFG',
   function ($scope, $rootScope, $window, services, $location, customFactory, APP_CFG) {
 
-    $rootScope.image = null;
-
     $rootScope.isLogged = customFactory.get('isLogged');
     $rootScope.userData = customFactory.get('userData');
     if ($rootScope.isLogged == null || $rootScope.userData == null) {
@@ -63,26 +61,26 @@ home.controller('HomeTraduttoreCtrl', ['$scope', '$rootScope', '$window', 'servi
       $rootScope.fields = data;
     });
 
-  //services
+    //services
     services.getCodeTable("codetable=5").success(function (data) {
       //alert(JSON.stringify(data));
       $rootScope.services = data;
     });
 
-  //currency
+    //currency
     services.getCodeTable("codetable=6").success(function (data) {
       //alert(JSON.stringify(data));
       $rootScope.currencies = data;
     });
 
-  //level
+    //level
     services.getCodeTable("codetable=7").success(function (data) {
       //alert(JSON.stringify(data));
       $rootScope.levels = data;
       customFactory.set('levels', $rootScope.levels);
     });
 
-  //ottengo le lenguage pair al caricamento della pagina
+    //ottengo le lenguage pair al caricamento della pagina
     (function init() {
       services.getFromRESTServer(
         "user_id=" + $rootScope.userData.ID, "getPair")
@@ -137,23 +135,28 @@ home.controller('HomeTraduttoreCtrl', ['$scope', '$rootScope', '$window', 'servi
         //alert(data[0]["IMAGE"]);
         //alert($rootScope.userData.IMAGE);
 
-        if (data[0]["IMAGE"] != $rootScope.userData.IMAGE) {
-          //riscrivo l'oggetto userData nel localStorage
-          $rootScope.userData.IMAGE = data[0]["IMAGE"];
-          customFactory.set('userData', $rootScope.userData);
+        //if (data[0]["IMAGE"] != $rootScope.userData.IMAGE) {
+        //riscrivo l'oggetto userData nel localStorage
+
+        if (customFactory.getSessionStorage('userProfileImage') == null) {
+          services.getFromRESTServer("user_id=" + $rootScope.userData.ID, "getUserProfilePicture")
+            .success(function (data) {
+              if (data.jsonError != null || data.errCode != null) {
+                //alert(JSON.stringify(data));
+              }
+              else {
+                customFactory.setSessionStorage('userProfileImage',data.base64);
+                $rootScope.image = customFactory.getSessionStorage('userProfileImage');
+              }
+            });//end success
         }
         else {
-          //alert('immagini uguali');
+          $rootScope.image = customFactory.getSessionStorage('userProfileImage');
         }
-        services.getFromRESTServer("user_id=" + $rootScope.userData.ID, "getUserProfilePicture")
-          .success(function (data) {
-            if (data.jsonError != null || data.errCode != null) {
-              alert(JSON.stringify(data));
-            }
-            else {
-              $rootScope.image = data.base64;
-            }
-          });//end success
+        //}
+        //else {
+        //alert('immagini uguali');
+        //}
       }
     });//end success
 
@@ -238,7 +241,7 @@ home.controller('HomeTraduttoreCtrl', ['$scope', '$rootScope', '$window', 'servi
     $scope.doDeleteEducation = function (educationID) {
       //alert(pairID);
       services.getFromRESTServer("education_id=" + educationID + "&user_id="
-        + $rootScope.userData.ID, "deleteEducation")
+      + $rootScope.userData.ID, "deleteEducation")
         .success(function (data) {
           if (data.jsonError != null || data.errCode != null) {
             //alert (data.errMsg); Nessun dato trovato
@@ -273,7 +276,7 @@ home.controller('HomeTraduttoreCtrl', ['$scope', '$rootScope', '$window', 'servi
     $scope.doDeleteCertification = function (certificationID) {
       //alert(CertificationID);
       services.getFromRESTServer("certification_id=" + certificationID + "&user_id="
-        + $rootScope.userData.ID, "deleteCertification")
+      + $rootScope.userData.ID, "deleteCertification")
         .success(function (data) {
           if (data.jsonError != null || data.errCode != null) {
             //alert (data.errMsg); Nessun dato trovato

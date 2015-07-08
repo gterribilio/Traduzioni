@@ -39,23 +39,28 @@ home.controller('HomeAgenziaCtrl', ['$scope', '$rootScope', '$window', 'services
         //alert(data[0]["IMAGE"]);
         //alert($rootScope.userData.IMAGE);
 
-        if (data[0]["IMAGE"] != $rootScope.userData.IMAGE) {
-          //riscrivo l'oggetto userData nel localStorage
-          $rootScope.userData.IMAGE = data[0]["IMAGE"];
-          customFactory.set('userData', $rootScope.userData);
+        //if (data[0]["IMAGE"] != $rootScope.userData.IMAGE) {
+        //riscrivo l'oggetto userData nel localStorage
+
+        if (customFactory.getSessionStorage('userProfileImage') == null) {
+          services.getFromRESTServer("user_id=" + $rootScope.userData.ID, "getUserProfilePicture")
+            .success(function (data) {
+              if (data.jsonError != null || data.errCode != null) {
+                //alert(JSON.stringify(data));
+              }
+              else {
+                customFactory.setSessionStorage('userProfileImage',data.base64);
+                $rootScope.image = customFactory.getSessionStorage('userProfileImage');
+              }
+            });//end success
         }
         else {
-          //alert('immagini uguali');
+          $rootScope.image = customFactory.getSessionStorage('userProfileImage');
         }
-        services.getFromRESTServer("user_id=" + $rootScope.userData.ID, "getUserProfilePicture")
-          .success(function (data) {
-            if (data.jsonError != null || data.errCode != null) {
-              alert(JSON.stringify(data));
-            }
-            else {
-              $rootScope.image = data.base64;
-            }
-          });//end succes
+        //}
+        //else {
+        //alert('immagini uguali');
+        //}
       }
     });//end success
 

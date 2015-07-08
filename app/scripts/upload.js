@@ -33,7 +33,9 @@ app.controller('UploadCtrl', ['$scope', '$rootScope', '$upload', 'APP_CFG', 'cus
                   alert(JSON.stringify(data));
                 }
                 else {
-                  $rootScope.image = data.base64;
+                  customFactory.setSessionStorage('userProfileImage', data.base64);
+                  $rootScope.image = customFactory.getSessionStorage('userProfileImage');
+
                 }
               });//end success
 

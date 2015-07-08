@@ -48,6 +48,7 @@ home.controller('HomeCtrl', ['$scope', '$rootScope', '$window', 'services', '$lo
       $location.path("/");
       $rootScope.isLogged = false;
       localStorage.clear();
+      sessionStorage.clear();
       IN.User.logout();
       FB.getLoginStatus(function (response) {
         if (response.status === 'connected') {
