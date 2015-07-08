@@ -604,7 +604,6 @@ angular.module('DirectivesModule')
     return {
       restrict: 'AE',
       link: function (scope, element, attrs) {
-        $(window).load(function () {
           /**
            * Set your date here  (YEAR, MONTH (0 for January/11 for December), DAY, HOUR, MINUTE, SECOND)
            * according to the GMT+0 Timezone
@@ -649,7 +648,6 @@ angular.module('DirectivesModule')
               //message.html('OUR SITE IS NOT READY YET, BUT WE ARE COMING SOON');
             }
           }
-        });
       }
     };
   });
